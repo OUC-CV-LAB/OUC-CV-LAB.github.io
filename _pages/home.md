@@ -1,5 +1,5 @@
 ---
-title: "Sanders Lab - Home"
+title: "CV前沿交叉组 - Home"
 layout: homelay
 excerpt: "CV前沿交叉组 at OUC."
 sitemap: false
