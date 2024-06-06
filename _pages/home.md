@@ -29,7 +29,7 @@ DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
 ### 成员
 ---
 
-## 导师
+#### 导师
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
@@ -42,7 +42,7 @@ DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
 
 <div class="col-sm-6 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <!-- <h4><a href="{{ member.url }}" class="off">{{ member.name }}</a></h4> -->
+  <h4>{{ member.name }}</h4>
   <i>{{ member.info }}</i>
 </div>
 
@@ -62,7 +62,7 @@ DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
 
 ---
 
-## 23级研究生
+#### 23级研究生
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
