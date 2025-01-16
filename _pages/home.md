@@ -1,12 +1,12 @@
 ---
 title: "CV前沿交叉组 - Home"
 layout: homelay
-excerpt: "CV前沿交叉组 at OUC."
+excerpt: "计算机视觉前沿交叉实验室 at OUC."
 sitemap: false
 permalink: /
 ---
 
-# 欢迎来到CV前沿交叉组@OUC
+# 欢迎来到中国海洋大学计算机视觉前沿交叉实验室
 
 
 ![]({{ site.url }}{{ site.baseurl }}/images/lab_logo.jpg){: style="width: 230px; float: left;margin-right: 20px; border: 10px"}
