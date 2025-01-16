@@ -1,7 +1,7 @@
-- name: Stephan Sanders
-  photo: stephansanders.jpg
-  info: Associate Professor
-  url: stephansanders
+- name: 蔡青
+  photo: caiqing.jpg
+  info: 副教授
+  url: https://tocaiqing.github.io
   group: 0
   
 - name: Shan Dong
