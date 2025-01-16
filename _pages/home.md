@@ -9,7 +9,7 @@ permalink: /
 # 欢迎来到CV前沿交叉组@OUC
 
 
-![]({{ site.url }}{{ site.baseurl }}/images/Lab_Logo_v6c.png){: style="width: 170px; float: left;margin-right: 20px; border: 10px"}
+![]({{ site.url }}{{ site.baseurl }}/images/lab_logo.png){: style="width: 230px; float: left;margin-right: 20px; border: 10px"}
 
 
 介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍
