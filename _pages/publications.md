@@ -1,7 +1,7 @@
 ---
-title: "Sanders Lab - Publications"
+title: "计算机视觉前沿交叉实验室 - Publications"
 layout: gridlay
-excerpt: "Sanders Lab -- Publications."
+excerpt: "计算机视觉前沿交叉实验室 -- Publications."
 sitemap: false
 permalink: /publications/
 ---

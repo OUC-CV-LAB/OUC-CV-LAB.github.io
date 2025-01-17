@@ -1,7 +1,7 @@
 ---
-title: "Allan Lab - About"
+title: "计算机视觉前沿交叉实验室 - About"
 layout: textlay
-excerpt: "Allan Lab -- About"
+excerpt: "计算机视觉前沿交叉实验室 -- About"
 sitemap: false
 permalink: /about/
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Sanders Lab - Recruitment"
+title: "计算机视觉前沿交叉实验室 - Recruitment"
 layout: textlay
 excerpt: "Openings"
 sitemap: false

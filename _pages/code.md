@@ -1,7 +1,7 @@
 ---
-title: "Sanders Lab - Code"
+title: "计算机视觉前沿交叉实验室 - Code"
 layout: textlay
-excerpt: "Sanders Lab -- Code."
+excerpt: "计算机视觉前沿交叉实验室 -- Code."
 sitemap: false
 permalink: /code/
 ---

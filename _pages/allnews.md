@@ -1,7 +1,7 @@
 ---
-title: "Sanders Lab - News"
+title: "计算机视觉前沿交叉实验室 - News"
 layout: textlay
-excerpt: "Sanders Lab at UCSF."
+excerpt: "计算机视觉前沿交叉实验室 at UCSF."
 sitemap: false
 permalink: /allnews.html
 ---

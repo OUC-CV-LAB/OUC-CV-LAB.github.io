@@ -1,5 +1,5 @@
 ---
-title: "CV前沿交叉组 - Home"
+title: "OUC计算机视觉前沿交叉实验室 - Home"
 layout: homelay
 excerpt: "计算机视觉前沿交叉实验室 at OUC."
 sitemap: false
