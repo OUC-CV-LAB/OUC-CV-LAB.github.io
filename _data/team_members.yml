@@ -4,41 +4,108 @@
   url: https://tocaiqing.github.io
   group: 0
   
-- name: Shan Dong
-  photo: shandong.jpg
-  info: Postdoctoral Scholar
-  url: shandong
+- name: 童亨
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
   group: 1
 
-- name: David Young
-  photo: davidyoung.jpg
-  info: Postdoctoral Scholar
-  url: davidyoung
+- name: 谭润请
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tanrunqing
   group: 1
 
-- name: Nick Page
-  photo: nickpage.jpg
-  info: Graduate Student
-  url: nickpage
+- name: 张朦幻
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
   group: 1
 
-- name: Clif Duhn
-  photo: clifduhn.jpg
-  info: Laboratory Manager
-  url: clifduhn
+- name: 仇世纪
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
+  group: 1
+
+- name: 鄢柯
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
+  group: 1
+
+- name: 李帅衡
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
+  group: 1
+
+- name: 曹子彦
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
+  group: 1
+
+- name: 孔松琦
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
+  group: 1
+
+- name: 李绍铭
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
+  group: 1
+
+- name: 曹政
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
   group: 2
 
-- name: Alessandra Aguilar
-  photo: alessandraaguilar.jpg
-  info: Staff Research Associate
-  url: alessandraaguilar
+- name: 舒恩慧
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
   group: 2
 
-- name: Aileen Poquiz
-  photo: aileenpoquiz.jpg
-  info: Administrative Officer
-  url: aileenpoquiz
+- name: 王绍哲
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
   group: 2
+
+- name: 严桂浩
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
+  group: 2
+
+- name: 时东方
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
+  group: 2
+
+- name: 魏兴悦
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
+  group: 2
+
+- name: 吉万文
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
+  group: 2
+
+- name: 陈继宗
+  photo: bio-photo.jpg
+  info: 计算机技术
+  url: tongheng
+  group: 2
+
       
 - name: Lindsay Liang
   photo: lindsayliang.jpg
