@@ -6,7 +6,7 @@ sitemap: false
 permalink: /research/
 ---
 
-# Research Highlights
+# 研究方向
 
 ---
 
