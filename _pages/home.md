@@ -64,9 +64,8 @@ permalink: /
 
 <div class="col-sm-12 clearfix">
  <div class="row">
- 	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="25%" style="float: right" />
-  <p><a class="pub1" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
-  <a class="pub2"> {{ publi.link.display }} </a>
+  <p><a class="pub1" href="{{ publi.link.url }}" style="font-size: 18px; font-weight: bold; text-decoration: none; color: #007bff;">{{ publi.title }}</a></p>
+  <a class="pub2" style="font-size: 16px; color: #555;"> {{ publi.link.display }} </a>
  </div>
 </div>
 
