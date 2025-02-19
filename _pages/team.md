@@ -6,13 +6,13 @@ sitemap: false
 permalink: /team/
 ---
 
-# 团队成员
+## 团队成员
 
 
 
 ---
 
-## 导师
+### 导师
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
@@ -25,7 +25,7 @@ permalink: /team/
 
 <div class="col-sm-6 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <!-- <h4><a href="{{ member.url }}" class="off">{{ member.name }}</a></h4> -->
+  <h4><a href="{{ member.url }}" class="off">{{ member.name }}</a></h4>
   <i>{{ member.info }}</i>
 </div>
 
@@ -45,7 +45,7 @@ permalink: /team/
 
 ---
 
-## 24级研究生
+### 24级研究生
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
@@ -58,7 +58,7 @@ permalink: /team/
 
 <div class="col-sm-6 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <h4><a href="{{ member.url }}" class="off">{{ member.name }}</a></h4>
+  <h4>{{ member.name }}</a></h4>
   <i>{{ member.info }}</i>
 </div>
 
@@ -78,7 +78,7 @@ permalink: /team/
 
 ---
 
-## 23级研究生
+### 23级研究生
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
@@ -91,7 +91,7 @@ permalink: /team/
 
 <div class="col-sm-6 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <h4><a href="{{ member.url }}" class="off">{{ member.name }}</a></h4>
+  <h4>{{ member.name }}</a></h4>
   <i>{{ member.info }}</i>
 </div>
 
