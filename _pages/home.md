@@ -60,12 +60,10 @@ permalink: /
 
 <div class="row">
   <div class="col-12">
-  <div class="row">
     <!-- 论文标题 -->
     <p><a class="pub1" href="{{ publi.link.url }}" style="font-size: 18px; font-weight: bold; text-decoration: none; color: #007bff;">{{ publi.title }}</a></p>
     <!-- 论文作者和期刊信息 -->
     <p class="pub2" style="font-size: 16px; color: #555;">{{ publi.link.display }}</p>
-    </div>
   </div>
 </div>
 
