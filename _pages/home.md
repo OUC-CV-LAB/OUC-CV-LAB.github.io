@@ -50,7 +50,7 @@ permalink: /
 
 ---
 ### 学术论文
-
+*通讯作者 #共同一作
 
 {% assign number_printed = 0 %}
 {% for publi in site.data.publist %}
@@ -64,7 +64,7 @@ permalink: /
 
 <div class="col-sm-12 clearfix">
  <div class="row">
-  <p><a class="pub1" href="{{ publi.link.url }}" style="font-size: 12px; font-weight: bold; text-decoration: none; ">{{ publi.title publi.link.display}}</a></p>
+  <p><a class="pub1" style="font-size: 22px; font-weight: bold; text-decoration: none;">{{ publi.brief }}</a></p>
   
  </div>
 </div>
