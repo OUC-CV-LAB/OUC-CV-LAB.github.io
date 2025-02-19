@@ -53,30 +53,21 @@ permalink: /
 
 {% assign number_printed = 0 %}
 {% for publi in site.data.publist %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if publi.highlight == 1 %}
-
-<div class="row">
-  <div class="col-12">
+  {% if publi.highlight == 1 %}
     <div class="row">
-      <!-- 论文标题 -->
-      <p><a class="pub1" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
-      <!-- 论文作者和期刊信息 -->
-      <p class="pub2">{{ publi.link.display }}</p>
+      <div class="col-sm-12 clearfix">
+        <div class="row">
+          <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="25%" style="float: right" />
+          <p><a class="pub1" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
+          <a class="pub2"> {{ publi.link.display }} </a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-{% assign number_printed = number_printed | plus: 1 %}
-
-{% endif %}
+    {% assign number_printed = number_printed | plus: 1 %}
+  {% endif %}
 {% endfor %}
 
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
-</div>
-{% endif %}
+
 
 <!-- 
 ### 成员
