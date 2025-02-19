@@ -48,15 +48,7 @@ permalink: /
 </script>
 
 
----
-### 学术论文
-*通讯作者 #共同一作
 
-<p style="font-size: 14px;">SGTC: Semantic-Guided Triplet Co-training for Sparsely Annotated Semi-Supervised Medical Image Segmentation. Ke Yan#, Qing Cai#, Fan Zhang, Ziyan Cao, Zhi Liu.2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]</p>
-
-<p style="font-size: 14px;">BSAFusion: A Bidirectional Stepwise Feature Alignment Network for Unaligned Medical Image Fusion. Huafeng Li, Dayong Su, Qing Cai*, Yafei Zhang. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]</p>
-
-<p style="font-size: 14px;">C2PD: Continuity-Constrained Pixelwise Deformation for Guided Depth Super-Resolution. Jiahui Kang, Qing Cai*, Runqing Tan, Yimei Liu, Zhi Liu. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]</p>
 
 
 ---
