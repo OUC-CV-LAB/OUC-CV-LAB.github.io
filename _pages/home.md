@@ -64,7 +64,7 @@ permalink: /
 
 <div class="col-sm-12 clearfix">
  <div class="row">
-  <p><a class="pub1" style="font-size: 14px; text-decoration: none;">{{ publi.brief }}</a></p>
+  <p><a class="pub1" style="font-size: 14px; text-decoration: none;">&#8226;{{ publi.brief }}</a></p>
   
  </div>
 </div>
