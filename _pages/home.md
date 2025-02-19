@@ -62,7 +62,7 @@ permalink: /
 <div class="row">
 {% endif %}
 
-<div class="col-sm-6 clearfix">
+<div class="col-sm-12 clearfix">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="25%" style="float: right" />
   <p><a class="pub1" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
