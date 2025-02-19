@@ -48,6 +48,33 @@ permalink: /
 </script>
 
 
+---
+### 学术论文
+
+
+{% assign number_printed = 0 %}
+{% for publi in site.data.publist %}
+
+{% assign even_odd = number_printed | modulo: 2 %}
+{% if publi.highlight == 1 %}
+
+<div class="row">
+  <div class="col-12">
+    <div class="row">
+      <!-- 论文标题 -->
+      <p><a class="pub1" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
+      <!-- 论文作者和期刊信息 -->
+      <a class="pub2"> {{ publi.link.display }} </a>
+    </div>
+  </div>
+</div>
+
+{% assign number_printed = number_printed | plus: 1 %}
+
+{% endif %}
+{% endfor %}
+
+<!-- 
 ### 成员
 ---
 
@@ -146,7 +173,7 @@ permalink: /
 {% if even_odd == 1 %}
 </div>
 {% endif %}
-
+-->
 <!-- 
 ### 合作
 We work with closely with numerous collaborators, including the [State Lab](https://www.mstatelab.com/) and [Bender Lab](https://benderlab.ucsf.edu/lab-members) at UCSF, the [Devlin Lab](https://www.psychiatry.pitt.edu/about-us/our-people/faculty/bernie-j-devlin-phd) at UPMC, the [Roeder Lab](http://www.stat.cmu.edu/~roeder/) at Carnegie Mellon, the [Sestan Lab](http://medicine.yale.edu/lab/sestan/index.aspx), and the [Talkowski lab](http://talkowski.mgh.harvard.edu/) at Harvard.
@@ -155,7 +182,9 @@ We work with closely with numerous collaborators, including the [State Lab](http
 If you are interested in joining please go to the [recruitment](recruitment) page. -->
 
 ### 联系我们
-联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们联系我们
+蔡青副教授
+电子邮箱： cq@ouc.edu.cn
+办公地址： 中国海洋大学西海岸校区 信息楼南楼A506
 
 
 <figure class="third">
