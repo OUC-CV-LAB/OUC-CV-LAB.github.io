@@ -21,89 +21,89 @@
   news2:
 
 - title: "C2PD: Continuity-Constrained Pixelwise Deformation for Guided Depth Super-Resolution"
-image: yankeaaai.jpg
-description: 
-authors: 
-link:
-  url: https://arxiv.org/abs/2412.15526
-  display: Jiahui Kang, Qing Cai*, Runqing Tan, Yimei Liu, Zhi Liu. AAAI Conference on Artificial Intelligence(2025)
-highlight: 1
-brief: "C2PD: Continuity-Constrained Pixelwise Deformation for Guided Depth Super-Resolution. Jiahui Kang, Qing Cai*, Runqing Tan, Yimei Liu, Zhi Liu. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
-news2:
+  image: yankeaaai.jpg
+  description: 
+  authors: 
+  link:
+    url: https://arxiv.org/abs/2412.15526
+    display: Jiahui Kang, Qing Cai*, Runqing Tan, Yimei Liu, Zhi Liu. AAAI Conference on Artificial Intelligence(2025)
+  highlight: 1
+  brief: "C2PD: Continuity-Constrained Pixelwise Deformation for Guided Depth Super-Resolution. Jiahui Kang, Qing Cai*, Runqing Tan, Yimei Liu, Zhi Liu. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
+  news2:
 
 - title: "Spherical Pseudo-cylindrical Representation for Omnidirectional Image Super-Resolution"
-image: yankeaaai.jpg
-description: 
-authors: 
-link:
-  url: https://arxiv.org/abs/2412.15526
-  display: Qing Cai, Mu Li, Dongwei Ren, Jun Lyu, Haiyong Zheng*, Herbert Yang and Junyu Dong*. AAAI Conference on Artificial Intelligence(2025)
-highlight: 1
-brief: "Spherical Pseudo-cylindrical Representation for Omnidirectional Image Super-Resolution. Qing Cai, Mu Li, Dongwei Ren, Jun Lyu, Haiyong Zheng*, Herbert Yang and Junyu Dong*. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
-news2:
+  image: yankeaaai.jpg
+  description: 
+  authors: 
+  link:
+    url: https://arxiv.org/abs/2412.15526
+    display: Qing Cai, Mu Li, Dongwei Ren, Jun Lyu, Haiyong Zheng*, Herbert Yang and Junyu Dong*. AAAI Conference on Artificial Intelligence(2025)
+  highlight: 1
+  brief: "Spherical Pseudo-cylindrical Representation for Omnidirectional Image Super-Resolution. Qing Cai, Mu Li, Dongwei Ren, Jun Lyu, Haiyong Zheng*, Herbert Yang and Junyu Dong*. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
+  news2:
 
 - title: "Exploring Cross-Domain Few-Shot Classification via Frequency-Aware Prompting"
-image: yankeaaai.jpg
-description: 
-authors: 
-link:
-  url: https://arxiv.org/abs/2412.15526
-  display: Tiange Zhang, Qing Cai*, Feng Gao, Lin Qi, Junyu Dong*. International Joint Conference on Artificial Intelligence(2024)
-highlight: 1
-brief: "Exploring Cross-Domain Few-Shot Classification via Frequency-Aware Prompting. Tiange Zhang, Qing Cai*, Feng Gao, Lin Qi, Junyu Dong*. 2024, International Joint Conference on Artificial Intelligence (IJCAI). [CCF A]"
-news2:
+  image: yankeaaai.jpg
+  description: 
+  authors: 
+  link:
+    url: https://arxiv.org/abs/2412.15526
+    display: Tiange Zhang, Qing Cai*, Feng Gao, Lin Qi, Junyu Dong*. International Joint Conference on Artificial Intelligence(2024)
+  highlight: 1
+  brief: "Exploring Cross-Domain Few-Shot Classification via Frequency-Aware Prompting. Tiange Zhang, Qing Cai*, Feng Gao, Lin Qi, Junyu Dong*. 2024, International Joint Conference on Artificial Intelligence (IJCAI). [CCF A]"
+  news2:
 
 - title: "Federated Cross-Incremental Self-Supervised Learning for Medical Image Segmentation"
-image: yankeaaai.jpg
-description: 
-authors: 
-link:
-  url: https://arxiv.org/abs/2412.15526
-  display: Fan Zhang, Huiying Liu, Qing Cai*, Chun-Mei Feng, Binglu Wang, Shanshan Wang, Junyu Dong, Zhang David. IEEE Transactions on Neural Networks and Learning Systems(2024)
-highlight: 1
-brief: "Federated Cross-Incremental Self-Supervised Learning for Medical Image Segmentation. Fan Zhang, Huiying Liu, Qing Cai*, Chun-Mei Feng, Binglu Wang, Shanshan Wang, Junyu Dong, Zhang David. 2024, IEEE Transactions on Neural Networks and Learning Systems. [CCF B,中科院SCI一区Top 期刊, IF=14.255]"
-news2:
+  image: yankeaaai.jpg
+  description: 
+  authors: 
+  link:
+    url: https://arxiv.org/abs/2412.15526
+    display: Fan Zhang, Huiying Liu, Qing Cai*, Chun-Mei Feng, Binglu Wang, Shanshan Wang, Junyu Dong, Zhang David. IEEE Transactions on Neural Networks and Learning Systems(2024)
+  highlight: 1
+  brief: "Federated Cross-Incremental Self-Supervised Learning for Medical Image Segmentation. Fan Zhang, Huiying Liu, Qing Cai*, Chun-Mei Feng, Binglu Wang, Shanshan Wang, Junyu Dong, Zhang David. 2024, IEEE Transactions on Neural Networks and Learning Systems. [CCF B,中科院SCI一区Top 期刊, IF=14.255]"
+  news2:
 
 - title: "A New Benchmark and Low Computational Cost Localization Method for Cephalometric Analysis"
-image: yankeaaai.jpg
-description: 
-authors: 
-link:
-  url: https://arxiv.org/abs/2412.15526
-  display: Xianglong Wang, Eric Rigall, Xifeng An, Zhihao Li, Qing Cai*, Shu Zhang, and Junyu Dong. IEEE Transactions on Circuits and Systems for Video Technology(2024)
-highlight: 1
-brief: "A New Benchmark and Low Computational Cost Localization Method for Cephalometric Analysis. Xianglong Wang, Eric Rigall, Xifeng An, Zhihao Li, Qing Cai*, Shu Zhang, and Junyu Dong. 2024, IEEE Transactions on Circuits and Systems for Video Technology. [CCF B, 中科院SCI一区Top 期刊, IF=8.4]"
-news2:
+  image: yankeaaai.jpg
+  description: 
+  authors: 
+  link:
+    url: https://arxiv.org/abs/2412.15526
+    display: Xianglong Wang, Eric Rigall, Xifeng An, Zhihao Li, Qing Cai*, Shu Zhang, and Junyu Dong. IEEE Transactions on Circuits and Systems for Video Technology(2024)
+  highlight: 1
+  brief: "A New Benchmark and Low Computational Cost Localization Method for Cephalometric Analysis. Xianglong Wang, Eric Rigall, Xifeng An, Zhihao Li, Qing Cai*, Shu Zhang, and Junyu Dong. 2024, IEEE Transactions on Circuits and Systems for Video Technology. [CCF B, 中科院SCI一区Top 期刊, IF=8.4]"
+  news2:
 
 - title: "Cross co-teaching for semi-supervised medical image segmentation"
-image: yankeaaai.jpg
-description: 
-authors: 
-link:
-  url: https://arxiv.org/abs/2412.15526
-  display: Fan Zhang, Huiying Liu, Jinjiang Wang, Jun Lyu, Qing Cai*, Huafeng Li, Junyu Dong, and David Zhang. Pattern Recognition(2024)
-highlight: 1
-brief: "Cross co-teaching for semi-supervised medical image segmentation. Fan Zhang, Huiying Liu, Jinjiang Wang, Jun Lyu, Qing Cai*, Huafeng Li, Junyu Dong, and David Zhang. 2024, Pattern Recognition. [CCF B, 中科院SCI一区Top 期刊, IF=8.518]"
-news2:
+  image: yankeaaai.jpg
+  description: 
+  authors: 
+  link:
+    url: https://arxiv.org/abs/2412.15526
+    display: Fan Zhang, Huiying Liu, Jinjiang Wang, Jun Lyu, Qing Cai*, Huafeng Li, Junyu Dong, and David Zhang. Pattern Recognition(2024)
+  highlight: 1
+  brief: "Cross co-teaching for semi-supervised medical image segmentation. Fan Zhang, Huiying Liu, Jinjiang Wang, Jun Lyu, Qing Cai*, Huafeng Li, Junyu Dong, and David Zhang. 2024, Pattern Recognition. [CCF B, 中科院SCI一区Top 期刊, IF=8.518]"
+  news2:
 
 - title: "CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting"
-image: yankeaaai.jpg
-description: 
-authors: 
-link:
-  url: https://arxiv.org/abs/2412.15526
-  display: Shao Xiang Guo, Qing Cai*, Lin Qi and Junyu Dong*. ACM International Conference on Multimedia(2023)
-highlight: 1
-brief: "CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting. Shao Xiang Guo, Qing Cai*, Lin Qi and Junyu Dong*. 2023, ACM International Conference on Multimedia (ACM MM). [CCF A]"
-news2:
+  image: yankeaaai.jpg
+  description: 
+  authors: 
+  link:
+    url: https://arxiv.org/abs/2412.15526
+    display: Shao Xiang Guo, Qing Cai*, Lin Qi and Junyu Dong*. ACM International Conference on Multimedia(2023)
+  highlight: 1
+  brief: "CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting. Shao Xiang Guo, Qing Cai*, Lin Qi and Junyu Dong*. 2023, ACM International Conference on Multimedia (ACM MM). [CCF A]"
+  news2:
 
 - title: "HIPA: Hierarchical Patch Transformer for Single Image Super Resolution"
-image: yankeaaai.jpg
-description: 
-authors: 
-link:
-  url: https://arxiv.org/abs/2412.15526
-  display: Qing Cai,Yiming Qian, Jinxing Li, Jun Lyu*, Yee-Hong Yang, Feng Wu, David Zhang*. IEEE Transactions on Image Processing(2023)
-highlight: 1
-brief: "HIPA: Hierarchical Patch Transformer for Single Image Super Resolution. Qing Cai,Yiming Qian, Jinxing Li, Jun Lyu*, Yee-Hong Yang, Feng Wu, David Zhang*. 2023, IEEE Transactions on Image Processing. [CCF A, 中科院SCI一区Top 期刊, IF=11.041]"
-news2:
+  image: yankeaaai.jpg
+  description: 
+  authors: 
+  link:
+    url: https://arxiv.org/abs/2412.15526
+    display: Qing Cai,Yiming Qian, Jinxing Li, Jun Lyu*, Yee-Hong Yang, Feng Wu, David Zhang*. IEEE Transactions on Image Processing(2023)
+  highlight: 1
+  brief: "HIPA: Hierarchical Patch Transformer for Single Image Super Resolution. Qing Cai,Yiming Qian, Jinxing Li, Jun Lyu*, Yee-Hong Yang, Feng Wu, David Zhang*. 2023, IEEE Transactions on Image Processing. [CCF A, 中科院SCI一区Top 期刊, IF=11.041]"
+  news2:
