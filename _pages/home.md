@@ -17,9 +17,9 @@ permalink: /
  欢迎对我们研究方向感兴趣的同学加入实验室，我们实验室学术氛围浓厚、成员融洽、不强制打卡，欢迎各位优秀的同学咨询！同时欢迎学有余力的本科生进入实验室！联系方式：cq@ouc.edu.cn 
 
 
-<div style="position: relative; text-align: center; max-width: 600px; margin: auto;">
+<div style="position: relative; text-align: center; max-width: 400px; margin: auto;">
   <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style="width: 100%; height: auto;">
-  
+  <p id="imageTitle" style="font-size: 18px; margin-top: 10px; color: #333;">实验室聚餐合影</p>
   <!-- 左右按钮 -->
   <button onclick="changeImage(-1)" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
     &#10094;
@@ -33,11 +33,17 @@ permalink: /
   let currentImage = 1;
   const totalImages = 2; // 假设总共有3张图片
 
+  const titles = [
+    "实验室聚餐合影",
+    "学校图书馆前合影",
+  ];
+
   function changeImage(direction) {
     currentImage += direction;
     if (currentImage > totalImages) currentImage = 1;
     if (currentImage < 1) currentImage = totalImages;
     document.getElementById('imageDisplay').src = `{{ site.url }}{{ site.baseurl }}/images/homepageimg/image${currentImage}.jpg`;
+    document.getElementById('imageTitle').innerText = titles[currentImage - 1];
   }
 </script>
 
