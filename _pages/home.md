@@ -58,7 +58,7 @@ permalink: /
 {% assign even_odd = number_printed | modulo: 2 %}
 {% if publi.highlight == 1 %}
 
-<div class="row">
+
   <div class="col-12">
     <div class="row">
       <!-- 论文标题 -->
@@ -67,7 +67,7 @@ permalink: /
       <a class="pub2"> {{ publi.link.display }} </a>
     </div>
   </div>
-</div>
+
 
 {% assign number_printed = number_printed | plus: 1 %}
 
@@ -183,7 +183,9 @@ If you are interested in joining please go to the [recruitment](recruitment) pag
 
 ### 联系我们
 蔡青副教授
+
 电子邮箱： cq@ouc.edu.cn
+
 办公地址： 中国海洋大学西海岸校区 信息楼南楼A506
 
 
