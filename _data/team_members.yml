@@ -47,9 +47,9 @@
   group: 1
 
 - name: 孔松琦
-  photo: bio-photo.jpg
+  photo: https://songqikong.github.io/assets/img/avater.png
   info: 计算机技术
-  url: tongheng
+  url: https://songqikong.github.io/
   group: 1
 
 - name: 李绍铭
