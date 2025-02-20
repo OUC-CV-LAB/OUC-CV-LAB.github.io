@@ -77,6 +77,7 @@ permalink: /
 
 {% endif %}
 {% endfor %}
+<a href="{{ site.url }}{{ site.baseurl }}/publications.html" style="text-decoration: none; color: #007bff; font-weight: bold;">更多</a>
 
 ---
 
