@@ -52,12 +52,13 @@ permalink: /
 ### 学术论文
 *通讯作者 #共同一作
 
-
+{% assign count = 0 %}
 {% for publi in site.data.publist %}
 
 
 {% if publi.highlight == 1 %}
-
+{% assign count = count | plus: 1 %}
+    {% if count <= 3 %}
 
 <div class="row">
 
@@ -74,10 +75,10 @@ permalink: /
 
 </div>
 
-
+{% endif %}
 {% endif %}
 {% endfor %}
-<a href="{{ site.url }}{{ site.baseurl }}/publications.html" style="text-decoration: none; color: #007bff; font-weight: bold;">更多</a>
+<a href="{{ site.url }}{{ site.baseurl }}/publications" style="text-decoration: none; color: #007bff; font-weight: bold;">...更多</a>
 
 ---
 
