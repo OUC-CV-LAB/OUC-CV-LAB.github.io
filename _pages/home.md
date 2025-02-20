@@ -9,7 +9,7 @@ permalink: /
 ### 欢迎！我们是CV前沿交叉实验室！
 
 
-<!--
+
  <div style="position: relative; text-align: center; margin: auto;">
 <div style="text-align: center; margin: auto;">
   <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style="width: 100%; height: auto;">
@@ -20,7 +20,7 @@ permalink: /
     &#10095;
   </button>
 </div>
--->
+
 
 <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
@@ -44,7 +44,7 @@ permalink: /
   </a>
 </div> -->
 
-
+<!-- 
 <div id="myCarousel" class="carousel slide">
 	<!-- 轮播（Carousel）指标 -->
 	<ol class="carousel-indicators">
@@ -76,7 +76,7 @@ permalink: /
 	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 	    <span class="sr-only">Next</span>
 	</a>
-</div> 
+</div>  -->
 
 ![]({{ site.url }}{{ site.baseurl }}/images/lab_logo.jpg){: style="width: 230px; float: left;margin-right: 20px; border: 10px"}
 
