@@ -12,30 +12,38 @@ permalink: /research/
 
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/genediscovery.png){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
 
-## Gene discovery in autism spectrum disorder and other developmental disorders
+## 医学图像处理
 <div style="text-align: justify">
-Exome sequencing has revolutionized our ability to find the genes associated with autism spectrum disorder (ASD) and other severe developmental disorders. Four papers, published concurrently in 2012, showed an excess of de novo mutations that disrupt genes in cases compared to controls and Dr. Sanders, working in Dr. State's lab at Yale, was the first author of one of these ([Sanders et al. Nature 2012](https://www.ncbi.nlm.nih.gov/pubmed/22495306)). This paper also demonstrated that observing disruptive de novo mutations in the same gene across multiple cases could be used to establish genome-wide association with ASD, and this method was used to identify the voltage-gated sodium channel SCN2A as one of the most frequent causes of ASD. As a member of the [Autism Sequencing Consortium](https://genome.emory.edu/ASC/), the Sanders Lab continues to play an active role in advancing gene discovery in ASD. The initial observation of an excess of disruptive de novo mutations in cases has been replicated in larger cohorts (e.g. [De Rubeis et al. Nature 2014](https://www.ncbi.nlm.nih.gov/pubmed/25363760), [Iossifov et al. Nature 2014](https://www.ncbi.nlm.nih.gov/pubmed/25363768), [Dong et al. 2014](https://www.ncbi.nlm.nih.gov/pubmed/25284784)). These two cohorts were combined and integrated with copy number variant (CNV) data to identify 65 genes associated with ASD ([Sanders et al. Neuron 2015](https://www.ncbi.nlm.nih.gov/pubmed/26402605)). This approach to gene discovery has been successful in several other developmental disorders, including severe developmental delay, epileptic encephalopathy, and congenital heart disease. 
+深度学习在医学图像处理中的应用，近年来取得了显著进展，极大地推动了自动化诊断、疾病预测和治疗规划等方面的发展。通过深度神经网络，尤其是卷积神经网络（CNN），可以实现医学图像的自动化分析与处理。深度学习方法能够有效处理复杂的图像特征，如图像分割、病变检测、三维重建等任务，突破了传统图像处理技术在处理高维数据和复杂结构方面的限制。深度学习在医学图像处理中的优势主要体现在其自动化和高精度的特性。例如，在肿瘤检测中，深度学习模型能够从CT、MRI等影像中自动识别并定位病变区域，甚至实现早期检测，为医生提供辅助决策依据。与此同时，深度学习也能够在多模态图像融合中发挥重要作用，通过整合来自不同扫描设备（如CT与MRI）的信息，提供更加全面、准确的病灶分析。此外，随着生成对抗网络（GAN）等技术的出现，深度学习还能够进行图像修复、增强和生成，为医学影像数据的质量提升提供了新的方法。总体来说，深度学习在医学图像处理领域的应用，不仅提高了图像分析的效率和准确性，还推动了个性化医疗和精准治疗的发展。
 </div>
 ---- 
 
 
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/scn2aMut.png){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
 
-## Understanding the role of ASD genes
+## 水下视觉
 <div style="text-align: justify">
-The genes discovered through exome sequencing provide an entree into the biology of ASD, hopefully as a foundation for developing theraputics. The Sanders Lab takes two research approaches: 1) To consider ASD-associated genes en masse to look for patterns of convergence [State MW, Šestan N Science 2012](https://www.ncbi.nlm.nih.gov/pubmed/22984058); 2) To investigate the genes with the strongest evidence of ASD association, such as SCN2A in depth.
+水下视觉是指在水下环境中使用计算机视觉技术进行图像或视频分析的研究领域。水下环境由于光线衰减、颗粒物、湍流等因素的影响，造成了图像质量差，常规的计算机视觉方法在这种环境下效果不佳，因此水下视觉面临着许多独特的挑战。为了应对这些挑战，研究者们开发了各种改进算法来提高水下图像的质量、识别准确度和处理速度。
 
-Through the first approach, the Sanders Lab has helped delineate two major functional roles of ASD-associated genes: 1) gene expression regulators (GER), i.e. genes that influence the expression of other genes such as CHD8 and ARID1B; and 2) neuronal communication, such as SCN2A and NRXN1, see [De Rubeis et al. Nature 2014](https://www.ncbi.nlm.nih.gov/pubmed/25363760) and [Sanders et al. Neuron 2015](https://www.ncbi.nlm.nih.gov/pubmed/26402605). Co-expression analysis showed convergence across multiple ASD-associated genes during mid-fetal development in the prefrontal cortex and this result was driven by layer 5/6 glutamatergic neurons ([Willsey et al. Cell 2015](https://www.ncbi.nlm.nih.gov/pubmed/24267886)). Similar patterns have been identified through other systems-based approaches, reviewed in [Sanders Curr Opin Genet Dev 2015](https://www.ncbi.nlm.nih.gov/pubmed/26547130).
+首先，水下视觉的一个主要问题是光的衰减和色彩失真，尤其在深水区域，红色光波长的光几乎完全被吸收，导致图像呈现出偏蓝或偏绿色的色调。为了解决这个问题，图像增强技术得到了广泛应用，如色彩恢复、对比度增强等方法，可以改善图像的可视性和质量。其次，水下图像的噪声问题也很突出，通常由于水中的颗粒物和湍流等因素，图像会出现模糊或噪点。深度学习方法，如卷积神经网络（CNN）和生成对抗网络（GAN），已经被广泛应用于水下图像去噪和图像修复，以提高图像的清晰度和可用性。
 
-The second approach has focused mainly on the gene SCN2A and is performed in collaboration with the [Bender lab at UCSF](https://benderlab.ucsf.edu/research-projects), the [SCN2A family group](http://www.scn2a.org), and [Simons VIP](https://simonsvipconnect.org). By integrating genetic data across multiple cases and cohorts with structural data on the NaV1.2 protein encoded by SCN2A and electrophysiology, we demonstrated that loss-of-function mutations of SCN2A lead to ASD and developmental delay, while gain-of-function mutations lead to epileptic encephalopathy ([Ben-Shalom et al. 2017](https://www.ncbi.nlm.nih.gov/pubmed/28256214)). 
+另外，水下目标检测与跟踪是水下视觉的另一个重要研究方向。由于水下环境的特殊性，目标的形态、颜色和纹理信息往往不如在空气中清晰，这增加了目标识别的难度。为此，深度学习方法，特别是卷积神经网络（CNN）和区域卷积神经网络（R-CNN），已被成功应用于水下目标检测任务，能够从噪声和低对比度的图像中提取有用信息。此外，水下视觉还广泛应用于水下机器人导航、海洋生态监测、沉船探测等领域，通过结合实时视频流和环境建模技术，帮助实现自动化的任务执行。
+
+总的来说，水下视觉作为一个跨学科的研究领域，结合了计算机视觉、图像处理、深度学习以及水下机器人技术，解决了许多传统视觉系统无法克服的难题，正在为海洋探索、环境保护以及水下操作等领域提供越来越重要的支持。
 
 </div>
 
 ![]({{ site.url }}{{ site.baseurl }}/images/respic/asdcnv.png){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
 
-## Copy number variants (CNVs) in autism spectrum 
+## 三维重建
 <div style="text-align: justify">
-My early publications describe the development of a novel approach to detecting de novo CNVs in Illumina SNP genotyping data and applying this to Autism Spectrum Disorder (ASD) families from the Simons Simplex Collection (SSC). While de novo CNVs had previously been associated with ASD (Sebat et al. 2007), our analysis of this cohort of 1,124 families, including unaffected siblings, allowed us to clarify the genomic architecture. In turn, this allowed us to develop a statistical approach to evaluating whether specific genomic loci are associated with ASD; four de novo duplications at 7q11.23 met these criteria for ASD association with reduced sociability and, notably, deletions at the same locus are associated with increased social behavior in William’s Syndrome. We have recently (2015) published a CNV analysis of all 2,591 families in the SSC. By integrating CNV and exome data we showed that small de novo deletions contain one critical ASD gene, while large de novo CNVs contain multiple ASD risk genes. We use this finding to identify six ASD risk CNV loci and 65 ASD risk genes. I led the analysis and write up of both projects including the development of novel approaches to CNV detection. Autism Speaks cited our 2011 CNV analysis as one of the top Ten Autism Research Achievements. 
+三维重建的核心挑战在于如何从二维数据中推测出三维结构。传统的方法包括立体视觉和结构光技术，立体视觉通过两个或多个摄像头拍摄同一场景的不同视角图像，利用视差计算来恢复深度信息。结构光技术则通过投射已知的光图案到物体表面，然后通过分析反射图案的变形来推测物体表面的形状。
+
+随着深度学习技术的发展，现代的三维重建方法通常依赖于深度神经网络，特别是卷积神经网络（CNN）和生成对抗网络（GAN）。这些方法能够从单一的二维图像中预测物体的三维结构，甚至可以通过深度学习生成三维点云或网格，极大地提升了重建的精度和效率。除了基于图像的数据，三维重建还可以利用激光扫描仪、LiDAR（光学雷达）等传感器来获取更精确的深度信息，这些数据通常通过点云处理技术进行分析和重建。
+
+在具体应用中，三维重建技术被广泛应用于建筑物和场景建模、虚拟现实环境的创建、医学图像处理中的器官三维重建、机器人导航与定位等领域。比如，在医学中，通过CT或MRI扫描得到的二维切片图像，可以被处理成一个完整的三维模型，帮助医生更直观地理解病灶位置和器官形态，辅助诊断和治疗决策。在自动驾驶中，通过融合激光雷达、摄像头和其他传感器的数据，可以实现环境的三维重建，帮助车辆理解和导航复杂的道路环境。
+
+总的来说，三维重建技术为各行各业提供了更精确、更直观的三维模型，极大地推动了虚拟现实、医学诊断、机器人技术等领域的进步。随着计算能力和算法的不断提升，三维重建将在更多应用场景中发挥重要作用。
 </div>
 ---
 
