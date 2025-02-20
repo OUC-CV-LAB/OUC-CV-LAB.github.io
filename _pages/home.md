@@ -9,17 +9,39 @@ permalink: /
 ### 欢迎！我们是CV前沿交叉实验室！
 
 
-<!-- <div style="position: relative; text-align: center; margin: auto;"> -->
+<!--
+ <div style="position: relative; text-align: center; margin: auto;">
 <div style="text-align: center; margin: auto;">
   <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style="width: 100%; height: auto;">
-  <!-- <p id="imageTitle" style="font-size: 18px; margin-top: 10px; color: #333;">实验室聚餐合影</p> -->
-  <!-- 左右按钮 -->
   <button onclick="changeImage(-1)" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
     &#10094;
   </button>
   <button onclick="changeImage(1)" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
     &#10095;
   </button>
+</div>
+-->
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
 ![]({{ site.url }}{{ site.baseurl }}/images/lab_logo.jpg){: style="width: 230px; float: left;margin-right: 20px; border: 10px"}
