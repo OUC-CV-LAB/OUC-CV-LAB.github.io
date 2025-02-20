@@ -6,8 +6,20 @@ sitemap: false
 permalink: /
 ---
 
-### 欢迎来到中国海大计算机视觉前沿交叉实验室
+### 欢迎！我们是CV前沿交叉实验室！
 
+
+<div style="position: relative; text-align: center; margin: auto;">
+  <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style="width: 100%; height: auto;">
+  <!-- <p id="imageTitle" style="font-size: 18px; margin-top: 10px; color: #333;">实验室聚餐合影</p> -->
+  <!-- 左右按钮 -->
+  <button onclick="changeImage(-1)" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
+    &#10094;
+  </button>
+  <button onclick="changeImage(1)" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
+    &#10095;
+  </button>
+</div>
 
 ![]({{ site.url }}{{ site.baseurl }}/images/lab_logo.jpg){: style="width: 230px; float: left;margin-right: 20px; border: 10px"}
 
@@ -17,17 +29,7 @@ permalink: /
 欢迎对我们研究方向感兴趣的同学加入实验室，我们实验室学术氛围浓厚、成员融洽、不强制打卡，欢迎各位优秀的同学咨询！同时欢迎学有余力的本科生进入实验室！联系方式：cq@ouc.edu.cn 
 
 
-<div style="position: relative; text-align: center; max-width: 400px; margin: auto;">
-  <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style="width: 100%; height: auto;">
-  <p id="imageTitle" style="font-size: 18px; margin-top: 10px; color: #333;">实验室聚餐合影</p>
-  <!-- 左右按钮 -->
-  <button onclick="changeImage(-1)" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
-    &#10094;
-  </button>
-  <button onclick="changeImage(1)" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
-    &#10095;
-  </button>
-</div>
+
 
 <script>
   let currentImage = 1;
