@@ -1,35 +1,59 @@
-- date: 2024/6/5
-  headline: "欢迎来到我们的主页，我们期待你的加入！"
+- date: 2024/09/18
+  headline: "祝贺课题组蔡青获批山东省优青项目！"
 
-- date: 2024/6/1
-  headline: "新文章发表!xxx在xx上发表了文章"
+- date: 2024/08/23
+  headline: "祝贺课题组蔡青获批国家自然科学基金面上项目！"
 
-- date: 2024/5/16
-  headline: "在aaaa上发表了题为bbbbbbbbbbbbbbb的文章"
+- date: 2024/01/01
+  headline: "祝贺课题组蔡青荣获山东省泰山学者青年专家荣誉称号！"
 
-# - date: Dec 13th 2018
-#   headline: "New paper! <a href='http://science.sciencemag.org/content/362/6420/eaat6576.long'> An et al. 2018 </a> published in Science, highlights the role of promoters in autism."
+- date: 2024/12/10
+  headline: "祝贺课题组鄢柯硕士的论文《SGTC: Semantic-Guided Triplet Co-training for Sparsely Annotated Semi-Supervised Medical Image Segmentation》被 CCF A 类会议 AAAI2025 接收！"
 
-# - date: Dec 1st 2018
-#   headline: "Our work with the Autism Sequencing Consortium identifies 99 autism genes, paper submitted to <a href='https://www.biorxiv.org/content/early/2018/12/01/484113'> BioRxiv </a>."
+- date: 2024/12/10
+  headline: "祝贺课题组本科生康家辉同学的论文《C2PD: Continuity-Constrained Pixelwise Deformation for Guided Depth Super-Resolution》被 CCF A 类会议 AAAI2025 接收！"
 
-# - date: May 29th 2018
-#   headline: "Donna presents the lab’s recent work, <a href='https://youtu.be/zR608Q20jn8'>'Analytical Framework for WGS and its Implications for ASD'</a> at the PGC Statistical Genetics Group online meeting."
+- date: 2024/12/10
+  headline: "祝贺课题组论文《BSAFusion: A Bidirectional Stepwise Feature Alignment Network for Unaligned Medical Image Fusion》被 CCF A 类会议 AAAI2025 接收！"
 
-# - date: May 9th 2018
-#   headline: "Stephan, Donna, Brooke and Joon travel to Rotterdam, Netherlands, to share our latest work at <a href='https://insar.confex.com/insar/2018/webprogram/start.html'>INSAR 2018</a>."
+- date: 2024/08/29
+  headline: "祝贺课题组张帆博士的论文《Federated Cross-Incremental Self-Supervised Learning for Medical Image Segmentation》被中科院一区 Top 期刊 TNNLS 接收！"
 
-# - date: May 7th 2018
-#   headline: "Donna and Joon’s latest works highlighted in <a href='https://autismsciencefoundation.org/news/wild-new-genetic-hot-spots/'>Autism Science Foundation Podcast</a>."
+- date: 2024/04/17
+  headline: "祝贺课题组张天戈博士的论文《Exploring Cross-Domain Few-Shot Classification via Frequency-Aware Prompting》被 CCF A 类会议 IJCAI2024 接收！"
 
-# - date: April 27th 2018
-#   headline: "New paper! <a href='https://www.nature.com/articles/s41588-018-0107-y'> Werling et al. 2018 </a> published in Nature Genetics in collaboration with the Autism Sequencing Consortium."
+- date: 2024/04/02
+  headline: "祝贺课题组王祥龙博士的论文《A New Benchmark and Low Computational Cost Localization Method for Cephalometric Analysis》被中科院一区 Top 期刊 TCSVT 接收！"
 
-# - date: April 12th 2017
-#   headline: "Stephan with Kevin Bender (UCSF) talk about <a href='https://youtu.be/zzP3DZcViyY'>'The genetics and physiology of SCN2A in autism and early-onset seizures'</a> at the Simons VIP Connect."
+- date: 2024/03/12
+  headline: "祝贺课题组张帆博士的论文《Cross co-teaching for semi-supervised medical image segmentation》被中科院一区 Top 期刊 PR 接收！"
 
-# - date: Nov 30th 2016
-#   headline: "Donna talks about <a href='https://youtu.be/M332bqmYI2Q'>'The Role of Sex-Differential Biology in Risk for Autism Spectrum Disorder'</a> at the SFARI Webinar Series."
+- date: 2023/12/09
+  headline: "祝贺课题组论文《Spherical Pseudo-cylindrical Representation for Omnidirectional Image Super-Resolution》被 CCF A 类会议 AAAI2024 接收！"
 
-# - date: April 21th 2016
-#   headline: "Stephan talks about <a href='https://youtu.be/lSH6-2mIdh4'>'The Genetics of Autism'</a> at the University of California Television."
+- date: 2023/11/26
+  headline: "祝贺课题组张帆博士的论文《DSLSM: Dual-kernel-induced Statistic Level Set Model for Image Segmentation》被中科院一区 Top 期刊 ESWA 接收！"
+
+- date: 2023/07/26
+  headline: "祝贺课题组郭少翔博士的论文《CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting》被 CCF A 类会议 ACM MM2023 接收！"
+
+- date: 2023/05/18
+  headline: "祝贺课题组论文《HIPA: Hierarchical Patch Transformer for Single Image Super Resolution》被 CCF A 类期刊 IEEE TIP 接收！"
+
+- date: 2023/02/24
+  headline: "祝贺课题组论文《Multi-contrast MRI Super-Resolution via Transformer-empowered Multi-scale Contextual Matching and Aggregation》被期刊 IEEE TNNLS 接收！"
+
+- date: 2022/03/03
+  headline: "祝贺课题组论文《TDPN: Texture and Detail-Preserving Network for Single Image Super-Resolution》被 CCF A 类期刊 IEEE TIP 接收！"
+
+- date: 2021/11/24
+  headline: "祝贺课题组论文《A Novel Hybrid Level Set Model for Non-Rigid Object Contour Tracking》被 CCF A 类期刊 IEEE TIP 接收！"
+
+- date: 2021/11/18
+  headline: "祝贺课题组论文《AVLSM: adaptive variational level set model for image segmentation in the presence of severe intensity inhomogeneity and high noise》被 CCF A 类期刊 IEEE TIP 接收！"
+
+- date: 2021/08/18
+  headline: "祝贺导师张大鹏教授获批国家自然科学基金面上项目！"
+
+- date: 2021/08/18
+  headline: "国家自然科学基金青年项目成功获批！"
