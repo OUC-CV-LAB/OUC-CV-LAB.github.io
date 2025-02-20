@@ -9,7 +9,8 @@ permalink: /
 ### 欢迎！我们是CV前沿交叉实验室！
 
 
-<div style="position: relative; text-align: center; margin: auto;">
+<!-- <div style="position: relative; text-align: center; margin: auto;"> -->
+<div style="text-align: center; margin: auto;">
   <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style="width: 100%; height: auto;">
   <!-- <p id="imageTitle" style="font-size: 18px; margin-top: 10px; color: #333;">实验室聚餐合影</p> -->
   <!-- 左右按钮 -->
