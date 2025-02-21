@@ -22,62 +22,6 @@ permalink: /
 </div>
 
 
-<!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image2.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image3.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div> -->
-
-<!-- 
-<div id="myCarousel" class="carousel slide">
-	<!-- 轮播（Carousel）指标 -->
-	<ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
-	</ol>   
-	<!-- 轮播（Carousel）项目 -->
-	<div class="carousel-inner">
-		<div class="item active">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="First slide">
-			<div class="carousel-caption">LOGO</div>
-		</div>
-		<div class="item">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image2.jpg" alt="Second slide">
-			<div class="carousel-caption">合影1</div>
-		</div>
-		<div class="item">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image3.jpg" alt="Third slide">
-			<div class="carousel-caption">合影2</div>
-		</div>
-	</div>
-	<!-- 轮播（Carousel）导航 -->
-	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
-	</a>
-	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
-	</a>
-</div>  -->
-
 ![]({{ site.url }}{{ site.baseurl }}/images/lab_logo.jpg){: style="width: 230px; float: left;margin-right: 20px; border: 10px"}
 
 
