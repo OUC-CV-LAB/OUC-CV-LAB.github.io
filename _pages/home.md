@@ -12,7 +12,7 @@ permalink: /
 
  <div style="position: relative; text-align: center; margin: auto;">
 <div style="text-align: center; margin: auto;">
-  <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style="width: 100%; height: auto;">
+  <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style="width: 80%; height: auto;">
   <button onclick="changeImage(-1)" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
     &#10094;
   </button>
@@ -20,23 +20,12 @@ permalink: /
     &#10095;
   </button>
 </div>
-
-
-![]({{ site.url }}{{ site.baseurl }}/images/lab_logo.jpg){: style="width: 230px; float: left;margin-right: 20px; border: 10px"}
-
-
-计算机视觉前沿交叉实验室隶属于<a href="https://www.ai-ouc.cn/" class="off" target="_blank">中国海洋大学人工智能研究院</a>，指导老师为<a href="https://tocaiqing.github.io" class="off" target="_blank">蔡青</a>副教授。我们的主要研究方向包括医学图像处理、疾病辅助诊断、水下视觉、水下图像增强、三维重建等。近年来团队的研究成果发表于AAAI、IJCAI、MM、TIP等国际顶级学术会议和期刊。实验室先后主持和参与国家自然科学基金、山东省自然科学基金等项目。
-
-欢迎对我们研究方向感兴趣的同学加入实验室，我们实验室学术氛围浓厚、成员融洽、不强制打卡，欢迎各位优秀的同学咨询！同时欢迎学有余力的本科生进入实验室！联系方式：cq@ouc.edu.cn 
-
-
-
-
 <script>
   let currentImage = 1;
-  const totalImages = 2; // 假设总共有3张图片
+  const totalImages = 3; // 假设总共有3张图片
 
   const titles = [
+    "CV前沿交叉实验室",
     "实验室聚餐合影",
     "学校图书馆前合影",
   ];
@@ -49,6 +38,18 @@ permalink: /
     document.getElementById('imageTitle').innerText = titles[currentImage - 1];
   }
 </script>
+
+<!-- ![]({{ site.url }}{{ site.baseurl }}/images/lab_logo.jpg){: style="width: 230px; float: left;margin-right: 20px; border: 10px"} -->
+
+
+计算机视觉前沿交叉实验室隶属于<a href="https://www.ai-ouc.cn/" class="off" target="_blank">中国海洋大学人工智能研究院</a>，指导老师为<a href="https://tocaiqing.github.io" class="off" target="_blank">蔡青</a>副教授。我们的主要研究方向包括医学图像处理、疾病辅助诊断、水下视觉、水下图像增强、三维重建等。近年来团队的研究成果发表于AAAI、IJCAI、MM、TIP等国际顶级学术会议和期刊。实验室先后主持和参与国家自然科学基金、山东省自然科学基金等项目。
+
+欢迎对我们研究方向感兴趣的同学加入实验室，我们实验室学术氛围浓厚、成员融洽、不强制打卡，欢迎各位优秀的同学咨询！同时欢迎学有余力的本科生进入实验室！联系方式：cq@ouc.edu.cn 
+
+
+
+
+
 
 
 ---
