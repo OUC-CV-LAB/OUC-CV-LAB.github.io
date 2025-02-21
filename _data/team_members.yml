@@ -61,9 +61,9 @@
   group: 1
 
 - name: 曹政
-  photo: bio-photo.jpg
-  info: 计算机技术
-
+  photo: caozehng.jpg
+  info: 计算机技术专业
+  info2: 医学图像三维重建
   group: 2
 
 - name: 舒恩慧
