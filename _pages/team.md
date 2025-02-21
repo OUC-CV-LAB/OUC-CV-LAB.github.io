@@ -63,7 +63,8 @@ permalink: /team/
   {% else %}
   <h4><a class="off">{{ member.name }}</a></h4>
   {% endif %}
-  <i>{{ member.info }}</i>
+  <i>{{ member.info }}</i><br>
+  <i>{{ member.info2 }}</i>
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
@@ -100,7 +101,7 @@ permalink: /team/
   {% else %}
   <h4><a class="off">{{ member.name }}</a></h4>
   {% endif %}
-  <i>{{ member.info }}</i>
+  <i>{{ member.info }}</i><br>
   <i>{{ member.info2 }}</i>
 
 </div>
