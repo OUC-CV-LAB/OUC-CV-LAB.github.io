@@ -89,7 +89,7 @@
 - name: 时东方
   photo: shidongfang.jpg
   info: 计算机科学与技术专业
-  info2: 研究方向：多模态辅助诊断
+  info2: 研究方向：多模态疾病辅助诊断
 
   group: 2
 
@@ -108,9 +108,9 @@
   group: 2
 
 - name: 陈继宗
-  photo: bio-photo.jpg
-  info: 计算机技术
-
+  photo: cjz.jpg
+  info: 计算机技术专业
+  info2: 研究方向：超声增强
   group: 2
 
       

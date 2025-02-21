@@ -10,7 +10,7 @@ permalink: /research/
 
 ---
 
-![]({{ site.url }}{{ site.baseurl }}/images/respic/genediscovery.png){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
+![]({{ site.url }}{{ site.baseurl }}/images/respic/yixue.jpg){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
 
 ## 医学图像处理
 <div style="text-align: justify">
@@ -19,7 +19,7 @@ permalink: /research/
 ---- 
 
 
-![]({{ site.url }}{{ site.baseurl }}/images/respic/scn2aMut.png){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
+![]({{ site.url }}{{ site.baseurl }}/images/respic/shengna.jpg){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
 
 ## 水下视觉
 <div style="text-align: justify">
@@ -33,7 +33,8 @@ permalink: /research/
 
 </div>
 
-![]({{ site.url }}{{ site.baseurl }}/images/respic/asdcnv.png){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
+---
+![]({{ site.url }}{{ site.baseurl }}/images/respic/sanwei.png){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
 
 ## 三维重建
 <div style="text-align: justify">
