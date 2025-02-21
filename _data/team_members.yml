@@ -48,7 +48,7 @@
   group: 1
 
 - name: 孔松琦
-  photo: kongsongqi.png
+  photo: songqikong.png
   info: 农业工程与信息技术专业
   info2: 研究方向：点云补全
   url: https://songqikong.github.io/
@@ -61,7 +61,7 @@
   group: 1
 
 - name: 曹政
-  photo: caozehng.jpg
+  photo: caozheng.jpg
   info: 计算机技术专业
   info2: 医学图像三维重建
   group: 2
