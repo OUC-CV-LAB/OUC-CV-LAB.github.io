@@ -14,15 +14,15 @@ permalink: /
 <div style="text-align: center; margin: auto;">
   <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style="width: 80%; height: 400px; object-fit: cover;">
    <!-- 图片标题 -->
-  <h3 id="imageTitle" style="position: absolute; top: 10px; width: 100%; text-align: center; color: white; font-size: 24px; font-weight: bold; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);">
+  <h3 id="imageTitle" style="margin-top: 10px; font-size: 24px; font-weight: bold; color: black;">
     CV前沿交叉实验室
   </h3>
   
   <!-- 左右箭头按钮 -->
-  <button onclick="changeImage(-1)" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
+  <button onclick="changeImage(-1)" style="position: absolute; top: 50%; left: 0; background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
     &#10094;
   </button>
-  <button onclick="changeImage(1)" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
+  <button onclick="changeImage(1)" style="position: absolute; top: 50%; right: 0;  background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
     &#10095;
   </button>
 </div>
