@@ -14,7 +14,7 @@ permalink: /
 <div style="text-align: center; margin: auto;">
   <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style="width: 80%; height: 400px; object-fit: cover;">
    <!-- 图片标题 -->
-  <h3 id="imageTitle" style="margin-top: 10px; font-size: 24px; font-weight: bold; color: black;">
+  <h3 id="imageTitle" style="margin-top: 10px; font-size: 18px; font-weight: bold; color: black;">
     CV前沿交叉实验室
   </h3>
   
@@ -26,14 +26,16 @@ permalink: /
     &#10095;
   </button>
 </div>
+</div>
 <script>
   let currentImage = 1;
   const totalImages = 3; // 假设总共有3张图片
 
   const titles = [
     "CV前沿交叉实验室",
-    "实验室聚餐合影",
     "学校图书馆前合影",
+    "实验室聚餐合影",
+    
   ];
 
   function changeImage(direction) {
