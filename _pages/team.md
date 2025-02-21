@@ -58,7 +58,11 @@ permalink: /team/
 
 <div class="col-sm-6 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
+  {% if member.url %}
   <h4><a href="{{ member.url }}" class="off">{{ member.name }}</a></h4>
+  {% else %}
+  <h4><a class="off">{{ member.name }}</a></h4>
+  {% endif %}
   <i>{{ member.info }}</i>
 </div>
 
@@ -91,7 +95,11 @@ permalink: /team/
 
 <div class="col-sm-6 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
+  {% if member.url %}
   <h4><a href="{{ member.url }}" class="off">{{ member.name }}</a></h4>
+  {% else %}
+  <h4><a class="off">{{ member.name }}</a></h4>
+  {% endif %}
   <i>{{ member.info }}</i>
   <i>{{ member.info2 }}</i>
 

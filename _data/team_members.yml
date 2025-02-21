@@ -7,44 +7,44 @@
 - name: 童亨
   photo: bio-photo.jpg
   info: 计算机技术
-  url: {{ site.url }}{{ site.baseurl }}/team
+
   group: 1
 
 - name: 谭润请
   photo: bio-photo.jpg
   info: 计算机技术
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 1
 
 - name: 张朦幻
   photo: huan.jpg
   info: 软件工程专业
   info2: 研究方向：细粒度图像分类
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 1
 
 - name: 仇世纪
   photo: bio-photo.jpg
   info: 计算机技术
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 1
 
 - name: 鄢柯
   photo: bio-photo.jpg
   info: 计算机技术
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 1
 
 - name: 李帅衡
   photo: bio-photo.jpg
   info: 计算机技术
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 1
 
 - name: 曹子彦
   photo: bio-photo.jpg
   info: 计算机技术
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 1
 
 - name: 孔松琦
@@ -57,60 +57,60 @@
 - name: 李绍铭
   photo: bio-photo.jpg
   info: 计算机技术
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 1
 
 - name: 曹政
   photo: bio-photo.jpg
   info: 计算机技术
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 2
 
 - name: 舒恩慧
   photo: shuenhui.jpg
   info: 计算机技术专业
   info2: 研究方向：图像融合
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 2
 
 - name: 王绍哲
   photo: bio-photo.jpg
   info: 计算机技术
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 2
 
 - name: 严桂浩
   photo: yanguihao.jpg
   info: 计算机科学与技术专业
   info2: 研究方向：超声标准切面识别
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 2
 
 - name: 时东方
   photo: shidongfang.jpg
   info: 计算机科学与技术专业
   info2: 研究方向：多模态辅助诊断
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 2
 
 - name: 魏兴悦
   photo: weixingyue.jpg
   info: 农业工程与信息技术专业
   info2: 研究方向：医学图像分类
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 2
 
 - name: 吉万文
   photo: jiwanwen.jpg
   info: 计算机技术专业
   info2: 研究方向：联邦医学图像分割
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 2
 
 - name: 陈继宗
   photo: bio-photo.jpg
   info: 计算机技术
-  url: "{{ site.url }}{{ site.baseurl }}/team"
+
   group: 2
 
       
