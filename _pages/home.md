@@ -12,7 +12,7 @@ permalink: /
 
  <div style="position: relative; text-align: center; margin: auto;">
 <div style="text-align: center; margin: auto;">
-  <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style="width: 80%; height: 400px; object-fit: cover;">
+  <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style=" height: 400px; object-fit: cover;">
    <!-- 图片标题 -->
   <h3 id="imageTitle" style="margin-top: 10px; font-size: 18px; font-weight: bold; color: black;">
     CV前沿交叉实验室
