@@ -17,7 +17,7 @@
 <div class="panel-heading">
     <h3 class="panel-title">新闻</h3>
 </div>
-<div class="panel-body">
+<div class="panel-body" style="background-color: #f2f0f0;">
     {% for article in site.data.news limit:6 %}
     {{ article.date }}
     <p style="color: rgba(248, 64, 64, 0.767);"><em>{{ article.headline }}</em></p>
