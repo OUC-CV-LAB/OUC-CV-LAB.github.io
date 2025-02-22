@@ -11,9 +11,9 @@
   group: 1
 
 - name: 谭润请
-  photo: bio-photo.jpg
-  info: 计算机技术
-
+  photo: tanrunqing.jpg
+  info: 计算机技术专业
+  info2: 研究方向：多视图三维重建
   group: 1
 
 - name: 张朦幻
@@ -24,9 +24,9 @@
   group: 1
 
 - name: 仇世纪
-  photo: bio-photo.jpg
-  info: 计算机技术
-
+  photo: qiushiji.jpg
+  info: 软件工程专业
+  info2: 研究方向：3D高斯
   group: 1
 
 - name: 鄢柯
@@ -36,9 +36,9 @@
   group: 1
 
 - name: 李帅衡
-  photo: bio-photo.jpg
-  info: 计算机技术
-
+  photo: lishuaiheng.png
+  info: 计算机技术专业
+  info2: 研究方向：细粒度分类
   group: 1
 
 - name: 曹子彦
