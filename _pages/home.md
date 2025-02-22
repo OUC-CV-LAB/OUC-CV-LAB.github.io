@@ -29,12 +29,11 @@ permalink: /
 </div>
 <script>
   let currentImage = 1;
-  const totalImages = 6; // 假设总共有3张图片
+  const totalImages = 5; // 假设总共有3张图片
 
   const titles = [
-    "CV前沿交叉实验室",
-    "学校图书馆前合影",
     "实验室聚餐合影",
+    "学校图书馆前合影",
     "8.20聚餐合影",
     "谭润清18大寿合影"，
     "中国海大100周年校庆合影"
