@@ -26,7 +26,7 @@
 - name: 仇世纪
   photo: qiushiji.jpg
   info: 软件工程专业
-  info2: 研究方向：3D高斯
+  info2: 研究方向：点云分割
   group: 1
 
 - name: 鄢柯
