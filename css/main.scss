@@ -141,11 +141,13 @@ firstp {
 
 .pub1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 19px;
+	font-size: 21px;
 	font-weight: 300;
 	line-height: 23px;
-  color: black;
+  color: rgba(0, 0, 0, 0.567);
   cursor:pointer;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .pub1:hover{

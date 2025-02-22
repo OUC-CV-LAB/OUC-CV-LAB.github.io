@@ -64,7 +64,6 @@ permalink: /
 ### 学术论文
 *通讯作者 #共同一作
 
-<div style="margin-left:10px">
 
 {% assign count = 0 %}
 {% for publi in site.data.publist %}
@@ -80,7 +79,6 @@ permalink: /
   <p><a class="pub1" style="font-size: 14px; text-decoration: none;">&#8226;{{ publi.brief }}</a></p>
   
  </div>
-</div>
 </div>
 
 
