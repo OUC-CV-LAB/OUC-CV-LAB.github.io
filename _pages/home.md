@@ -62,7 +62,7 @@ permalink: /
 
 
 ---
-
+<div class="row" style="max-width: 800px; margin: auto;">
 ### 学术论文
 *通讯作者 #共同一作
 
@@ -91,7 +91,7 @@ permalink: /
 {% endif %}
 {% endfor %}
 <a href="{{ site.url }}{{ site.baseurl }}/publications" style="text-decoration: none; color: #007bff; font-weight: bold;">...更多</a>
-
+</div>
 ---
 
 <!-- 
@@ -200,7 +200,7 @@ We work with closely with numerous collaborators, including the [State Lab](http
 
 ### 加入我们
 If you are interested in joining please go to the [recruitment](recruitment) page. -->
-
+<div class="row" style="max-width: 800px; margin: auto;">
 ### 联系我们
 <div class="row" style="max-width: 800px; margin: auto;">
 蔡青副教授
@@ -212,7 +212,7 @@ If you are interested in joining please go to the [recruitment](recruitment) pag
 
 <figure class="third">
 <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/xiaohui.png" style="width: 200px">	
-
+</div>
 <!-- <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_SFARI.png" style="width: 200px">
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_ASF.jpeg" style="width: 200px"> <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_BBRF.png" style="width: 200px">
