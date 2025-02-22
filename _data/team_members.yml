@@ -36,9 +36,9 @@
   group: 1
 
 - name: 李帅衡
-  photo: bio-photo.jpg
-  info: 计算机技术
-
+  photo: lishuaiheng.png
+  info: 计算机技术专业
+  info2: 研究方向：细粒度分类
   group: 1
 
 - name: 曹子彦
