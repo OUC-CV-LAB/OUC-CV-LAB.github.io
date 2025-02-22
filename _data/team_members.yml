@@ -5,9 +5,9 @@
   group: 0
   
 - name: 童亨
-  photo: bio-photo.jpg
-  info: 计算机技术
-
+  photo: th.jpg
+  info: 计算机技术专业
+  info2: 研究方向：三维形状生成
   group: 1
 
 - name: 谭润请
