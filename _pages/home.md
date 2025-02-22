@@ -62,6 +62,7 @@ permalink: /
 
 
 ---
+
 ### 学术论文
 *通讯作者 #共同一作
 
@@ -74,7 +75,7 @@ permalink: /
 {% assign count = count | plus: 1 %}
     {% if count <= 3 %}
 
-<div class="row">
+<div class="row" style="max-width: 800px;">
 <div class="col-sm-12 clearfix">
  <div class="row">
   <p><a class="pub1" style="font-size: 14px; text-decoration: none;">&#8226;{{ publi.brief }}</a></p>
@@ -201,12 +202,13 @@ We work with closely with numerous collaborators, including the [State Lab](http
 If you are interested in joining please go to the [recruitment](recruitment) page. -->
 
 ### 联系我们
+<div class="row" style="max-width: 800px;">
 蔡青副教授
 
 电子邮箱： cq@ouc.edu.cn
 
 办公地址： 中国海洋大学西海岸校区 信息楼南楼A506
-
+</div>
 
 <figure class="third">
 <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/xiaohui.png" style="width: 200px">	
