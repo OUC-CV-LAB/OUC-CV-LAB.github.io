@@ -23,13 +23,28 @@ figcaption {
 
 /* Top navigation bar */
 
-// .navbar-default {
-// 	background-color: #004098; /* 主背景色 */
-// 	// border-color: #边框颜色;      /* 可选边框色 */
-//   }
+.navbar-default {
+	background-color: #004098; /* 主背景色 */
+	border-color: #003074;      /* 可选边框色 */
+  }
   
 
+/* 修改文字颜色 */
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #ffffffd6;
+}
 
+/* 鼠标悬停效果 */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+// /* 移动端菜单图标颜色 */
+// .navbar-default .navbar-toggle .icon-bar {
+//   background-color: #图标颜色;
+// }
 
 p.byline {
 	text-align: center;
