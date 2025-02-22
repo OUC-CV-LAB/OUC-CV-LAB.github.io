@@ -15,7 +15,7 @@ permalink: /
   <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style=" height: 400px; object-fit: cover;">
    <!-- 图片标题 -->
   <h3 id="imageTitle" style="margin-top: 10px; font-size: 16px; font-weight: bold; color: black;">
-    CV前沿交叉实验室
+    实验室聚餐合影
   </h3>
   
   <!-- 左右箭头按钮 -->
