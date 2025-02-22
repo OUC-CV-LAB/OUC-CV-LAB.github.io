@@ -51,7 +51,7 @@ permalink: /
 <!-- ![]({{ site.url }}{{ site.baseurl }}/images/lab_logo.jpg){: style="width: 230px; float: left;margin-right: 20px; border: 10px"} -->
 
 <div class="row" style="max-width: 800px; margin: auto;">
-计算机视觉前沿交叉实验室隶属于<a href="https://www.ai-ouc.cn/" class="off" target="_blank">中国海洋大学人工智能研究院</a>，指导老师为<a href="https://tocaiqing.github.io" class="off" target="_blank">蔡青</a>副教授。我们的主要研究方向包括医学图像处理、疾病辅助诊断、水下视觉、水下图像增强、三维重建等。近年来团队的研究成果发表于AAAI、IJCAI、MM、TIP等国际顶级学术会议和期刊。实验室先后主持和参与国家自然科学基金、山东省自然科学基金等项目。
+计算机视觉前沿交叉实验室隶属于<a href="https://www.ai-ouc.cn/" class="off" target="_blank">中国海洋大学人工智能研究院</a>，指导老师为<a href="https://tocaiqing.github.io" class="off" target="_blank">蔡青</a>副教授。主要研究方向包括医学图像处理、疾病辅助诊断、水下视觉、水下图像增强、三维重建等。近年来团队的研究成果发表于AAAI、IJCAI、MM、TIP等国际顶级学术会议和期刊。实验室先后主持和参与国家自然科学基金、山东省自然科学基金等项目。
 
 欢迎对我们研究方向感兴趣的同学加入实验室，我们实验室学术氛围浓厚、成员融洽、不强制打卡，欢迎各位优秀的同学咨询！同时欢迎学有余力的本科生进入实验室！联系方式：cq@ouc.edu.cn 
 
@@ -75,7 +75,7 @@ permalink: /
 {% assign count = count | plus: 1 %}
     {% if count <= 3 %}
 
-<div class="row" style="max-width: 800px;">
+<div class="row" style="max-width: 800px; margin: auto;">
 <div class="col-sm-12 clearfix">
  <div class="row">
   <p><a class="pub1" style="font-size: 14px; text-decoration: none;">&#8226;{{ publi.brief }}</a></p>
@@ -202,7 +202,7 @@ We work with closely with numerous collaborators, including the [State Lab](http
 If you are interested in joining please go to the [recruitment](recruitment) page. -->
 
 ### 联系我们
-<div class="row" style="max-width: 800px;">
+<div class="row" style="max-width: 800px; margin: auto;">
 蔡青副教授
 
 电子邮箱： cq@ouc.edu.cn
