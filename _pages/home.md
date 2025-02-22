@@ -202,21 +202,18 @@ We work with closely with numerous collaborators, including the [State Lab](http
 If you are interested in joining please go to the [recruitment](recruitment) page. -->
 <div class="row" style="max-width: 800px; margin: auto;">
 ### 联系我们
-<div class="row" style="max-width: 800px; margin: auto;">
+
 蔡青副教授
 
 电子邮箱： cq@ouc.edu.cn
 
 办公地址： 中国海洋大学西海岸校区 信息楼南楼A506
-</div>
+
 
 <figure class="third">
 <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/xiaohui.png" style="width: 200px">	
 </div>
-<!-- <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_SFARI.png" style="width: 200px">
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_ASF.jpeg" style="width: 200px"> <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_BBRF.png" style="width: 200px">
-</figure> -->
 
 
 
