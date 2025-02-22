@@ -212,7 +212,7 @@ If you are interested in joining please go to the [recruitment](recruitment) pag
 
 <figure class="third">
 <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/xiaohui.png" style="width: 200px">	
-</div>
+
 
 
 
