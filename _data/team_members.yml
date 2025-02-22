@@ -24,9 +24,9 @@
   group: 1
 
 - name: 仇世纪
-  photo: bio-photo.jpg
-  info: 计算机技术
-
+  photo: qiushiji.jpg
+  info: 软件工程专业
+  info2: 研究方向：3D高斯
   group: 1
 
 - name: 鄢柯
