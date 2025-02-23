@@ -9,7 +9,7 @@ permalink: /
 ### 欢迎！我们是CV前沿交叉实验室！
 
 
-计算机视觉前沿交叉实验室隶属于<a href="https://www.ai-ouc.cn/" class="off" target="_blank">中国海洋大学人工智能研究院</a>，指导老师为<a href="https://tocaiqing.github.io" class="off" target="_blank">蔡青</a>副教授。主要研究方向包括医学图像处理、疾病辅助诊断、水下视觉、水下图像增强、三维重建等。近年来团队的研究成果发表于AAAI、IJCAI、MM、TIP等国际顶级学术会议和期刊。实验室先后主持和参与国家自然科学基金、山东省自然科学基金等项目。
+计算机视觉前沿交叉实验室隶属于<a href="https://www.ai-ouc.cn/" class="off" target="_blank">中国海洋大学人工智能研究院</a>，<a href="http://it.ouc.edu.cn/djy/list.htm" class="off" target="_blank">董军宇</a>教授为总负责人，指导老师为<a href="https://tocaiqing.github.io" class="off" target="_blank">蔡青</a>副教授。主要研究方向包括医学图像处理、疾病辅助诊断、水下视觉、水下图像增强、三维重建等。近年来团队的研究成果发表于AAAI、IJCAI、MM、TIP等国际顶级学术会议和期刊。实验室先后主持和参与国家自然科学基金、山东省自然科学基金等项目。
 
 欢迎对我们研究方向感兴趣的同学加入实验室，我们实验室学术氛围浓厚、成员融洽、不强制打卡，欢迎各位优秀的同学咨询！同时欢迎学有余力的本科生进入实验室！联系方式：cq@ouc.edu.cn 
 

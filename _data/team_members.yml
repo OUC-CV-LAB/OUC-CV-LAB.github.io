@@ -3,6 +3,13 @@
   info: 副教授
   url: https://tocaiqing.github.io
   group: 0
+
+- name: 董军宇
+  photo: dongjunyu.jpg
+  info: 教授
+  url: http://it.ouc.edu.cn/djy/list.htm
+  group: 0
+  
   
 - name: 童亨
   photo: th.jpg
@@ -113,12 +120,21 @@
   info2: 研究方向：超声增强
   group: 2
 
+- name: 郭少翔
+  photo: bio-photo.jpg
+
+  group: 3
+
+- name: 张天戈
+  photo: bio-photo.jpg
+
+  group: 3
       
 - name: Lindsay Liang
   photo: lindsayliang.jpg
   info: Bioinformatics Programmer II
   url: lindsayliang
-  group: 3
+  group: 8
 
 - name: Michael Gilson
   photo: michaelgilson.jpg
