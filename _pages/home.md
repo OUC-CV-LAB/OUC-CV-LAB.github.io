@@ -10,44 +10,6 @@ permalink: /
 
 
 
- <div style="position: relative; text-align: center; margin: auto;">
-<div style="text-align: center; margin: auto;">
-  <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style=" height: 400px; object-fit: cover;">
-   <!-- 图片标题 -->
-  <h3 id="imageTitle" style="margin-top: 10px; font-size: 16px; font-weight: bold; color: black;">
-    实验室聚餐合影
-  </h3>
-  
-  <!-- 左右箭头按钮 -->
-  <button onclick="changeImage(-1)" style="position: absolute; top: 50%; left: 0; background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
-    &#10094;
-  </button>
-  <button onclick="changeImage(1)" style="position: absolute; top: 50%; right: 0;  background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
-    &#10095;
-  </button>
-</div>
-</div>
-<script>
-  let currentImage = 1;
-  const totalImages = 5; // 假设总共有3张图片
-
-  const titles = [
-    "实验室聚餐合影",
-    "学校图书馆前合影",
-    "8.20聚餐合影",
-    "谭润清18大寿合影",
-    "中国海大100周年校庆合影"
-  ];
-
-  function changeImage(direction) {
-    currentImage += direction;
-    if (currentImage > totalImages) currentImage = 1;
-    if (currentImage < 1) currentImage = totalImages;
-    document.getElementById('imageDisplay').src = `{{ site.url }}{{ site.baseurl }}/images/homepageimg/image${currentImage}.jpg`;
-    document.getElementById('imageTitle').innerText = titles[currentImage - 1];
-  }
-</script>
-
 <!-- ![]({{ site.url }}{{ site.baseurl }}/images/lab_logo.jpg){: style="width: 230px; float: left;margin-right: 20px; border: 10px"} -->
 
 <div class="row" style="max-width: 800px; margin: auto;">
