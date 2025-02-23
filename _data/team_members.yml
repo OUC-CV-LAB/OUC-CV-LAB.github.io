@@ -1,14 +1,15 @@
+- name: 董军宇
+  photo: dongjunyu.jpg
+  info: 教授
+  url: http://it.ouc.edu.cn/djy/list.htm
+  group: 0
+  
 - name: 蔡青
   photo: caiqing.jpg
   info: 副教授
   url: https://tocaiqing.github.io
   group: 0
 
-- name: 董军宇
-  photo: dongjunyu.jpg
-  info: 教授
-  url: http://it.ouc.edu.cn/djy/list.htm
-  group: 0
   
   
 - name: 童亨
