@@ -69,19 +69,7 @@ permalink: /data/
     
   </div>
 
-<div class="activity-container">
-    <div class="activity-title">大模型混战时代：智能安防的演进路径和机遇挑战”技术论坛</div>
-    <div class="activity-details">
-      <strong>时间：</strong>2024年11月9日<br>
-      <strong>地点：</strong>山东科技大学计算机科学与工程学院<br>
-      <strong>主办方：</strong>中国计算机学会
-    </div>
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-11-09.png" alt="活动合影">
-    <div class="activity-description">
-      本次论坛由CCF主办， CCF YOCSEF青岛学术委员会组织，山东科技大学计算机科学与工程学院（腾讯人工智能学院）支持。CCF YOCSEF青岛学术秘书张鹏（山东科技大学）与CCF YOCSEF青岛22-23主席包永堂（山东科技大学）担任执行主席，CCF YOCSEF青岛委员张雪（山东科技大学）和张晓林（山东科技大学）担任线上主席。论坛邀请到了以萨股份技术有限公司石柱国总工程师、山东大学软件学院卢宪凯研究员和中科人工智能创新技术研究院副院长纪文峰高级工程师担任引导发言嘉宾，并邀请到了中国海洋大学蔡青副教授、武汉大学林雨恬副教授和长烽数智科技（山东）有限公司首席网络专家邸正强高级工程师担任思辨嘉宾出席。CCF YOCSEF青岛发起人之一梁永全教授、CCF YOCSEF青岛15-16主席赵建立、CCF YOCSEF青岛20-21主席赵中英、CCF YOCSEF青岛23-24主席于彦伟、现任主席晁国清以及来自北京航空航天大学、山东科技大学、中国海洋大学、中国石油大学（华东）、青岛大学、中科人工智能创新技术研究院、青岛安瑞信息技术、烟台舜宝网络科技、青岛博软网络科技、青岛地铁运营、优谷有鹿等高校、企业和事业单位60余位专家和师生参与了本次论坛。
-    </div>
-    
-  </div>
+
 
 <div class="activity-container">
     <div class="activity-title">大模型混战时代：智能安防的演进路径和机遇挑战”技术论坛</div>
