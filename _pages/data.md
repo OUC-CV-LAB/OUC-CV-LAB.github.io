@@ -28,7 +28,7 @@ permalink: /data/
       margin-bottom: 30px;
     }
     .activity-title {
-      font-size: 2em;
+      font-size: 1.5em;
       font-weight: bold;
       color: #007bff;
       margin-bottom: 10px;
@@ -39,14 +39,14 @@ permalink: /data/
       margin-bottom: 15px;
     }
     .activity-description {
-      font-size: 1.2em;
+      font-size: 1em;
       text-align: center;
       width: 80%;
       max-width: 800px;
       margin-bottom: 20px;
     }
     .activity-details {
-      font-size: 1em;
+      font-size: 0.9em;
       color: #555;
       text-align: center;
     }
