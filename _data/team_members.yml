@@ -3,7 +3,7 @@
   info: 教授
   url: http://it.ouc.edu.cn/djy/list.htm
   group: 0
-  
+
 - name: 蔡青
   photo: caiqing.jpg
   info: 副教授
@@ -44,7 +44,7 @@
   group: 1
 
 - name: 李帅衡
-  photo: lishuaiheng.png
+  photo: lishuaiheng.jpg
   info: 计算机技术专业
   info2: 研究方向：细粒度分类
   group: 1
@@ -122,7 +122,7 @@
   group: 2
 
 - name: 郭少翔
-  photo: bio-photo.jpg
+  photo: guoshaoxiang.jpg
 
   group: 3
 
