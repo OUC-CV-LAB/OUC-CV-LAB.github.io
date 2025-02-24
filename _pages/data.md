@@ -119,7 +119,7 @@ permalink: /data/
   <!-- 活动1 -->
   <div class="activity-container">
     <div class="activity-title">“海洋大模型落地的核心挑战与演进路径”深度技术论坛</div>
-    </div>
+    
     <div class="activity-details">
       <strong>时间：</strong>2024年9月21日<br>
       <strong>地点：</strong>中国海洋大学西海岸校区信息科学与工程学部<br>
