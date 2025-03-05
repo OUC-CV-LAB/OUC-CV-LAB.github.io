@@ -24,8 +24,8 @@ permalink: /publications/
 <div class="col-sm-6 clearfix">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
-  <p><a class="pub1" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
-  <a class="pub2"> {{ publi.link.display }} </a>
+  <p><a class="pub1" style="font-size: 0.8em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
+  <a class="pub2" style="font-size: 0.8em;"> {{ publi.link.display }} </a>
  </div>
 </div>
 
