@@ -99,6 +99,7 @@ permalink: /team/
   {% endif %}
   <i>{{ member.info }}</i><br>
   <i>{{ member.info2 }}</i>
+  <i style="color: red;">{{ member.pub }}</i>
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
@@ -138,6 +139,7 @@ permalink: /team/
   {% endif %}
   <i>{{ member.info }}</i><br>
   <i>{{ member.info2 }}</i>
+  <i style="color: red;">{{ member.pub }}</i>
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
@@ -176,7 +178,7 @@ permalink: /team/
   {% endif %}
   <i>{{ member.info }}</i><br>
   <i>{{ member.info2 }}</i>
-
+  <i style="color: red;">{{ member.pub }}</i>
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}

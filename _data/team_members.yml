@@ -41,6 +41,7 @@
   photo: yanke.jpg
   info: 计算机科学与技术专业
   info2: 研究方向：医学图像分割
+  pub: AAAI+1
   group: 1
 
 - name: 李帅衡
@@ -66,6 +67,7 @@
   photo: lishaoming.png
   info: 人工智能专业
   info2: 研究方向：单幅图三维重建
+  pub: CVPR+1
   group: 1
 
 - name: 曹政
@@ -123,12 +125,12 @@
 
 - name: 郭少翔
   photo: guoshaoxiang.jpg
-
+  pub: ACM MM+1
   group: 3
 
 - name: 张天戈
   photo: bio-photo.jpg
-
+  pub: IJCAI+1
   group: 3
 
 - name: 张帆
