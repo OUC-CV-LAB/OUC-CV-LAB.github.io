@@ -64,9 +64,9 @@ firstp {
 }
 
 .container-fluid {
-	margin-right: auto;
-	margin-left: auto;
-	max-width: 1000px; /* or 950px */
+  margin-right: 15px;
+  margin-left: 15px;
+  max-width: auto; /* or 950px */
 }
 
 /* Home, News */
