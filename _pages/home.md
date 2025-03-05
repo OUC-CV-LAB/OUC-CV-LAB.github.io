@@ -10,35 +10,35 @@ permalink: /
 
 ---
 <div class="row" style="max-width: 800px; margin: auto;">
-### 学术论文
-*通讯作者 #共同一作
+    <h3 style="text-align: center;">学术论文</h3>
+    <p style="font-size: 14px;">* 通讯作者 &nbsp;&nbsp; # 共同一作</p>
 
+    {% assign count = 0 %}
+    {% for publi in site.data.publist %}
+        {% if publi.highlight == 1 %}
+            {% assign count = count | plus: 1 %}
+            {% if count <= 3 %}
+                <div class="row" style="max-width: 800px; margin: auto;">
+                    <div class="col-sm-12">
+                        <p>
+                            <a class="pub1" style="font-size: 14px; text-decoration: none; color: inherit;">
+                                &#8226; {{ publi.brief }}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
 
-{% assign count = 0 %}
-{% for publi in site.data.publist %}
-
-
-{% if publi.highlight == 1 %}
-{% assign count = count | plus: 1 %}
-    {% if count <= 3 %}
-
-<div class="row" style="max-width: 800px; margin: auto;">
-<div class="col-sm-12 clearfix">
- <div class="row">
-  <p><a class="pub1" style="font-size: 14px; text-decoration: none;">&#8226;{{ publi.brief }}</a></p>
-  
- </div>
+    <p style="text-align: center; margin-top: 10px;">
+        <a href="{{ site.url }}{{ site.baseurl }}/publications" 
+           style="text-decoration: none; color: #007bff; font-weight: bold;">
+            ...更多
+        </a>
+    </p>
 </div>
 
-
-
-</div>
-
-{% endif %}
-{% endif %}
-{% endfor %}
-<a href="{{ site.url }}{{ site.baseurl }}/publications" style="text-decoration: none; color: #007bff; font-weight: bold;">...更多</a>
-</div>
 ---
 
 <!-- 

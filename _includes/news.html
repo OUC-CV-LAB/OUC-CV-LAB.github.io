@@ -11,7 +11,7 @@
     
 </div> -->
 
-
+<!--
 
 <div class="panel panel-primary">
 <div class="panel-heading" style="background-color:#13458b">
@@ -26,3 +26,30 @@
     <h4><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">...更多新闻</a></h4>
 </div>
 </div>
+
+-->
+
+<div class="row" style="max-width: 800px; margin: auto;">
+    <h3 style="text-align: center;">新闻动态</h3>
+
+    {% for article in site.data.news limit:6 %}
+        <div class="row" style="max-width: 800px; margin: auto;">
+            <div class="col-sm-12">
+                <p style="font-size: 14px; margin-bottom: 5px;">
+                    <strong>{{ article.date }}</strong>
+                </p>
+                <p style="color: rgba(251, 71, 71, 0.868); font-size: 14px;">
+                    <em>{{ article.headline }}</em>
+                </p>
+            </div>
+        </div>
+    {% endfor %}
+
+    <p style="text-align: center; margin-top: 10px;">
+        <a href="{{ site.url }}{{ site.baseurl }}/news" 
+           style="text-decoration: none; color: #007bff; font-weight: bold;">
+            ...更多
+        </a>
+    </p>
+</div>
+
