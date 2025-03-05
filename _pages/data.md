@@ -70,6 +70,42 @@ permalink: /data/
   </div>
 
 <div class="activity-container">
+    <div class="activity-title">第四届泰山智能产业创新发展大会———元宇宙与创新成果论坛</div>
+    <div class="activity-details">
+      <strong>时间：</strong>2023年12月15日<br>
+      <strong>地点：</strong>山东省潍坊市富华大酒店<br>
+      <strong>主办方：</strong>山东省人工智能学会、山东省电力行业协会、潍坊市科学技术协会共同主办
+    </div>
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-12-15.jpg" alt="活动合影">
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-12-15_2.jpg" alt="活动合影">
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-12-15_3.jpg" alt="活动合影">
+    <div class="activity-description">
+        大会期间，围绕元宇宙、智能制造、专业建设三个主题，设立了“元宇宙与创新成果论坛”“智能制造与大模型论坛”“山东省人工智能一流专业建设高峰论坛”，论坛嘉宾通过思维转换、经验分享，给现场的嘉宾们带来了一场意犹未尽的视听盛宴。大会同期还进行了山东省人工智能自然科学奖、科技进步奖、技术发明奖、优秀青年奖、卓越贡献奖、企业创新奖、年度优秀学术论文奖以及年度优秀学位论文奖，山东省人工智能教学成果奖，2023年“齐鲁最美科技工作者”，2023年“齐鲁最美科技工作者获奖团队”，2023年山东省人工智能学会优秀科技工作者等奖项的颁奖仪式。
+        中国海洋大学蔡青教授参与TAIIC2023并获得了2023年山东省人工智能优秀青年奖。
+    </div>
+    
+  </div>
+
+
+<div class="activity-container">
+    <div class="activity-title">献礼校庆十周年——AI+Science智启未来院士高峰论坛</div>
+    <div class="activity-details">
+      <strong>时间：</strong>2024年01月27日<br>
+      <strong>地点：</strong>香港中文大学（深圳）<br>
+      <strong>主办方：</strong>香港中文大学（深圳）
+    </div>
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27.jpg" alt="活动合影">
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(2).jpg" alt="活动合影">
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(3).jpg" alt="活动合影">
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(4).jpg" alt="活动合影">
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(5).jpg" alt="活动合影">
+    <div class="activity-description">
+        深圳市模式分析与感知计算重点实验室和香港中文大学（深圳）数据科学学院围绕“AI+Science”主题，于1月27日在港中大（深圳）校园举办“模式分析与感知计算”院士高峰论坛，汇聚全球顶尖学者，共同探讨领域的前沿问题与应用，为港中大（深圳）数据科学学院献礼校庆10周年系列活动拉开序幕。模式分析与感知计算作为人工智能领域的重要分支，在图像处理、自然语言理解、生物特征识别以及信号分析等方面发挥了巨大作用，极大地促进了人工智能技术的发展与创新。本次院士论坛将聚焦新一代人工智能技术，探讨模式分析与感知计算新方法，发掘AI+Science新应用，促进人工智能技术的深入研究和落地，推动未来的科学发展与社会进步。
+    </div>
+    
+  </div>
+
+<div class="activity-container">
     <div class="activity-title">人工智能前沿论坛・第四期</div>
     <div class="activity-details">
       <strong>时间：</strong>2024年12月26日<br>
