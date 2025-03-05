@@ -138,7 +138,7 @@ permalink: /team/
   <h4><a class="off">{{ member.name }}</a></h4>
   {% endif %}
   <i>{{ member.info }}</i><br>
-  <i>{{ member.info2 }}</i>
+  <i>{{ member.info2 }}</i><br>
   <i style="color: red;">{{ member.pub }}</i>
 </div>
 
@@ -177,7 +177,7 @@ permalink: /team/
   <h4><a class="off">{{ member.name }}</a></h4>
   {% endif %}
   <i>{{ member.info }}</i><br>
-  <i>{{ member.info2 }}</i>
+  <i>{{ member.info2 }}</i><br>
   <i style="color: red;">{{ member.pub }}</i>
 </div>
 
