@@ -54,11 +54,6 @@ permalink: /data/
 </head>
 <body>
 
-<div class="title-container">
-  <span>参与学术活动</span>
-  <span>举办学术会议</span>
-</div>
-
 <div class="activity-container">
     <div class="activity-title">第七届中国模式识别与计算机视觉大会（PRCV2024）</div>
     <div class="activity-details">
