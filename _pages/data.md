@@ -95,10 +95,10 @@ permalink: /data/
       <strong>主办方：</strong>香港中文大学（深圳）
     </div>
     <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27.jpg" alt="活动合影">
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-1-27(2).jpg" alt="活动合影">
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-1-27(3).jpg" alt="活动合影">
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-1-27(4).jpg" alt="活动合影">
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-1-27(5).jpg" alt="活动合影">
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(2).jpg" alt="活动合影">
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(3).jpg" alt="活动合影">
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(4).jpg" alt="活动合影">
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(5).jpg" alt="活动合影">
     <div class="activity-description">
         深圳市模式分析与感知计算重点实验室和香港中文大学（深圳）数据科学学院围绕“AI+Science”主题，于1月27日在港中大（深圳）校园举办“模式分析与感知计算”院士高峰论坛，汇聚全球顶尖学者，共同探讨领域的前沿问题与应用，为港中大（深圳）数据科学学院献礼校庆10周年系列活动拉开序幕。模式分析与感知计算作为人工智能领域的重要分支，在图像处理、自然语言理解、生物特征识别以及信号分析等方面发挥了巨大作用，极大地促进了人工智能技术的发展与创新。本次院士论坛将聚焦新一代人工智能技术，探讨模式分析与感知计算新方法，发掘AI+Science新应用，促进人工智能技术的深入研究和落地，推动未来的科学发展与社会进步。
     </div>
