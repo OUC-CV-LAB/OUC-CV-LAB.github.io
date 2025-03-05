@@ -6,7 +6,7 @@
     {% for publi in site.data.publist %}
         {% if publi.highlight == 1 %}
             {% assign count = count | plus: 1 %}
-            {% if count <= 3 %}
+            {% if count <= 5 %}
                 <div class="row" style="max-width: 800px; margin: auto;">
                     <div class="col-sm-12">
                         <p>
