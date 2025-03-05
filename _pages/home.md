@@ -5,51 +5,9 @@ excerpt: "计算机视觉前沿交叉实验室 at OUC."
 sitemap: false
 permalink: /
 ---
-<div class="row" style="max-width: 800px; margin: auto;">
-### 欢迎！我们是CV前沿交叉实验室！
-
-
-计算机视觉前沿交叉实验室隶属于<a href="https://www.ai-ouc.cn/" class="off" target="_blank">中国海洋大学人工智能研究院</a>，<a href="http://it.ouc.edu.cn/djy/list.htm" class="off" target="_blank">董军宇</a>教授为总负责人，指导老师为<a href="https://tocaiqing.github.io" class="off" target="_blank">蔡青</a>副教授。主要研究方向包括医学图像处理、疾病辅助诊断、水下视觉、水下图像增强、三维重建等。近年来团队的研究成果发表于AAAI、IJCAI、MM、TIP等国际顶级学术会议和期刊。实验室先后主持和参与国家自然科学基金、山东省自然科学基金等项目。
-
-欢迎对我们研究方向感兴趣的同学加入实验室，我们实验室学术氛围浓厚、成员融洽、不强制打卡，欢迎各位优秀的同学咨询！同时欢迎学有余力的本科生进入实验室！联系方式：cq@ouc.edu.cn 
-
-</div>
 
 
 
-
-
----
-<div class="row" style="max-width: 800px; margin: auto;">
-### 学术论文
-*通讯作者 #共同一作
-
-
-{% assign count = 0 %}
-{% for publi in site.data.publist %}
-
-
-{% if publi.highlight == 1 %}
-{% assign count = count | plus: 1 %}
-    {% if count <= 3 %}
-
-<div class="row" style="max-width: 800px; margin: auto;">
-<div class="col-sm-12 clearfix">
- <div class="row">
-  <p><a class="pub1" style="font-size: 14px; text-decoration: none;">&#8226;{{ publi.brief }}</a></p>
-  
- </div>
-</div>
-
-
-
-</div>
-
-{% endif %}
-{% endif %}
-{% endfor %}
-<a href="{{ site.url }}{{ site.baseurl }}/publications" style="text-decoration: none; color: #007bff; font-weight: bold;">...更多</a>
-</div>
 ---
 
 <!-- 

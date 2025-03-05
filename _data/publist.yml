@@ -4,9 +4,9 @@
   authors: 
   link:
     url: https://arxiv.org/abs/2412.15526
-    display: Ke Yan#, Qing Cai#, Fan Zhang, Ziyan Cao, Zhi Liu. AAAI Conference on Artificial Intelligence(2025)
+    display: Ke Yan#, Qing Cai#, Fan Zhang, Ziyan Cao, Zhi Liu. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]
   highlight: 1
-  brief: "SGTC: Semantic-Guided Triplet Co-training for Sparsely Annotated Semi-Supervised Medical Image Segmentation. Ke Yan#, Qing Cai#, Fan Zhang, Ziyan Cao, Zhi Liu.2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
+  brief: "SGTC: Semantic-Guided Triplet Co-training for Sparsely Annotated Semi-Supervised Medical Image Segmentation. Ke Yan#, Qing Cai#, Fan Zhang, Ziyan Cao, Zhi Liu. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
   news2: 
 
 - title: "BSAFusion: A Bidirectional Stepwise Feature Alignment Network for Unaligned Medical Image Fusion"
@@ -15,7 +15,7 @@
   authors: 
   link:
     url: https://arxiv.org/pdf/2412.08050
-    display: Huafeng Li, Dayong Su, Qing Cai*, Yafei Zhang. AAAI Conference on Artificial Intelligence(2025)
+    display: Huafeng Li, Dayong Su, Qing Cai*, Yafei Zhang. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]
   highlight: 1
   brief: "BSAFusion: A Bidirectional Stepwise Feature Alignment Network for Unaligned Medical Image Fusion. Huafeng Li, Dayong Su, Qing Cai*, Yafei Zhang. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
   news2:
@@ -26,7 +26,7 @@
   authors: 
   link:
     url: https://arxiv.org/pdf/2501.07688
-    display: Jiahui Kang, Qing Cai*, Runqing Tan, Yimei Liu, Zhi Liu. AAAI Conference on Artificial Intelligence(2025)
+    display: Jiahui Kang, Qing Cai*, Runqing Tan, Yimei Liu, Zhi Liu. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]
   highlight: 1
   brief: "C2PD: Continuity-Constrained Pixelwise Deformation for Guided Depth Super-Resolution. Jiahui Kang, Qing Cai*, Runqing Tan, Yimei Liu, Zhi Liu. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
   news2:
@@ -37,9 +37,9 @@
   authors: 
   link:
     url: https://ojs.aaai.org/index.php/AAAI/article/view/27846
-    display: Qing Cai, Mu Li, Dongwei Ren, Jun Lyu, Haiyong Zheng*, Herbert Yang and Junyu Dong*. AAAI Conference on Artificial Intelligence(2024)
+    display: Qing Cai, Mu Li, Dongwei Ren, Jun Lyu, Haiyong Zheng*, Herbert Yang and Junyu Dong*. 2024, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]
   highlight: 1
-  brief: "Spherical Pseudo-cylindrical Representation for Omnidirectional Image Super-Resolution. Qing Cai, Mu Li, Dongwei Ren, Jun Lyu, Haiyong Zheng*, Herbert Yang and Junyu Dong*. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
+  brief: "Spherical Pseudo-cylindrical Representation for Omnidirectional Image Super-Resolution. Qing Cai, Mu Li, Dongwei Ren, Jun Lyu, Haiyong Zheng*, Herbert Yang and Junyu Dong*. 2024, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
   news2:
 
 - title: "Exploring Cross-Domain Few-Shot Classification via Frequency-Aware Prompting"
@@ -48,7 +48,7 @@
   authors: 
   link:
     url: https://arxiv.org/pdf/2406.16422
-    display: Tiange Zhang, Qing Cai*, Feng Gao, Lin Qi, Junyu Dong*. International Joint Conference on Artificial Intelligence(2024)
+    display: Tiange Zhang, Qing Cai*, Feng Gao, Lin Qi, Junyu Dong*. 2024, International Joint Conference on Artificial Intelligence (IJCAI). [CCF A]
   highlight: 1
   brief: "Exploring Cross-Domain Few-Shot Classification via Frequency-Aware Prompting. Tiange Zhang, Qing Cai*, Feng Gao, Lin Qi, Junyu Dong*. 2024, International Joint Conference on Artificial Intelligence (IJCAI). [CCF A]"
   news2:
@@ -59,7 +59,7 @@
   authors: 
   link:
     url: https://ieeexplore.ieee.org/abstract/document/10715722
-    display: Fan Zhang, Huiying Liu, Qing Cai*, Chun-Mei Feng, Binglu Wang, Shanshan Wang, Junyu Dong, Zhang David. IEEE Transactions on Neural Networks and Learning Systems(2024)
+    display: Fan Zhang, Huiying Liu, Qing Cai*, Chun-Mei Feng, Binglu Wang, Shanshan Wang, Junyu Dong, Zhang David. 2024, IEEE Transactions on Neural Networks and Learning Systems. [CCF B,中科院SCI一区Top 期刊, IF=14.255]
   highlight: 1
   brief: "Federated Cross-Incremental Self-Supervised Learning for Medical Image Segmentation. Fan Zhang, Huiying Liu, Qing Cai*, Chun-Mei Feng, Binglu Wang, Shanshan Wang, Junyu Dong, Zhang David. 2024, IEEE Transactions on Neural Networks and Learning Systems. [CCF B,中科院SCI一区Top 期刊, IF=14.255]"
   news2:
@@ -70,7 +70,7 @@
   authors: 
   link:
     url: https://ieeexplore.ieee.org/abstract/document/10494542
-    display: Xianglong Wang, Eric Rigall, Xifeng An, Zhihao Li, Qing Cai*, Shu Zhang, and Junyu Dong. IEEE Transactions on Circuits and Systems for Video Technology(2024)
+    display: Xianglong Wang, Eric Rigall, Xifeng An, Zhihao Li, Qing Cai*, Shu Zhang, and Junyu Dong. 2024, IEEE Transactions on Circuits and Systems for Video Technology. [CCF B, 中科院SCI一区Top 期刊, IF=8.4]
   highlight: 1
   brief: "A New Benchmark and Low Computational Cost Localization Method for Cephalometric Analysis. Xianglong Wang, Eric Rigall, Xifeng An, Zhihao Li, Qing Cai*, Shu Zhang, and Junyu Dong. 2024, IEEE Transactions on Circuits and Systems for Video Technology. [CCF B, 中科院SCI一区Top 期刊, IF=8.4]"
   news2:
@@ -81,7 +81,7 @@
   authors: 
   link:
     url: https://www.sciencedirect.com/science/article/pii/S0031320324001778
-    display: Fan Zhang, Huiying Liu, Jinjiang Wang, Jun Lyu, Qing Cai*, Huafeng Li, Junyu Dong, and David Zhang. Pattern Recognition(2024)
+    display: Fan Zhang, Huiying Liu, Jinjiang Wang, Jun Lyu, Qing Cai*, Huafeng Li, Junyu Dong, and David Zhang. 2024, Pattern Recognition. [CCF B, 中科院SCI一区Top 期刊, IF=8.518]
   highlight: 1
   brief: "Cross co-teaching for semi-supervised medical image segmentation. Fan Zhang, Huiying Liu, Jinjiang Wang, Jun Lyu, Qing Cai*, Huafeng Li, Junyu Dong, and David Zhang. 2024, Pattern Recognition. [CCF B, 中科院SCI一区Top 期刊, IF=8.518]"
   news2:
@@ -92,7 +92,7 @@
   authors: 
   link:
     url: https://arxiv.org/pdf/2309.16140
-    display: Shao Xiang Guo, Qing Cai*, Lin Qi and Junyu Dong*. ACM International Conference on Multimedia(2023)
+    display: Shao Xiang Guo, Qing Cai*, Lin Qi and Junyu Dong*. 2023, ACM International Conference on Multimedia (ACM MM). [CCF A]
   highlight: 1
   brief: "CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting. Shao Xiang Guo, Qing Cai*, Lin Qi and Junyu Dong*. 2023, ACM International Conference on Multimedia (ACM MM). [CCF A]"
   news2:
@@ -103,7 +103,7 @@
   authors: 
   link:
     url: https://arxiv.org/pdf/2203.10247
-    display: Qing Cai,Yiming Qian, Jinxing Li, Jun Lyu*, Yee-Hong Yang, Feng Wu, David Zhang*. IEEE Transactions on Image Processing(2023)
+    display: Qing Cai,Yiming Qian, Jinxing Li, Jun Lyu*, Yee-Hong Yang, Feng Wu, David Zhang*. 2023, IEEE Transactions on Image Processing. [CCF A, 中科院SCI一区Top 期刊, IF=11.041]
   highlight: 1
   brief: "HIPA: Hierarchical Patch Transformer for Single Image Super Resolution. Qing Cai,Yiming Qian, Jinxing Li, Jun Lyu*, Yee-Hong Yang, Feng Wu, David Zhang*. 2023, IEEE Transactions on Image Processing. [CCF A, 中科院SCI一区Top 期刊, IF=11.041]"
   news2:
@@ -114,7 +114,7 @@
   authors: 
   link:
     url: https://ieeexplore.ieee.org/abstract/document/10063231
-    display: Jun Lyu, Guangyuan Li, Chengyan Wang, Qing Cai*, Qi Dou, David Zhang and Jing Qin. IEEE Transactions on Neural Networks and Learning Systems(2023)
+    display: Jun Lyu, Guangyuan Li, Chengyan Wang, Qing Cai*, Qi Dou, David Zhang and Jing Qin. 2023, IEEE Transactions on Neural Networks and Learning Systems.[CCF B, 中科院SCI一区Top 期刊, IF=14.255]
   highlight: 1
   brief: "Multi-contrast MRI Super-Resolution via Transformer-empowered Multi-scale Contextual Matching and Aggregation. Jun Lyu, Guangyuan Li, Chengyan Wang, Qing Cai*, Qi Dou, David Zhang and Jing Qin. 2023, IEEE Transactions on Neural Networks and Learning Systems.[CCF B, 中科院SCI一区Top 期刊, IF=14.255]"
   news2:
@@ -125,7 +125,7 @@
   authors: 
   link:
     url: https://www.sciencedirect.com/science/article/pii/S0957417423032748
-    display: Fan Zhang, Huiying Liu, Xiaojun Duan, Binglu Wang, Qing Cai*, Huafeng Li, Junyu Dong, and David Zhang. Expert Systems With Applications(2023)
+    display: Fan Zhang, Huiying Liu, Xiaojun Duan, Binglu Wang, Qing Cai*, Huafeng Li, Junyu Dong, and David Zhang. 2023, Expert Systems With Applications.[中科院SCI一区Top 期刊, IF=8.5]
   highlight: 1
   brief: "DSLSM: Dual-kernel-induced Statistic Level Set Model for Image Segmentation. Fan Zhang, Huiying Liu, Xiaojun Duan, Binglu Wang, Qing Cai*, Huafeng Li, Junyu Dong, and David Zhang. 2023, Expert Systems With Applications.[中科院SCI一区Top 期刊, IF=8.5]"
   news2:
@@ -136,7 +136,7 @@
   authors: 
   link:
     url: https://ieeexplore.ieee.org/abstract/document/9727093
-    display: Qing Cai, Jinxing Li*, Huafeng Li, Yee-Hong Yang, Feng Wu, David Zhang*. Expert Systems With Applications(2023)
+    display: Qing Cai, Jinxing Li*, Huafeng Li, Yee-Hong Yang, Feng Wu, David Zhang*. 2023, IEEE Transactions on Image Processing. [CCF A, 中科院SCI一区Top 期刊, IF=11.041]
   highlight: 1
   brief: "TDPN: Texture and Detail-Preserving Network for Single Image Super-Resolution. Qing Cai, Jinxing Li*, Huafeng Li, Yee-Hong Yang, Feng Wu, David Zhang*. 2023, IEEE Transactions on Image Processing. [CCF A, 中科院SCI一区Top 期刊, IF=11.041]"
   news2:
@@ -147,8 +147,30 @@
   authors: 
   link:
     url: https://www.sciencedirect.com/science/article/pii/S0020025522002468
-    display: Fan Zhang#, Huiying Liu, Chuanshuo Cao, Qing Cai*, David Zhang. Information Sciences(2022)
+    display: Fan Zhang#, Huiying Liu, Chuanshuo Cao, Qing Cai*, David Zhang. 2022, Information Sciences. [CCF B, 中科院SCI一区Top 期刊, IF=8.233]
   highlight: 1
   brief: "RVLSM: Robust Variational Level Set Method for Image Segmentation with Intensity Inhomogeneity and High Noise. Fan Zhang#, Huiying Liu, Chuanshuo Cao, Qing Cai*, David Zhang. 2022, Information Sciences. [CCF B, 中科院SCI一区Top 期刊, IF=8.233] "
+  news2:
+
+- title: "AVLSM: Adaptive Variational Level Set Model for Image Segmentation in the Presence of Severe Intensity Inhomogeneity and High Noise"
+  image: 1250.jpg
+  description: 
+  authors: 
+  link:
+    url: https://ieeexplore.ieee.org/abstract/document/9619954/
+    display: Qing Cai, Yiming Qian, Sanping Zhou, Jinxing Li*, Yee-Hong Yang, Feng Wu, David Zhang*. 2021, IEEE Transactions on Image Processing. (CCF A, 中科院SCI一区Top 期刊, IF=11.041)
+  highlight: 1
+  brief: "AVLSM: Adaptive Variational Level Set Model for Image Segmentation in the Presence of Severe Intensity Inhomogeneity and High Noise”. Qing Cai, Yiming Qian, Sanping Zhou, Jinxing Li*, Yee-Hong Yang, Feng Wu, David Zhang*. 2021, IEEE Transactions on Image Processing. (CCF A, 中科院SCI一区Top 期刊, IF=11.041) "
+  news2:
+
+- title: "A Novel Hybrid Level Set Model for Non-Rigid Object Contour Tracking"
+  image: 1617.jpg
+  description: 
+  authors: 
+  link:
+    url: https://ieeexplore.ieee.org/abstract/document/9626663
+    display: Qing Cai*, Huiying Liu, Yiming Qian, Sanping Zhou, Xiaojun Duan, Yee-Hong Yang. 2021, IEEE Transactions on Image Processing. (CCF A, 中科院SCI一区Top 期刊, IF=11.041)
+  highlight: 1
+  brief: "AVLSM: Adaptive Variational Level Set Model for Image Segmentation in the Presence of Severe Intensity Inhomogeneity and High Noise”. Qing Cai, Yiming Qian, Sanping Zhou, Jinxing Li*, Yee-Hong Yang, Feng Wu, David Zhang*. 2021, IEEE Transactions on Image Processing. (CCF A, 中科院SCI一区Top 期刊, IF=11.041) "
   news2:
 
