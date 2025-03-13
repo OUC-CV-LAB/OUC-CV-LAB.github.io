@@ -174,3 +174,24 @@
   brief: "AVLSM: Adaptive Variational Level Set Model for Image Segmentation in the Presence of Severe Intensity Inhomogeneity and High Noise”. Qing Cai, Yiming Qian, Sanping Zhou, Jinxing Li*, Yee-Hong Yang, Feng Wu, David Zhang*. 2021, IEEE Transactions on Image Processing. (CCF A, 中科院SCI一区Top 期刊, IF=11.041) "
   news2:
 
+- title: "Saliency-Guided Level Set Model for Automatic Object Segmentation"
+  image: 1932.jpg
+  description: 
+  authors: 
+  link:
+    url: https://www.sciencedirect.com/science/article/pii/S0031320319301657
+    display: Qing Cai*, Huiying Liu, Yiming Qian, Sanping Zhou, Jinjun Wang, Yee-Hong Yang. 2019, Pattern Recognition. (CCF B, 中科院SCI一区Top 期刊, IF=8.518)
+  highlight: 1
+  brief: 
+  news2:
+
+- title: "An Adaptive-Scale Active Contour Model for Inhomogeneous Image Segmentation and Bias Feld Estimation"
+  image: 2132.jpg
+  description: 
+  authors: 
+  link:
+    url: https://www.sciencedirect.com/science/article/pii/S0031320318301729
+    display: Qing Cai*, Huiying Liu, Sanping Zhou, Jingfeng Sun, Jing Li. 2018, Pattern Recognition. (CCF B, 中科院SCI一区Top 期刊, IF=8.518)
+  highlight: 1
+  brief: 
+  news2:
