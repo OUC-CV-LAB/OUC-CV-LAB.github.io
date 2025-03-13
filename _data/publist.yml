@@ -1,3 +1,14 @@
+- title: "MESC-3D:Mining Effective Semantic Cues for 3D Reconstruction from a Single Image"
+  image: 2743.jpg
+  description: 
+  authors: 
+  link:
+    url: https://arxiv.org/html/2502.20861v1
+    display: Shaoming Li#, Qing Cai#, Songqi Kong, Runqing Tan, Heng Tong, Shiji Qiu, Yongguo Jiang, Zhi Liu. 2025, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). (CCF A 类会议)
+  highlight: 1
+  brief: 
+  news2:
+
 - title: "SGTC: Semantic-Guided Triplet Co-training for Sparsely Annotated Semi-Supervised Medical Image Segmentation"
   image: yankeaaai.jpg
   description: 
