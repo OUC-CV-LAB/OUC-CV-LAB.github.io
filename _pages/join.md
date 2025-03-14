@@ -6,7 +6,7 @@ sitemap: false
 permalink: /join.html
 ---
 
-# 参与学术活动
+# <span style="color:red">参与学术活动</span>
 
 ---
 
