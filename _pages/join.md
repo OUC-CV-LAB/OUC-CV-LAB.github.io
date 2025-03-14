@@ -54,6 +54,74 @@ permalink: /join.html
 </head>
 <body>
 
+<!-- 轮播图样式 -->
+<style>
+    .carousel-container {
+        position: relative;
+        text-align: center;
+        margin: 20px auto;
+        max-width: 600px;
+    }
+
+    .carousel-container img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .carousel-btn.left {
+        left: 0;
+    }
+
+    .carousel-btn.right {
+        right: 0;
+    }
+
+    .carousel-btn:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+</style>
+
+<script>
+    const imagesAI = [
+        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27.jpg",
+        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(2).jpg",
+        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(3).jpg",
+        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(4).jpg",
+        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(5).jpg"
+    ];
+
+    let currentIndexAI = 0; // 当前图片索引
+
+    function changeImageAI(direction) {
+        currentIndexAI += direction;
+        
+        // 处理边界情况（循环切换）
+        if (currentIndexAI < 0) {
+            currentIndexAI = imagesAI.length - 1;
+        } else if (currentIndexAI >= imagesAI.length) {
+            currentIndexAI = 0;
+        }
+
+        // 更新图片
+        document.getElementById("imageDisplayAI").src = imagesAI[currentIndexAI];
+    }
+</script>
+
+
 <div class="activity-container">
     <div class="activity-title">第七届中国模式识别与计算机视觉大会（PRCV2024）</div>
     <div class="activity-details">
@@ -80,7 +148,6 @@ permalink: /join.html
     <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-12-15_2.jpg" alt="活动合影">
     <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-12-15_3.jpg" alt="活动合影">
     <div class="activity-description">
-        大会期间，围绕元宇宙、智能制造、专业建设三个主题，设立了“元宇宙与创新成果论坛”“智能制造与大模型论坛”“山东省人工智能一流专业建设高峰论坛”，论坛嘉宾通过思维转换、经验分享，给现场的嘉宾们带来了一场意犹未尽的视听盛宴。大会同期还进行了山东省人工智能自然科学奖、科技进步奖、技术发明奖、优秀青年奖、卓越贡献奖、企业创新奖、年度优秀学术论文奖以及年度优秀学位论文奖，山东省人工智能教学成果奖，2023年“齐鲁最美科技工作者”，2023年“齐鲁最美科技工作者获奖团队”，2023年山东省人工智能学会优秀科技工作者等奖项的颁奖仪式。
         中国海洋大学蔡青教授参与TAIIC2023并获得了2023年山东省人工智能优秀青年奖。
     </div>
     
@@ -90,21 +157,22 @@ permalink: /join.html
 <div class="activity-container">
     <div class="activity-title">献礼校庆十周年——AI+Science智启未来院士高峰论坛</div>
     <div class="activity-details">
-      <strong>时间：</strong>2024年01月27日<br>
-      <strong>地点：</strong>香港中文大学（深圳）<br>
-      <strong>主办方：</strong>香港中文大学（深圳）
+        <strong>时间：</strong>2024年01月27日<br>
+        <strong>地点：</strong>香港中文大学（深圳）<br>
+        <strong>主办方：</strong>香港中文大学（深圳）
     </div>
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27.jpg" alt="活动合影">
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(2).jpg" alt="活动合影">
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(3).jpg" alt="活动合影">
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(4).jpg" alt="活动合影">
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(5).jpg" alt="活动合影">
+
+    <!-- 轮播图容器 -->
+    <div class="carousel-container">
+        <button class="carousel-btn left" onclick="changeImageAI(-1)">&#10094;</button>
+        <img id="imageDisplayAI" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27.jpg" alt="活动合影">
+        <button class="carousel-btn right" onclick="changeImageAI(1)">&#10095;</button>
+    </div>
+
     <div class="activity-description">
         深圳市模式分析与感知计算重点实验室和香港中文大学（深圳）数据科学学院围绕“AI+Science”主题，于1月27日在港中大（深圳）校园举办“模式分析与感知计算”院士高峰论坛，汇聚全球顶尖学者，共同探讨领域的前沿问题与应用，为港中大（深圳）数据科学学院献礼校庆10周年系列活动拉开序幕。模式分析与感知计算作为人工智能领域的重要分支，在图像处理、自然语言理解、生物特征识别以及信号分析等方面发挥了巨大作用，极大地促进了人工智能技术的发展与创新。本次院士论坛将聚焦新一代人工智能技术，探讨模式分析与感知计算新方法，发掘AI+Science新应用，促进人工智能技术的深入研究和落地，推动未来的科学发展与社会进步。
     </div>
-    
-  </div>
-
+</div>
 <div class="activity-container">
     <div class="activity-title">中国多媒体大会(ChinaMM )2024 </div>
     <div class="activity-details">
@@ -134,21 +202,7 @@ permalink: /join.html
     
   </div>
 
-<div class="activity-container">
-    <div class="activity-title">“海洋大模型落地的核心挑战与演进路径”深度技术论坛</div>
-    
-    <div class="activity-details">
-      <strong>时间：</strong>2024年9月21日<br>
-      <strong>地点：</strong>中国海洋大学西海岸校区信息科学与工程学部<br>
-      <strong>主办方：</strong>中国计算机学会
-    </div>
-  
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-9-21.png" alt="活动合影">
-    <div class="activity-description">
-      本次论坛由CCF主办，CCF青岛分部和CCF YOCSEF青岛共同组织，中国海洋大学信息科学与工程学部支持。由CCF YOCSEF青岛AC委员中国海洋大学仲国强和CCF YOCSEF青岛委员中国海洋大学蔡青共同担任执行主席，由CCF YOCSEF青岛副主席青岛科技大学刘金环、CCF YOCSEF青岛学术秘书山东科技大学张鹏、CCF YOCSEF青岛AC委员中国石油大学（华东）王爽和CCF YOCSEF青岛委员杨昕担任微论坛主席，CCF YOCSEF总部学术秘书张莹和AC委员赵恺作为总部系列论坛的发起人全程参与了论坛活动。论坛邀请到了南京信息工程大学海洋科学学院院长董昌明教授（中国海洋学会人工智能海洋学专委会主任）、中国海洋大学信息科学与工程学部部长董军宇教授（国家高层次人才计划专家）、国防科技大学汪祥副研究员（湖南省科技创新“湖湘青年英才”、羲和大模型论文一作）、南京信息工程大学张荣华教授（国家特聘专家）和中国海洋大学青年英才工程第一层次特聘教授聂婕（国家优青）担任引导嘉宾，邀请到了中国科学院自动化研究所郭龙腾副研究员（紫东太初大模型研究骨干）、华为昇腾人工智能高级工程师隋晓金、青岛大学黄宝香教授、科大讯飞产业加速中心产品总监刘鹏、中国海洋大学王胜科副教授和CCF YOCSEF青岛AC委员青岛国实科技集团有限公司高级项目经理王成锐担任思辨嘉宾。来自青岛市海洋局、工信局、大数据局、中国移动、中国联通、中国海洋大学、山东科技大学、中国石油大学（华东）等100余位海洋大模型研究与落地相关的学者、专家以及CCF YOCSEF青岛的委员们共同参与了本次论坛的思辨和研讨。
-    </div>
-    </div>
-    
+
 <div class="activity-container">
     <div class="activity-title">人工智能前沿论坛・第二期</div>
     <div class="activity-details">
@@ -163,20 +217,6 @@ permalink: /join.html
     
   </div>
 
-<div class="activity-container">
-    <div class="activity-title">VALSE Webinar 十周年特别活动</div>
-    <div class="activity-details">
-      <strong>时间：</strong>2024年10月26日<br>
-      <strong>地点：</strong>中国海洋大学西海岸校区<br>
-      <strong>主办方：</strong>VALSE
-    </div>
-  
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-10-26.jpg" alt="活动合影">
-    <div class="activity-description">
-      视觉与学习青年学者研讨会（VALSE）是面向计算机视觉与机器学习领域国内外华人青年学者的重要学术平台。自2014年以来，VALSE Webinar已成功举办365期，值此十周年之际，VALSE Webinar十周年特别活动在中国海洋大学西海岸校区顺利召开。在本次研讨会上，众多专家学者齐聚一堂，就大模型驱动的视觉理解展开报告和深入讨论。在这次活动中，通过专家学者们的精彩分享和深入互动，活动取得了圆满成功。在这个充满创新和探索的时刻，我们目睹着学术思想的碰撞与交流，为人工智能领域的前沿研究开辟着新的视野和可能。这次成功的活动不仅是对为VALSE Webinar过去十年成就的回顾，更是对未来蓬勃发展的启示，VALSE Webinar将始终恪守初心，砥砺前行，努力探索创新之路，信念坚定，必将书写出更加辉煌的未来，推动人工智能领域的蓬勃发展。
-    </div>
-    </div>
-    
 
 <div class="activity-container">
     <div class="activity-title">大模型混战时代：智能安防的演进路径和机遇挑战”技术论坛</div>
