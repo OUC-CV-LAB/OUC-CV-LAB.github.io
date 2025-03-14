@@ -1,9 +1,9 @@
 ---
 title: "计算机视觉前沿交叉实验室 - Data"
-layout: textlay
+layout: activity_lay
 excerpt: "计算机视觉前沿交叉实验室 -- Data."
 sitemap: false
-permalink: /data/
+permalink: /join.html
 ---
 
 # 参与学术活动
