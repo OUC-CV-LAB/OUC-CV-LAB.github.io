@@ -103,8 +103,29 @@ permalink: /join.html
         "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(4).jpg",
         "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-1-27(5).jpg"
     ];
+    
+    const imagesCSIG = [
+        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-13.jpg",
+        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-13(2).jpg",
+        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-13(3).jpg"
+    ];
 
+    let currentIndexCSIG = 0; // 当前图片索引
     let currentIndexAI = 0; // 当前图片索引
+
+    function changeImageCSIG(direction) {
+        currentIndexCSIG += direction;
+
+        // 处理边界情况（循环切换）
+        if (currentIndexCSIG < 0) {
+            currentIndexCSIG = imagesCSIG.length - 1;
+        } else if (currentIndexCSIG >= imagesCSIG.length) {
+            currentIndexCSIG = 0;
+        }
+
+        // 更新图片
+        document.getElementById("imageDisplayCSIG").src = imagesCSIG[currentIndexCSIG];
+    }
 
     function changeImageAI(direction) {
         currentIndexAI += direction;
@@ -133,22 +154,6 @@ permalink: /join.html
     <div class="activity-description">
         本次大会聚焦于模式识别与计算机视觉领域所面临的新挑战、新问题和新发展方向，旨在展示我国在该领域的最新研究进展。大会为科研院所和科技企业的研究、开发及应用相关人员搭建了一个重要的交流平台。
         中国海洋大学蔡青教授参与2024年PRCV并入选CCF-CV专委会。
-    </div>
-    
-  </div>
-
-<div class="activity-container">
-    <div class="activity-title">第四届泰山智能产业创新发展大会———元宇宙与创新成果论坛</div>
-    <div class="activity-details">
-      <strong>时间：</strong>2023年12月15日<br>
-      <strong>地点：</strong>山东省潍坊市富华大酒店<br>
-      <strong>主办方：</strong>山东省人工智能学会、山东省电力行业协会、潍坊市科学技术协会共同主办
-    </div>
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-12-15.jpg" alt="活动合影">
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-12-15_2.jpg" alt="活动合影">
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-12-15_3.jpg" alt="活动合影">
-    <div class="activity-description">
-        中国海洋大学蔡青教授参与TAIIC2023并获得了2023年山东省人工智能优秀青年奖。
     </div>
     
   </div>
@@ -248,19 +253,23 @@ permalink: /join.html
 <div class="activity-container">
     <div class="activity-title">CSIG青年科学家会议</div>
     <div class="activity-details">
-      <strong>时间：</strong>2024年12月13日<br>
-      <strong>地点：</strong>杭州<br>
-      <strong>主办方：</strong>中国图象图形学学会
+        <strong>时间：</strong>2024年12月13日<br>
+        <strong>地点：</strong>杭州<br>
+        <strong>主办方：</strong>中国图象图形学学会
     </div>
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-13.jpg" alt="活动合影">
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-13(2).jpg" alt="活动合影">
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-13(3).jpg" alt="活动合影">
+
+    <!-- 轮播图容器 -->
+    <div class="carousel-container">
+        <button class="carousel-btn left" onclick="changeImageCSIG(-1)">&#10094;</button>
+        <img id="imageDisplayCSIG" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-13.jpg" alt="活动合影">
+        <button class="carousel-btn right" onclick="changeImageCSIG(1)">&#10095;</button>
+    </div>
+
     <div class="activity-description">
         大会特别邀请了四位在图像图形学领域取得卓越成就的专家做主旨报告。他们分别是南京大学副校长、国家杰出青年科学基金获得者周志华教授，中国科学院自动化研究所多模态人工智能系统全国重点实验室副主任王亮研究员，香港科技大学计算机科学与工程学系教授、思谋科技创始人贾佳亚教授和深圳大学计算机与软件学院院长黄惠教授。四位讲者就各自领域的最新研究成果发表了精彩的报告。
         第二十一届中国图象图形学学会青年科学家会议拟于2025年在青岛召开。成功申办2025年CSIG科学家会议，并入选青工委。
     </div>
-    
-  </div>
+</div>
 
 <div class="activity-container">
     <div class="activity-title">人工智能前沿论坛・第四期</div>
