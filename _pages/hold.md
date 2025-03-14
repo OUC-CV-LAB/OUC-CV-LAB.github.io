@@ -6,7 +6,7 @@ sitemap: false
 permalink: /hold.html
 ---
 
-# <span style="color:red">举办学术会议</span>
+# <span style="color:red">举办学术活动</span>
 
 ---
 
