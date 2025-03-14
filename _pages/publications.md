@@ -7,7 +7,7 @@ permalink: /publications/
 ---
 
 
-# Publications
+# 学术论文（点击标题即可跳转至论文）
 
 ---
 
