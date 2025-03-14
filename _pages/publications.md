@@ -20,18 +20,27 @@ permalink: /publications/
 {% if even_odd == 0 %}
 <div class="row">
 {% endif %}
-
+{% if publi.code %}
 <div class="col-sm-6 clearfix">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
   <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
   <a class="pub2" style="font-size: 0.8em;"> {{ publi.link.display }} </a>
-    {% if publi.code !='' %}
-    <a class="pub2" href="{{ publi.code }}" style="font-size: 0.8em; margin-left: 10px;">[code]</a>
-    {% endif %}
+  <a href="{{ publi.code }}" style="font-size: 0.8em; margin-left: 10px;">[code]</a>
+    
  </div>
 </div>
 
+{% else %}
+<div class="col-sm-6 clearfix">
+ <div class="row">
+ 	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
+  <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
+  <a class="pub2" style="font-size: 0.8em;"> {{ publi.link.display }} </a>
+    
+ </div>
+</div>
+{% endif %}
 {% assign number_printed = number_printed | plus: 1 %}
 
 {% if even_odd == 1 %}
