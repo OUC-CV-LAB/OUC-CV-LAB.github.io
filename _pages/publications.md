@@ -27,7 +27,7 @@ permalink: /publications/
   <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
   <a class="pub2" style="font-size: 0.8em;"> {{ publi.link.display }} </a>
     {% if publi.code %}
-      <a href="{{ publi.code }}" style="font-size: 0.8em; margin-left: 10px;">[code]</a>
+      <a class="pub2" href="{{ publi.code }}" style="font-size: 0.8em; margin-left: 10px;">[code]</a>
     {% endif %}
  </div>
 </div>
