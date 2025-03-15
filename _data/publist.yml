@@ -7,7 +7,9 @@
     display: Shaoming Li#, Qing Cai#, Songqi Kong, Runqing Tan, Heng Tong, Shiji Qiu, Yongguo Jiang, Zhi Liu. 2025, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). (CCF A 类会议)
   highlight: 1
   brief: "MESC-3D:Mining Effective Semantic Cues for 3D Reconstruction from a Single Image. Shaoming Li#, Qing Cai#, Songqi Kong, Runqing Tan, Heng Tong, Shiji Qiu, Yongguo Jiang, Zhi Liu. 2025, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). [CCF A]"
+  pdf: https://arxiv.org/html/2502.20861v1
   code: https://github.com/QINGQINGLE/MESC-3D/tree/main
+  cn: https://blog.csdn.net/Qing__er/article/details/146094563
 
 - title: "SGTC: Semantic-Guided Triplet Co-training for Sparsely Annotated Semi-Supervised Medical Image Segmentation"
   image: yankeaaai.jpg
@@ -18,6 +20,7 @@
     display: Ke Yan#, Qing Cai#, Fan Zhang, Ziyan Cao, Zhi Liu. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]
   highlight: 1
   brief: "SGTC: Semantic-Guided Triplet Co-training for Sparsely Annotated Semi-Supervised Medical Image Segmentation. Ke Yan#, Qing Cai#, Fan Zhang, Ziyan Cao, Zhi Liu. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
+  pdf: https://arxiv.org/abs/2412.15526
   code: https://github.com/xmeimeimei/SGTC
 
 - title: "BSAFusion: A Bidirectional Stepwise Feature Alignment Network for Unaligned Medical Image Fusion"
@@ -30,6 +33,8 @@
   highlight: 1
   brief: "BSAFusion: A Bidirectional Stepwise Feature Alignment Network for Unaligned Medical Image Fusion. Huafeng Li, Dayong Su, Qing Cai*, Yafei Zhang. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
   code: https://github.com/slrl123/BSAFusion
+  pdf: https://arxiv.org/pdf/2412.08050
+  
 
 - title: "C2PD: Continuity-Constrained Pixelwise Deformation for Guided Depth Super-Resolution"
   image: c2pd.jpg
@@ -41,6 +46,8 @@
   highlight: 1
   brief: "C2PD: Continuity-Constrained Pixelwise Deformation for Guided Depth Super-Resolution. Jiahui Kang, Qing Cai*, Runqing Tan, Yimei Liu, Zhi Liu. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
   code: https://github.com/amhamster/C2PD
+  pdf: https://arxiv.org/pdf/2501.07688
+  
 
 - title: "Spherical Pseudo-cylindrical Representation for Omnidirectional Image Super-Resolution"
   image: spr.jpg
@@ -52,6 +59,8 @@
   highlight: 1
   brief: "Spherical Pseudo-cylindrical Representation for Omnidirectional Image Super-Resolution. Qing Cai, Mu Li, Dongwei Ren, Jun Lyu, Haiyong Zheng*, Herbert Yang and Junyu Dong*. 2024, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
   code:
+  pdf: https://ojs.aaai.org/index.php/AAAI/article/view/27846
+  
 
 - title: "Exploring Cross-Domain Few-Shot Classification via Frequency-Aware Prompting"
   image: tiange.jpg
@@ -63,6 +72,7 @@
   highlight: 1
   brief: "Exploring Cross-Domain Few-Shot Classification via Frequency-Aware Prompting. Tiange Zhang, Qing Cai*, Feng Gao, Lin Qi, Junyu Dong*. 2024, International Joint Conference on Artificial Intelligence (IJCAI). [CCF A]"
   code: https://github.com/tinkez/FAP_CDFSC
+  pdf: https://arxiv.org/pdf/2406.16422
 
 - title: "Federated Cross-Incremental Self-Supervised Learning for Medical Image Segmentation"
   image: 1842.jpg
@@ -74,6 +84,7 @@
   highlight: 1
   brief: "Federated Cross-Incremental Self-Supervised Learning for Medical Image Segmentation. Fan Zhang, Huiying Liu, Qing Cai*, Chun-Mei Feng, Binglu Wang, Shanshan Wang, Junyu Dong, Zhang David. 2024, IEEE Transactions on Neural Networks and Learning Systems. [CCF B,中科院SCI一区Top 期刊, IF=14.255]"
   code:
+  pdf: https://ieeexplore.ieee.org/abstract/document/10715722
 
 - title: "A New Benchmark and Low Computational Cost Localization Method for Cephalometric Analysis"
   image: 2041.jpg
@@ -85,6 +96,7 @@
   highlight: 1
   brief: "A New Benchmark and Low Computational Cost Localization Method for Cephalometric Analysis. Xianglong Wang, Eric Rigall, Xifeng An, Zhihao Li, Qing Cai*, Shu Zhang, and Junyu Dong. 2024, IEEE Transactions on Circuits and Systems for Video Technology. [CCF B, 中科院SCI一区Top 期刊, IF=8.4]"
   code:
+  pdf: https://ieeexplore.ieee.org/abstract/document/10494542
 
 - title: "Cross co-teaching for semi-supervised medical image segmentation"
   image: 2220.jpg
@@ -96,6 +108,7 @@
   highlight: 1
   brief: "Cross co-teaching for semi-supervised medical image segmentation. Fan Zhang, Huiying Liu, Jinjiang Wang, Jun Lyu, Qing Cai*, Huafeng Li, Junyu Dong, and David Zhang. 2024, Pattern Recognition. [CCF B, 中科院SCI一区Top 期刊, IF=8.518]"
   code:
+  pdf: https://www.sciencedirect.com/science/article/pii/S0031320324001778
 
 - title: "CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting"
   image: 2359.jpg
@@ -107,6 +120,7 @@
   highlight: 1
   brief: "CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting. Shao Xiang Guo, Qing Cai*, Lin Qi and Junyu Dong*. 2023, ACM International Conference on Multimedia (ACM MM). [CCF A]"
   code:
+  pdf: https://arxiv.org/pdf/2309.16140
 
 - title: "HIPA: Hierarchical Patch Transformer for Single Image Super Resolution"
   image: hipa.jpg
@@ -118,6 +132,7 @@
   highlight: 1
   brief: "HIPA: Hierarchical Patch Transformer for Single Image Super Resolution. Qing Cai,Yiming Qian, Jinxing Li, Jun Lyu*, Yee-Hong Yang, Feng Wu, David Zhang*. 2023, IEEE Transactions on Image Processing. [CCF A, 中科院SCI一区Top 期刊, IF=11.041]"
   code:
+  pdf: https://arxiv.org/pdf/2203.10247
 
 - title: "Multi-contrast MRI Super-Resolution via Transformer-empowered Multi-scale Contextual Matching and Aggregation"
   image: mms.jpg
@@ -129,6 +144,7 @@
   highlight: 1
   brief: "Multi-contrast MRI Super-Resolution via Transformer-empowered Multi-scale Contextual Matching and Aggregation. Jun Lyu, Guangyuan Li, Chengyan Wang, Qing Cai*, Qi Dou, David Zhang and Jing Qin. 2023, IEEE Transactions on Neural Networks and Learning Systems.[CCF B, 中科院SCI一区Top 期刊, IF=14.255]"
   code:
+  pdf: https://ieeexplore.ieee.org/abstract/document/10063231
 
 - title: "DSLSM: Dual-kernel-induced Statistic Level Set Model for Image Segmentation"
   image: 4923.jpg
@@ -140,6 +156,7 @@
   highlight: 1
   brief: "DSLSM: Dual-kernel-induced Statistic Level Set Model for Image Segmentation. Fan Zhang, Huiying Liu, Xiaojun Duan, Binglu Wang, Qing Cai*, Huafeng Li, Junyu Dong, and David Zhang. 2023, Expert Systems With Applications.[中科院SCI一区Top 期刊, IF=8.5]"
   code:
+  pdf: https://www.sciencedirect.com/science/article/pii/S0957417423032748
 
 - title: "TDPN: Texture and Detail-Preserving Network for Single Image Super-Resolution"
   image: 5952.jpg
@@ -151,6 +168,7 @@
   highlight: 1
   brief: "TDPN: Texture and Detail-Preserving Network for Single Image Super-Resolution. Qing Cai, Jinxing Li*, Huafeng Li, Yee-Hong Yang, Feng Wu, David Zhang*. 2023, IEEE Transactions on Image Processing. [CCF A, 中科院SCI一区Top 期刊, IF=11.041]"
   code:
+  pdf: https://ieeexplore.ieee.org/abstract/document/9727093
 
 - title: "RVLSM: Robust Variational Level Set Method for Image Segmentation with Intensity Inhomogeneity and High Noise"
   image: 0303.jpg
@@ -162,6 +180,7 @@
   highlight: 1
   brief: "RVLSM: Robust Variational Level Set Method for Image Segmentation with Intensity Inhomogeneity and High Noise. Fan Zhang#, Huiying Liu, Chuanshuo Cao, Qing Cai*, David Zhang. 2022, Information Sciences. [CCF B, 中科院SCI一区Top 期刊, IF=8.233] "
   code:
+  pdf: https://www.sciencedirect.com/science/article/pii/S0020025522002468
 
 - title: "AVLSM: Adaptive Variational Level Set Model for Image Segmentation in the Presence of Severe Intensity Inhomogeneity and High Noise"
   image: 1250.jpg
@@ -173,6 +192,7 @@
   highlight: 1
   brief: "AVLSM: Adaptive Variational Level Set Model for Image Segmentation in the Presence of Severe Intensity Inhomogeneity and High Noise”. Qing Cai, Yiming Qian, Sanping Zhou, Jinxing Li*, Yee-Hong Yang, Feng Wu, David Zhang*. 2021, IEEE Transactions on Image Processing. (CCF A, 中科院SCI一区Top 期刊, IF=11.041) "
   code:
+  pdf: https://ieeexplore.ieee.org/abstract/document/9619954/
 
 - title: "A Novel Hybrid Level Set Model for Non-Rigid Object Contour Tracking"
   image: 1617.jpg
@@ -184,6 +204,7 @@
   highlight: 1
   brief: "AVLSM: Adaptive Variational Level Set Model for Image Segmentation in the Presence of Severe Intensity Inhomogeneity and High Noise”. Qing Cai, Yiming Qian, Sanping Zhou, Jinxing Li*, Yee-Hong Yang, Feng Wu, David Zhang*. 2021, IEEE Transactions on Image Processing. (CCF A, 中科院SCI一区Top 期刊, IF=11.041) "
   code:
+  pdf: https://ieeexplore.ieee.org/abstract/document/9626663
 
 - title: "Saliency-Guided Level Set Model for Automatic Object Segmentation"
   image: 1932.jpg
@@ -195,6 +216,7 @@
   highlight: 1
   brief: 
   code:
+  pdf: https://www.sciencedirect.com/science/article/pii/S0031320319301657
 
 - title: "An Adaptive-Scale Active Contour Model for Inhomogeneous Image Segmentation and Bias Feld Estimation"
   image: 2132.jpg
@@ -206,3 +228,4 @@
   highlight: 1
   brief: 
   code:
+  pdf: https://www.sciencedirect.com/science/article/pii/S0031320318301729
