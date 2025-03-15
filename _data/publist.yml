@@ -34,6 +34,7 @@
   brief: "BSAFusion: A Bidirectional Stepwise Feature Alignment Network for Unaligned Medical Image Fusion. Huafeng Li, Dayong Su, Qing Cai*, Yafei Zhang. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]"
   code: https://github.com/slrl123/BSAFusion
   pdf: https://arxiv.org/pdf/2412.08050
+  cn: https://blog.csdn.net/m0_59164304/article/details/145041096
   
 
 - title: "C2PD: Continuity-Constrained Pixelwise Deformation for Guided Depth Super-Resolution"
