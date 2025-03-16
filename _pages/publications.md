@@ -22,6 +22,7 @@ permalink: /publications/
 {% endif %}
 {% if publi.code %}
 {% if publi.cn %}
+<div class="container text-center">
 <div class="col-sm-8 mx-auto">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
@@ -32,7 +33,9 @@ permalink: /publications/
     <a href="{{ publi.cn }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[中文解读]</a>
  </div>
 </div>
+</div>
 {% else %}
+<div class="container text-center">
 <div class="col-sm-8 mx-auto">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
@@ -41,10 +44,12 @@ permalink: /publications/
   <a href="{{ publi.pdf }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[pdf]</a>
   <a href="{{ publi.code }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[code]</a>
  </div>
+</div>
 </div>
 {% endif %}
 {% else %}
 {% if publi.cn %}
+<div class="container text-center">
 <div class="col-sm-8 mx-auto">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
@@ -54,7 +59,9 @@ permalink: /publications/
     <a href="{{ publi.cn }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[中文解读]</a>
  </div>
 </div>
+</div>
 {% else %}
+<div class="container text-center">
 <div class="col-sm-8 mx-auto">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
@@ -62,6 +69,7 @@ permalink: /publications/
   <a class="pub2" style="font-size: 0.8em;"> {{ publi.link.display }} </a>
   <a href="{{ publi.pdf }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[pdf]</a>
  </div>
+</div>
 </div>
 {% endif %}
 {% endif %}
