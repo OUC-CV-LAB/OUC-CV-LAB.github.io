@@ -23,7 +23,7 @@ permalink: /publications/
 {% if publi.code %}
 {% if publi.cn %}
 <div class="container text-center">
-<div class="col-sm-8 mx-auto">
+<div class="col-sm-12 mx-auto">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
   <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
@@ -36,7 +36,7 @@ permalink: /publications/
 </div>
 {% else %}
 <div class="container text-center">
-<div class="col-sm-8 mx-auto">
+<div class="col-sm-12 mx-auto">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
   <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
@@ -50,7 +50,7 @@ permalink: /publications/
 {% else %}
 {% if publi.cn %}
 <div class="container text-center">
-<div class="col-sm-8 mx-auto">
+<div class="col-sm-12 mx-auto">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
   <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
@@ -62,7 +62,7 @@ permalink: /publications/
 </div>
 {% else %}
 <div class="container text-center">
-<div class="col-sm-8 mx-auto">
+<div class="col-sm-12 mx-auto">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
   <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
