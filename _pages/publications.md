@@ -22,7 +22,7 @@ permalink: /publications/
 {% endif %}
 {% if publi.code %}
 {% if publi.cn %}
-<div class="col-sm-8 clearfix d-flex flex-column align-items-center ">
+<div class="col-sm-8 d-flex flex-column align-items-center ">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
   <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
@@ -33,7 +33,7 @@ permalink: /publications/
  </div>
 </div>
 {% else %}
-<div class="col-sm-8 clearfix d-flex flex-column align-items-center ">
+<div class="col-sm-8 d-flex flex-column align-items-center ">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
   <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
@@ -45,7 +45,7 @@ permalink: /publications/
 {% endif %}
 {% else %}
 {% if publi.cn %}
-<div class="col-sm-8 clearfix d-flex flex-column align-items-center ">
+<div class="col-sm-8 d-flex flex-column align-items-center ">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
   <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
@@ -55,7 +55,7 @@ permalink: /publications/
  </div>
 </div>
 {% else %}
-<div class="col-sm-8 clearfix d-flex flex-column align-items-center ">
+<div class="col-sm-8 d-flex flex-column align-items-center ">
  <div class="row">
  	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
   <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
