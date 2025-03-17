@@ -57,18 +57,48 @@ permalink: /activity/
 
 <!-- 轮播图样式 -->
 <style>
-    .carousel-container {
-        position: relative;
-        text-align: center;
-        margin: 20px auto;
-        max-width: 600px;
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
     }
-
+    .activity-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .activity-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+    .activity-photo,
     .carousel-container img {
         width: 100%;
         height: 400px;
         object-fit: cover;
         border-radius: 8px;
+    }
+    .activity-description {
+        font-size: 1em;
+        text-align: center;
+        width: 80%;
+        max-width: 800px;
+        margin-bottom: 20px;
+    }
+    .activity-details {
+        font-size: 0.9em;
+        color: #555;
+        text-align: center;
+    }
+
+    .carousel-container {
+        position: relative;
+        text-align: center;
+        margin: 20px auto;
+        max-width: 600px;
     }
 
     .carousel-btn {
