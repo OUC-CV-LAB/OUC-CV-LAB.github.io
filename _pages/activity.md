@@ -460,5 +460,3 @@ permalink: /activity/
 
 
   
-</body>
-</html>
