@@ -112,9 +112,9 @@ permalink: /activity/
     ];
     
     const imagesCSIG = [
-        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-13.jpg",
-        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-13(2).jpg",
-        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-13(3).jpg"
+    "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-13.jpg",
+    "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-13(2).jpg",
+    "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-13(3).jpg"
     ];
     const images = [
         "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-11-26.jpg",
@@ -127,18 +127,16 @@ permalink: /activity/
     let currentIndexMeta = 0; // 当前图片索引
     let currentIndex = 0; // 当前图片索引
     function changeImageCSIG(direction) {
-        currentIndexCSIG += direction;
+    currentIndexCSIG += direction;
 
-        // 处理边界情况（循环切换）
-        if (currentIndexCSIG < 0) {
-            currentIndexCSIG = imagesCSIG.length - 1;
-        } else if (currentIndexCSIG >= imagesCSIG.length) {
-            currentIndexCSIG = 0;
-        }
-
-        // 更新图片
-        document.getElementById("imageDisplayCSIG").src = imagesCSIG[currentIndexCSIG];
+    if (currentIndexCSIG < 0) {
+        currentIndexCSIG = imagesCSIG.length - 1;
+    } else if (currentIndexCSIG >= imagesCSIG.length) {
+        currentIndexCSIG = 0;
     }
+
+    document.getElementById("imageDisplayCSIG").src = imagesCSIG[currentIndexCSIG];
+}
 
     function changeImageAI(direction) {
         currentIndexAI += direction;
@@ -337,7 +335,7 @@ permalink: /activity/
     
   </div>
 
-<div class="activity-container">
+<!-- <div class="activity-container">
     <div class="activity-title">中国多媒体大会(ChinaMM )2024 </div>
     <div class="activity-details">
       <strong>时间：</strong>2024年07月24日<br>
@@ -350,7 +348,7 @@ permalink: /activity/
         中国海洋大学蔡青教授已成功通过2024年CCF多媒体执行委员会申请。
     </div>
     
-  </div>
+  </div> -->
 
 <div class="activity-container">
     <div class="activity-title">献礼校庆十周年——AI+Science智启未来院士高峰论坛</div>
