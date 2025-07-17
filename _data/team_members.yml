@@ -135,9 +135,17 @@
 
 - name: 张帆
   photo: zhangfan.jpg
-
   group: 4
-      
+
+- name: 胡腾峰
+  photo: hutengfeng.jpg
+  info: 计算机科学与技术专业
+  info2: 研究方向： 医学多模态辅助诊断
+  group: 5
+
+
+
+
 - name: Lindsay Liang
   photo: lindsayliang.jpg
   info: Bioinformatics Programmer II
