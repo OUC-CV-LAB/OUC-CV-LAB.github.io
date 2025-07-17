@@ -133,6 +133,10 @@
   pub: IJCAI+1
   group: 3
 
+- name: 张成
+  photo: zhangcheng.jpg
+  group: 3
+
 - name: 张帆
   photo: zhangfan.jpg
   group: 4
@@ -143,7 +147,29 @@
   info2: 研究方向： 医学多模态辅助诊断
   group: 5
 
+- name: 胡梓怡
+  photo:
+  info:
+  info2:
+  group: 5
 
+- name: 李雄
+  photo: lixiong.jpg
+  info: 人工智能专业
+  info2: 研究方向： 具身智能
+  group: 5
+
+- name: 李福临
+  photo: lifulin.jpg
+  info: 软件工程专业
+  info2: 研究方向： 多模态医学影像辅助诊断-基因组学，空间转录组，影像辅助诊断
+  group: 5
+
+- name: 吴兴政
+  photo: wuxingzheng.jpg
+  info: 农业工程与信息技术专业
+  info2: 研究方向： 具身智能
+  group: 5
 
 
 - name: Lindsay Liang
