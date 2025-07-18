@@ -18,7 +18,7 @@
   info2: 研究方向：三维形状生成
   group: 1
 
-- name: 谭润请
+- name: 谭润清
   photo: tanrunqing.jpg
   info: 计算机技术专业
   info2: 研究方向：多视图三维重建
@@ -144,37 +144,49 @@
 - name: 胡腾峰
   photo: hutengfeng.jpg
   info: 计算机科学与技术专业
-  info2: 研究方向： 医学多模态辅助诊断
+  info2: 研究方向：医学多模态辅助诊断
   group: 5
 
 - name: 胡梓怡
-  photo:
-  info:
-  info2:
+  photo: huziyi.jpg
+  info: 计算机科学与技术专业
+  info2: 研究方向：医学多模态辅助诊断
   group: 5
 
 - name: 李雄
   photo: lixiong.jpg
   info: 人工智能专业
-  info2: 研究方向： 具身智能
+  info2: 研究方向：具身智能
   group: 5
 
 - name: 李福临
   photo: lifulin.jpg
   info: 软件工程专业
-  info2: 研究方向： 多模态医学影像辅助诊断-基因组学，空间转录组，影像辅助诊断
+  info2: 研究方向：多模态医学影像辅助诊断
   group: 5
 
 - name: 吴兴政
   photo: wuxingzheng.jpg
   info: 农业工程与信息技术专业
-  info2: 研究方向： 具身智能
+  info2: 研究方向：具身智能
   group: 5
 
 - name: 王子健
   photo: wangzijian.jpg
   info: 网络空间安全与保密专业
-  info2: 研究方向： 多标签分类
+  info2: 研究方向：多标签分类
+  group: 5
+
+- name: 赵彤
+  photo: zhaotong.jpg
+  info: 计算机技术
+  info2: 研究方向：图像增强
+  group: 5
+
+- name: 杨宇
+  photo: yangyu.jpg
+  info: 软件工程
+  info2: 研究方向：多模态影像辅助诊断
   group: 5
 
 - name: Lindsay Liang
