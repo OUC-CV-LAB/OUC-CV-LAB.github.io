@@ -162,7 +162,7 @@
 - name: 李福临
   photo: lifulin.jpg
   info: 软件工程专业
-  info2: 研究方向：多模态医学影像辅助诊断
+  info2: 研究方向：医学多模态辅助诊断
   group: 5
 
 - name: 吴兴政
@@ -186,7 +186,7 @@
 - name: 杨宇
   photo: yangyu.jpg
   info: 软件工程
-  info2: 研究方向：多模态影像辅助诊断
+  info2: 研究方向：医学多模态辅助诊断
   group: 5
 
 - name: Lindsay Liang
