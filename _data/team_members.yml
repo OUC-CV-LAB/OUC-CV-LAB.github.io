@@ -153,12 +153,6 @@
   info2: 研究方向：医学多模态辅助诊断
   group: 5
 
-- name: 李雄
-  photo: lixiong.jpg
-  info: 人工智能专业
-  info2: 研究方向：具身智能
-  group: 5
-
 - name: 李福临
   photo: lifulin.jpg
   info: 软件工程专业
@@ -181,12 +175,6 @@
   photo: zhaotong.jpg
   info: 计算机技术
   info2: 研究方向：图像增强
-  group: 5
-
-- name: 杨宇
-  photo: yangyu.jpg
-  info: 软件工程
-  info2: 研究方向：医学多模态辅助诊断
   group: 5
 
 - name: Lindsay Liang
