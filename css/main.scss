@@ -496,14 +496,15 @@ color:black;
 .intro-container p {
   font-size: 1.4rem; /* 24px - 段落字体大小 */
   line-height: 1.8;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: #ffffff; /* 改为白色 */
-  text-align: center; /* 改为居中对齐，实现垂直效果 */
+  text-align: left; /* 改回左对齐，类似学术论文样式 */
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* 添加文字阴影 */
-  writing-mode: vertical-rl; /* 垂直书写模式，从右到左 */
-  text-orientation: mixed; /* 混合方向，数字和英文保持水平 */
+  writing-mode: horizontal-tb; /* 改回水平书写模式 */
+  text-orientation: mixed; /* 混合方向 */
   height: auto;
-  min-height: 200px; /* 确保有足够的高度显示垂直文字 */
+  min-height: auto; /* 移除最小高度限制 */
+  padding: 0 10px; /* 添加左右内边距 */
 }
 
 .intro-container a {

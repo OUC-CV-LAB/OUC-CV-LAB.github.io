@@ -167,8 +167,8 @@
 
 - name: 王子健
   photo: wangzijian.jpg
-  info: 网络空间安全与保密专业
-  info2: 研究方向：多标签分类
+  info: 保密科学与技术专业
+  info2: 研究方向：联邦学习
   group: 5
 
 - name: 赵彤
