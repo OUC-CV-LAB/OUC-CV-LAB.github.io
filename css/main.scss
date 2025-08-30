@@ -438,7 +438,7 @@ color:black;
 /* 图片容器和介绍容器的对齐优化 */
 .image-container,
 .intro-container {
-  min-height: 400px; /* 设置最小高度确保一致性 */
+  min-height: 500px; /* 设置最小高度确保一致性 */
   margin: 0; /* 移除默认边距 */
   display: flex;
   flex-direction: column;
@@ -457,14 +457,14 @@ color:black;
 /* 强制垂直居中对齐 */
 .hero-section .row {
   display: flex;
-  align-items: center; /* 行内元素垂直居中 */
+  align-items: stretch; /* 行内元素拉伸到相同高度 */
   min-height: 500px; /* 设置最小高度确保有足够空间 */
 }
 
 .hero-section .col-sm-7,
 .hero-section .col-sm-5 {
   display: flex;
-  align-items: center; /* 列内元素垂直居中 */
+  align-items: stretch; /* 列内元素拉伸到相同高度 */
   justify-content: center; /* 列内元素水平居中 */
 }
 
@@ -2235,60 +2235,55 @@ color:black;
 
 /* ===== 主页介绍区域样式 ===== */
 .intro-container {
-    padding: 20px;
+    padding: 30px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .lab-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.lab-logo {
-    margin-bottom: 15px;
-}
-
-.logo-img {
-    width: 80px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
 }
 
 .lab-title {
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-weight: bold;
-    color: #2c3e50;
-    margin: 10px 0 5px 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .lab-subtitle {
-    font-size: 1em;
-    color: #7f8c8d;
+    font-size: 1.2em;
+    color: #ffffcc;
     font-style: italic;
-    margin-bottom: 20px;
+    margin: 0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .animation-section {
-    position: relative;
-    height: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gif-container {
     text-align: center;
-    margin-bottom: 15px;
 }
 
 .main-gif {
     width: 120px;
     height: 120px;
     border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
@@ -2296,145 +2291,82 @@ color:black;
     transform: scale(1.05);
 }
 
-.floating-gifs {
-    position: relative;
-    height: 60px;
+.lab-intro {
+    margin-bottom: 30px;
+    max-width: 400px;
 }
 
-.floating-gif {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    animation: float 3s ease-in-out infinite;
-}
-
-.gif-1 {
-    left: 20%;
-    animation-delay: 0s;
-}
-
-.gif-2 {
-    right: 20%;
-    animation-delay: 1.5s;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-}
-
-.lab-description {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.description-card {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 15px;
-    padding: 15px;
-    border-left: 4px solid #007bff;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-}
-
-.description-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-}
-
-.card-icon {
-    font-size: 1.5em;
-    margin-bottom: 8px;
-}
-
-.description-card h4 {
+.lab-intro p {
     font-size: 1.1em;
-    font-weight: 600;
-    color: #2c3e50;
-    margin: 0 0 8px 0;
-}
-
-.description-card p {
-    font-size: 0.9em;
-    line-height: 1.5;
-    color: #495057;
+    line-height: 1.6;
+    color: #ffffff;
     margin: 0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .highlight-link {
-    color: #007bff;
+    color: #ffffcc;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .highlight-link:hover {
-    color: #0056b3;
+    color: #ffffff;
     text-decoration: underline;
 }
 
-.contact-section {
-    margin-top: auto;
-}
-
-.contact-card {
-    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-    border-radius: 15px;
-    padding: 20px;
-    color: white;
+.contact-info {
     text-align: center;
-    box-shadow: 0 6px 20px rgba(0,123,255,0.3);
-}
-
-.contact-icon {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.contact-info h5 {
-    font-size: 1.2em;
-    margin: 0 0 10px 0;
-    font-weight: 600;
 }
 
 .contact-info p {
-    margin: 5px 0;
-    font-size: 0.9em;
+    margin: 8px 0;
+    font-size: 1em;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info strong {
+    color: #ffffcc;
+    font-weight: 600;
 }
 
 .contact-link {
-    color: #ffd700;
+    color: #ffffcc;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .contact-link:hover {
-    color: #ffed4e;
-    text-decoration: underline;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
 }
 
 .address {
-    font-size: 0.8em;
+    font-size: 0.9em;
     opacity: 0.9;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
     .intro-container {
-        padding: 15px;
+        padding: 20px;
     }
     
     .lab-title {
-        font-size: 1.8em;
+        font-size: 2em;
     }
     
-    .animation-section {
-        height: 150px;
+    .lab-subtitle {
+        font-size: 1em;
     }
     
     .main-gif {
@@ -2442,8 +2374,7 @@ color:black;
         height: 100px;
     }
     
-    .floating-gif {
-        width: 40px;
-        height: 40px;
+    .lab-intro p {
+        font-size: 1em;
     }
 }
