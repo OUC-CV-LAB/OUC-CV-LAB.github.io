@@ -11,6 +11,108 @@ img { margin-bottom: 24px;
 
 body {
 	padding-top: 70px;
+	font-size: 16px; /* 基础字体大小 */
+	line-height: 1.6; /* 行高优化 */
+}
+
+/* 标题字体大小调整 */
+h1 {
+	font-size: 2.5rem; /* 40px */
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+}
+
+h2 {
+	font-size: 2rem; /* 32px */
+	font-weight: 600;
+	margin-bottom: 1.25rem;
+}
+
+h3 {
+	font-size: 1.5rem; /* 24px */
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+h4 {
+	font-size: 1.25rem; /* 20px */
+	font-weight: 600;
+	margin-bottom: 0.75rem;
+}
+
+h5 {
+	font-size: 1.125rem; /* 18px */
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+h6 {
+	font-size: 1rem; /* 16px */
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+/* 段落字体大小 */
+p {
+	font-size: 1rem; /* 16px */
+	line-height: 1.7;
+	margin-bottom: 1rem;
+}
+
+/* 导航栏字体大小调整 */
+.navbar-default .navbar-nav > li > a.nav-link {
+	position: relative;
+	transition: all 0.3s ease;
+	padding: 15px 20px;
+	font-weight: 500;
+	font-size: 1.1rem; /* 17.6px */
+}
+
+.navbar-default .navbar-brand {
+	font-size: 1.3rem; /* 20.8px */
+	font-weight: 600;
+}
+
+/* 卡片标题字体大小 */
+.card-header h3 {
+	margin: 0;
+	font-size: 1.25rem; /* 20px */
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+/* 特色区域字体大小 */
+.feature-item h4 {
+	color: #004098;
+	font-size: 1.25rem; /* 20px */
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.feature-item p {
+	color: #666;
+	font-size: 1rem; /* 16px */
+	line-height: 1.6;
+	margin: 0;
+}
+
+/* 内容区域字体大小 */
+.content-card {
+	background: white;
+	border-radius: 15px;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-body {
+	padding: 25px;
+	font-size: 1rem; /* 16px */
+	line-height: 1.7;
 }
 
 figcaption {
@@ -429,4 +531,35 @@ color:black;
 .image-container img:hover {
   transform: scale(1.02);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* 响应式字体大小调整 */
+@media (max-width: 768px) {
+	body {
+		font-size: 15px;
+	}
+	
+	h1 {
+		font-size: 2rem; /* 32px */
+	}
+	
+	h2 {
+		font-size: 1.75rem; /* 28px */
+	}
+	
+	h3 {
+		font-size: 1.375rem; /* 22px */
+	}
+	
+	.navbar-default .navbar-nav > li > a.nav-link {
+		font-size: 1rem; /* 16px */
+	}
+	
+	.card-header h3 {
+		font-size: 1.125rem; /* 18px */
+	}
+	
+	.feature-item h4 {
+		font-size: 1.125rem; /* 18px */
+	}
 }
