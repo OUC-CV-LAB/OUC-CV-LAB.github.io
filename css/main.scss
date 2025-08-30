@@ -13,7 +13,7 @@ body {
 	padding-top: 70px;
 	font-size: 32px; /* 基础字体大小 */
 	line-height: 1.6; /* 行高优化 */
-	background-color: #f0f4f8; /* 添加浅蓝色背景，与蓝色主题协调 */
+	/* 移除浅蓝色背景 */
 }
 
 /* 标题字体大小调整 */
@@ -221,7 +221,7 @@ firstp {
   margin-right: 15px;
   margin-left: 15px;
   max-width: auto; /* or 950px */
-  background-color: #f0f4f8; /* 确保容器背景一致 */
+  /* 移除浅蓝色背景 */
 }
 
 /* Home, News */
@@ -265,7 +265,7 @@ firstp {
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
-  background-color: #f0f4f8; /* 确保内容区域背景一致 */
+  /* 移除浅蓝色背景 */
 }
 
 /* Content text */
