@@ -491,9 +491,22 @@ color:black;
   transition: all 0.3s ease;
 }
 
+/* Unicode图标样式 */
+.feature-icon .icon-symbol {
+  font-size: 36px;
+  line-height: 1;
+  display: block;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
 .feature-item:hover .feature-icon {
   transform: scale(1.1);
   box-shadow: 0 10px 25px rgba(0, 64, 152, 0.4);
+}
+
+.feature-item:hover .icon-symbol {
+  transform: scale(1.05);
 }
 
 .feature-item h4 {
