@@ -384,13 +384,14 @@ color:black;
 
 /* 确保左右两列高度一致 */
 .hero-section .row {
-  align-items: stretch;
+  align-items: center; /* 改为center，确保垂直居中对齐 */
 }
 
 .hero-section .col-sm-7,
 .hero-section .col-sm-5 {
   display: flex;
   flex-direction: column;
+  align-items: stretch; /* 拉伸子元素 */
 }
 
 /* 图片容器和介绍容器的对齐优化 */
@@ -398,6 +399,17 @@ color:black;
 .intro-container {
   min-height: 400px; /* 设置最小高度确保一致性 */
   margin: 0; /* 移除默认边距 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 内容垂直居中 */
+  align-items: center; /* 内容水平居中 */
+}
+
+/* 确保两个容器在视觉上完全对齐 */
+.hero-section .col-sm-7 .image-container,
+.hero-section .col-sm-5 .intro-container {
+  height: 100%; /* 占满整个列的高度 */
+  align-self: center; /* 在列中居中对齐 */
 }
 
 /* 响应式对齐调整 */
@@ -409,7 +421,13 @@ color:black;
   }
   
   .hero-section .row {
-    align-items: flex-start;
+    align-items: center; /* 移动端也保持居中对齐 */
+  }
+  
+  /* 移动端特殊对齐处理 */
+  .hero-section .col-sm-7,
+  .hero-section .col-sm-5 {
+    margin-bottom: 20px;
   }
 }
 
