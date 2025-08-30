@@ -10,18 +10,34 @@ permalink: /research/
 
 ---
 
-![]({{ site.url }}{{ site.baseurl }}/images/respic/yixue.jpg){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
-
-## 医学图像处理
+<div class="research-section">
+  <div class="research-header">
+    <div class="research-icon">
+      <i class="fas fa-heartbeat"></i>
+    </div>
+    <h2>医学图像处理</h2>
+  </div>
+  
+  <div class="research-content">
+    <img src="{{ site.url }}{{ site.baseurl }}/images/respic/yixue.jpg" alt="医学图像处理" style="width: 300px; float: left;margin-right: 30px; border: 10px">
 <div style="text-align: justify">
 深度学习在医学图像处理中的应用，近年来取得了显著进展，极大地推动了自动化诊断、疾病预测和治疗规划等方面的发展。通过深度神经网络，尤其是卷积神经网络（CNN），可以实现医学图像的自动化分析与处理。深度学习方法能够有效处理复杂的图像特征，如图像分割、病变检测、三维重建等任务，突破了传统图像处理技术在处理高维数据和复杂结构方面的限制。深度学习在医学图像处理中的优势主要体现在其自动化和高精度的特性。例如，在肿瘤检测中，深度学习模型能够从CT、MRI等影像中自动识别并定位病变区域，甚至实现早期检测，为医生提供辅助决策依据。与此同时，深度学习也能够在多模态图像融合中发挥重要作用，通过整合来自不同扫描设备（如CT与MRI）的信息，提供更加全面、准确的病灶分析。此外，随着生成对抗网络（GAN）等技术的出现，深度学习还能够进行图像修复、增强和生成，为医学影像数据的质量提升提供了新的方法。总体来说，深度学习在医学图像处理领域的应用，不仅提高了图像分析的效率和准确性，还推动了个性化医疗和精准治疗的发展。
 </div>
+  </div>
+</div>
+
 ---- 
 
-
-![]({{ site.url }}{{ site.baseurl }}/images/respic/shengna.jpg){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
-
-## 水下视觉
+<div class="research-section">
+  <div class="research-header">
+    <div class="research-icon">
+      <i class="fas fa-water"></i>
+    </div>
+    <h2>水下视觉</h2>
+  </div>
+  
+  <div class="research-content">
+    <img src="{{ site.url }}{{ site.baseurl }}/images/respic/shengna.jpg" alt="水下视觉" style="width: 300px; float: left;margin-right: 30px; border: 10px">
 <div style="text-align: justify">
 水下视觉是指在水下环境中使用计算机视觉技术进行图像或视频分析的研究领域。水下环境由于光线衰减、颗粒物、湍流等因素的影响，造成了图像质量差，常规的计算机视觉方法在这种环境下效果不佳，因此水下视觉面临着许多独特的挑战。为了应对这些挑战，研究者们开发了各种改进算法来提高水下图像的质量、识别准确度和处理速度。
 
@@ -33,10 +49,21 @@ permalink: /research/
 
 </div>
 
----
-![]({{ site.url }}{{ site.baseurl }}/images/respic/sanwei.png){: style="width: 300px; float: left;margin-right: 30px; border: 10px"}
+  </div>
+</div>
 
-## 三维重建
+---
+
+<div class="research-section">
+  <div class="research-header">
+    <div class="research-icon">
+      <i class="fas fa-cube"></i>
+    </div>
+    <h2>三维重建</h2>
+  </div>
+  
+  <div class="research-content">
+    <img src="{{ site.url }}{{ site.baseurl }}/images/respic/sanwei.png" alt="三维重建" style="width: 300px; float: left;margin-right: 30px; border: 10px">
 <div style="text-align: justify">
 三维重建的核心挑战在于如何从二维数据中推测出三维结构。传统的方法包括立体视觉和结构光技术，立体视觉通过两个或多个摄像头拍摄同一场景的不同视角图像，利用视差计算来恢复深度信息。结构光技术则通过投射已知的光图案到物体表面，然后通过分析反射图案的变形来推测物体表面的形状。
 

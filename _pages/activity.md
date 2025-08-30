@@ -6,7 +6,12 @@ sitemap: false
 permalink: /activity/
 ---
 
-# <span style="color:red">举办/参与学术活动</span>
+<div class="activity-hero">
+  <div class="activity-hero-content">
+    <h1 class="activity-hero-title">🎯 举办/参与学术活动</h1>
+    <p class="activity-hero-subtitle">积极参与国内外学术交流，推动学科发展</p>
+  </div>
+</div>
 
 ---
 
