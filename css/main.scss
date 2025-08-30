@@ -482,12 +482,65 @@ color:black;
   font-weight: 600;
   display: flex;
   align-items: center;
+  justify-content: center; /* 文字居中 */
   gap: 10px;
+  color: #ffffff; /* 确保文字是白色 */
+  text-align: center; /* 文字居中对齐 */
 }
 
 .card-header i {
   font-size: 18px;
   opacity: 0.9;
+  color: #ffffff; /* 确保图标是白色 */
+}
+
+/* 卡片标题悬停效果增强 */
+.card-header:hover h3 {
+  color: #ffffcc; /* 悬停时变为淡黄色，更加醒目 */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* 添加发光效果 */
+}
+
+.card-header:hover i {
+  color: #ffffcc; /* 图标也变为淡黄色 */
+  transform: scale(1.1); /* 图标悬停时轻微放大 */
+  transition: all 0.3s ease;
+}
+
+/* 卡片标题动画效果 */
+.card-header h3 {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card-header h3::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #ffffcc;
+  transition: width 0.3s ease;
+}
+
+.card-header:hover h3::after {
+  width: 80%; /* 悬停时显示下划线 */
+}
+
+/* 图标悬停动画 */
+.card-header i {
+  transition: all 0.3s ease;
+}
+
+.card-header:hover i {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
 
 .card-body {
@@ -629,6 +682,7 @@ color:black;
   vertical-align: middle;
   transition: all 0.3s ease;
   filter: brightness(0.8); /* 让logo颜色与文字颜色协调 */
+  display: block; /* 确保图片正确显示 */
 }
 
 .footer-logo:hover {
@@ -649,6 +703,11 @@ color:black;
 #footer .nav > li > a:hover {
   background-color: rgba(0, 0, 0, 0.05);
   color: #333 !important;
+}
+
+/* 页脚logo链接特殊样式 */
+#footer .nav > li:first-child > a {
+  padding: 8px 12px; /* 减少左边距 */
 }
 
 /* 响应式页脚logo */
