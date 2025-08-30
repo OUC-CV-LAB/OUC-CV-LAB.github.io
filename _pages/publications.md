@@ -7,12 +7,7 @@ permalink: /publications/
 ---
 
 
-<div class="publications-hero">
-  <div class="publications-hero-content">
-    <h1 class="publications-title">📚 学术论文</h1>
-    <p class="publications-subtitle">发表在国际顶级会议和期刊的研究成果</p>
-  </div>
-</div>
+# 学术论文
 
 ---
 
@@ -28,68 +23,44 @@ permalink: /publications/
 {% if publi.code %}
 {% if publi.cn %}
 <div class="col-sm-12 clearfix">
- <div class="publication-card">
-  <div class="publication-image">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" alt="论文配图" />
-  </div>
-  <div class="publication-content">
-    <h3 class="publication-title"><a href="{{ publi.link.url }}">{{ publi.title }}</a></h3>
-    <p class="publication-venue">{{ publi.link.display }}</p>
-    <div class="publication-links">
-      <a href="{{ publi.pdf }}" class="publication-link pdf-link">📄 PDF</a>
-      <a href="{{ publi.code }}" class="publication-link code-link">💻 Code</a>
-      <a href="{{ publi.cn }}" class="publication-link cn-link">🇨🇳 中文解读</a>
-    </div>
-  </div>
+ <div class="row">
+ 	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
+  <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
+  <a class="pub2" style="font-size: 0.8em;"> {{ publi.link.display }} </a>
+  <a href="{{ publi.pdf }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[pdf]</a>
+  <a href="{{ publi.code }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[code]</a>
+    <a href="{{ publi.cn }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[中文解读]</a>
  </div>
 </div>
 {% else %}
 <div class="col-sm-12 clearfix">
- <div class="publication-card">
-  <div class="publication-image">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" alt="论文配图" />
-  </div>
-  <div class="publication-content">
-    <h3 class="publication-title"><a href="{{ publi.link.url }}">{{ publi.title }}</a></h3>
-    <p class="publication-venue">{{ publi.link.display }}</p>
-    <div class="publication-links">
-      <a href="{{ publi.pdf }}" class="publication-link pdf-link">📄 PDF</a>
-      <a href="{{ publi.code }}" class="publication-link code-link">💻 Code</a>
-    </div>
-  </div>
+ <div class="row">
+ 	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
+  <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
+  <a class="pub2" style="font-size: 0.8em;"> {{ publi.link.display }} </a>
+  <a href="{{ publi.pdf }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[pdf]</a>
+  <a href="{{ publi.code }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[code]</a>
  </div>
 </div>
 {% endif %}
 {% else %}
 {% if publi.cn %}
 <div class="col-sm-12 clearfix">
- <div class="publication-card">
-  <div class="publication-image">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" alt="论文配图" />
-  </div>
-  <div class="publication-content">
-    <h3 class="publication-title"><a href="{{ publi.link.url }}">{{ publi.title }}</a></h3>
-    <p class="publication-venue">{{ publi.link.display }}</p>
-    <div class="publication-links">
-      <a href="{{ publi.pdf }}" class="publication-link pdf-link">📄 PDF</a>
-      <a href="{{ publi.cn }}" class="publication-link cn-link">🇨🇳 中文解读</a>
-    </div>
-  </div>
+ <div class="row">
+ 	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
+  <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
+  <a class="pub2" style="font-size: 0.8em;"> {{ publi.link.display }} </a>
+  <a href="{{ publi.pdf }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[pdf]</a>
+    <a href="{{ publi.cn }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[中文解读]</a>
  </div>
 </div>
 {% else %}
 <div class="col-sm-12 clearfix">
- <div class="publication-card">
-  <div class="publication-image">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" alt="论文配图" />
-  </div>
-  <div class="publication-content">
-    <h3 class="publication-title"><a href="{{ publi.link.url }}">{{ publi.title }}</a></h3>
-    <p class="publication-venue">{{ publi.link.display }}</p>
-    <div class="publication-links">
-      <a href="{{ publi.pdf }}" class="publication-link pdf-link">📄 PDF</a>
-    </div>
-  </div>
+ <div class="row">
+ 	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
+  <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
+  <a class="pub2" style="font-size: 0.8em;"> {{ publi.link.display }} </a>
+  <a href="{{ publi.pdf }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[pdf]</a>
  </div>
 </div>
 {% endif %}
