@@ -569,6 +569,49 @@ color:black;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
 }
 
+/* ===== 页脚Logo样式 ===== */
+.footer-logo {
+  height: 24px !important;
+  width: auto !important;
+  margin-right: 8px;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+  filter: brightness(0.8); /* 让logo颜色与文字颜色协调 */
+}
+
+.footer-logo:hover {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
+
+/* 页脚链接样式优化 */
+#footer .nav > li > a {
+  display: flex !important;
+  align-items: center;
+  padding: 8px 15px;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+}
+
+#footer .nav > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #333 !important;
+}
+
+/* 响应式页脚logo */
+@media (max-width: 768px) {
+  .footer-logo {
+    height: 20px !important;
+    margin-right: 6px;
+  }
+  
+  #footer .nav > li > a {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
 /* 响应式字体大小调整 */
 @media (max-width: 768px) {
 	body {
