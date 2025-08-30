@@ -13,6 +13,7 @@ body {
 	padding-top: 70px;
 	font-size: 32px; /* 基础字体大小 */
 	line-height: 1.6; /* 行高优化 */
+	background-color: #f0f4f8; /* 添加浅蓝色背景，与蓝色主题协调 */
 }
 
 /* 标题字体大小调整 */
@@ -215,10 +216,12 @@ pubtit {
 firstp {
 }
 
+/* 容器背景调整 */
 .container-fluid {
   margin-right: 15px;
   margin-left: 15px;
   max-width: auto; /* or 950px */
+  background-color: #f0f4f8; /* 确保容器背景一致 */
 }
 
 /* Home, News */
@@ -255,13 +258,14 @@ firstp {
 	padding-right: 26px;
 }
 
-/* Content text */
+/* 主内容区域背景调整 */
 .content {
-	padding-left: 26px;
-	padding-right: 26px;
+  padding-left: 26px;
+  padding-right: 26px;
   font-size: 16px;
-	font-weight: 300;
+  font-weight: 300;
   font-style: normal;
+  background-color: #f0f4f8; /* 确保内容区域背景一致 */
 }
 
 /* Content text */
@@ -354,6 +358,7 @@ color:black;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 64, 152, 0.1); /* 添加淡蓝色边框 */
 }
 
 .image-container {
@@ -484,6 +489,7 @@ color:black;
 /* 内容区域样式 */
 .content-section {
   margin-bottom: 30px;
+  background-color: transparent; /* 透明背景，继承body背景 */
 }
 
 .content-card {
@@ -618,6 +624,7 @@ color:black;
 .features-section {
   margin-bottom: 60px;
   padding: 40px 0;
+  background-color: transparent; /* 透明背景，继承body背景 */
 }
 
 .feature-item {
