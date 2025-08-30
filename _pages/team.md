@@ -13,10 +13,6 @@ permalink: /team/
   </div>
 </div>
 
-
-
----
-
 <div class="team-section">
   <div class="section-header">
     <div class="section-icon">👨‍🏫</div>
@@ -39,8 +35,20 @@ permalink: /team/
       <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" alt="{{ member.name }}" />
     </div>
     <div class="member-info">
-      <h4 class="member-name"><a href="{{ member.url }}" class="off">{{ member.name }}</a></h4>
+      <h4 class="member-name">
+        {% if member.url %}
+        <a href="{{ member.url }}" class="off">{{ member.name }}</a>
+        {% else %}
+        <a class="off">{{ member.name }}</a>
+        {% endif %}
+      </h4>
       <p class="member-title">{{ member.info }}</p>
+      {% if member.info2 %}
+      <p class="member-research">{{ member.info2 }}</p>
+      {% endif %}
+      {% if member.pub %}
+      <p class="member-publication">{{ member.pub }}</p>
+      {% endif %}
     </div>
   </div>
 </div>
@@ -84,8 +92,20 @@ permalink: /team/
       <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" alt="{{ member.name }}" />
     </div>
     <div class="member-info">
-      <h4 class="member-name"><a href="{{ member.url }}" class="off">{{ member.name }}</a></h4>
+      <h4 class="member-name">
+        {% if member.url %}
+        <a href="{{ member.url }}" class="off">{{ member.name }}</a>
+        {% else %}
+        <a class="off">{{ member.name }}</a>
+        {% endif %}
+      </h4>
       <p class="member-title">{{ member.info }}</p>
+      {% if member.info2 %}
+      <p class="member-research">{{ member.info2 }}</p>
+      {% endif %}
+      {% if member.pub %}
+      <p class="member-publication">{{ member.pub }}</p>
+      {% endif %}
     </div>
   </div>
 </div>
