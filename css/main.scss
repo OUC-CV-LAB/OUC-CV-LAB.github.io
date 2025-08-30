@@ -384,14 +384,13 @@ color:black;
 
 /* 确保左右两列高度一致 */
 .hero-section .row {
-  align-items: center; /* 改为center，确保垂直居中对齐 */
+  align-items: stretch; /* 改回stretch，让列拉伸到相同高度 */
 }
 
 .hero-section .col-sm-7,
 .hero-section .col-sm-5 {
   display: flex;
   flex-direction: column;
-  align-items: stretch; /* 拉伸子元素 */
 }
 
 /* 图片容器和介绍容器的对齐优化 */
@@ -403,13 +402,28 @@ color:black;
   flex-direction: column;
   justify-content: center; /* 内容垂直居中 */
   align-items: center; /* 内容水平居中 */
+  flex: 1; /* 让容器占满整个列的高度 */
 }
 
 /* 确保两个容器在视觉上完全对齐 */
 .hero-section .col-sm-7 .image-container,
 .hero-section .col-sm-5 .intro-container {
   height: 100%; /* 占满整个列的高度 */
-  align-self: center; /* 在列中居中对齐 */
+  align-self: stretch; /* 拉伸到列的高度 */
+}
+
+/* 强制垂直居中对齐 */
+.hero-section .row {
+  display: flex;
+  align-items: center; /* 行内元素垂直居中 */
+  min-height: 500px; /* 设置最小高度确保有足够空间 */
+}
+
+.hero-section .col-sm-7,
+.hero-section .col-sm-5 {
+  display: flex;
+  align-items: center; /* 列内元素垂直居中 */
+  justify-content: center; /* 列内元素水平居中 */
 }
 
 /* 响应式对齐调整 */
