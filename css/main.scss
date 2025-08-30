@@ -355,9 +355,9 @@ color:black;
 .hero-section {
   margin-bottom: 60px;
   padding: 40px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* 更漂亮的渐变背景 */
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #4a90e2 100%); /* 海蓝色渐变背景 */
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3); /* 彩色阴影 */
+  box-shadow: 0 20px 40px rgba(30, 60, 114, 0.3); /* 海蓝色阴影 */
   border: none;
   position: relative;
   overflow: hidden;
@@ -371,7 +371,7 @@ color:black;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.15) 50%, transparent 70%);
   animation: shimmer 3s ease-in-out infinite;
   pointer-events: none;
 }
@@ -549,7 +549,7 @@ color:black;
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+  background: linear-gradient(90deg, #1e3c72, #2a5298, #4a90e2); /* 海蓝色渐变 */
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
@@ -565,7 +565,7 @@ color:black;
 }
 
 .card-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* 海蓝色渐变 */
   color: white;
   padding: 25px 30px;
   border-bottom: none;
@@ -754,7 +754,7 @@ color:black;
   width: 90px;
   height: 90px;
   margin: 0 auto 25px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* 海蓝色渐变 */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -773,7 +773,7 @@ color:black;
   left: -5px;
   right: -5px;
   bottom: -5px;
-  background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #4a90e2); /* 海蓝色渐变 */
   border-radius: 50%;
   z-index: -1;
   opacity: 0;
