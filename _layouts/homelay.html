@@ -2,24 +2,77 @@
 layout: default
 ---
 
-  <div id="iamgeid" class="col-sm-7">
-    <!-- <h1>Welcome to the Allan Lab</h1> -->
-
-  {% include showimg.html %}
+<!-- 英雄区域 - 图片展示和介绍 -->
+<div class="hero-section">
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="image-container">
+        {% include showimg.html %}
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <div class="intro-container">
+        {% include intro.html %}
+      </div>
+    </div>
   </div>
-  <div id="iamgeid" class="col-sm-5">
-    <!-- <h1>Welcome to the Allan Lab</h1> -->
+</div>
 
-  {% include intro.html %}
+<!-- 内容区域 -->
+<div class="content-section">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="content-card home-pub-card">
+        <div class="card-header">
+          <h3><i class="fas fa-book-open"></i> 最新发表</h3>
+        </div>
+        <div class="card-body">
+          {% include homepub.html %}
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="content-card news-card">
+        <div class="card-header">
+          <h3><i class="fas fa-newspaper"></i> 实验室动态</h3>
+        </div>
+        <div class="card-body">
+          {% include news.html %}
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 
-
-  <div id="homeid" class="col-sm-6">
-        <!-- <h1>Welcome to the Allan Lab</h1> -->
-
-	{% include  homepub.html %}
+<!-- 特色区域 -->
+<div class="features-section">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fas fa-microscope"></i>
+        </div>
+        <h4>前沿研究</h4>
+        <p>专注于计算机视觉与人工智能的交叉领域研究</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h4>优秀团队</h4>
+        <p>汇聚国内外顶尖人才，打造一流研究团队</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fas fa-globe"></i>
+        </div>
+        <h4>国际视野</h4>
+        <p>与全球顶尖实验室建立合作关系</p>
+      </div>
+    </div>
   </div>
-
-  <div id="newsid" class="col-sm-6" >
-	{% include news.html %}
-  </div>
+</div>
