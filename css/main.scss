@@ -361,6 +361,10 @@ color:black;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  height: 100%; /* 确保高度一致 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .image-container:hover {
@@ -372,6 +376,41 @@ color:black;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  height: 100%; /* 确保高度一致 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 确保左右两列高度一致 */
+.hero-section .row {
+  align-items: stretch;
+}
+
+.hero-section .col-sm-7,
+.hero-section .col-sm-5 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 图片容器和介绍容器的对齐优化 */
+.image-container,
+.intro-container {
+  min-height: 400px; /* 设置最小高度确保一致性 */
+  margin: 0; /* 移除默认边距 */
+}
+
+/* 响应式对齐调整 */
+@media (max-width: 768px) {
+  .image-container,
+  .intro-container {
+    min-height: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section .row {
+    align-items: flex-start;
+  }
 }
 
 /* 实验室介绍区域字体大小控制 */
