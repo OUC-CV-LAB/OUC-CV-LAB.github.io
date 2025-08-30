@@ -402,7 +402,7 @@ color:black;
 
 .intro-container {
   padding: 35px 25px;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.1); /* 改为半透明 */
   border-radius: 18px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   height: 100%;
@@ -410,14 +410,14 @@ color:black;
   flex-direction: column;
   justify-content: center;
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* 改为半透明边框 */
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .intro-container:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  background: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.2); /* 悬停时稍微增加透明度 */
 }
 
 /* 确保左右两列高度一致 */
@@ -487,36 +487,41 @@ color:black;
 .intro-container h3 {
   font-size: 3rem; /* 40px - 标题字体大小 */
   font-weight: 700;
-  color: #004098;
+  color: #ffffff; /* 改为白色，在深色背景上更清晰 */
   margin-bottom: 1rem;
   text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* 添加文字阴影 */
 }
 
 .intro-container p {
   font-size: 1.4rem; /* 24px - 段落字体大小 */
   line-height: 1.8;
   margin-bottom: 1rem;
-  color: #333;
+  color: #ffffff; /* 改为白色 */
   text-align: justify;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* 添加文字阴影 */
 }
 
 .intro-container a {
   font-size: 1.4rem; /* 24px - 链接字体大小 */
-  color: #004098;
+  color: #ffffcc; /* 改为淡黄色，更醒目 */
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .intro-container a:hover {
-  color: #0056b3;
+  color: #ffffff;
   text-decoration: underline;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .intro-container strong {
   font-size: 1.4rem; /* 24px - 加粗文字字体大小 */
   font-weight: 700;
-  color: #004098;
+  color: #ffffcc; /* 改为淡黄色 */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* 内容区域样式 */
@@ -526,14 +531,15 @@ color:black;
 }
 
 .content-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.9); /* 改为半透明白色 */
   border-radius: 20px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   margin-bottom: 30px;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.3); /* 半透明边框 */
   position: relative;
+  backdrop-filter: blur(10px); /* 添加毛玻璃效果 */
 }
 
 .content-card::before {
@@ -555,6 +561,7 @@ color:black;
 .content-card:hover {
   transform: translateY(-12px) scale(1.02);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.95); /* 悬停时稍微增加不透明度 */
 }
 
 .card-header {
@@ -710,14 +717,15 @@ color:black;
 .feature-item {
   text-align: center;
   padding: 35px 25px;
-  background: white;
+  background: rgba(255, 255, 255, 0.9); /* 改为半透明白色 */
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   height: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.3); /* 半透明边框 */
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(10px); /* 添加毛玻璃效果 */
 }
 
 .feature-item::before {
@@ -739,6 +747,7 @@ color:black;
 .feature-item:hover {
   transform: translateY(-15px) scale(1.03);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.95); /* 悬停时稍微增加不透明度 */
 }
 
 .feature-icon {
