@@ -374,9 +374,45 @@ color:black;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
+/* 实验室介绍区域字体大小控制 */
+.intro-container h3 {
+  font-size: 5rem; /* 40px - 标题字体大小 */
+  font-weight: 700;
+  color: #004098;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.intro-container p {
+  font-size: 3rem; /* 24px - 段落字体大小 */
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: justify;
+}
+
+.intro-container a {
+  font-size: 3rem; /* 24px - 链接字体大小 */
+  color: #004098;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.intro-container a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.intro-container strong {
+  font-size: 3rem; /* 24px - 加粗文字字体大小 */
+  font-weight: 700;
+  color: #004098;
+}
+
 /* 内容区域样式 */
 .content-section {
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .content-card {
@@ -562,4 +598,14 @@ color:black;
 	.feature-item h4 {
 		font-size: 1.125rem; /* 18px */
 	}
+
+  .intro-container h3 {
+    font-size: 2rem; /* 32px */
+  }
+  
+  .intro-container p,
+  .intro-container a,
+  .intro-container strong {
+    font-size: 1.25rem; /* 20px */
+  }
 }
