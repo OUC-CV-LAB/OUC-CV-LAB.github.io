@@ -412,6 +412,10 @@ color:black;
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.2); /* 改为半透明边框 */
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  writing-mode: horizontal-tb !important; /* 强制水平书写模式 */
+  text-orientation: mixed !important; /* 强制混合方向 */
+  transform: none !important; /* 强制移除任何变换 */
+  transform-origin: initial !important; /* 重置变换原点 */
 }
 
 .intro-container:hover {
@@ -491,6 +495,8 @@ color:black;
   margin-bottom: 1rem;
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* 添加文字阴影 */
+  writing-mode: horizontal-tb !important; /* 强制水平书写模式 */
+  transform: none !important; /* 强制移除任何变换 */
 }
 
 .intro-container p {
@@ -500,11 +506,13 @@ color:black;
   color: #ffffff; /* 改为白色 */
   text-align: left; /* 改回左对齐，类似学术论文样式 */
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* 添加文字阴影 */
-  writing-mode: horizontal-tb; /* 改回水平书写模式 */
+  writing-mode: horizontal-tb !important; /* 强制水平书写模式 */
   text-orientation: mixed; /* 混合方向 */
   height: auto;
   min-height: auto; /* 移除最小高度限制 */
   padding: 0 10px; /* 添加左右内边距 */
+  transform: none !important; /* 强制移除任何变换 */
+  transform-origin: initial !important; /* 重置变换原点 */
 }
 
 .intro-container a {
@@ -514,6 +522,8 @@ color:black;
   font-weight: 500;
   transition: all 0.3s ease;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  writing-mode: horizontal-tb !important; /* 强制水平书写模式 */
+  transform: none !important; /* 强制移除任何变换 */
 }
 
 .intro-container a:hover {
@@ -527,6 +537,8 @@ color:black;
   font-weight: 700;
   color: #ffffcc; /* 改为淡黄色 */
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  writing-mode: horizontal-tb !important; /* 强制水平书写模式 */
+  transform: none !important; /* 强制移除任何变换 */
 }
 
 /* 联系方式特殊样式 */
