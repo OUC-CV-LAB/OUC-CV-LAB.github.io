@@ -482,16 +482,51 @@ color:black;
   font-weight: 600;
   display: flex;
   align-items: center;
-  justify-content: center; /* 文字居中 */
+  justify-content: center; /* 水平居中 */
   gap: 10px;
   color: #ffffff; /* 确保文字是白色 */
   text-align: center; /* 文字居中对齐 */
+  width: 100%; /* 占满整个宽度 */
+  height: 100%; /* 占满整个高度 */
+  position: relative; /* 相对定位 */
 }
 
 .card-header i {
   font-size: 18px;
   opacity: 0.9;
   color: #ffffff; /* 确保图标是白色 */
+  margin: 0; /* 移除默认边距 */
+}
+
+/* 确保卡片头部本身也是居中的 */
+.card-header {
+  background: linear-gradient(135deg, #004098 0%, #0056b3 100%);
+  color: white;
+  padding: 20px 25px;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 60px; /* 设置最小高度确保居中效果 */
+}
+
+/* 强制卡片标题完全居中 */
+.card-header h3 {
+  flex: 1; /* 占满可用空间 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* 确保图标和文字的组合完全居中 */
+.card-header h3 i,
+.card-header h3 span {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* 卡片标题悬停效果增强 */
