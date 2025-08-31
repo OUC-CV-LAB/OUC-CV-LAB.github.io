@@ -6,80 +6,71 @@ sitemap: false
 permalink: /publications/
 ---
 
-
-# 学术论文
-
----
-
-{% assign number_printed = 0 %}
-{% for publi in site.data.publist %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if publi.highlight == 1 %}
-
-{% if even_odd == 0 %}
-<div class="row">
-{% endif %}
-{% if publi.code %}
-{% if publi.cn %}
-<div class="col-sm-12 clearfix">
- <div class="row">
- 	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
-  <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
-  <a class="pub2" style="font-size: 0.8em;"> {{ publi.link.display }} </a>
-  <a href="{{ publi.pdf }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[pdf]</a>
-  <a href="{{ publi.code }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[code]</a>
-    <a href="{{ publi.cn }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[中文解读]</a>
- </div>
+<!-- 英雄区域 -->
+<div class="publications-hero">
+  <div class="publications-hero-content">
+    <div class="publications-hero-icon">📚</div>
+    <h1 class="publications-title">学术论文</h1>
+    <p class="publications-subtitle">前沿研究成果，推动学科发展</p>
+  </div>
 </div>
-{% else %}
-<div class="col-sm-12 clearfix">
- <div class="row">
- 	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
-  <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
-  <a class="pub2" style="font-size: 0.8em;"> {{ publi.link.display }} </a>
-  <a href="{{ publi.pdf }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[pdf]</a>
-  <a href="{{ publi.code }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[code]</a>
- </div>
-</div>
-{% endif %}
-{% else %}
-{% if publi.cn %}
-<div class="col-sm-12 clearfix">
- <div class="row">
- 	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
-  <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
-  <a class="pub2" style="font-size: 0.8em;"> {{ publi.link.display }} </a>
-  <a href="{{ publi.pdf }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[pdf]</a>
-    <a href="{{ publi.cn }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[中文解读]</a>
- </div>
-</div>
-{% else %}
-<div class="col-sm-12 clearfix">
- <div class="row">
- 	<img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="300px" style="float: right" />
-  <p><a class="pub1" style="font-size: 1em;" href="{{ publi.link.url }}">{{ publi.title }}</a></p>
-  <a class="pub2" style="font-size: 0.8em;"> {{ publi.link.display }} </a>
-  <a href="{{ publi.pdf }}" style="font-size: 0.8em; margin-left: 5px; color: blue;">[pdf]</a>
- </div>
-</div>
-{% endif %}
-{% endif %}
-{% assign number_printed = number_printed | plus: 1 %}
 
-{% if even_odd == 1 %}
+<!-- 论文列表 -->
+<div class="publications-section">
+  {% assign number_printed = 0 %}
+  {% for publi in site.data.publist %}
+  {% assign even_odd = number_printed | modulo: 2 %}
+  {% if publi.highlight == 1 %}
+  
+  {% if even_odd == 0 %}
+  <div class="row">
+  {% endif %}
+  
+  <div class="col-sm-12">
+    <div class="publication-card">
+      <div class="publication-image">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" alt="{{ publi.title }}" />
+      </div>
+      <div class="publication-content">
+        <h3 class="publication-title">
+          <a href="{{ publi.link.url }}" target="_blank">{{ publi.title }}</a>
+        </h3>
+        <p class="publication-venue">{{ publi.link.display }}</p>
+        <div class="publication-links">
+          {% if publi.pdf %}
+          <a href="{{ publi.pdf }}" class="publication-link pdf-link" target="_blank">
+            <i class="fas fa-file-pdf"></i> PDF
+          </a>
+          {% endif %}
+          {% if publi.code %}
+          <a href="{{ publi.code }}" class="publication-link code-link" target="_blank">
+            <i class="fas fa-code"></i> Code
+          </a>
+          {% endif %}
+          {% if publi.cn %}
+          <a href="{{ publi.cn }}" class="publication-link cn-link" target="_blank">
+            <i class="fas fa-language"></i> 中文解读
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {% assign number_printed = number_printed | plus: 1 %}
+  
+  {% if even_odd == 1 %}
+  </div>
+  {% endif %}
+  
+  {% endif %}
+  {% endfor %}
+  
+  {% assign even_odd = number_printed | modulo: 2 %}
+  {% if even_odd == 1 %}
+  </div>
+  {% endif %}
 </div>
-{% endif %}
-
-{% endif %}
-{% endfor %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-<p> &nbsp; </p>
 
 
 
