@@ -194,13 +194,13 @@ layout: default
 
       <!-- 硕士研究生 -->
       
-      <!-- 25级研究生 -->
+      <!-- 23级研究生 -->
       <div class="team-section">
         <div class="section-header">
           <div class="section-icon">🌟</div>
           <div>
-            <h2 class="section-title">25级研究生</h2>
-            <p class="section-description">年轻有为，充满创新活力</p>
+            <h2 class="section-title">23级研究生</h2>
+            <p class="section-description">经验丰富，成果丰硕</p>
           </div>
         </div>
         
@@ -208,7 +208,7 @@ layout: default
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
           {% assign even_odd = number_printed | modulo: 2 %}
-          {% if member.group == 5 %}
+          {% if member.group == 1 %}
           
           {% if even_odd == 0 %}
           <div class="row">
@@ -308,13 +308,13 @@ layout: default
         </div>
       </div>
 
-      <!-- 23级研究生 -->
+      <!-- 25级研究生 -->
       <div class="team-section">
         <div class="section-header">
           <div class="section-icon">🌟</div>
           <div>
-            <h2 class="section-title">23级研究生</h2>
-            <p class="section-description">经验丰富，成果丰硕</p>
+            <h2 class="section-title">25级研究生</h2>
+            <p class="section-description">年轻有为，充满创新活力</p>
           </div>
         </div>
         
@@ -322,7 +322,7 @@ layout: default
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
           {% assign even_odd = number_printed | modulo: 2 %}
-          {% if member.group == 1 %}
+          {% if member.group == 5 %}
           
           {% if even_odd == 0 %}
           <div class="row">

@@ -1684,11 +1684,14 @@ color:black;
   gap: 20px;
   position: relative;
   z-index: 1;
+  text-align: center;
+  flex-direction: column;
 }
 
 .section-icon {
   font-size: 3rem;
   animation: bounce 2s ease-in-out infinite;
+  margin-bottom: 15px;
 }
 
 .section-title {
@@ -1697,6 +1700,8 @@ color:black;
   font-weight: 700;
   margin: 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
 }
 
 .section-description {
@@ -1705,6 +1710,12 @@ color:black;
   font-weight: 400;
   margin: 0;
   opacity: 0.8;
+  text-align: center;
+}
+
+.section-content {
+  text-align: center;
+  width: 100%;
 }
 
 .member-card {
@@ -3319,9 +3330,10 @@ color:black;
 /* 联系页面样式 */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 40px;
+  align-items: start;
 }
 
 .contact-card {
@@ -3333,6 +3345,10 @@ color:black;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact-card::before {
@@ -3360,6 +3376,7 @@ color:black;
   font-size: 4rem;
   margin-bottom: 20px;
   display: block;
+  flex-shrink: 0;
 }
 
 .contact-card h3 {
@@ -3429,6 +3446,7 @@ color:black;
   
   .contact-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
   
   .join-content {
