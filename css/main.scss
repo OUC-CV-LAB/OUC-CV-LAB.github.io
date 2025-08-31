@@ -3627,3 +3627,27 @@ color:black;
   }
 }
 
+/* 发表文章页面网格布局 */
+.publications-section {
+  margin-bottom: 60px;
+}
+
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .publications-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .publication-card {
+    margin-bottom: 20px;
+  }
+}
+

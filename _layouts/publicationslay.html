@@ -34,9 +34,12 @@ layout: default
           {% for pub in site.data.publist %}
           {% if pub.highlight == 1 %}
           <div class="publication-card">
+            <!-- 论文图片在上方 -->
             <div class="publication-image">
               <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ pub.image }}" alt="{{ pub.title }}" />
             </div>
+            
+            <!-- 论文文字描述在图片下方 -->
             <div class="publication-content">
               <h3 class="publication-title">
                 {% if pub.link.url %}
@@ -46,12 +49,20 @@ layout: default
                 {% endif %}
               </h3>
               <p class="publication-authors">{{ pub.link.display }}</p>
-              {% if pub.pdf %}
-              <a href="{{ pub.pdf }}" class="publication-link" target="_blank">PDF</a>
-              {% endif %}
-              {% if pub.code %}
-              <a href="{{ pub.code }}" class="publication-link" target="_blank">Code</a>
-              {% endif %}
+              
+              <!-- 操作按钮 -->
+              <div class="publication-links">
+                {% if pub.pdf %}
+                <a href="{{ pub.pdf }}" class="publication-link pdf-link" target="_blank">
+                  <i class="fas fa-file-pdf"></i> PDF
+                </a>
+                {% endif %}
+                {% if pub.code %}
+                <a href="{{ pub.code }}" class="publication-link code-link" target="_blank">
+                  <i class="fas fa-code"></i> Code
+                </a>
+                {% endif %}
+              </div>
             </div>
           </div>
           {% endif %}
