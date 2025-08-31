@@ -1,12 +1,14 @@
 - name: 董军宇
   photo: dongjunyu.jpg
   info: 教授
+  info2: 研究方向：计算机视觉、人工智能、深度学习
   url: http://it.ouc.edu.cn/djy/list.htm
   group: 0
 
 - name: 蔡青
   photo: caiqing.jpg
   info: 副教授
+  info2: 研究方向：计算机视觉、机器学习、医学图像分析
   url: http://it.ouc.edu.cn/cq/list.htm
   group: 0
 
@@ -73,7 +75,7 @@
 - name: 曹政
   photo: caozheng.jpg
   info: 计算机技术专业
-  info2: 医学图像三维重建
+  info2: 研究方向：医学图像三维重建
   group: 2
 
 - name: 舒恩慧
@@ -125,20 +127,28 @@
 
 - name: 郭少翔
   photo: guoshaoxiang.jpg
+  info: 计算机技术专业
+  info2: 研究方向：计算机视觉与深度学习
   pub: ACM MM+1
   group: 3
 
 - name: 张天戈
   photo: bio-photo.jpg
+  info: 计算机技术专业
+  info2: 研究方向：人工智能与机器学习
   pub: IJCAI+1
   group: 3
 
 - name: 张成
   photo: zhangcheng.jpg
+  info: 计算机技术专业
+  info2: 研究方向：计算机视觉与图像处理
   group: 3
 
 - name: 张帆
   photo: zhangfan.jpg
+  info: 合作学者
+  info2: 研究方向：计算机视觉与人工智能
   group: 4
 
 - name: 胡腾峰
