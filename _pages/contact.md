@@ -1,6 +1,6 @@
 ---
 title: "计算机视觉前沿交叉实验室 - Contact"
-layout: textlay
+layout: modern
 excerpt: "Contact."
 sitemap: false
 permalink: /contact/
