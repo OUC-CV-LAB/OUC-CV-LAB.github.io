@@ -3328,12 +3328,22 @@ color:black;
 }
 
 /* 联系页面样式 */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 40px;
   align-items: start;
+  justify-content: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-card {
@@ -3444,9 +3454,17 @@ color:black;
     align-self: center;
   }
   
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   .join-content {
