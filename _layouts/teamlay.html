@@ -193,11 +193,13 @@ layout: default
       </div>
 
       <!-- 硕士研究生 -->
+      
+      <!-- 25级研究生 -->
       <div class="team-section">
         <div class="section-header">
           <div class="section-icon">🌟</div>
           <div>
-            <h2 class="section-title">硕士研究生</h2>
+            <h2 class="section-title">25级研究生</h2>
             <p class="section-description">年轻有为，充满创新活力</p>
           </div>
         </div>
@@ -206,7 +208,121 @@ layout: default
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
           {% assign even_odd = number_printed | modulo: 2 %}
-          {% if member.group == 1 or member.group == 2 or member.group == 5 %}
+          {% if member.group == 5 %}
+          
+          {% if even_odd == 0 %}
+          <div class="row">
+          {% endif %}
+          
+          <div class="col-sm-6">
+            <div class="member-card">
+              <div class="member-photo">
+                <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" alt="{{ member.name }}" />
+              </div>
+              <div class="member-info">
+                <h4 class="member-name">
+                  {% if member.url %}
+                  <a href="{{ member.url }}" target="_blank">{{ member.name }}</a>
+                  {% else %}
+                  {{ member.name }}
+                  {% endif %}
+                </h4>
+                <p class="member-title">{{ member.info }}</p>
+                {% if member.info2 %}
+                <p class="member-research">{{ member.info2 }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          
+          {% assign number_printed = number_printed | plus: 1 %}
+          
+          {% if even_odd == 1 %}
+          </div>
+          {% endif %}
+          
+          {% endif %}
+          {% endfor %}
+          
+          {% assign even_odd = number_printed | modulo: 2 %}
+          {% if even_odd == 1 %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- 24级研究生 -->
+      <div class="team-section">
+        <div class="section-header">
+          <div class="section-icon">🌟</div>
+          <div>
+            <h2 class="section-title">24级研究生</h2>
+            <p class="section-description">潜心研究，追求学术卓越</p>
+          </div>
+        </div>
+        
+        <div class="team-grid">
+          {% assign number_printed = 0 %}
+          {% for member in site.data.team_members %}
+          {% assign even_odd = number_printed | modulo: 2 %}
+          {% if member.group == 2 %}
+          
+          {% if even_odd == 0 %}
+          <div class="row">
+          {% endif %}
+          
+          <div class="col-sm-6">
+            <div class="member-card">
+              <div class="member-photo">
+                <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" alt="{{ member.name }}" />
+              </div>
+              <div class="member-info">
+                <h4 class="member-name">
+                  {% if member.url %}
+                  <a href="{{ member.url }}" target="_blank">{{ member.name }}</a>
+                  {% else %}
+                  {{ member.name }}
+                  {% endif %}
+                </h4>
+                <p class="member-title">{{ member.info }}</p>
+                {% if member.info2 %}
+                <p class="member-research">{{ member.info2 }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          
+          {% assign number_printed = number_printed | plus: 1 %}
+          
+          {% if even_odd == 1 %}
+          </div>
+          {% endif %}
+          
+          {% endif %}
+          {% endfor %}
+          
+          {% assign even_odd = number_printed | modulo: 2 %}
+          {% if even_odd == 1 %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- 23级研究生 -->
+      <div class="team-section">
+        <div class="section-header">
+          <div class="section-icon">🌟</div>
+          <div>
+            <h2 class="section-title">23级研究生</h2>
+            <p class="section-description">经验丰富，成果丰硕</p>
+          </div>
+        </div>
+        
+        <div class="team-grid">
+          {% assign number_printed = 0 %}
+          {% for member in site.data.team_members %}
+          {% assign even_odd = number_printed | modulo: 2 %}
+          {% if member.group == 1 %}
           
           {% if even_odd == 0 %}
           <div class="row">
