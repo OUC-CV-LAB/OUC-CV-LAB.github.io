@@ -426,13 +426,16 @@ color:black;
 
 /* 确保左右两列高度一致 */
 .hero-section .row {
-  align-items: stretch; /* 改回stretch，让列拉伸到相同高度 */
+  align-items: stretch; /* 让列拉伸到相同高度 */
+  min-height: 500px; /* 设置最小高度确保有足够空间 */
 }
 
 .hero-section .col-sm-7,
 .hero-section .col-sm-5 {
   display: flex;
   flex-direction: column;
+  align-items: center; /* 列内元素垂直居中 */
+  justify-content: center; /* 列内元素水平居中 */
 }
 
 /* 图片容器和介绍容器的对齐优化 */
@@ -445,27 +448,8 @@ color:black;
   justify-content: center; /* 内容垂直居中 */
   align-items: center; /* 内容水平居中 */
   flex: 1; /* 让容器占满整个列的高度 */
-}
-
-/* 确保两个容器在视觉上完全对齐 */
-.hero-section .col-sm-7 .image-container,
-.hero-section .col-sm-5 .intro-container {
   height: 100%; /* 占满整个列的高度 */
   align-self: stretch; /* 拉伸到列的高度 */
-}
-
-/* 强制垂直居中对齐 */
-.hero-section .row {
-  display: flex;
-  align-items: center; /* 行内元素垂直居中 */
-  min-height: 500px; /* 设置最小高度确保有足够空间 */
-}
-
-.hero-section .col-sm-7,
-.hero-section .col-sm-5 {
-  display: flex;
-  align-items: center; /* 列内元素垂直居中 */
-  justify-content: center; /* 列内元素水平居中 */
 }
 
 /* 响应式对齐调整 */
@@ -484,6 +468,26 @@ color:black;
   .hero-section .col-sm-7,
   .hero-section .col-sm-5 {
     margin-bottom: 20px;
+  }
+  
+  /* 移动端dogs.gif和联系方式调整 */
+  .dogs-gif {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .intro-container .contact-section {
+    padding: 15px;
+    gap: 10px;
+  }
+  
+  .contact-info {
+    font-size: 1.2rem;
+  }
+  
+  .contact-info strong,
+  .contact-info a {
+    font-size: 1.2rem;
   }
 }
 
@@ -541,26 +545,56 @@ color:black;
   transform: none !important; /* 强制移除任何变换 */
 }
 
-/* 联系方式特殊样式 */
-.intro-container p:last-child {
-  writing-mode: horizontal-tb; /* 联系方式保持水平方向 */
-  text-align: left;
-  font-size: 1.4rem; /* 与段落字体保持一致 */
-  font-weight: 600;
+/* 联系方式区域样式 */
+.intro-container .contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
   margin-top: 1rem;
-  padding: 15px;
+  padding: 20px;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  width: 100%;
 }
 
-.intro-container p:last-child strong {
+/* Dogs GIF 样式 */
+.dogs-gif {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.dogs-gif:hover {
+  transform: scale(1.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* 联系方式文字样式 */
+.contact-info {
+  writing-mode: horizontal-tb; /* 联系方式保持水平方向 */
+  text-align: center;
+  font-size: 1.4rem; /* 与段落字体保持一致 */
+  font-weight: 600;
+  margin: 0;
+}
+
+.contact-info strong {
   font-size: 1.4rem; /* 与段落字体保持一致 */
   color: #ffffcc;
   margin-right: 10px;
 }
 
-.intro-container p:last-child a {
+.contact-info a {
   font-size: 1.4rem; /* 与段落字体保持一致 */
   color: #ffffcc;
   font-weight: 600;
@@ -569,9 +603,10 @@ color:black;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-.intro-container p:last-child a:hover {
+.contact-info a:hover {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
