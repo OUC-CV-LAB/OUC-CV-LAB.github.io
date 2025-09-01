@@ -1,6 +1,6 @@
-<div style="position: relative; text-align: center; margin: auto;">
-    <div style="text-align: center; margin: auto;">
-      <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style="height: 400px; width: 100%; object-fit: cover; border-radius: 10px;">
+<div style="position: relative; text-align: center; margin: auto; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+    <div style="text-align: center; margin: auto; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+      <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style="height: 100%; max-height: 450px; width: 100%; object-fit: contain; border-radius: 10px; transition: transform 0.3s ease;">
        <!-- 图片标题 -->
       <h3 id="imageTitle" style="margin-top: 10px; font-size: 16px; font-weight: bold; color: black;">
         实验室聚餐合影
@@ -42,12 +42,19 @@
     </script>
     
     <style>
+      /* 图片悬停放大效果 */
+      #imageDisplay:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+      
       /* 响应式设计优化 */
       @media (max-width: 768px) {
         #imageDisplay {
-          height: 250px !important;
+          height: 100% !important;
+          max-height: 300px !important;
           width: 100% !important;
-          object-fit: cover;
+          object-fit: contain;
           border-radius: 8px;
         }
         
@@ -66,7 +73,8 @@
       
       @media (max-width: 480px) {
         #imageDisplay {
-          height: 200px !important;
+          height: 100% !important;
+          max-height: 250px !important;
           border-radius: 6px;
         }
         

@@ -390,9 +390,11 @@ color:black;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  min-height: 450px;
 }
 
 .image-container:hover {
@@ -409,6 +411,7 @@ color:black;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.2); /* 改为半透明边框 */
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -416,6 +419,7 @@ color:black;
   text-orientation: mixed !important; /* 强制混合方向 */
   transform: none !important; /* 强制移除任何变换 */
   transform-origin: initial !important; /* 重置变换原点 */
+  min-height: 450px;
 }
 
 .intro-container:hover {
@@ -472,8 +476,8 @@ color:black;
   
   /* 移动端dogs.gif和联系方式调整 */
   .dogs-gif {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 120px;
   }
   
   .intro-container .contact-section {
@@ -565,14 +569,16 @@ color:black;
 
 /* Dogs GIF 样式 */
 .dogs-gif {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  object-fit: contain;
   border: 3px solid rgba(0, 64, 152, 0.3);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
 }
 
 .dogs-gif:hover {
