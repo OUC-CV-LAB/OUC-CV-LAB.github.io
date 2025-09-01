@@ -23,10 +23,10 @@ permalink: /activity/
       align-items: center;
       margin-bottom: 30px;
       width: 100%;
-      max-width: 1200px;
+      max-width: 1400px;
       margin-left: auto;
       margin-right: auto;
-      padding: 30px;
+      padding: 40px;
       border: 1px solid #e0e0e0;
       border-radius: 10px;
       background-color: #fafafa;
@@ -77,7 +77,7 @@ permalink: /activity/
       text-align: center;
       margin: 15px auto;
       width: 100%;
-      max-width: 800px;
+      max-width: 1000px;
     }
     .carousel-container img {
       width: 100%;
@@ -212,6 +212,20 @@ permalink: /activity/
 </div>
 
 <div class="activity-container">
+    <div class="activity-title">第七届中国模式识别与计算机视觉大会（PRCV2024）</div>
+    <div class="activity-details">
+      <strong class="time-red">时间：</strong><span class="time-red">2024年10月18日</span><br>
+      <strong>地点：</strong>新疆乌鲁木齐<br>
+      <strong>主办方：</strong>中国自动化学会（CAA）、中国图象图形学学会（CSIG）、中国人工智能学会（CAAI）和中国计算机学会（CCF）联合主办
+    </div>
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-10-18.jpg" alt="活动合影">
+    <div class="activity-description">
+        本次大会聚焦于模式识别与计算机视觉领域所面临的新挑战、新问题和新发展方向，旨在展示我国在该领域的最新研究进展。大会为科研院所和科技企业的研究、开发及应用相关人员搭建了一个重要的交流平台。
+        中国海洋大学蔡青教授参与2024年PRCV并入选CCF-CV专委会。
+    </div>
+</div>
+
+<div class="activity-container">
     <div class="activity-title">人工智能前沿论坛・第二期</div>
     <div class="activity-details">
       <strong class="time-red">时间：</strong><span class="time-red">2024年09月27日</span><br>
@@ -268,19 +282,7 @@ permalink: /activity/
     </div>
 </div>
 
-<div class="activity-container">
-    <div class="activity-title">第七届中国模式识别与计算机视觉大会（PRCV2024）</div>
-    <div class="activity-details">
-      <strong class="time-red">时间：</strong><span class="time-red">2023年10月18日</span><br>
-      <strong>地点：</strong>新疆乌鲁木齐<br>
-      <strong>主办方：</strong>中国自动化学会（CAA）、中国图象图形学学会（CSIG）、中国人工智能学会（CAAI）和中国计算机学会（CCF）联合主办
-    </div>
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-10-18.jpg" alt="活动合影">
-    <div class="activity-description">
-        本次大会聚焦于模式识别与计算机视觉领域所面临的新挑战、新问题和新发展方向，旨在展示我国在该领域的最新研究进展。大会为科研院所和科技企业的研究、开发及应用相关人员搭建了一个重要的交流平台。
-        中国海洋大学蔡青教授参与2024年PRCV并入选CCF-CV专委会。
-    </div>
-</div>
+
 
 </body>
 </html>
