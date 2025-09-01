@@ -1808,6 +1808,7 @@ color:black;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 25%; /* 调整照片位置，让脸部更清楚，稍微向上一点 */
   border: 4px solid #f0f0f0;
   transition: all 0.3s ease;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -1817,6 +1818,7 @@ color:black;
   border-color: #4a90e2;
   transform: scale(1.05);
   box-shadow: 0 12px 35px rgba(74, 144, 226, 0.2);
+  object-position: center 25%; /* 悬停时保持相同的位置 */
 }
 
 .member-info {
@@ -2285,6 +2287,7 @@ color:black;
   .member-photo img {
     width: 100px;
     height: 100px;
+    object-position: center 25%; /* 手机端也保持相同的位置 */
   }
   
   .member-name {
@@ -4406,6 +4409,7 @@ color:black;
   .member-photo img {
     width: 80px;
     height: 80px;
+    object-position: center 25%; /* 超小屏幕也保持相同的位置 */
   }
   
   .member-name {
