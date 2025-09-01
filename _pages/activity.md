@@ -31,6 +31,12 @@ permalink: /activity/
       border-radius: 10px;
       background-color: #fafafa;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .activity-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
     .activity-title {
       font-size: 1.5em;
@@ -100,6 +106,7 @@ permalink: /activity/
     }
     .carousel-btn:hover {
       background-color: rgba(0, 0, 0, 0.7);
+      transform: translateY(-50%) scale(1.05);
     }
   </style>
 </head>
