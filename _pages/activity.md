@@ -23,10 +23,10 @@ permalink: /activity/
       align-items: center;
       margin-bottom: 30px;
       width: 100%;
-      max-width: 800px;
+      max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
-      padding: 20px;
+      padding: 30px;
       border: 1px solid #e0e0e0;
       border-radius: 10px;
       background-color: #fafafa;
@@ -71,7 +71,7 @@ permalink: /activity/
       text-align: center;
       margin: 15px auto;
       width: 100%;
-      max-width: 600px;
+      max-width: 800px;
     }
     .carousel-container img {
       width: 100%;
