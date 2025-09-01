@@ -1044,6 +1044,35 @@ color:black;
   .intro-container strong {
     font-size: 1.25rem; /* 20px */
   }
+  
+  /* 主页手机端布局优化 */
+  .hero-section .row {
+    flex-direction: column;
+  }
+  
+  .hero-section .col-sm-7,
+  .hero-section .col-sm-5 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .content-section .row {
+    flex-direction: column;
+  }
+  
+  .content-section .col-sm-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .features-section .row {
+    flex-direction: column;
+  }
+  
+  .features-section .col-sm-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 /* ===== 页脚容器样式优化 ===== */
@@ -3849,6 +3878,696 @@ color:black;
   .contact-email {
     font-size: 1.1rem;
     padding: 4px 8px;
+  }
+}
+
+/* ===== 修复研究方向小icon显示问题 ===== */
+.research-item .research-content h3::before {
+  content: '🔬';
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+/* ===== 调整非主页的hero-section大小 ===== */
+/* 非主页的hero-section样式 - 更小更紧凑 */
+.team-hero,
+.research-hero,
+.publications-hero,
+.activity-hero,
+.contact-hero {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #4a90e2 100%);
+  padding: 40px 0; /* 从80px减少到40px */
+  margin-bottom: 40px; /* 从60px减少到40px */
+  border-radius: 20px; /* 从30px减少到20px */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(30, 60, 114, 0.3); /* 减少阴影 */
+}
+
+.team-hero-icon,
+.research-hero-icon,
+.publications-hero-icon,
+.activity-hero-icon,
+.contact-hero-icon {
+  font-size: 3rem; /* 从4rem减少到3rem */
+  margin-bottom: 15px; /* 从20px减少到15px */
+  display: inline-block;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.team-title,
+.research-title,
+.publications-title,
+.activity-hero-title,
+.contact-title {
+  color: #ffffff;
+  font-size: 2.8rem; /* 从3.5rem减少到2.8rem */
+  font-weight: 700;
+  margin-bottom: 0.8rem; /* 从1rem减少到0.8rem */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.team-subtitle,
+.research-subtitle,
+.publications-subtitle,
+.activity-hero-subtitle,
+.contact-subtitle {
+  color: #ffffcc;
+  font-size: 1.4rem; /* 从1.8rem减少到1.4rem */
+  font-weight: 400;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== 优化手机浏览响应式设计 ===== */
+/* 主页轮播图片手机适配 */
+@media (max-width: 768px) {
+  /* 主页轮播图片手机优化 */
+  .image-container {
+    padding: 15px;
+    min-height: 300px; /* 减少最小高度 */
+  }
+  
+  .image-container img {
+    height: 250px !important; /* 固定高度，避免被裁减 */
+    width: 100% !important;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* 主页介绍文字手机优化 */
+  .intro-container {
+    padding: 20px 15px;
+    min-height: 300px;
+  }
+  
+  .intro-container h3 {
+    font-size: 1.8rem; /* 减少标题字体 */
+    margin-bottom: 0.8rem;
+  }
+  
+  .intro-container p,
+  .intro-container a,
+  .intro-container strong {
+    font-size: 1rem; /* 减少正文字体 */
+    line-height: 1.5;
+  }
+  
+  /* 非主页hero-section手机优化 */
+  .team-hero,
+  .research-hero,
+  .publications-hero,
+  .activity-hero,
+  .contact-hero {
+    padding: 30px 0; /* 进一步减少内边距 */
+    margin-bottom: 30px;
+    border-radius: 15px;
+  }
+  
+  .team-hero-icon,
+  .research-hero-icon,
+  .publications-hero-icon,
+  .activity-hero-icon,
+  .contact-hero-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .team-title,
+  .research-title,
+  .publications-title,
+  .activity-hero-title,
+  .contact-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .team-subtitle,
+  .research-subtitle,
+  .publications-subtitle,
+  .activity-hero-subtitle,
+  .contact-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  /* 内容区域手机优化 */
+  .content-section {
+    padding: 30px 0;
+    margin-bottom: 40px;
+  }
+  
+  .card-header {
+    padding: 20px 25px;
+    min-height: 60px;
+  }
+  
+  .card-header h3 {
+    font-size: 1.6rem;
+  }
+  
+  .card-body {
+    padding: 25px 20px;
+  }
+  
+  /* 特色区域手机优化 */
+  .features-section {
+    padding: 40px 0;
+    margin-bottom: 40px;
+  }
+  
+  .feature-item {
+    padding: 30px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-item h4 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .feature-item p {
+    font-size: 1.2rem;
+  }
+  
+  /* 研究方向页面手机优化 */
+  .research-section {
+    padding: 30px 0;
+    margin-bottom: 40px;
+  }
+  
+  .research-header {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .research-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+  }
+  
+  .research-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .research-content {
+    padding: 0 15px;
+  }
+  
+  .research-content img {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: none;
+  }
+  
+  .research-content div[style*="text-align: justify"] {
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+  
+  /* 团队成员页面手机优化 */
+  .team-section {
+    padding: 30px 0;
+    margin-bottom: 40px;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .section-icon {
+    font-size: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-description {
+    font-size: 1.2rem;
+  }
+  
+  .member-card {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .member-photo img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .member-name {
+    font-size: 1.6rem;
+  }
+  
+  .member-title {
+    font-size: 1.1rem;
+  }
+  
+  /* 发表文章页面手机优化 */
+  .publications-section {
+    padding: 30px 0;
+    margin-bottom: 40px;
+  }
+  
+  .publication-card {
+    flex-direction: column;
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .publication-image img {
+    width: 100%;
+    max-width: none;
+    height: 200px;
+  }
+  
+  .publication-title {
+    font-size: 1.4rem;
+  }
+  
+  .publication-authors {
+    font-size: 1rem;
+  }
+  
+  .publication-links {
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .publication-link {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+  
+  /* 联系我们页面手机优化 */
+  .contact-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px 0;
+  }
+  
+  .contact-card {
+    padding: 25px 20px;
+  }
+  
+  .contact-icon {
+    font-size: 3rem;
+  }
+  
+  .contact-name {
+    font-size: 2.2rem;
+  }
+  
+  .contact-label {
+    font-size: 1.1rem;
+  }
+  
+  .contact-value {
+    font-size: 1.3rem;
+  }
+  
+  /* 学术活动页面手机优化 */
+  .activity-content {
+    padding: 30px 0;
+    margin-bottom: 40px;
+  }
+  
+  .activity-container {
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .activity-title {
+    font-size: 1.8rem;
+  }
+  
+  .activity-description {
+    font-size: 1.3rem;
+  }
+  
+  .activity-details {
+    font-size: 1.1rem;
+  }
+  
+  /* 加入我们区域手机优化 */
+  .join-section {
+    padding: 30px 0;
+    margin-bottom: 40px;
+  }
+  
+  .join-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .join-header p {
+    font-size: 1.3rem;
+  }
+  
+  .join-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .join-card {
+    padding: 25px 20px;
+  }
+  
+  .join-icon {
+    font-size: 3rem;
+  }
+  
+  .join-card h3 {
+    font-size: 1.8rem;
+  }
+  
+  .join-card p {
+    font-size: 1.2rem;
+  }
+  
+  .join-card li {
+    font-size: 1.1rem;
+  }
+}
+
+/* 超小屏幕优化 */
+@media (max-width: 480px) {
+  /* 主页轮播图片超小屏幕优化 */
+  .image-container {
+    padding: 10px;
+    min-height: 250px;
+  }
+  
+  .image-container img {
+    height: 200px !important;
+  }
+  
+  .intro-container {
+    padding: 15px 10px;
+    min-height: 250px;
+  }
+  
+  .intro-container h3 {
+    font-size: 1.6rem;
+  }
+  
+  .intro-container p,
+  .intro-container a,
+  .intro-container strong {
+    font-size: 0.9rem;
+  }
+  
+  /* 非主页hero-section超小屏幕优化 */
+  .team-hero,
+  .research-hero,
+  .publications-hero,
+  .activity-hero,
+  .contact-hero {
+    padding: 25px 0;
+    margin-bottom: 25px;
+  }
+  
+  .team-hero-icon,
+  .research-hero-icon,
+  .publications-hero-icon,
+  .activity-hero-icon,
+  .contact-hero-icon {
+    font-size: 2rem;
+  }
+  
+  .team-title,
+  .research-title,
+  .publications-title,
+  .activity-hero-title,
+  .contact-title {
+    font-size: 1.8rem;
+  }
+  
+  .team-subtitle,
+  .research-subtitle,
+  .publications-subtitle,
+  .activity-hero-subtitle,
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+  
+  /* 内容区域超小屏幕优化 */
+  .content-section {
+    padding: 20px 0;
+    margin-bottom: 30px;
+  }
+  
+  .card-header {
+    padding: 15px 20px;
+    min-height: 50px;
+  }
+  
+  .card-header h3 {
+    font-size: 1.4rem;
+  }
+  
+  .card-body {
+    padding: 20px 15px;
+  }
+  
+  /* 特色区域超小屏幕优化 */
+  .features-section {
+    padding: 30px 0;
+    margin-bottom: 30px;
+  }
+  
+  .feature-item {
+    padding: 25px 15px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-item h4 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
+  
+  .feature-item p {
+    font-size: 1.1rem;
+  }
+  
+  /* 研究方向页面超小屏幕优化 */
+  .research-section {
+    padding: 25px 0;
+    margin-bottom: 30px;
+  }
+  
+  .research-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .research-content div[style*="text-align: justify"] {
+    font-size: 1.1rem;
+  }
+  
+  /* 团队成员页面超小屏幕优化 */
+  .team-section {
+    padding: 25px 0;
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-description {
+    font-size: 1.1rem;
+  }
+  
+  .member-card {
+    padding: 15px;
+    margin-bottom: 12px;
+  }
+  
+  .member-photo img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .member-name {
+    font-size: 1.4rem;
+  }
+  
+  .member-title {
+    font-size: 1rem;
+  }
+  
+  /* 发表文章页面超小屏幕优化 */
+  .publications-section {
+    padding: 25px 0;
+    margin-bottom: 30px;
+  }
+  
+  .publication-card {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+  }
+  
+  .publication-image img {
+    height: 150px;
+  }
+  
+  .publication-title {
+    font-size: 1.2rem;
+  }
+  
+  .publication-authors {
+    font-size: 0.9rem;
+  }
+  
+  .publication-links {
+    gap: 8px;
+  }
+  
+  .publication-link {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  
+  /* 联系我们页面超小屏幕优化 */
+  .contact-section {
+    gap: 15px;
+    padding: 25px 0;
+  }
+  
+  .contact-card {
+    padding: 20px 15px;
+  }
+  
+  .contact-icon {
+    font-size: 2.5rem;
+  }
+  
+  .contact-name {
+    font-size: 1.8rem;
+  }
+  
+  .contact-label {
+    font-size: 1rem;
+  }
+  
+  .contact-value {
+    font-size: 1.1rem;
+  }
+  
+  /* 学术活动页面超小屏幕优化 */
+  .activity-content {
+    padding: 25px 0;
+    margin-bottom: 30px;
+  }
+  
+  .activity-container {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+  }
+  
+  .activity-title {
+    font-size: 1.6rem;
+  }
+  
+  .activity-description {
+    font-size: 1.1rem;
+  }
+  
+  .activity-details {
+    font-size: 1rem;
+  }
+  
+  /* 加入我们区域超小屏幕优化 */
+  .join-section {
+    padding: 25px 0;
+    margin-bottom: 30px;
+  }
+  
+  .join-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .join-header p {
+    font-size: 1.1rem;
+  }
+  
+  .join-card {
+    padding: 20px 15px;
+  }
+  
+  .join-icon {
+    font-size: 2.5rem;
+  }
+  
+  .join-card h3 {
+    font-size: 1.6rem;
+  }
+  
+  .join-card p {
+    font-size: 1.1rem;
+  }
+  
+  .join-card li {
+    font-size: 1rem;
+  }
+}
+
+/* ===== 修复研究方向小icon显示问题 - 增强版本 ===== */
+.research-item .research-content h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.research-item .research-content h3::before {
+  content: '🔬';
+  font-size: 1.5em;
+  flex-shrink: 0;
+}
+
+/* 为不同研究方向添加不同图标 */
+.research-item:nth-child(1) .research-content h3::before {
+  content: '🏥'; /* 医学图像处理 */
+}
+
+.research-item:nth-child(2) .research-content h3::before {
+  content: '🌊'; /* 水下视觉 */
+}
+
+.research-item:nth-child(3) .research-content h3::before {
+  content: '📐'; /* 三维重建 */
+}
+
+/* 确保图标在手机端也能正常显示 */
+@media (max-width: 768px) {
+  .research-item .research-content h3::before {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .research-item .research-content h3::before {
+    font-size: 1em;
   }
 }
 

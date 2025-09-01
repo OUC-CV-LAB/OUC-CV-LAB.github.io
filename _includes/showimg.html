@@ -1,23 +1,23 @@
 <div style="position: relative; text-align: center; margin: auto;">
     <div style="text-align: center; margin: auto;">
-      <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style=" height: 400px; object-fit: cover;">
+      <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/homepageimg/image1.jpg" alt="Image" style="height: 400px; width: 100%; object-fit: cover; border-radius: 10px;">
        <!-- 图片标题 -->
       <h3 id="imageTitle" style="margin-top: 10px; font-size: 16px; font-weight: bold; color: black;">
         实验室聚餐合影
       </h3>
       
       <!-- 左右箭头按钮 -->
-      <button onclick="changeImage(-1)" style="position: absolute; top: 50%; left: 0; background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
+      <button onclick="changeImage(-1)" style="position: absolute; top: 50%; left: 10px; background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-size: 16px;">
         &#10094;
       </button>
-      <button onclick="changeImage(1)" style="position: absolute; top: 50%; right: 0;  background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px;">
+      <button onclick="changeImage(1)" style="position: absolute; top: 50%; right: 10px; background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-size: 16px;">
         &#10095;
       </button>
     </div>
     </div>
     <script>
       let currentImage = 1;
-      const totalImages = 5; // 假设总共有3张图片
+      const totalImages = 5; // 假设总共有5张图片
     
       const titles = [
         "实验室聚餐合影",
@@ -34,4 +34,52 @@
         document.getElementById('imageDisplay').src = `{{ site.url }}{{ site.baseurl }}/images/homepageimg/image${currentImage}.jpg`;
         document.getElementById('imageTitle').innerText = titles[currentImage - 1];
       }
+      
+      // 添加自动轮播功能
+      setInterval(function() {
+        changeImage(1);
+      }, 5000); // 每5秒自动切换
     </script>
+    
+    <style>
+      /* 响应式设计优化 */
+      @media (max-width: 768px) {
+        #imageDisplay {
+          height: 250px !important;
+          width: 100% !important;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+        
+        #imageTitle {
+          font-size: 14px !important;
+          margin-top: 8px !important;
+        }
+        
+        button {
+          width: 35px !important;
+          height: 35px !important;
+          font-size: 14px !important;
+          padding: 8px !important;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        #imageDisplay {
+          height: 200px !important;
+          border-radius: 6px;
+        }
+        
+        #imageTitle {
+          font-size: 12px !important;
+          margin-top: 6px !important;
+        }
+        
+        button {
+          width: 30px !important;
+          height: 30px !important;
+          font-size: 12px !important;
+          padding: 6px !important;
+        }
+      }
+    </style>
