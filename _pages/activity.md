@@ -1,9 +1,13 @@
 ---
 title: "计算机视觉前沿交叉实验室 - Activity"
-layout: activitylay
-excerpt: "计算机视觉前沿交叉实验室: Activity"
+layout: activity_lay
+excerpt: "计算机视觉前沿交叉实验室 -- Activity."
 sitemap: false
-permalink: /activity/
+permalink: /activity.html
+---
+
+# <span style="color:red">举办学术活动</span>
+
 ---
 
 <html lang="zh">
@@ -21,52 +25,47 @@ permalink: /activity/
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 30px;
-      width: 100%;
-      max-width: 1400px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 40px;
-      border: 1px solid #e0e0e0;
+      margin-bottom: 40px;
+      padding: 20px;
       border-radius: 10px;
-      background-color: #fafafa;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-    }
-    
-    .activity-container:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      background-color: #fff;
     }
     .activity-title {
-      font-size: 1.5em;
+      font-size: 1.8em;
       font-weight: bold;
       color: #007bff;
       margin-bottom: 15px;
       text-align: center;
-      width: 100%;
     }
     .activity-photo {
-      max-width: 100%;
-      height: 300px;
-      object-fit: cover;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        float: right;
+        width: 50%; /* 增加图片宽度从40%到50% */
+        max-width: 600px; /* 增加最大宽度 */
+        margin: 0 0 20px 20px; /* 增加间距 */
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease;
+    }
+    .activity-photo:hover {
+        transform: scale(1.02);
     }
     .activity-description {
-      font-size: 1em;
+      font-size: 1.1em;
       text-align: center;
       width: 100%;
-      margin-bottom: 15px;
-      line-height: 1.6;
+      margin-bottom: 20px;
+      line-height: 1.8;
     }
     .activity-details {
-      font-size: 0.9em;
+      font-size: 1em;
       color: #555;
       text-align: center;
       width: 100%;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
     }
     .time-red {
       color: red;
@@ -75,38 +74,124 @@ permalink: /activity/
     .carousel-container {
       position: relative;
       text-align: center;
-      margin: 15px auto;
+      margin: 25px auto;
       width: 100%;
-      max-width: 1000px;
+      max-width: 1200px; /* 增加最大宽度 */
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
     }
     .carousel-container img {
       width: 100%;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      height: auto; /* 改为auto，让图片完整显示 */
+      max-height: 600px; /* 设置最大高度 */
+      object-fit: contain; /* 改为contain，完整显示图片 */
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     .carousel-btn {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.6);
       color: white;
       border: none;
-      padding: 10px 15px;
+      padding: 15px 20px;
       cursor: pointer;
-      font-size: 24px;
-      border-radius: 5px;
+      font-size: 28px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
     }
     .carousel-btn.left {
-      left: 10px;
+      left: 20px;
     }
     .carousel-btn.right {
-      right: 10px;
+      right: 20px;
     }
     .carousel-btn:hover {
-      background-color: rgba(0, 0, 0, 0.7);
-      transform: translateY(-50%) scale(1.05);
+      background-color: rgba(0, 0, 0, 0.8);
+      transform: translateY(-50%) scale(1.1);
+    }
+    
+    /* 手机端自适应优化 */
+    @media (max-width: 768px) {
+      body {
+        margin: 10px;
+      }
+      .activity-container {
+        margin-bottom: 30px;
+        padding: 15px;
+      }
+      .activity-title {
+        font-size: 1.4em;
+        margin-bottom: 12px;
+      }
+      .activity-photo {
+        width: 100%; /* 手机端图片占满宽度 */
+        float: none;
+        margin: 0 0 15px 0;
+        max-width: 100%;
+      }
+      .activity-description {
+        font-size: 1em;
+        line-height: 1.6;
+      }
+      .activity-details {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      .carousel-container {
+        margin: 20px auto;
+        max-width: 100%;
+      }
+      .carousel-container img {
+        max-height: 400px;
+      }
+      .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        padding: 10px;
+      }
+      .carousel-btn.left {
+        left: 10px;
+      }
+      .carousel-btn.right {
+        right: 10px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .activity-container {
+        padding: 10px;
+        margin-bottom: 25px;
+      }
+      .activity-title {
+        font-size: 1.2em;
+      }
+      .activity-photo {
+        border-radius: 8px;
+      }
+      .carousel-container img {
+        max-height: 300px;
+      }
+      .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        padding: 8px;
+      }
+      .carousel-btn.left {
+        left: 5px;
+      }
+      .carousel-btn.right {
+        right: 5px;
+      }
     }
   </style>
 </head>

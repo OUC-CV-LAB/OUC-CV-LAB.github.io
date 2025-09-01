@@ -34,9 +34,15 @@ permalink: /hold.html
       margin-bottom: 10px;
     }
     .activity-photo {
-      max-width: 800px;
+      max-width: 1000px; /* 增加最大宽度 */
       height: auto;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .activity-photo:hover {
+      transform: scale(1.02);
     }
     .activity-description {
       font-size: 1em;
@@ -49,6 +55,46 @@ permalink: /hold.html
       font-size: 0.9em;
       color: #555;
       text-align: center;
+    }
+    
+    /* 手机端自适应优化 */
+    @media (max-width: 768px) {
+      body {
+        margin: 10px;
+      }
+      .activity-container {
+        margin-bottom: 25px;
+        padding: 15px;
+      }
+      .activity-title {
+        font-size: 1.3em;
+        margin-bottom: 12px;
+      }
+      .activity-photo {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+      .activity-description {
+        font-size: 0.95em;
+        line-height: 1.6;
+      }
+      .activity-details {
+        font-size: 0.85em;
+        padding: 12px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .activity-container {
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      .activity-title {
+        font-size: 1.1em;
+      }
+      .activity-photo {
+        border-radius: 6px;
+      }
     }
   </style>
 </head>
