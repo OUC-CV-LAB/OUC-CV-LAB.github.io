@@ -6,7 +6,7 @@ sitemap: false
 permalink: /activity/
 ---
 
-# <span style="color:red">学术活动</span>
+
 
 ---
 
