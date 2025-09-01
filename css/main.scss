@@ -355,9 +355,9 @@ color:black;
 .hero-section {
   margin-bottom: 60px;
   padding: 40px 0;
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #4a90e2 100%); /* 海蓝色渐变背景 */
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* 浅灰色渐变背景 */
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(30, 60, 114, 0.3); /* 海蓝色阴影 */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* 浅灰色阴影 */
   border: none;
   position: relative;
   overflow: hidden;
@@ -495,10 +495,10 @@ color:black;
 .intro-container h3 {
   font-size: 3rem; /* 40px - 标题字体大小 */
   font-weight: 700;
-  color: #ffffff; /* 改为白色，在深色背景上更清晰 */
+  color: #1e3c72; /* 改为深蓝色，在浅色背景上更清晰 */
   margin-bottom: 1rem;
   text-align: center;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* 添加文字阴影 */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加文字阴影 */
   writing-mode: horizontal-tb !important; /* 强制水平书写模式 */
   transform: none !important; /* 强制移除任何变换 */
 }
@@ -507,9 +507,9 @@ color:black;
   font-size: 1.4rem; /* 24px - 段落字体大小 */
   line-height: 1.6;
   margin-bottom: 1rem;
-  color: #ffffff; /* 改为白色 */
+  color: #333333; /* 改为深灰色 */
   text-align: left; /* 改回左对齐，类似学术论文样式 */
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* 添加文字阴影 */
+  text-shadow: none; /* 移除文字阴影 */
   writing-mode: horizontal-tb !important; /* 强制水平书写模式 */
   text-orientation: mixed; /* 混合方向 */
   height: auto;
@@ -521,26 +521,26 @@ color:black;
 
 .intro-container a {
   font-size: 1.4rem; /* 24px - 链接字体大小 */
-  color: #ffffcc; /* 改为淡黄色，更醒目 */
+  color: #004098; /* 改为深蓝色，更醒目 */
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: none;
   writing-mode: horizontal-tb !important; /* 强制水平书写模式 */
   transform: none !important; /* 强制移除任何变换 */
 }
 
 .intro-container a:hover {
-  color: #ffffff;
+  color: #1e3c72;
   text-decoration: underline;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  text-shadow: none;
 }
 
 .intro-container strong {
   font-size: 1.4rem; /* 24px - 加粗文字字体大小 */
   font-weight: 700;
-  color: #ffffcc; /* 改为淡黄色 */
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: #004098; /* 改为深蓝色 */
+  text-shadow: none;
   writing-mode: horizontal-tb !important; /* 强制水平书写模式 */
   transform: none !important; /* 强制移除任何变换 */
 }
@@ -551,14 +551,16 @@ color:black;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   margin-top: 1rem;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
+  min-height: auto;
+  height: auto;
 }
 
 /* Dogs GIF 样式 */
@@ -567,16 +569,16 @@ color:black;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  border: 3px solid rgba(0, 64, 152, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   margin-bottom: 10px;
 }
 
 .dogs-gif:hover {
   transform: scale(1.1);
-  border-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 64, 152, 0.6);
+  box-shadow: 0 12px 35px rgba(0, 64, 152, 0.2);
 }
 
 /* 联系方式文字样式 */
@@ -590,27 +592,27 @@ color:black;
 
 .contact-info strong {
   font-size: 1.4rem; /* 与段落字体保持一致 */
-  color: #ffffcc;
+  color: #333333;
   margin-right: 10px;
 }
 
 .contact-info a {
   font-size: 1.4rem; /* 与段落字体保持一致 */
-  color: #ffffcc;
+  color: #004098;
   font-weight: 600;
   padding: 6px 12px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 64, 152, 0.1);
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 64, 152, 0.3);
   transition: all 0.3s ease;
   text-decoration: none;
 }
 
 .contact-info a:hover {
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 64, 152, 0.8);
   transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 64, 152, 0.3);
 }
 
 /* 内容区域样式 */
