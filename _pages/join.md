@@ -239,7 +239,7 @@ permalink: /join.html
 <div class="activity-container">
     <div class="activity-title">第七届中国模式识别与计算机视觉大会（PRCV2024）</div>
     <div class="activity-details">
-      <strong>时间：</strong>2023年10月18日<br>
+      <strong>时间：</strong>2024年10月18日<br>
       <strong>地点：</strong>新疆乌鲁木齐<br>
       <strong>主办方：</strong>中国自动化学会（CAA）、中国图象图形学学会（CSIG）、中国人工智能学会（CAAI）和中国计算机学会（CCF）联合主办
     </div>
