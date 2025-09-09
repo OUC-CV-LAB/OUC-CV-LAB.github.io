@@ -353,6 +353,76 @@ layout: default
           {% endif %}
         </div>
       </div>
+
+
+
+
+
+      <!-- 25届本科生 -->
+      <div class="team-section">
+        <div class="section-header">
+          <div class="section-icon">🌟</div>
+          <div>
+            <h2 class="section-title">25届本科生</h2>
+            <p class="section-description">心怀梦想，追求学术高峰</p>
+          </div>
+        </div>
+
+        <div class="team-grid">
+          {% assign number_printed = 0 %}
+          {% for member in site.data.team_members %}
+          {% assign even_odd = number_printed | modulo: 2 %}
+          {% if member.group == 6 %}
+
+          {% if even_odd == 0 %}
+          <div class="row">
+          {% endif %}
+
+          <div class="col-sm-6">
+            <div class="member-card">
+              <div class="member-photo">
+                <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/benke/{{ member.photo }}" alt="{{ member.name }}" />
+              </div>
+              <div class="member-info">
+                <h4 class="member-name">
+                  {% if member.url %}
+                  <a href="{{ member.url }}" target="_blank">{{ member.name }}</a>
+                  {% else %}
+                  {{ member.name }}
+                  {% endif %}
+                </h4>
+                <p class="member-title">{{ member.info }}</p>
+                {% if member.info2 %}
+                <p class="member-research">{{ member.info2 }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+
+          {% assign number_printed = number_printed | plus: 1 %}
+
+          {% if even_odd == 1 %}
+          </div>
+          {% endif %}
+
+          {% endif %}
+          {% endfor %}
+
+          {% assign even_odd = number_printed | modulo: 2 %}
+          {% if even_odd == 1 %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
     </div>
   </div>
 </div>
