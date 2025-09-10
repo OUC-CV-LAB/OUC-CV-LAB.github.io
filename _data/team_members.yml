@@ -12,8 +12,6 @@
   url: http://it.ouc.edu.cn/cq/list.htm
   group: 0
 
-  
-  
 - name: 童亨
   photo: th.jpg
   info: 计算机技术专业
@@ -30,7 +28,6 @@
   photo: huan.jpg
   info: 软件工程专业
   info2: 研究方向：细粒度图像分类
-
   group: 1
 
 - name: 仇世纪
@@ -82,7 +79,6 @@
   photo: shuenhui.jpg
   info: 计算机技术专业
   info2: 研究方向：图像融合
-
   group: 2
 
 - name: 王绍哲
@@ -95,28 +91,24 @@
   photo: yanguihao.jpg
   info: 计算机科学与技术专业
   info2: 研究方向：超声标准切面识别
-
   group: 2
 
 - name: 时东方
   photo: shidongfang.jpg
   info: 计算机科学与技术专业
   info2: 研究方向：多模态疾病辅助诊断
-
   group: 2
 
 - name: 魏兴悦
   photo: weixingyue.jpg
   info: 农业工程与信息技术专业
   info2: 研究方向：医学图像分类
-
   group: 2
 
 - name: 吉万文
   photo: jiwanwen.jpg
   info: 计算机技术专业
   info2: 研究方向：联邦医学图像分割
-
   group: 2
 
 - name: 陈继宗
@@ -206,7 +198,7 @@
   url: brookesheppard
   group: 8
   year: 2017-2021
-  
+
 - name: Aparna Kumar
   photo: aparnakumar.jpg
   info: Undergraduate Research Volunteer
@@ -230,7 +222,7 @@
   year: 2015-2019
   current: Assistant Professor of Genetics, University of Wisconsin-Madison
   extlink: https://werling.genetics.wisc.edu/
-  
+
 - name: Joon An
   photo: joonan.jpg
   info: Postdoctoral Scholar
@@ -270,7 +262,7 @@
   url: denizyuruk
   group: 8
   year: 2017-2018
-  
+
 - name: Louw Smith
   info: Data Operations Manager
   url: louwsmith
@@ -298,14 +290,14 @@
   url: florazhao
   group: 8
   year: 2017
-  current: 
+  current:
 
 - name: Jason Zhao
   info: High School Research Volunteer
   url: jasonzhao
   group: 8
   year: 2017
-  current: 
+  current:
 
 - name: Carmen Sandoval
   info: Neuroscience Rotation Student
@@ -321,18 +313,6 @@
   year: 2018
   current: Bard College
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- 本科! -->
 - name: 洪佳荣
   photo: hongjiarong.jpg
   info: 去往院校：南京大学
@@ -344,4 +324,3 @@
   info: 去往院校：西安交通大学
   info2: 研究方向：通过视觉语言模型实现深度超分辨率
   group: 6
- 
