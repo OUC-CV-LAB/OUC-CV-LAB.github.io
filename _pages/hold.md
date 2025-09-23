@@ -101,18 +101,23 @@ permalink: /hold.html
 <body>
 
 <div class="activity-container">
-    <div class="activity-title">京东副总裁郑宇教授莅临指导工作</div>
+    <div class="activity-title">VALSE Webinar 十周年特别活动</div>
     <div class="activity-details">
-      <strong>时间：</strong>2024年08月07日<br>
+      <strong>时间：</strong>2024年10月26日<br>
       <strong>地点：</strong>中国海洋大学西海岸校区<br>
-      <strong>主办方：</strong>中国海洋大学
+      <strong>主办方：</strong>中国人工智能学会
     </div>
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-8-7.jpg" alt="活动合影">
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-10-26.jpg" alt="活动合影">
     <div class="activity-description">
-        郑宇教授进行 “ 城市计算：释放城市数据要素价值 ” 学术汇报。
+        视觉与学习青年学者研讨会（VALSE）是面向计算机视觉与机器学习领域国内外华人青年学者的重要学术平台。自2014年以来，VALSE Webinar已成功举办365期，值此十周年之际，VALSE Webinar十周年特别活动在中国海洋大学西海岸校区顺利召开。在本次研讨会上，众多专家学者齐聚一堂，就大模型驱动的视觉理解展开报告和深入讨论。在这次活动中，通过专家学者们的精彩分享和深入互动，活动取得了圆满成功。在这个充满创新和探索的时刻，我们目睹着学术思想的碰撞与交流，为人工智能领域的前沿研究开辟着新的视野和可能。这次成功的活动不仅是对为VALSE Webinar过去十年成就的回顾，更是对未来蓬勃发展的启示，VALSE Webinar将始终恪守初心，砥砺前行，努力探索创新之路，信念坚定，必将书写出更加辉煌的未来，推动人工智能领域的蓬勃发展。
+中国海洋大学珠峰论坛
     </div>
     
   </div>
+
+
+
+
 
 
 <div class="activity-container">
@@ -145,16 +150,15 @@ permalink: /hold.html
   </div>
 
 <div class="activity-container">
-    <div class="activity-title">VALSE Webinar 十周年特别活动</div>
+    <div class="activity-title">京东副总裁郑宇教授莅临指导工作</div>
     <div class="activity-details">
-      <strong>时间：</strong>2024年10月26日<br>
+      <strong>时间：</strong>2024年08月07日<br>
       <strong>地点：</strong>中国海洋大学西海岸校区<br>
-      <strong>主办方：</strong>中国人工智能学会
+      <strong>主办方：</strong>中国海洋大学
     </div>
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-10-26.jpg" alt="活动合影">
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-8-7.jpg" alt="活动合影">
     <div class="activity-description">
-        视觉与学习青年学者研讨会（VALSE）是面向计算机视觉与机器学习领域国内外华人青年学者的重要学术平台。自2014年以来，VALSE Webinar已成功举办365期，值此十周年之际，VALSE Webinar十周年特别活动在中国海洋大学西海岸校区顺利召开。在本次研讨会上，众多专家学者齐聚一堂，就大模型驱动的视觉理解展开报告和深入讨论。在这次活动中，通过专家学者们的精彩分享和深入互动，活动取得了圆满成功。在这个充满创新和探索的时刻，我们目睹着学术思想的碰撞与交流，为人工智能领域的前沿研究开辟着新的视野和可能。这次成功的活动不仅是对为VALSE Webinar过去十年成就的回顾，更是对未来蓬勃发展的启示，VALSE Webinar将始终恪守初心，砥砺前行，努力探索创新之路，信念坚定，必将书写出更加辉煌的未来，推动人工智能领域的蓬勃发展。
-中国海洋大学珠峰论坛
+        郑宇教授进行 “ 城市计算：释放城市数据要素价值 ” 学术汇报。
     </div>
     
   </div>
@@ -163,19 +167,24 @@ permalink: /hold.html
 
 
 <div class="activity-container">
-    <div class="activity-title">VALSE Webinar 十周年特别活动</div>
+    <div class="activity-title">中国海洋大学"基金申请与论文写作"经验分享会</div>
     <div class="activity-details">
-      <strong>时间：</strong>2024年10月26日<br>
-      <strong>地点：</strong>中国海洋大学西海岸校区<br>
-      <strong>主办方：</strong>VALSE
+        <strong>时间：</strong>2023年11月26日<br>
+        <strong>地点：</strong>中国海洋大学西海岸校区<br>
+        <strong>主办方：</strong>中国海洋大学
     </div>
-  
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-10-26.jpg" alt="活动合影">
+
+    <!-- 轮播图容器 -->
+    <div class="carousel-container">
+        <button class="carousel-btn left" onclick="changeImage(-1)">&#10094;</button>
+        <img id="imageDisplay" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-11-26.jpg" alt="活动合影">
+        <button class="carousel-btn right" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
     <div class="activity-description">
-      视觉与学习青年学者研讨会（VALSE）是面向计算机视觉与机器学习领域国内外华人青年学者的重要学术平台。自2014年以来，VALSE Webinar已成功举办365期，值此十周年之际，VALSE Webinar十周年特别活动在中国海洋大学西海岸校区顺利召开。在本次研讨会上，众多专家学者齐聚一堂，就大模型驱动的视觉理解展开报告和深入讨论。在这次活动中，通过专家学者们的精彩分享和深入互动，活动取得了圆满成功。在这个充满创新和探索的时刻，我们目睹着学术思想的碰撞与交流，为人工智能领域的前沿研究开辟着新的视野和可能。这次成功的活动不仅是对为VALSE Webinar过去十年成就的回顾，更是对未来蓬勃发展的启示，VALSE Webinar将始终恪守初心，砥砺前行，努力探索创新之路，信念坚定，必将书写出更加辉煌的未来，推动人工智能领域的蓬勃发展。
+        科研工作者常面临基金申请与论文写作两大难题，为此我们举办经验分享会，助力大家掌握窍门、与专家深度交流，诚邀参与，共克科研难关。
     </div>
-  
-  </div>
+</div>
   
 </body>
 </html>
