@@ -2097,14 +2097,14 @@ color:black;
 
 .detail-header h3 {
   color: #1e3c72;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .detail-subtitle {
   color: #666;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-style: italic;
   margin: 0;
 }
@@ -2118,36 +2118,38 @@ color:black;
 
 .detail-section h4 {
   color: #1e3c72;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border-left: 4px solid #4a90e2;
-  padding-left: 12px;
+  padding-left: 15px;
 }
 
 .detail-section p {
   color: #555;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 8px;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
 }
 
 .detail-section ul {
   color: #555;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.3rem;
+  line-height: 1.7;
   margin: 0;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 .detail-section li {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .detail-section a {
   color: #4a90e2;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .detail-section a:hover {
@@ -4553,14 +4555,27 @@ color:black;
   }
   
   .member-detail-card {
-    padding: 20px;
+    padding: 25px;
   }
   
   .detail-header h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .detail-subtitle {
+    font-size: 1.2rem;
   }
   
   .detail-section h4 {
+    font-size: 1.4rem;
+  }
+  
+  .detail-section p,
+  .detail-section ul {
+    font-size: 1.1rem;
+  }
+  
+  .detail-section a {
     font-size: 1.1rem;
   }
   
@@ -4908,20 +4923,28 @@ color:black;
   }
   
   .member-detail-card {
-    padding: 15px;
+    padding: 20px;
   }
   
   .detail-header h3 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+  }
+  
+  .detail-subtitle {
+    font-size: 1.1rem;
   }
   
   .detail-section h4 {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   
   .detail-section p,
   .detail-section ul {
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+  
+  .detail-section a {
+    font-size: 1rem;
   }
   
   .member-card {
