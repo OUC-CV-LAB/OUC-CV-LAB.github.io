@@ -3,8 +3,23 @@ layout: default
 ---
 
 <!-- 英雄区域 - 图片展示和介绍 -->
-<div class="hero-section">
+
+<!--<div class="hero-section">
   <div class="row">
+    <div class="col-sm-7">
+      <div class="image-container">
+        {% include showimg.html %}
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <div class="intro-container">
+        {% include intro.html %}
+      </div>
+    </div>
+  </div>
+</div>-->
+<div class="hero-section">
+  <div class="row align-items-center">  <!-- 关键：这里 -->
     <div class="col-sm-7">
       <div class="image-container">
         {% include showimg.html %}
