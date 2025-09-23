@@ -175,10 +175,14 @@ figcaption {
   transition: all 0.3s ease;
   max-width: 120px;
   height: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)); /* 添加阴影增强对比度 */
+  opacity: 0.95; /* 稍微调整透明度 */
 }
 
 .navbar-brand:hover img {
   transform: scale(1.05);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4)); /* 悬停时增强阴影 */
+  opacity: 1; /* 悬停时完全不透明 */
 }
 
 /* 响应式logo尺寸 */
@@ -186,6 +190,8 @@ figcaption {
   .navbar-brand img {
     max-width: 100px;
     height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    opacity: 0.95;
   }
 }
 
@@ -193,6 +199,8 @@ figcaption {
   .navbar-brand img {
     max-width: 80px;
     height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    opacity: 0.95;
   }
 }
 
@@ -1136,6 +1144,14 @@ color:black;
     flex: none; /* 移动端取消flex: 1 */
   }
   
+  /* 移动端content-section card-body文字水平排列 */
+  .content-section .card-body {
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    direction: ltr !important;
+    unicode-bidi: normal !important;
+  }
+  
   .features-section .row {
     flex-direction: column;
   }
@@ -1194,6 +1210,10 @@ color:black;
   flex: 1;
   display: block;
   text-align: left;
+  writing-mode: horizontal-tb !important; /* 强制水平书写模式 */
+  text-orientation: mixed !important; /* 强制混合方向 */
+  direction: ltr !important; /* 强制从左到右方向 */
+  unicode-bidi: normal !important; /* 正常双向文本 */
 }
 
 .content-section::before {
@@ -2511,6 +2531,17 @@ color:black;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(74, 144, 226, 0.1);
+}
+
+/* 团队页面section标题和描述文字颜色 */
+.team-section .section-title {
+  color: #000000 !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-section .section-description {
+  color: #000000 !important;
+  opacity: 0.8;
 }
 
 .team-section::before {
@@ -4270,6 +4301,15 @@ color:black;
     margin-bottom: 40px;
   }
   
+  /* 团队页面section标题和描述文字颜色 - 手机端 */
+  .team-section .section-title {
+    color: #000000 !important;
+  }
+  
+  .team-section .section-description {
+    color: #000000 !important;
+  }
+  
   .section-header {
     flex-direction: column;
     gap: 15px;
@@ -4571,10 +4611,27 @@ color:black;
     font-size: 1.1rem;
   }
   
+  /* 超小屏幕content-section card-body文字水平排列 */
+  .content-section .card-body {
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    direction: ltr !important;
+    unicode-bidi: normal !important;
+  }
+  
   /* 团队成员页面超小屏幕优化 */
   .team-section {
     padding: 25px 15px;
     margin-bottom: 30px;
+  }
+  
+  /* 团队页面section标题和描述文字颜色 - 超小屏幕 */
+  .team-section .section-title {
+    color: #000000 !important;
+  }
+  
+  .team-section .section-description {
+    color: #000000 !important;
   }
   
   .section-title {
