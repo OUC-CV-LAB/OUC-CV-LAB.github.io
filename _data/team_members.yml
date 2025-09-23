@@ -142,13 +142,14 @@
   url: https://scholar.google.com/citations?user=brp3wz4AAAAJ&hl=zh-CN&oi=ao
   info: 软件工程专业
   info2: 研究方向：医学影像处理
-  pub: information fusion
+
   group: 3
 
 - name: 胡喜凤
   photo: huxifeng.jpg
   info: 信息与通信工程专业
   info2: 研究方向：医学图像分析
+  pub: information fusion
   group: 3
 
 - name: 张帆
