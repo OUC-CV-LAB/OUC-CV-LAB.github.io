@@ -152,11 +152,7 @@
   pub: information fusion
   group: 3
 
-- name: 张帆
-  photo: zhangfan.jpg
-  info: 合作学者
-  info2: 研究方向：计算机视觉与人工智能
-  group: 4
+
 
 - name: 刘治
   photo: liuzhi.jpg
@@ -164,6 +160,14 @@
   info2: 研究方向：医学影像组学，智能心理测量，网络空间安全
   url: https://faculty.sdu.edu.cn/liuzhi1/zh_CN/index/538797/list/index.htm
   group: 4
+
+- name: 张帆
+  photo: zhangfan.jpg
+  info: 合作学者
+  info2: 研究方向：计算机视觉与人工智能
+  group: 4
+
+
 
 - name: 胡腾峰
   photo: hutengfeng.jpg
