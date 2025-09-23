@@ -2513,6 +2513,10 @@ color:black;
   position: relative;
   overflow: hidden;
   transform: translateY(0);
+
+  /* 设置宽度为父容器的80% */
+  width: 70%;  /* 可调节为适当的百分比 */
+  max-width: 350px;  /* 设置最大宽度 */
 }
 
 .member-card::before {
@@ -2535,6 +2539,7 @@ color:black;
   transform: translateY(-15px) scale(1.03);
   box-shadow: 0 25px 60px rgba(30, 60, 114, 0.15);
 }
+
 
 .member-photo {
   text-align: center;
