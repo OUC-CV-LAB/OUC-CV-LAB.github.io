@@ -34,26 +34,55 @@ layout: default
 </div>
 
 
+<!-- 研究方向 -->
+<div class="research-section">
+  <div class="container">
+    <h2 class="section-title">研究方向</h2>
+    <p class="section-description">我们致力于以下主要研究领域</p>
+
+    <div class="research-grid">
+      <div class="research-item">
+        <h4>医工交叉</h4>
+        <p>图像识别、目标检测、视频分析等。</p>
+      </div>
+      <div class="research-item">
+        <h4>三维重建</h4>
+        <p>生成式模型、跨模态学习、视觉大模型。</p>
+      </div>
+      <div class="research-item">
+        <h4>具身智能</h4>
+        <p>图像、文本、语音的联合理解与生成。</p>
+      </div>
+      <!-- 可以继续添加研究方向 -->
+    </div>
+  </div>
+</div>
+
+
+
+
 <!-- 内容区域 -->
 <div class="content-section">
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="content-card home-pub-card">
-        <div class="card-header">
-          <h3><i class="fas fa-book-open"></i> 最新发表</h3>
-        </div>
-        <div class="card-body">
-          {% include homepub.html %}
+  <div class="row align-items-center">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="content-card home-pub-card">
+          <div class="card-header">
+            <h3><i class="fas fa-book-open"></i> 最新发表</h3>
+          </div>
+          <div class="card-body">
+            {% include homepub.html %}
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="content-card news-card">
-        <div class="card-header">
-          <h3><i class="fas fa-newspaper"></i> 实验室动态</h3>
-        </div>
-        <div class="card-body">
-          {% include news.html %}
+      <div class="col-sm-6">
+        <div class="content-card news-card">
+          <div class="card-header">
+            <h3><i class="fas fa-newspaper"></i> 实验室动态</h3>
+          </div>
+          <div class="card-body">
+            {% include news.html %}
+          </div>
         </div>
       </div>
     </div>
