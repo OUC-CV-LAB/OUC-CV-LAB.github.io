@@ -2599,34 +2599,35 @@ color:black;
   margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* 居中对齐 */
-  align-items: flex-start; /* 顶部对齐 */
+  justify-content: space-between; /* 均匀分布 */
+  align-items: stretch; /* 拉伸对齐 */
   gap: 0; /* 移除gap，使用padding控制间距 */
 }
 
 .team-grid .col-sm-3 {
   margin-bottom: 20px;
-  padding: 0 10px;
-  flex: 0 0 25%; /* 固定宽度为25% */
-  max-width: 25%;
+  padding: 0 8px; /* 减少左右padding */
+  flex: 0 0 24%; /* 稍微减少宽度，留出间距 */
+  max-width: 24%;
   display: flex;
   justify-content: center; /* 卡片内容居中 */
 }
 
 .member-card {
   background: white;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 0; /* 移除底部margin，由row控制间距 */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
   transform: translateY(0);
   height: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%; /* 确保卡片占满容器宽度 */
 }
 
 .member-card::before {
@@ -2646,8 +2647,8 @@ color:black;
 }
 
 .member-card:hover {
-  transform: translateY(-15px) scale(1.03);
-  box-shadow: 0 25px 60px rgba(30, 60, 114, 0.15);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(30, 60, 114, 0.12);
 }
 
 
@@ -2658,20 +2659,20 @@ color:black;
 }
 
 .member-photo img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 25%;
-  border: 3px solid #f0f0f0;
-  transition: all 0.4s ease;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .member-card:hover .member-photo img {
   border-color: #4a90e2;
-  transform: scale(1.08);
-  box-shadow: 0 15px 40px rgba(74, 144, 226, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(74, 144, 226, 0.15);
 }
 
 .member-info {
@@ -2684,10 +2685,11 @@ color:black;
 
 .member-name {
   color: #1e3c72;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   transition: all 0.3s ease;
+  line-height: 1.3;
 }
 
 .member-name a {
@@ -2703,9 +2705,10 @@ color:black;
 
 .member-title {
   color: #666;
-  font-size: 1rem;
-  margin-bottom: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
   font-style: italic;
+  line-height: 1.4;
 }
 
 /* 研究方向页面样式 */
@@ -4331,16 +4334,17 @@ color:black;
   
   /* 移动端改为2列布局 */
   .team-grid .row {
-    justify-content: center; /* 移动端也居中对齐 */
-    align-items: flex-start;
+    justify-content: space-between; /* 移动端也均匀分布 */
+    align-items: stretch;
     gap: 0;
   }
   
   .team-grid .col-sm-3 {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 48%; /* 稍微减少宽度，留出间距 */
+    max-width: 48%;
     display: flex;
     justify-content: center;
+    padding: 0 6px; /* 减少左右padding */
   }
   
   .member-card {
@@ -4645,8 +4649,8 @@ color:black;
   
   /* 超小屏幕改为1列布局 */
   .team-grid .row {
-    justify-content: center; /* 超小屏幕也居中对齐 */
-    align-items: flex-start;
+    justify-content: center; /* 超小屏幕居中对齐 */
+    align-items: stretch;
     gap: 0;
   }
   
@@ -4655,6 +4659,7 @@ color:black;
     max-width: 100%;
     display: flex;
     justify-content: center;
+    padding: 0 10px; /* 增加左右padding */
   }
   
   .member-card {
