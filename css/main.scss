@@ -1818,6 +1818,8 @@ color:black;
   border: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
   overflow: hidden;
+  width: 40%;  /* 设置宽度为父容器的 80% */
+  max-width: 300px;  /* 设置最大宽度 */
 }
 
 .member-card::before {
