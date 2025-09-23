@@ -1809,12 +1809,7 @@ color:black;
   width: 100%;
 }
 
-.team-section {
-  display: flex;
-  justify-content: center; /* 将子元素对齐到父容器的左侧 */
-  align-items: center;         /* 垂直居中 */
-  height: 100vh;               /* 确保父容器高度足够，以便垂直居中 */
-}
+
 
 .member-card {
   background: white;
@@ -2452,6 +2447,8 @@ color:black;
 
 /* 团队成员页面样式 */
 .team-section {
+  justify-content: center; /* 将子元素对齐到父容器的zhongjian */
+  align-items: center;         /* 垂直居中 */
   margin-bottom: 80px;
   padding: 60px;
   padding-right: 120px;
