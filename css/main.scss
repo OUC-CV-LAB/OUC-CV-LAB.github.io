@@ -395,7 +395,7 @@ color:black;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  min-height: 450px;
+  min-height: 500px;
 }
 
 .image-container:hover {
@@ -420,7 +420,7 @@ color:black;
   text-orientation: mixed !important; /* 强制混合方向 */
   transform: none !important; /* 强制移除任何变换 */
   transform-origin: initial !important; /* 重置变换原点 */
-  min-height: 450px;
+  min-height: 500px;
 }
 
 .intro-container:hover {
@@ -432,7 +432,7 @@ color:black;
 /* 确保左右两列高度一致 */
 .hero-section .row {
   align-items: stretch; /* 让列拉伸到相同高度 */
-  min-height: 500px; /* 设置最小高度确保有足够空间 */
+  min-height: 550px; /* 设置最小高度确保有足够空间 */
 }
 
 .hero-section .col-sm-7,
@@ -446,7 +446,7 @@ color:black;
 /* 图片容器和介绍容器的对齐优化 */
 .image-container,
 .intro-container {
-  min-height: 400px; /* 设置最小高度确保一致性 */
+  min-height: 500px; /* 设置最小高度确保一致性 */
   margin: 0; /* 移除默认边距 */
   display: flex;
   flex-direction: column;
@@ -461,7 +461,7 @@ color:black;
 @media (max-width: 768px) {
   .image-container,
   .intro-container {
-    min-height: 300px;
+    min-height: 400px;
     margin-bottom: 20px;
   }
   
@@ -4029,7 +4029,7 @@ color:black;
   /* 主页轮播图片手机优化 */
   .image-container {
     padding: 15px;
-    min-height: 300px; /* 减少最小高度 */
+    min-height: 400px; /* 保持与intro-container一致的高度 */
   }
   
   .image-container img {
@@ -4042,7 +4042,7 @@ color:black;
   /* 主页介绍文字手机优化 */
   .intro-container {
     padding: 20px 15px;
-    min-height: 300px;
+    min-height: 400px;
   }
   
   .intro-container h3 {
@@ -4352,7 +4352,7 @@ color:black;
   /* 主页轮播图片超小屏幕优化 */
   .image-container {
     padding: 10px;
-    min-height: 250px;
+    min-height: 350px;
   }
   
   .image-container img {
@@ -4361,7 +4361,7 @@ color:black;
   
   .intro-container {
     padding: 15px 10px;
-    min-height: 250px;
+    min-height: 350px;
   }
   
   .intro-container h3 {
