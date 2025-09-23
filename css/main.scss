@@ -1152,6 +1152,17 @@ color:black;
     unicode-bidi: normal !important;
   }
   
+  /* 移动端card-body中的row元素改为垂直排列 */
+  .content-section .card-body .row {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .content-section .card-body .col-sm-12 {
+    padding: 0 5px;
+    margin-bottom: 8px;
+  }
+  
   .features-section .row {
     flex-direction: column;
   }
@@ -1208,12 +1219,42 @@ color:black;
 
 .content-section .card-body {
   flex: 1;
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-align: left;
   writing-mode: horizontal-tb !important; /* 强制水平书写模式 */
   text-orientation: mixed !important; /* 强制混合方向 */
   direction: ltr !important; /* 强制从左到右方向 */
   unicode-bidi: normal !important; /* 正常双向文本 */
+}
+
+/* 将card-body中的row元素改为横向排列 */
+.content-section .card-body .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+/* 调整col-sm-12在card-body中的样式 */
+.content-section .card-body .col-sm-12 {
+  flex: 1;
+  min-width: 0;
+  padding: 0 10px;
+}
+
+/* 调整pub1链接的样式 */
+.content-section .card-body .pub1 {
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* 调整新闻条目的样式 */
+.content-section .card-body p {
+  margin-bottom: 8px;
+  line-height: 1.4;
 }
 
 .content-section::before {
@@ -1950,9 +1991,9 @@ color:black;
 
 .member-name {
   color: #1e3c72;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   transition: all 0.3s ease;
 }
 
@@ -1969,8 +2010,8 @@ color:black;
 
 .member-title {
   color: #666;
-  font-size: 1.2rem;
-  margin-bottom: 8px;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
   font-style: italic;
 }
 
@@ -1979,6 +2020,34 @@ color:black;
   font-size: 1.8rem;
   margin-bottom: 8px;
   font-style: italic;
+}
+
+/* 蔡青卡片特殊样式 - 放大图片 */
+.team-grid .row .col-sm-6:first-child .member-photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 25px rgba(30, 60, 114, 0.2);
+}
+
+.team-grid .row .col-sm-6:first-child .member-photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(30, 60, 114, 0.3);
+}
+
+/* 蔡青卡片整体样式优化 */
+.team-grid .row .col-sm-6:first-child .member-card {
+  background: linear-gradient(135deg, rgba(30, 60, 114, 0.05) 0%, rgba(74, 144, 226, 0.05) 100%);
+  border: 2px solid rgba(30, 60, 114, 0.1);
+  box-shadow: 0 10px 30px rgba(30, 60, 114, 0.1);
+}
+
+.team-grid .row .col-sm-6:first-child .member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(30, 60, 114, 0.15);
+  border-color: rgba(30, 60, 114, 0.2);
 }
 
 /* 成员详细介绍卡片样式 */
@@ -2518,7 +2587,22 @@ color:black;
   }
   
   .member-name {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+  }
+  
+  .member-title {
+    font-size: 1.3rem;
+  }
+  
+  /* 蔡青卡片移动端样式 */
+  .team-grid .row .col-sm-6:first-child .member-photo img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  /* 蔡青卡片移动端整体样式 */
+  .team-grid .row .col-sm-6:first-child .member-card {
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.08) 0%, rgba(74, 144, 226, 0.08) 100%);
   }
   
   .section-title {
@@ -4756,6 +4840,27 @@ color:black;
     unicode-bidi: normal !important;
   }
   
+  /* 超小屏幕card-body中的row元素改为垂直排列 */
+  .content-section .card-body .row {
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+  
+  .content-section .card-body .col-sm-12 {
+    padding: 0;
+    margin-bottom: 6px;
+  }
+  
+  .content-section .card-body .pub1 {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .content-section .card-body p {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  
   /* 团队成员页面超小屏幕优化 */
   .team-section {
     padding: 25px 15px;
@@ -5006,8 +5111,8 @@ color:black;
 
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   margin-top: 50px;
 }
 
@@ -5074,33 +5179,33 @@ color:black;
 
 .research-content h3 {
   color: #2c3e50;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 600;
-  margin: 0 0 20px 0;
+  margin: 0 0 25px 0;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
 }
 
 .research-content p {
   color: #5a6c7d;
-  line-height: 1.7;
-  margin: 0 0 25px 0;
-  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0 0 30px 0;
+  font-size: 1.4rem;
 }
 
 .research-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 15px;
 }
 
 .tag {
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
-  padding: 6px 16px;
-  border-radius: 25px;
-  font-size: 0.9rem;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 1.1rem;
   font-weight: 500;
   box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
   transition: transform 0.2s ease;
@@ -5142,8 +5247,8 @@ color:black;
   }
   
   .research-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
   
   .research-image {
@@ -5155,11 +5260,11 @@ color:black;
   }
   
   .research-content h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   
   .research-content p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -5173,6 +5278,11 @@ color:black;
     font-size: 1.8rem;
   }
   
+  .research-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
   .research-image {
     height: 200px;
   }
@@ -5182,11 +5292,26 @@ color:black;
   }
   
   .research-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   
   .research-content p {
+    font-size: 1.1rem;
+  }
+  
+  .tag {
     font-size: 1rem;
+    padding: 6px 16px;
+  }
+  
+  /* 蔡青卡片超小屏幕样式 */
+  .team-grid .row .col-sm-6:first-child .member-photo img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .team-grid .row .col-sm-6:first-child .member-card {
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.1) 0%, rgba(74, 144, 226, 0.1) 100%);
   }
 }
 
