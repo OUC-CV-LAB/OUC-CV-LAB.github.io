@@ -1981,6 +1981,110 @@ color:black;
   font-style: italic;
 }
 
+/* 成员详细介绍卡片样式 */
+.member-detail-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-detail-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #1e3c72, #2a5298, #4a90e2);
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.member-detail-card:hover::before {
+  transform: scaleX(1);
+}
+
+.member-detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(30, 60, 114, 0.12);
+}
+
+.detail-header {
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.detail-header h3 {
+  color: #1e3c72;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.detail-subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.detail-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detail-section h4 {
+  color: #1e3c72;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-left: 4px solid #4a90e2;
+  padding-left: 12px;
+}
+
+.detail-section p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.detail-section ul {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.detail-section li {
+  margin-bottom: 6px;
+}
+
+.detail-section a {
+  color: #4a90e2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.detail-section a:hover {
+  color: #1e3c72;
+  text-decoration: underline;
+}
+
 .member-publication {
   color: #e74c3c;
   font-size: 2.0rem;
@@ -2593,7 +2697,7 @@ color:black;
   z-index: 1;
 }
 
-/* 4列布局样式 */
+/* 导师团队特殊布局样式 */
 .team-grid .row {
   margin-bottom: 30px;
   display: flex;
@@ -2601,6 +2705,16 @@ color:black;
   justify-content: space-between; /* 均匀分布 */
   align-items: stretch; /* 拉伸对齐 */
   gap: 0; /* 移除gap，使用padding控制间距 */
+}
+
+/* 导师团队2列布局 */
+.team-grid .col-sm-6 {
+  margin-bottom: 20px;
+  padding: 0 10px;
+  flex: 0 0 48%; /* 稍微减少宽度，留出间距 */
+  max-width: 48%;
+  display: flex;
+  justify-content: center;
 }
 
 .team-grid .col-sm-3 {
@@ -4346,6 +4460,25 @@ color:black;
     padding: 0 6px; /* 减少左右padding */
   }
   
+  /* 导师团队移动端布局 */
+  .team-grid .col-sm-6 {
+    flex: 0 0 100%; /* 移动端改为1列 */
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  
+  .member-detail-card {
+    padding: 20px;
+  }
+  
+  .detail-header h3 {
+    font-size: 1.5rem;
+  }
+  
+  .detail-section h4 {
+    font-size: 1.1rem;
+  }
+  
   .member-card {
     padding: 15px;
     margin-bottom: 15px;
@@ -4659,6 +4792,30 @@ color:black;
     display: flex;
     justify-content: center;
     padding: 0 10px; /* 增加左右padding */
+  }
+  
+  /* 导师团队超小屏幕布局 */
+  .team-grid .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 5px;
+  }
+  
+  .member-detail-card {
+    padding: 15px;
+  }
+  
+  .detail-header h3 {
+    font-size: 1.3rem;
+  }
+  
+  .detail-section h4 {
+    font-size: 1rem;
+  }
+  
+  .detail-section p,
+  .detail-section ul {
+    font-size: 0.9rem;
   }
   
   .member-card {

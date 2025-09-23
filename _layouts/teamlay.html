@@ -17,49 +17,65 @@ layout: default
         </div>
         
         <div class="team-grid">
-          {% assign number_printed = 0 %}
-          {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 4 %}
-          {% if member.group == 0 %}
-          
-          {% if even_odd == 0 %}
           <div class="row">
-          {% endif %}
-          
-          <div class="col-sm-3">
-            <div class="member-card">
-              <div class="member-photo">
-                <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" alt="{{ member.name }}" />
+            <!-- 蔡青卡片 - 左侧 -->
+            <div class="col-sm-6">
+              <div class="member-card">
+                <div class="member-photo">
+                  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/caiqing.jpg" alt="蔡青" />
+                </div>
+                <div class="member-info">
+                  <h4 class="member-name">
+                    <a href="http://it.ouc.edu.cn/cq/list.htm" target="_blank">蔡青</a>
+                  </h4>
+                  <p class="member-title">副教授</p>
+                  <p class="member-research">研究方向：计算机视觉、机器学习、医学图像分析</p>
+                </div>
               </div>
-              <div class="member-info">
-                <h4 class="member-name">
-                  {% if member.url %}
-                  <a href="{{ member.url }}" target="_blank">{{ member.name }}</a>
-                  {% else %}
-                  {{ member.name }}
-                  {% endif %}
-                </h4>
-                <p class="member-title">{{ member.info }}</p>
-                {% if member.info2 %}
-                <p class="member-research">{{ member.info2 }}</p>
-                {% endif %}
+            </div>
+            
+            <!-- 蔡青详细介绍 - 右侧 -->
+            <div class="col-sm-6">
+              <div class="member-detail-card">
+                <div class="detail-header">
+                  <h3>蔡青 副教授</h3>
+                  <p class="detail-subtitle">实验室负责人</p>
+                </div>
+                <div class="detail-content">
+                  <div class="detail-section">
+                    <h4>个人简介</h4>
+                    <p>蔡青副教授是中国海洋大学人工智能研究院的副教授，担任VMV实验室的负责人。在计算机视觉、机器学习和医学图像分析领域具有丰富的研究经验。</p>
+                  </div>
+                  
+                  <div class="detail-section">
+                    <h4>研究方向</h4>
+                    <ul>
+                      <li>计算机视觉与深度学习</li>
+                      <li>医学图像分析与处理</li>
+                      <li>机器学习算法优化</li>
+                      <li>多模态数据融合</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="detail-section">
+                    <h4>学术成就</h4>
+                    <ul>
+                      <li>在CVPR、AAAI、IJCAI、MM、TIP等国际顶级会议和期刊发表多篇论文</li>
+                      <li>主持和参与国家自然科学基金、山东省自然科学基金等项目</li>
+                      <li>荣获山东省泰山学者青年专家荣誉称号</li>
+                      <li>获批山东省优青项目</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="detail-section">
+                    <h4>联系方式</h4>
+                    <p><strong>邮箱：</strong>cq@ouc.edu.cn</p>
+                    <p><strong>个人主页：</strong><a href="http://it.ouc.edu.cn/cq/list.htm" target="_blank">http://it.ouc.edu.cn/cq/list.htm</a></p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          
-          {% assign number_printed = number_printed | plus: 1 %}
-          
-          {% if even_odd == 3 %}
-          </div>
-          {% endif %}
-          
-          {% endif %}
-          {% endfor %}
-          
-          {% assign even_odd = number_printed | modulo: 4 %}
-          {% if even_odd != 0 %}
-          </div>
-          {% endif %}
         </div>
       </div>
 
