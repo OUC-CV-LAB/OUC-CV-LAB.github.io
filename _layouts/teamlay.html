@@ -19,14 +19,14 @@ layout: default
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 2 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
           {% if member.group == 0 %}
           
           {% if even_odd == 0 %}
           <div class="row">
           {% endif %}
           
-          <div class="col-sm-6">
+          <div class="col-sm-3">
             <div class="member-card">
               <div class="member-photo">
                 <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" alt="{{ member.name }}" />
@@ -49,15 +49,15 @@ layout: default
           
           {% assign number_printed = number_printed | plus: 1 %}
           
-          {% if even_odd == 1 %}
+          {% if even_odd == 3 %}
           </div>
           {% endif %}
           
           {% endif %}
           {% endfor %}
           
-          {% assign even_odd = number_printed | modulo: 2 %}
-          {% if even_odd == 1 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
+          {% if even_odd != 0 %}
           </div>
           {% endif %}
         </div>
@@ -76,14 +76,14 @@ layout: default
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 2 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
           {% if member.group == 4 %}
           
           {% if even_odd == 0 %}
           <div class="row">
           {% endif %}
           
-          <div class="col-sm-6">
+          <div class="col-sm-3">
             <div class="member-card">
               <div class="member-photo">
                 <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" alt="{{ member.name }}" />
@@ -106,15 +106,15 @@ layout: default
           
           {% assign number_printed = number_printed | plus: 1 %}
           
-          {% if even_odd == 1 %}
+          {% if even_odd == 3 %}
           </div>
           {% endif %}
           
           {% endif %}
           {% endfor %}
           
-          {% assign even_odd = number_printed | modulo: 2 %}
-          {% if even_odd == 1 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
+          {% if even_odd != 0 %}
           </div>
           {% endif %}
         </div>
@@ -133,14 +133,14 @@ layout: default
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 2 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
           {% if member.group == 3 %}
           
           {% if even_odd == 0 %}
           <div class="row">
           {% endif %}
           
-          <div class="col-sm-6">
+          <div class="col-sm-3">
             <div class="member-card">
               <div class="member-photo">
                 <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" alt="{{ member.name }}" />
@@ -166,15 +166,15 @@ layout: default
           
           {% assign number_printed = number_printed | plus: 1 %}
           
-          {% if even_odd == 1 %}
+          {% if even_odd == 3 %}
           </div>
           {% endif %}
           
           {% endif %}
           {% endfor %}
           
-          {% assign even_odd = number_printed | modulo: 2 %}
-          {% if even_odd == 1 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
+          {% if even_odd != 0 %}
           </div>
           {% endif %}
         </div>
@@ -194,14 +194,14 @@ layout: default
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 2 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
           {% if member.group == 1 %}
 
           {% if even_odd == 0 %}
           <div class="row">
           {% endif %}
 
-          <div class="col-sm-6">
+          <div class="col-sm-3">
             <div class="member-card">
               <div class="member-photo">
                 <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" alt="{{ member.name }}" />
@@ -227,15 +227,15 @@ layout: default
 
           {% assign number_printed = number_printed | plus: 1 %}
 
-          {% if even_odd == 1 %}
+          {% if even_odd == 3 %}
           </div>
           {% endif %}
 
           {% endif %}
           {% endfor %}
 
-          {% assign even_odd = number_printed | modulo: 2 %}
-          {% if even_odd == 1 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
+          {% if even_odd != 0 %}
           </div>
           {% endif %}
         </div>
@@ -255,14 +255,14 @@ layout: default
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 2 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
           {% if member.group == 2 %}
           
           {% if even_odd == 0 %}
           <div class="row">
           {% endif %}
           
-          <div class="col-sm-6">
+          <div class="col-sm-3">
             <div class="member-card">
               <div class="member-photo">
                 <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" alt="{{ member.name }}" />
@@ -285,15 +285,15 @@ layout: default
           
           {% assign number_printed = number_printed | plus: 1 %}
           
-          {% if even_odd == 1 %}
+          {% if even_odd == 3 %}
           </div>
           {% endif %}
           
           {% endif %}
           {% endfor %}
           
-          {% assign even_odd = number_printed | modulo: 2 %}
-          {% if even_odd == 1 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
+          {% if even_odd != 0 %}
           </div>
           {% endif %}
         </div>
@@ -312,14 +312,14 @@ layout: default
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 2 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
           {% if member.group == 5 %}
 
           {% if even_odd == 0 %}
           <div class="row">
           {% endif %}
 
-          <div class="col-sm-6">
+          <div class="col-sm-3">
             <div class="member-card">
               <div class="member-photo">
                 <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" alt="{{ member.name }}" />
@@ -342,15 +342,15 @@ layout: default
 
           {% assign number_printed = number_printed | plus: 1 %}
 
-          {% if even_odd == 1 %}
+          {% if even_odd == 3 %}
           </div>
           {% endif %}
 
           {% endif %}
           {% endfor %}
 
-          {% assign even_odd = number_printed | modulo: 2 %}
-          {% if even_odd == 1 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
+          {% if even_odd != 0 %}
           </div>
           {% endif %}
         </div>
@@ -373,14 +373,14 @@ layout: default
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 2 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
           {% if member.group == 6 %}
 
           {% if even_odd == 0 %}
           <div class="row">
           {% endif %}
 
-          <div class="col-sm-6">
+          <div class="col-sm-3">
             <div class="member-card">
               <div class="member-photo">
                 <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/benke/{{ member.photo }}" alt="{{ member.name }}" />
@@ -403,15 +403,15 @@ layout: default
 
           {% assign number_printed = number_printed | plus: 1 %}
 
-          {% if even_odd == 1 %}
+          {% if even_odd == 3 %}
           </div>
           {% endif %}
 
           {% endif %}
           {% endfor %}
 
-          {% assign even_odd = number_printed | modulo: 2 %}
-          {% if even_odd == 1 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
+          {% if even_odd != 0 %}
           </div>
           {% endif %}
         </div>
