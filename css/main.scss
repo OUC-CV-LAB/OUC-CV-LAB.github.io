@@ -1183,6 +1183,19 @@ color:black;
   align-items: stretch; /* 让列内元素拉伸到相同高度 */
 }
 
+/* 确保卡片内容正常显示 */
+.content-section .content-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content-section .card-body {
+  flex: 1;
+  display: block;
+  text-align: left;
+}
+
 .content-section::before {
   content: '';
   position: absolute;
@@ -1306,8 +1319,8 @@ color:black;
   background: white;
   position: relative;
   flex: 1; /* 让card-body占满剩余空间 */
-  display: flex;
-  flex-direction: column;
+  display: block; /* 恢复正常的块级显示 */
+  text-align: left; /* 文字左对齐 */
 }
 
 .card-body::before {
@@ -2555,6 +2568,8 @@ color:black;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* 居中对齐 */
+  align-items: flex-start; /* 顶部对齐 */
+  gap: 0; /* 移除gap，使用padding控制间距 */
 }
 
 .team-grid .col-sm-3 {
@@ -2562,6 +2577,8 @@ color:black;
   padding: 0 10px;
   flex: 0 0 25%; /* 固定宽度为25% */
   max-width: 25%;
+  display: flex;
+  justify-content: center; /* 卡片内容居中 */
 }
 
 .member-card {
@@ -4274,11 +4291,15 @@ color:black;
   /* 移动端改为2列布局 */
   .team-grid .row {
     justify-content: center; /* 移动端也居中对齐 */
+    align-items: flex-start;
+    gap: 0;
   }
   
   .team-grid .col-sm-3 {
     flex: 0 0 50%;
     max-width: 50%;
+    display: flex;
+    justify-content: center;
   }
   
   .member-card {
@@ -4567,11 +4588,15 @@ color:black;
   /* 超小屏幕改为1列布局 */
   .team-grid .row {
     justify-content: center; /* 超小屏幕也居中对齐 */
+    align-items: flex-start;
+    gap: 0;
   }
   
   .team-grid .col-sm-3 {
     flex: 0 0 100%;
     max-width: 100%;
+    display: flex;
+    justify-content: center;
   }
   
   .member-card {
