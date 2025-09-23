@@ -5006,9 +5006,9 @@ color:black;
 
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
 }
 
 .research-item {
@@ -5029,7 +5029,7 @@ color:black;
 
 .research-image {
   position: relative;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
 }
 
@@ -5063,44 +5063,44 @@ color:black;
 }
 
 .overlay-icon {
-  font-size: 3rem;
+  font-size: 4rem;
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .research-content {
-  padding: 30px;
+  padding: 40px;
 }
 
 .research-content h3 {
   color: #2c3e50;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  margin: 0 0 15px 0;
+  margin: 0 0 20px 0;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .research-content p {
   color: #5a6c7d;
-  line-height: 1.6;
-  margin: 0 0 20px 0;
-  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 0 25px 0;
+  font-size: 1.2rem;
 }
 
 .research-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 12px;
 }
 
 .tag {
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 0.8rem;
+  padding: 6px 16px;
+  border-radius: 25px;
+  font-size: 0.9rem;
   font-weight: 500;
   box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
   transition: transform 0.2s ease;
@@ -5147,11 +5147,19 @@ color:black;
   }
   
   .research-image {
-    height: 180px;
+    height: 220px;
   }
   
   .research-content {
-    padding: 20px;
+    padding: 30px;
+  }
+  
+  .research-content h3 {
+    font-size: 1.6rem;
+  }
+  
+  .research-content p {
+    font-size: 1.1rem;
   }
 }
 
@@ -5166,15 +5174,19 @@ color:black;
   }
   
   .research-image {
-    height: 160px;
+    height: 200px;
   }
   
   .research-content {
-    padding: 15px;
+    padding: 25px;
   }
   
   .research-content h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+  }
+  
+  .research-content p {
+    font-size: 1rem;
   }
 }
 
