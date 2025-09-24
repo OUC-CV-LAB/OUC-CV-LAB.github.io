@@ -2166,8 +2166,8 @@ color:black;
 
 /* 蔡青卡片特殊样式 - 放大图片 */
 .team-grid .row .col-sm-6:first-child .member-photo img {
-  width: 180px;
-  height: 180px;
+  width: 210px;
+  height: 210px;
   object-fit: cover;
   border-radius: 50%;
   transition: all 0.4s ease;
@@ -2717,6 +2717,7 @@ color:black;
   
   .section-title {
     font-size: 2.2rem;
+    color: black;
   }
   
   .member-card {
