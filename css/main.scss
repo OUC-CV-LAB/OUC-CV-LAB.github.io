@@ -1141,7 +1141,8 @@ color:black;
   
   .content-section .col-sm-6 {
     width: 100%;
-    margin-bottom: 20px;
+    max-width: 100%; /* 移动端使用全宽 */
+    margin: 0 0 20px 0; /* 移动端只保留底部间距 */
     flex: none; /* 移动端取消flex: 1 */
   }
   
@@ -1156,8 +1157,8 @@ color:black;
   /* 移动端card-body中的row元素改为垂直排列 */
   .content-section .card-body .row {
     flex-direction: column;
-    margin-bottom: 15px;
-    padding: 12px 0;
+    margin-bottom: 2px;
+    padding: 1px 0;
   }
   
   .content-section .card-body .col-sm-12 {
@@ -1167,14 +1168,17 @@ color:black;
   
   /* 移动端标题样式调整 */
   .content-section .card-body h3 {
+    text-align: center !important;
     font-size: 1.5rem;
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto !important;
+    width: fit-content;
+    display: block;
   }
   
   /* 移动端论文链接样式调整 */
   .content-section .card-body .pub1 {
-    padding: 10px 12px;
-    margin-bottom: 12px;
+    padding: 6px 10px;
+    margin-bottom: 4px;
     font-size: 0.9rem;
   }
   
@@ -1192,8 +1196,12 @@ color:black;
   /* 移动端更多链接样式调整 */
   .content-section .card-body a[href*="publications"],
   .content-section .card-body a[href*="allnews"] {
+    display: block !important;
+    margin: 10px auto 0 auto !important;
     padding: 8px 20px;
     font-size: 0.9rem;
+    text-align: center !important;
+    width: fit-content !important;
   }
   
   .features-section .row {
@@ -1234,13 +1242,16 @@ color:black;
 .content-section .row {
   display: flex;
   align-items: stretch; /* 让列拉伸到相同高度 */
-  min-height: 300px; /* 设置最小高度确保有足够空间 */
+  justify-content: space-between; /* 左右对齐 */
+  min-height: 100px; /* 设置最小高度确保有足够空间 */
 }
 
 .content-section .col-sm-6 {
   display: flex;
   flex-direction: column;
   align-items: stretch; /* 让列内元素拉伸到相同高度 */
+  flex: 1; /* 平均分配宽度 */
+  margin: 0 10px; /* 添加左右间距 */
 }
 
 /* 确保卡片内容正常显示 */
@@ -1254,12 +1265,12 @@ color:black;
   flex: 1;
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
   writing-mode: horizontal-tb !important; /* 强制水平书写模式 */
   text-orientation: mixed !important; /* 强制混合方向 */
   direction: ltr !important; /* 强制从左到右方向 */
   unicode-bidi: normal !important; /* 正常双向文本 */
-  padding: 15px;
+  padding: 8px;
 }
 
 /* 将card-body中的row元素改为横向排列 */
@@ -1268,8 +1279,8 @@ color:black;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin-bottom: 10px;
-  padding: 8px 0;
+  margin-bottom: 1px;
+  padding: 1px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
@@ -1290,14 +1301,16 @@ color:black;
 
 /* 优化学术论文标题样式 */
 .content-section .card-body h3 {
-  text-align: center;
+  text-align: center !important;
   color: #1e3c72;
   font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto !important;
   padding-bottom: 8px;
   border-bottom: 2px solid #4a90e2;
   position: relative;
+  width: fit-content;
+  display: block;
 }
 
 .content-section .card-body h3::after {
@@ -1328,9 +1341,9 @@ color:black;
 /* 调整pub1链接的样式 */
 .content-section .card-body .pub1 {
   display: block;
-  margin-bottom: 8px;
-  line-height: 1.6;
-  padding: 8px 12px;
+  margin-bottom: 3px;
+  line-height: 1.4;
+  padding: 6px 10px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   border-left: 4px solid #4a90e2;
@@ -1346,9 +1359,17 @@ color:black;
 
 /* 调整新闻条目的样式 */
 .content-section .card-body p {
-  margin-bottom: 8px;
-  line-height: 1.6;
+  margin-bottom: 3px;
+  line-height: 1.4;
   color: #555;
+}
+
+/* 确保包含更多按钮的p元素居中 */
+.content-section .card-body p:has(a[href*="publications"]),
+.content-section .card-body p:has(a[href*="allnews"]) {
+  text-align: center !important;
+  margin: 10px auto 0 auto !important;
+  width: 100% !important;
 }
 
 /* 优化新闻日期样式 */
@@ -1381,8 +1402,8 @@ color:black;
 /* 优化更多链接样式 */
 .content-section .card-body a[href*="publications"],
 .content-section .card-body a[href*="allnews"] {
-  display: inline-block;
-  margin-top: 10px;
+  display: block !important;
+  margin: 10px auto 0 auto !important;
   padding: 8px 20px;
   background: linear-gradient(135deg, #1e3c72, #4a90e2);
   color: white !important;
@@ -1391,6 +1412,8 @@ color:black;
   font-weight: 500;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);
+  width: fit-content !important;
+  text-align: center !important;
 }
 
 .content-section .card-body a[href*="publications"]:hover,
@@ -2111,8 +2134,8 @@ color:black;
 }
 
 .member-photo img {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 25%; /* 调整照片位置，让脸部更清楚，稍微向上一点 */
@@ -2134,7 +2157,7 @@ color:black;
 
 .member-name {
   color: #1e3c72;
-  font-size: 1.8rem;
+  font-size: 1.8rem !important;
   font-weight: 600;
   margin-bottom: 12px;
   transition: all 0.3s ease;
@@ -2153,7 +2176,7 @@ color:black;
 
 .member-title {
   color: #666;
-  font-size: 1.8rem;
+  font-size: 1.8rem !important;
   margin-bottom: 10px;
   font-style: italic;
 }
@@ -2167,8 +2190,8 @@ color:black;
 
 /* 蔡青卡片特殊样式 - 放大图片 */
 .team-grid .row .col-sm-6:first-child .member-photo img {
-  width: 210px;
-  height: 210px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%;
   transition: all 0.4s ease;
@@ -2191,6 +2214,41 @@ color:black;
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(30, 60, 114, 0.15);
   border-color: rgba(30, 60, 114, 0.2);
+}
+
+/* 蔡青卡片特殊文字样式 - 放大姓名和职位 */
+.team-grid .row .col-sm-6:first-child .member-name {
+  font-size: 3.6rem !important;
+  font-weight: 700;
+}
+
+.team-grid .row .col-sm-6:first-child .member-title {
+  font-size: 3.6rem !important;
+  font-weight: 600;
+}
+
+/* 5列布局样式 */
+.team-grid .col-sm-2 {
+  flex: 0 0 20%;
+  max-width: 20%;
+  padding: 0 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .team-grid .col-sm-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid .col-sm-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 5px;
+  }
 }
 
 /* 成员详细介绍卡片样式 */
@@ -2239,14 +2297,14 @@ color:black;
 
 .detail-header h3 {
   color: #1e3c72;
-  font-size: 2.2rem;
+  font-size: 3.3rem;
   font-weight: 700;
   margin-bottom: 12px;
 }
 
 .detail-subtitle {
   color: #666;
-  font-size: 1.4rem;
+  font-size: 2.1rem;
   font-style: italic;
   margin: 0;
 }
@@ -2260,7 +2318,7 @@ color:black;
 
 .detail-section h4 {
   color: #1e3c72;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 15px;
   border-left: 4px solid #4a90e2;
@@ -2269,14 +2327,14 @@ color:black;
 
 .detail-section p {
   color: #555;
-  font-size: 1.3rem;
+  font-size: 1.95rem;
   line-height: 1.7;
   margin-bottom: 12px;
 }
 
 .detail-section ul {
   color: #555;
-  font-size: 1.3rem;
+  font-size: 1.95rem;
   line-height: 1.7;
   margin: 0;
   padding-left: 25px;
@@ -2290,7 +2348,7 @@ color:black;
   color: #4a90e2;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 1.3rem;
+  font-size: 1.95rem;
   font-weight: 500;
 }
 
@@ -2727,28 +2785,39 @@ color:black;
   }
   
   .member-photo img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-position: center 25%; /* 手机端也保持相同的位置 */
   }
   
   .member-name {
-    font-size: 1.1rem;
+    font-size: 1.8rem !important;
   }
   
   .member-title {
-    font-size: 1.1rem;
+    font-size: 1.8rem !important;
   }
   
   /* 蔡青卡片移动端样式 */
   .team-grid .row .col-sm-6:first-child .member-photo img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
   }
   
   /* 蔡青卡片移动端整体样式 */
   .team-grid .row .col-sm-6:first-child .member-card {
     background: linear-gradient(135deg, rgba(30, 60, 114, 0.08) 0%, rgba(74, 144, 226, 0.08) 100%);
+  }
+  
+  /* 蔡青卡片移动端特殊文字样式 */
+  .team-grid .row .col-sm-6:first-child .member-name {
+    font-size: 3.6rem !important;
+    font-weight: 700;
+  }
+  
+  .team-grid .row .col-sm-6:first-child .member-title {
+    font-size: 3.6rem !important;
+    font-weight: 600;
   }
   
   .section-title {
@@ -3002,8 +3071,8 @@ color:black;
 }
 
 .member-photo img {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 25%;
@@ -3028,7 +3097,7 @@ color:black;
 
 .member-name {
   color: #1e3c72;
-  font-size: 1.1rem;
+  font-size: 1.8rem !important;
   font-weight: 600;
   margin-bottom: 6px;
   transition: all 0.3s ease;
@@ -3048,7 +3117,7 @@ color:black;
 
 .member-title {
   color: #666;
-  font-size: 1.1rem;
+  font-size: 1.8rem !important;
   margin-bottom: 4px;
   font-style: italic;
   line-height: 1.4;
@@ -3703,12 +3772,12 @@ color:black;
   }
   
   .member-photo img {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
   }
   
   .member-name {
-    font-size: 1.1rem;
+    font-size: 1.8rem !important;
   }
   
   .research-header {
@@ -4703,24 +4772,24 @@ color:black;
   }
   
   .detail-header h3 {
-    font-size: 1.8rem;
+    font-size: 2.7rem;
   }
   
   .detail-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   
   .detail-section h4 {
-    font-size: 1.4rem;
+    font-size: 2.1rem;
   }
   
   .detail-section p,
   .detail-section ul {
-    font-size: 1.1rem;
+    font-size: 1.65rem;
   }
   
   .detail-section a {
-    font-size: 1.1rem;
+    font-size: 1.65rem;
   }
   
   .member-card {
@@ -4729,20 +4798,20 @@ color:black;
   }
   
   .member-photo img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
   
   .member-name {
-    font-size: 1.1rem;
+    font-size: 1.8rem !important;
   }
   
   .member-title {
-    font-size: 1.1rem;
+    font-size: 1.8rem !important;
   }
   
   .member-title {
-    font-size: 1.1rem;
+    font-size: 1.8rem !important;
   }
   
   /* 发表文章页面手机优化 */
@@ -5003,8 +5072,8 @@ color:black;
   /* 超小屏幕card-body中的row元素改为垂直排列 */
   .content-section .card-body .row {
     flex-direction: column;
-    margin-bottom: 12px;
-    padding: 10px 0;
+    margin-bottom: 1px;
+    padding: 1px 0;
   }
   
   .content-section .card-body .col-sm-12 {
@@ -5014,8 +5083,11 @@ color:black;
   
   /* 超小屏幕标题样式调整 */
   .content-section .card-body h3 {
+    text-align: center !important;
     font-size: 1.3rem;
-    margin-bottom: 12px;
+    margin: 0 auto 12px auto !important;
+    width: fit-content;
+    display: block;
   }
   
   /* 超小屏幕作者说明样式调整 */
@@ -5027,13 +5099,13 @@ color:black;
   
   .content-section .card-body .pub1 {
     font-size: 0.85rem;
-    margin-bottom: 10px;
-    padding: 8px 10px;
+    margin-bottom: 3px;
+    padding: 4px 8px;
   }
   
   .content-section .card-body p {
     font-size: 0.9rem;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
   }
   
   /* 超小屏幕新闻样式调整 */
@@ -5050,8 +5122,12 @@ color:black;
   /* 超小屏幕更多链接样式调整 */
   .content-section .card-body a[href*="publications"],
   .content-section .card-body a[href*="allnews"] {
+    display: block !important;
+    margin: 10px auto 0 auto !important;
     padding: 6px 16px;
     font-size: 0.8rem;
+    text-align: center !important;
+    width: fit-content !important;
   }
   
   /* 团队成员页面超小屏幕优化 */
@@ -5105,24 +5181,24 @@ color:black;
   }
   
   .detail-header h3 {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
   }
   
   .detail-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.65rem;
   }
   
   .detail-section h4 {
-    font-size: 1.3rem;
+    font-size: 1.95rem;
   }
   
   .detail-section p,
   .detail-section ul {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   
   .detail-section a {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   
   .member-card {
@@ -5131,17 +5207,17 @@ color:black;
   }
   
   .member-photo img {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     object-position: center 25%; /* 超小屏幕也保持相同的位置 */
   }
   
   .member-name {
-    font-size: 1.1rem;
+    font-size: 1.8rem !important;
   }
   
   .member-title {
-    font-size: 1.1rem;
+    font-size: 1.8rem !important;
   }
   
   /* 发表文章页面超小屏幕优化 */
@@ -5270,6 +5346,33 @@ color:black;
   overflow: hidden;
 }
 
+/* 自定义research-section中的container宽度为1.5倍 */
+.research-section .container {
+  max-width: 1710px; /* 1140px * 1.5 = 1710px */
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .research-section .container {
+    max-width: 1080px; /* 720px * 1.5 = 1080px */
+  }
+}
+
+@media (min-width: 992px) {
+  .research-section .container {
+    max-width: 1410px; /* 940px * 1.5 = 1410px */
+  }
+}
+
+@media (min-width: 1200px) {
+  .research-section .container {
+    max-width: 1710px; /* 1140px * 1.5 = 1710px */
+  }
+}
+
 .research-section::before {
   content: '';
   position: absolute;
@@ -5298,7 +5401,7 @@ color:black;
 
 .section-title {
   color: white;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   margin: 0 0 10px 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -5306,7 +5409,7 @@ color:black;
 
 .section-description {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   margin: 0;
   font-weight: 300;
 }
@@ -5401,6 +5504,8 @@ color:black;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 .tag {
@@ -5442,11 +5547,11 @@ color:black;
   }
   
   .section-title {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
   
   .section-description {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   
   .research-grid {
@@ -5486,7 +5591,11 @@ color:black;
   }
   
   .section-title {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+  }
+  
+  .section-description {
+    font-size: 1.2rem;
   }
   
   .research-grid {
@@ -5525,12 +5634,23 @@ color:black;
   
   /* 蔡青卡片超小屏幕样式 */
   .team-grid .row .col-sm-6:first-child .member-photo img {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
   }
   
   .team-grid .row .col-sm-6:first-child .member-card {
     background: linear-gradient(135deg, rgba(30, 60, 114, 0.1) 0%, rgba(74, 144, 226, 0.1) 100%);
+  }
+  
+  /* 蔡青卡片小屏幕特殊文字样式 */
+  .team-grid .row .col-sm-6:first-child .member-name {
+    font-size: 3.6rem !important;
+    font-weight: 700;
+  }
+  
+  .team-grid .row .col-sm-6:first-child .member-title {
+    font-size: 3.6rem !important;
+    font-weight: 600;
   }
 }
 
