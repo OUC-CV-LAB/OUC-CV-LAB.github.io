@@ -820,7 +820,7 @@ color:black;
 }
 
 .card-body {
-  padding: 25px;
+  padding: 15px;
 }
 
 /* 特色区域样式 */
@@ -1234,7 +1234,7 @@ color:black;
 .content-section .row {
   display: flex;
   align-items: stretch; /* 让列拉伸到相同高度 */
-  min-height: 400px; /* 设置最小高度确保有足够空间 */
+  min-height: 300px; /* 设置最小高度确保有足够空间 */
 }
 
 .content-section .col-sm-6 {
@@ -1259,6 +1259,7 @@ color:black;
   text-orientation: mixed !important; /* 强制混合方向 */
   direction: ltr !important; /* 强制从左到右方向 */
   unicode-bidi: normal !important; /* 正常双向文本 */
+  padding: 15px;
 }
 
 /* 将card-body中的row元素改为横向排列 */
@@ -1267,8 +1268,8 @@ color:black;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin-bottom: 20px;
-  padding: 15px 0;
+  margin-bottom: 10px;
+  padding: 8px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
@@ -1293,8 +1294,8 @@ color:black;
   color: #1e3c72;
   font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
   border-bottom: 2px solid #4a90e2;
   position: relative;
 }
@@ -1316,8 +1317,8 @@ color:black;
   color: #666;
   font-size: 1rem !important;
   font-style: italic;
-  margin-bottom: 25px;
-  padding: 8px 15px;
+  margin-bottom: 15px;
+  padding: 6px 12px;
   background: rgba(30, 60, 114, 0.05);
   border-radius: 20px;
   display: inline-block;
@@ -1327,9 +1328,9 @@ color:black;
 /* 调整pub1链接的样式 */
 .content-section .card-body .pub1 {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   line-height: 1.6;
-  padding: 12px 15px;
+  padding: 8px 12px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   border-left: 4px solid #4a90e2;
@@ -1345,7 +1346,7 @@ color:black;
 
 /* 调整新闻条目的样式 */
 .content-section .card-body p {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   line-height: 1.6;
   color: #555;
 }
@@ -1381,8 +1382,8 @@ color:black;
 .content-section .card-body a[href*="publications"],
 .content-section .card-body a[href*="allnews"] {
   display: inline-block;
-  margin-top: 20px;
-  padding: 10px 25px;
+  margin-top: 10px;
+  padding: 8px 20px;
   background: linear-gradient(135deg, #1e3c72, #4a90e2);
   color: white !important;
   text-decoration: none;
@@ -2133,7 +2134,7 @@ color:black;
 
 .member-name {
   color: #1e3c72;
-  font-size: 4.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 12px;
   transition: all 0.3s ease;
@@ -2152,7 +2153,7 @@ color:black;
 
 .member-title {
   color: #666;
-  font-size: 3.6rem;
+  font-size: 1.8rem;
   margin-bottom: 10px;
   font-style: italic;
 }
@@ -2731,11 +2732,11 @@ color:black;
   }
   
   .member-name {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
   }
   
   .member-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   
   /* 蔡青卡片移动端样式 */
@@ -3026,7 +3027,7 @@ color:black;
 
 .member-name {
   color: #1e3c72;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 6px;
   transition: all 0.3s ease;
@@ -3046,7 +3047,7 @@ color:black;
 
 .member-title {
   color: #666;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   margin-bottom: 4px;
   font-style: italic;
   line-height: 1.4;
@@ -3706,7 +3707,7 @@ color:black;
   }
   
   .member-name {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
   }
   
   .research-header {
@@ -4732,11 +4733,11 @@ color:black;
   }
   
   .member-name {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   
   .member-title {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   
   .member-title {
@@ -5135,11 +5136,11 @@ color:black;
   }
   
   .member-name {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   
   .member-title {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   
   /* 发表文章页面超小屏幕优化 */
