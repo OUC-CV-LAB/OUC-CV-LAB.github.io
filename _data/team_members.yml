@@ -117,6 +117,15 @@
   info2: 研究方向：超声增强
   group: 2
 
+
+
+
+- name: 张帆
+  photo: zhangfan.jpg
+  info: 合作学者
+  info2: 研究方向：计算机视觉与人工智能
+  group: 3
+
 - name: 郭少翔
   photo: guoshaoxiang.jpg
   info: 计算机技术专业
@@ -153,6 +162,13 @@
   group: 3
 
 
+- name: 张大鹏
+  photo: zhangdapeng.jpg
+  info: 合作学者
+  info2: 研究方向：人工智能, 计算机科学, 机器学习与人工智能, 计算机视觉与计算机图形学
+  url: https://sds.cuhk.edu.cn/teacher/315
+  group: 4
+
 
 - name: 刘治
   photo: liuzhi.jpg
@@ -161,10 +177,11 @@
   url: https://faculty.sdu.edu.cn/liuzhi1/zh_CN/index/538797/list/index.htm
   group: 4
 
-- name: 张帆
-  photo: zhangfan.jpg
+- name: 吴枫
+  photo: liuzhi.jpg
   info: 合作学者
-  info2: 研究方向：计算机视觉与人工智能
+  info2: 研究方向：视频编码与通信、多媒体内容分析、计算机视觉
+  url: https://faculty.ustc.edu.cn/wufeng1/zh_CN/index.htm
   group: 4
 
 

@@ -2227,6 +2227,262 @@ color:black;
   font-weight: 600;
 }
 
+/* 学术活动页面布局优化 */
+.activity-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.activity-page-container .row {
+  margin: 0;
+  display: flex;
+  align-items: stretch;
+  min-height: 50px;
+  height: fit-content;
+}
+
+/* 强制两个活动卡片高度一致 */
+.activity-page-container .col-sm-6:first-child .iamgeid,
+.activity-page-container .col-sm-6:last-child .iamgeid {
+  height: 100% !important;
+  min-height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.activity-page-container .col-sm-6:first-child .iamgeid .activity-container,
+.activity-page-container .col-sm-6:last-child .iamgeid .activity-container {
+  height: 100% !important;
+  min-height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.activity-page-container .col-sm-6 {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: stretch;
+  height: 100%;
+}
+
+.iamgeid {
+  padding: 20px;
+  margin: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(30, 60, 114, 0.1);
+  height: 100%;
+  min-height: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  align-items: stretch !important;
+}
+
+.iamgeid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1e3c72, #4a90e2, #2a5298);
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.iamgeid:hover::before {
+  transform: scaleX(1);
+}
+
+.iamgeid:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.iamgeid .section-header {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(30, 60, 114, 0.1);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.iamgeid .section-title {
+  font-size: 2.2rem;
+  color: #1e3c72;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.iamgeid .section-icon {
+  font-size: 2.6rem;
+  margin-right: 15px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.iamgeid .activity-container {
+  margin-bottom: 0 !important;
+  flex: 1;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between;
+  min-height: 100% !important;
+  height: 100% !important;
+  align-items: center !important;
+}
+
+.iamgeid .activity-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1e3c72;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, rgba(30, 60, 114, 0.05), rgba(74, 144, 226, 0.05));
+  border-radius: 12px;
+  border-left: 4px solid #4a90e2;
+}
+
+.iamgeid .activity-details {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 15px;
+  line-height: 1.7;
+  padding: 15px 20px;
+  background: rgba(248, 250, 252, 0.8);
+  border-radius: 10px;
+  border: 1px solid rgba(30, 60, 114, 0.08);
+}
+
+.iamgeid .carousel-container {
+  max-width: 100%;
+  margin: 5px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  flex-shrink: 0;
+}
+
+.iamgeid .carousel-container img {
+  max-height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.iamgeid .carousel-container:hover img {
+  transform: scale(1.02);
+}
+
+.iamgeid .activity-description {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.8;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, rgba(30, 60, 114, 0.03), rgba(74, 144, 226, 0.03));
+  border-radius: 12px;
+  border: 1px solid rgba(30, 60, 114, 0.1);
+  flex-shrink: 0;
+}
+
+.iamgeid .row {
+  margin-top: auto;
+  padding-top: 5px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .activity-page-container .row {
+    flex-direction: column;
+    min-height: auto;
+    height: auto;
+  }
+  
+  .iamgeid {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .iamgeid .section-title {
+    font-size: 2rem;
+  }
+  
+  .iamgeid .section-icon {
+    font-size: 2.4rem;
+  }
+  
+  .iamgeid .activity-title {
+    font-size: 1.6rem;
+    padding: 10px 16px;
+  }
+  
+  .iamgeid .activity-details {
+    font-size: 1.1rem;
+    padding: 12px 16px;
+  }
+  
+  .iamgeid .carousel-container img {
+    max-height: 250px;
+  }
+  
+  .iamgeid .activity-description {
+    font-size: 1rem;
+    padding: 15px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .activity-page-container {
+    padding: 15px;
+  }
+  
+  .iamgeid {
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .iamgeid .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .iamgeid .section-icon {
+    font-size: 2.2rem;
+  }
+  
+  .iamgeid .activity-title {
+    font-size: 1.5rem;
+    padding: 8px 14px;
+  }
+  
+  .iamgeid .activity-details {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+  
+  .iamgeid .carousel-container img {
+    max-height: 200px;
+  }
+  
+  .iamgeid .activity-description {
+    font-size: 0.95rem;
+    padding: 12px 15px;
+  }
+}
+
 /* 5列布局样式 */
 .team-grid .col-sm-2 {
   flex: 0 0 20%;
