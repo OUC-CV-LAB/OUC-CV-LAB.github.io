@@ -29,16 +29,13 @@
   url: https://faculty.ustc.edu.cn/wufeng1/zh_CN/index.htm
   group: 4
 
+
 - name: 刘治
   photo: liuzhi.jpg
   info:
   info2: 研究方向：医学影像组学，智能心理测量，网络空间安全
   url: https://faculty.sdu.edu.cn/liuzhi1/zh_CN/index/538797/list/index.htm
   group: 4
-
-
-
-
 
 
 - name: 张帆
@@ -53,7 +50,6 @@
   url: https://scholar.google.com/citations?user=brp3wz4AAAAJ&hl=zh-CN&oi=ao
   info: 博士后：软件工程专业
   info2: 研究方向：医学影像处理
-  group: 3
 
 - name: 张天戈
   photo: bio-photo.jpg
@@ -68,6 +64,7 @@
   info2: 研究方向：计算机视觉与深度学习
   pub: ACM MM+1
   group: 3
+
 
 - name: 张成
   photo: zhangcheng.jpg
