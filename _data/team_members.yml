@@ -1,9 +1,3 @@
-- name: 董军宇
-  photo: dongjunyu.jpg
-  info: 教授
-  info2: 研究方向：计算机视觉、人工智能、深度学习
-  url: http://it.ouc.edu.cn/djy/list.htm
-  group: 0
 
 - name: 蔡青
   photo: caiqing.jpg
@@ -12,8 +6,88 @@
   url: http://it.ouc.edu.cn/cq/list.htm
   group: 0
 
-  
-  
+
+- name: 董军宇
+  photo: dongjunyu.jpg
+  info:
+  info2: 研究方向：计算机视觉、人工智能、深度学习
+  url: http://it.ouc.edu.cn/djy/list.htm
+  group: 4
+
+- name: 张大鹏
+  photo: zhangdapeng.jpg
+  info:
+  info2: 研究方向：人工智能, 计算机科学, 机器学习与人工智能, 计算机视觉与计算机图形学
+  url: https://sds.cuhk.edu.cn/teacher/315
+  group: 4
+
+
+- name: 吴枫
+  photo: wufeng.jpg
+  info:
+  info2: 研究方向：视频编码与通信、多媒体内容分析、计算机视觉
+  url: https://faculty.ustc.edu.cn/wufeng1/zh_CN/index.htm
+  group: 4
+
+- name: 刘治
+  photo: liuzhi.jpg
+  info:
+  info2: 研究方向：医学影像组学，智能心理测量，网络空间安全
+  url: https://faculty.sdu.edu.cn/liuzhi1/zh_CN/index/538797/list/index.htm
+  group: 4
+
+
+
+
+
+
+- name: 张帆
+  photo: zhangfan.jpg
+  info: 博士后：计算机技术专业
+  info2: 研究方向：计算机视觉与人工智能
+  pub: TNNLS,PR
+  group: 3
+
+- name: 曹艳坤
+  photo: caoyankun.jpg
+  url: https://scholar.google.com/citations?user=brp3wz4AAAAJ&hl=zh-CN&oi=ao
+  info: 博士后：软件工程专业
+  info2: 研究方向：医学影像处理
+  group: 3
+
+
+- name: 张天戈
+  photo: bio-photo.jpg
+  info: 计算机技术专业
+  info2: 研究方向：人工智能与机器学习
+  pub: IJCAI+1
+  group: 3
+
+- name: 郭少翔
+  photo: guoshaoxiang.jpg
+  info: 计算机技术专业
+  info2: 研究方向：计算机视觉与深度学习
+  pub: ACM MM+1
+  group: 3
+
+- name: 张成
+  photo: zhangcheng.jpg
+  info: 计算机技术专业
+  info2: 研究方向：计算机视觉与图像处理
+  group: 3
+
+
+
+- name: 胡喜风
+  photo: huxifeng.jpg
+  info: 信息与通信工程专业
+  info2: 研究方向：医学图像分析
+  pub: information fusion
+  group: 3
+
+
+
+
 - name: 童亨
   photo: th.jpg
   info: 计算机技术专业
@@ -30,7 +104,6 @@
   photo: huan.jpg
   info: 软件工程专业
   info2: 研究方向：细粒度图像分类
-
   group: 1
 
 - name: 仇世纪
@@ -72,120 +145,107 @@
   pub: CVPR+1
   group: 1
 
+
+
+
+
+
+
 - name: 曹政
   photo: caozheng.jpg
   info: 计算机技术专业
   info2: 研究方向：医学图像三维重建
-  group: 2
+  group: 1
 
 - name: 舒恩慧
   photo: shuenhui.jpg
   info: 计算机技术专业
   info2: 研究方向：图像融合
-
-  group: 2
+  group: 1
 
 - name: 王绍哲
   photo: wangshaozhe.jpg
   info: 软件工程专业
   info2: 研究方向：多模态疾病辅助诊断
-  group: 2
+  group: 1
 
 - name: 严桂浩
   photo: yanguihao.jpg
   info: 计算机科学与技术专业
   info2: 研究方向：超声标准切面识别
-
-  group: 2
+  group: 1
 
 - name: 时东方
   photo: shidongfang.jpg
   info: 计算机科学与技术专业
   info2: 研究方向：多模态疾病辅助诊断
-
-  group: 2
+  group: 1
 
 - name: 魏兴悦
   photo: weixingyue.jpg
   info: 农业工程与信息技术专业
   info2: 研究方向：医学图像分类
-
-  group: 2
+  group: 1
 
 - name: 吉万文
   photo: jiwanwen.jpg
   info: 计算机技术专业
   info2: 研究方向：联邦医学图像分割
-
-  group: 2
+  group: 1
 
 - name: 陈继宗
   photo: cjz.jpg
   info: 计算机技术专业
   info2: 研究方向：超声增强
-  group: 2
+  group: 1
 
-- name: 郭少翔
-  photo: guoshaoxiang.jpg
-  info: 计算机技术专业
-  info2: 研究方向：计算机视觉与深度学习
-  pub: ACM MM+1
-  group: 3
 
-- name: 张天戈
-  photo: bio-photo.jpg
-  info: 计算机技术专业
-  info2: 研究方向：人工智能与机器学习
-  pub: IJCAI+1
-  group: 3
 
-- name: 张成
-  photo: zhangcheng.jpg
-  info: 计算机技术专业
-  info2: 研究方向：计算机视觉与图像处理
-  group: 3
 
-- name: 张帆
-  photo: zhangfan.jpg
-  info: 合作学者
-  info2: 研究方向：计算机视觉与人工智能
-  group: 4
+
+
+
+
+
+
+
+
 
 - name: 胡腾峰
   photo: hutengfeng.jpg
   info: 计算机科学与技术专业
   info2: 研究方向：医学多模态辅助诊断
-  group: 5
+  group: 1
 
 - name: 胡梓怡
   photo: huziyi.jpg
   info: 计算机科学与技术专业
   info2: 研究方向：医学多模态辅助诊断
-  group: 5
+  group: 1
 
 - name: 李福临
   photo: lifulin.jpg
   info: 软件工程专业
   info2: 研究方向：医学多模态辅助诊断
-  group: 5
+  group: 1
 
 - name: 吴兴政
   photo: wuxingzheng.jpg
   info: 农业工程与信息技术专业
   info2: 研究方向：具身智能
-  group: 5
+  group: 1
 
 - name: 王子健
   photo: wangzijian.jpg
   info: 保密科学与技术专业
   info2: 研究方向：联邦学习
-  group: 5
+  group: 1
 
 - name: 赵彤
   photo: zhaotong.jpg
   info: 计算机技术
   info2: 研究方向：图像增强
-  group: 5
+  group: 1
 
 - name: Lindsay Liang
   photo: lindsayliang.jpg
@@ -206,7 +266,7 @@
   url: brookesheppard
   group: 8
   year: 2017-2021
-  
+
 - name: Aparna Kumar
   photo: aparnakumar.jpg
   info: Undergraduate Research Volunteer
@@ -230,7 +290,7 @@
   year: 2015-2019
   current: Assistant Professor of Genetics, University of Wisconsin-Madison
   extlink: https://werling.genetics.wisc.edu/
-  
+
 - name: Joon An
   photo: joonan.jpg
   info: Postdoctoral Scholar
@@ -270,7 +330,7 @@
   url: denizyuruk
   group: 8
   year: 2017-2018
-  
+
 - name: Louw Smith
   info: Data Operations Manager
   url: louwsmith
@@ -298,14 +358,14 @@
   url: florazhao
   group: 8
   year: 2017
-  current: 
+  current:
 
 - name: Jason Zhao
   info: High School Research Volunteer
   url: jasonzhao
   group: 8
   year: 2017
-  current: 
+  current:
 
 - name: Carmen Sandoval
   info: Neuroscience Rotation Student
@@ -320,5 +380,22 @@
   group: 8
   year: 2018
   current: Bard College
-  
- 
+
+- name: 洪佳荣
+  photo: hongjiarong.jpg
+  info: 去往院校：南京大学
+  info2:
+  url: https://github.com/hongjr03
+  group: 6
+
+- name: 康家辉
+  photo: kangjiahui.jpg
+  info: 去往院校：西安交通大学
+  info2: 研究方向：通过视觉语言模型实现深度超分辨率
+  group: 6
+
+- name: 曾祥辉
+  photo: zengxianghui.jpg
+  info: 去往院校：西安交通大学
+  info2: 研究方向：通过视觉语言模型实现深度超分辨率
+  group: 6

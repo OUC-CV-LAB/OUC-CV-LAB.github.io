@@ -14,6 +14,7 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: 30px;
+
     }
     .activity-title {
       font-size: 1.5em;
@@ -178,9 +179,9 @@
 
 <script>
     const imagesMeta = [
-        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-12-15.jpg",
-        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-12-15_2.jpg",
-        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-12-15_3.jpg"
+        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2025-9-20.jpg",
+        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2025-9-20_2.jpg",
+        "{{ site.url }}{{ site.baseurl }}/images/xueshupic/2025-9-20.jpg"
     ];
 
     let currentIndexMeta = 0; // 当前图片索引
@@ -211,28 +212,63 @@
 
 
 <div class="activity-container">
-    <div class="activity-title">第四届泰山智能产业创新发展大会———元宇宙与创新成果论坛</div>
+    <div class="activity-title">人工智能前沿论坛・第四期</div>
     <div class="activity-details">
-        <strong>时间：</strong>2023年12月15日<br>
-        <strong>地点：</strong>山东省潍坊市富华大酒店<br>
-        <strong>主办方：</strong>山东省人工智能学会、山东省电力行业协会、潍坊市科学技术协会共同主办
+      <strong>时间：</strong>2024年12月26日<br>
+      <strong>地点：</strong>中国科学技术大学高新校区<br>
+      <strong>主办方：</strong>脑启发智能感知与认知教育部重点实验室
+    </div>
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-26.jpg" alt="活动合影">
+    <div class="activity-description">
+        由脑启发智能感知与认知教育部重点实验室主办，华为诺亚方舟实验室、类脑智能技术及应用国家工程实验室和安徽省计算机学会机器学习专委会协办的第四期人工智能前沿论坛暨“具身智能”专题论坛在中国科学技术大学高新校区成功举办。
+        本次论坛邀请了19位国内人工智能领域知名专家，围绕“具身智能”专题进行了精彩的学术报告。吸引了来自中国科学技术大学、复旦大学、山东大学、山东师范大学、中国海洋大学、中科院合肥创新院等高校和科研院所的师生及专家学者们，线下总人数达到300余人。
     </div>
 
-    <!-- 轮播图容器 -->
-    <div class="carousel-container">
-        <button class="carousel-btn left" onclick="changeImageMeta(-1)">&#10094;</button>
-        <img id="imageDisplayMeta" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2023-12-15.jpg" alt="活动合影">
-        <button class="carousel-btn right" onclick="changeImageMeta(1)">&#10095;</button>
+  </div>
+<div class="activity-container">
+    <div class="activity-title">CSIG青年科学家会议</div>
+    <div class="activity-details">
+        <strong>时间：</strong>2024年12月13日<br>
+        <strong>地点：</strong>杭州<br>
+        <strong>主办方：</strong>中国图象图形学学会
     </div>
+
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-12-13.jpg" alt="活动合影">
 
     <div class="activity-description">
-        中国海洋大学蔡青教授参与TAIIC2023并获得了2023年山东省人工智能优秀青年奖。
+        大会特别邀请了四位在图像图形学领域取得卓越成就的专家做主旨报告。他们分别是南京大学副校长、国家杰出青年科学基金获得者周志华教授，中国科学院自动化研究所多模态人工智能系统全国重点实验室副主任王亮研究员，香港科技大学计算机科学与工程学系教授、思谋科技创始人贾佳亚教授和深圳大学计算机与软件学院院长黄惠教授。四位讲者就各自领域的最新研究成果发表了精彩的报告。
+        第二十一届中国图象图形学学会青年科学家会议拟于2025年在青岛召开。成功申办2025年CSIG科学家会议，并入选青工委。
     </div>
 </div>
+<div class="activity-container">
+    <div class="activity-title">人工智能前沿论坛・第三期</div>
+    <div class="activity-details">
+      <strong>时间：</strong>2024年11月21日<br>
+      <strong>地点：</strong>中国科学技术大学高新校区<br>
+      <strong>主办方：</strong>脑启发智能感知与认知教育部重点实验室
+    </div>
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2024-11-21.png" alt="活动合影">
+    <div class="activity-description">
+        本次论坛邀请了复旦大学杨珉教授，北京化工大学朱群雄教授，北京大学查红彬教授，清华大学鲁继文教授，
+        同济大学赵生捷教授，中科院自动化所刘成林研究员，上海交通大学王新兵教授，中国科学院大学叶齐祥教授等15位人工智能领域专家。
+        中国科学技术大学党委常委、副校长吴枫教授，脑启发智能感知与认知教育部重点实验室副主任王杰教授致欢迎辞。
+        中国科学技术大学信息科学技术学院党委书记李斌书记，中国科学技术大学人工智能与数据科学学院副院长何向南教授，
+        中国科学技术大学张天柱教授等出席会议，此外现场来宾还有来自中国科学技术大学、
+        国防科技大学等高校师生及科研院所学者专家，参会总人次共计320余人。
+    </div>
+  </div>
+
+
+
+
+
+
+
+
 
 <div class="row" style="max-width: 800px; margin: auto;">
     <p style="text-align: center; margin-top: 10px;">
-        <a href="{{ site.url }}{{ site.baseurl }}/join.html" 
+        <a href="{{ site.url }}{{ site.baseurl }}/join.html"
            style="text-decoration: none; color: #007bff; font-weight: bold;">
             ...更多
         </a>

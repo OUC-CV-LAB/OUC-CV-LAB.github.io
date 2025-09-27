@@ -64,20 +64,23 @@ p {
 .navbar-default .navbar-nav > li > a.nav-link {
 	position: relative;
 	transition: all 0.3s ease;
-	padding: 15px 20px;
+	padding: 25px 20px; /* 增加垂直padding来控制高度 */
 	font-weight: 500;
 	font-size: 2rem; /* 17.6px */
+	line-height: 30px; /* 设置行高 */
 }
 
 .navbar-default .navbar-brand {
 	font-size: 2rem; /* 20.8px */
 	font-weight: 600;
+	padding: 20px 15px; /* 调整brand的padding来控制高度 */
+	line-height: 40px; /* 设置行高 */
 }
 
 /* 卡片标题字体大小 */
 .card-header h3 {
 	margin: 0;
-	font-size: 2.5rem; /* 20px */
+	font-size: 3.4rem; /* 从2.8rem再放大20%到3.4rem */
 	font-weight: 600;
 	display: flex;
 	align-items: center;
@@ -129,6 +132,8 @@ figcaption {
 .navbar-default {
 	background-color: #004098; /* 主背景色 */
 	border-color: #003074;      /* 可选边框色 */
+	min-height: 80px; /* 设置navbar最小高度 */
+	height: 80px; /* 设置navbar固定高度 */
   }
   
 
@@ -173,16 +178,121 @@ figcaption {
 /* 导航栏品牌logo优化 */
 .navbar-brand img {
   transition: all 0.3s ease;
+  max-width: 120px;
+  height: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)); /* 添加阴影增强对比度 */
+  opacity: 0.95; /* 稍微调整透明度 */
 }
 
 .navbar-brand:hover img {
   transform: scale(1.05);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4)); /* 悬停时增强阴影 */
+  opacity: 1; /* 悬停时完全不透明 */
+}
+
+/* 响应式logo尺寸 */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    max-width: 100px;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    opacity: 0.95;
+  }
+  
+  /* 移动端navbar高度调整 */
+  .navbar-default {
+    min-height: 60px;
+    height: 60px;
+  }
+  
+  .navbar-default .navbar-brand {
+    padding: 15px 15px;
+    line-height: 30px;
+  }
+  
+  .navbar-default .navbar-nav > li > a.nav-link {
+    padding: 15px 15px;
+    line-height: 30px;
+  }
+  
+  /* 移动端navbar-collapse高度调整 */
+  .navbar-collapse {
+    min-height: 60px !important;
+    height: 60px !important;
+  }
+  
+  .navbar-collapse .navbar-nav > li > a {
+    padding: 15px 15px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand img {
+    max-width: 80px;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    opacity: 0.95;
+  }
+  
+  /* 超小屏幕navbar-collapse高度调整 */
+  .navbar-collapse {
+    min-height: 50px !important;
+    height: 50px !important;
+  }
+  
+  .navbar-collapse .navbar-nav > li > a {
+    padding: 10px 10px !important;
+  }
 }
 
 /* 移动端菜单按钮优化 */
 .navbar-toggle {
   border: 2px solid rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease;
+}
+
+/* collapse navbar-collapse高度设置 */
+.navbar-collapse {
+  min-height: 80px !important; /* 与navbar-default高度一致 */
+  height: 80px !important;
+  display: flex !important;
+  align-items: center !important; /* 垂直居中对齐 */
+  padding: 0 !important; /* 移除默认padding */
+}
+
+.navbar-collapse .navbar-nav {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important; /* 垂直居中对齐 */
+  margin: 0 !important; /* 移除默认margin */
+}
+
+.navbar-collapse .navbar-nav > li {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.navbar-collapse .navbar-nav > li > a {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 25px 20px !important; /* 确保垂直padding足够 */
+}
+
+/* 确保navbar-collapse在展开状态下也有正确高度 */
+.navbar-collapse.in,
+.navbar-collapse.collapse.in {
+  min-height: 80px !important;
+  height: 80px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* 确保navbar-collapse在折叠状态下也有正确高度 */
+.navbar-collapse.collapse {
+  min-height: 80px !important;
+  height: 80px !important;
 }
 
 .navbar-toggle:hover {
@@ -394,7 +504,7 @@ color:black;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  min-height: 450px;
+  min-height: 500px;
 }
 
 .image-container:hover {
@@ -419,7 +529,7 @@ color:black;
   text-orientation: mixed !important; /* 强制混合方向 */
   transform: none !important; /* 强制移除任何变换 */
   transform-origin: initial !important; /* 重置变换原点 */
-  min-height: 450px;
+  min-height: 500px;
 }
 
 .intro-container:hover {
@@ -430,22 +540,34 @@ color:black;
 
 /* 确保左右两列高度一致 */
 .hero-section .row {
+  display: flex;
   align-items: stretch; /* 让列拉伸到相同高度 */
-  min-height: 500px; /* 设置最小高度确保有足够空间 */
+  min-height: 600px; /* 增加最小高度确保有足够空间 */
 }
 
 .hero-section .col-sm-7,
 .hero-section .col-sm-5 {
   display: flex;
   flex-direction: column;
-  align-items: center; /* 列内元素垂直居中 */
-  justify-content: center; /* 列内元素水平居中 */
+  align-items: stretch; /* 让列内元素拉伸到相同高度 */
+  justify-content: center; /* 列内元素垂直居中 */
 }
+
+/* 手动设置hero-section列宽度为50% */
+.hero-section .col-sm-7,
+.hero-section .col-sm-5 {
+  width: 50% !important; /* 强制设置为50%宽度 */
+  flex: 0 0 50%; /* flexbox方式设置50%宽度 */
+}
+
+
+
+
 
 /* 图片容器和介绍容器的对齐优化 */
 .image-container,
 .intro-container {
-  min-height: 400px; /* 设置最小高度确保一致性 */
+  min-height: 500px; /* 设置最小高度确保一致性 */
   margin: 0; /* 移除默认边距 */
   display: flex;
   flex-direction: column;
@@ -454,24 +576,29 @@ color:black;
   flex: 1; /* 让容器占满整个列的高度 */
   height: 100%; /* 占满整个列的高度 */
   align-self: stretch; /* 拉伸到列的高度 */
+  width: 100%; /* 确保占满列宽 */
 }
 
 /* 响应式对齐调整 */
 @media (max-width: 768px) {
   .image-container,
   .intro-container {
-    min-height: 300px;
+    min-height: 400px;
     margin-bottom: 20px;
   }
   
   .hero-section .row {
-    align-items: center; /* 移动端也保持居中对齐 */
+    flex-direction: column;
+    align-items: stretch; /* 移动端也保持拉伸对齐 */
+    min-height: auto; /* 移动端取消固定最小高度 */
   }
   
   /* 移动端特殊对齐处理 */
   .hero-section .col-sm-7,
   .hero-section .col-sm-5 {
+    width: 100%;
     margin-bottom: 20px;
+    flex: none; /* 移动端取消flex: 1 */
   }
   
   /* 移动端dogs.gif和联系方式调整 */
@@ -687,7 +814,7 @@ color:black;
 
 .card-header h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: 29px; /* 从24px再放大20%到29px */
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -788,7 +915,7 @@ color:black;
 }
 
 .card-body {
-  padding: 25px;
+  padding: 15px;
 }
 
 /* 特色区域样式 */
@@ -1091,21 +1218,85 @@ color:black;
   /* 主页手机端布局优化 */
   .hero-section .row {
     flex-direction: column;
+    align-items: stretch; /* 移动端也保持拉伸对齐 */
+    min-height: auto; /* 移动端取消固定最小高度 */
   }
   
   .hero-section .col-sm-7,
   .hero-section .col-sm-5 {
     width: 100%;
     margin-bottom: 20px;
+    flex: none; /* 移动端取消flex: 1 */
   }
   
   .content-section .row {
     flex-direction: column;
+    align-items: stretch; /* 移动端也保持拉伸对齐 */
   }
   
   .content-section .col-sm-6 {
     width: 100%;
-    margin-bottom: 20px;
+    max-width: 100%; /* 移动端使用全宽 */
+    margin: 0 0 20px 0; /* 移动端只保留底部间距 */
+    flex: none; /* 移动端取消flex: 1 */
+  }
+  
+  /* 移动端content-section card-body文字水平排列 */
+  .content-section .card-body {
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    direction: ltr !important;
+    unicode-bidi: normal !important;
+  }
+  
+  /* 移动端card-body中的row元素改为垂直排列 */
+  .content-section .card-body .row {
+    flex-direction: column;
+    margin-bottom: 2px;
+    padding: 1px 0;
+  }
+  
+  .content-section .card-body .col-sm-12 {
+    padding: 0 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* 移动端标题样式调整 */
+  .content-section .card-body h3 {
+    text-align: center !important;
+    font-size: 1.5rem;
+    margin: 0 auto 15px auto !important;
+    width: fit-content;
+    display: block;
+  }
+  
+  /* 移动端论文链接样式调整 */
+  .content-section .card-body .pub1 {
+    padding: 6px 10px;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+  }
+  
+  /* 移动端新闻样式调整 */
+  .content-section .card-body p strong {
+    font-size: 1rem;
+    padding: 4px 8px;
+  }
+  
+  .content-section .card-body p em {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+  
+  /* 移动端更多链接样式调整 */
+  .content-section .card-body a[href*="publications"],
+  .content-section .card-body a[href*="allnews"] {
+    display: block !important;
+    margin: 10px auto 0 auto !important;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    text-align: center !important;
+    width: fit-content !important;
   }
   
   .features-section .row {
@@ -1142,6 +1333,247 @@ color:black;
   overflow: hidden;
 }
 
+/* 确保content-section中的两个col-sm-6上下对齐 */
+.content-section .row {
+  display: flex;
+  align-items: stretch; /* 让列拉伸到相同高度 */
+  justify-content: space-between; /* 左右对齐 */
+  min-height: 100px; /* 设置最小高度确保有足够空间 */
+}
+
+.content-section .col-sm-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* 让列内元素拉伸到相同高度 */
+  flex: 1; /* 平均分配宽度 */
+  margin: 0 10px; /* 添加左右间距 */
+}
+
+/* 确保卡片内容正常显示 */
+.content-section .content-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content-section .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  writing-mode: horizontal-tb !important; /* 强制水平书写模式 */
+  text-orientation: mixed !important; /* 强制混合方向 */
+  direction: ltr !important; /* 强制从左到右方向 */
+  unicode-bidi: normal !important; /* 正常双向文本 */
+  padding: 8px;
+}
+
+/* 将card-body中的row元素改为横向排列 */
+.content-section .card-body .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 1px;
+  padding: 1px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.content-section .card-body .row:hover {
+  background: rgba(30, 60, 114, 0.02);
+  border-radius: 8px;
+  padding: 15px 10px;
+  margin: 0 -10px 20px -10px;
+}
+
+/* 调整col-sm-12在card-body中的样式 */
+.content-section .card-body .col-sm-12 {
+  flex: 1;
+  min-width: 0;
+  padding: 0 15px;
+}
+
+/* 优化学术论文标题样式 */
+.content-section .card-body h3 {
+  text-align: center !important;
+  color: #1e3c72;
+  font-size: 2.5rem; /* 从2.1rem再放大20%到2.5rem */
+  font-weight: 600;
+  margin: 0 auto 10px auto !important;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #4a90e2;
+  position: relative;
+  width: fit-content;
+  display: block;
+}
+
+.content-section .card-body h3::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, #1e3c72, #4a90e2);
+}
+
+/* 优化作者说明样式 */
+.content-section .card-body p[style*="font-size: 14px"] {
+  text-align: center;
+  color: #666;
+  font-size: 1.4rem !important; /* 从1.2rem再放大20%到1.4rem */
+  font-style: italic;
+  margin-bottom: 15px;
+  padding: 6px 12px;
+  background: rgba(30, 60, 114, 0.05);
+  border-radius: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* 调整pub1链接的样式 */
+.content-section .card-body .pub1 {
+  display: block;
+  margin-bottom: 3px;
+  line-height: 1.4;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  border-left: 4px solid #4a90e2;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-size: 1.3rem; /* 从1.1rem再放大20%到1.3rem */
+}
+
+.content-section .card-body .pub1:hover {
+  background: rgba(30, 60, 114, 0.05);
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(30, 60, 114, 0.1);
+}
+
+/* 确保右边新闻动态的pub1样式与左边一致 */
+.content-section .news-card .card-body .pub1 {
+  display: block;
+  margin-bottom: 3px;
+  line-height: 1.4;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  border-left: 4px solid #4a90e2;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-size: 1.3rem; /* 从1.1rem再放大20%到1.3rem */
+}
+
+.content-section .news-card .card-body .pub1:hover {
+  background: rgba(30, 60, 114, 0.05);
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(30, 60, 114, 0.1);
+}
+
+/* 调整新闻条目的样式 */
+.content-section .card-body p {
+  margin-bottom: 3px;
+  line-height: 1.4;
+  color: #555;
+}
+
+/* 确保右边新闻动态的标题和描述样式与左边一致 */
+.content-section .news-card .card-body h3 {
+  text-align: center !important;
+  color: #1e3c72;
+  font-size: 2.5rem; /* 从2.1rem再放大20%到2.5rem */
+  font-weight: 600;
+  margin-bottom: 15px;
+  position: relative;
+  display: block;
+}
+
+.content-section .news-card .card-body h3::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #4a90e2, #1e3c72);
+  border-radius: 2px;
+}
+
+.content-section .news-card .card-body p[style*="font-size: 14px"] {
+  text-align: center;
+  color: #666;
+  font-size: 1.4rem !important; /* 从1.2rem再放大20%到1.4rem */
+  margin-bottom: 20px;
+  padding: 8px 15px;
+  background: rgba(30, 60, 114, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid #4a90e2;
+}
+
+/* 确保包含更多按钮的p元素居中 */
+.content-section .card-body p:has(a[href*="publications"]),
+.content-section .card-body p:has(a[href*="allnews"]) {
+  text-align: center !important;
+  margin: 10px auto 0 auto !important;
+  width: 100% !important;
+}
+
+/* 优化新闻日期样式 */
+.content-section .card-body p strong {
+  color: #1e3c72;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: linear-gradient(135deg, rgba(30, 60, 114, 0.1), rgba(74, 144, 226, 0.1));
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* 优化新闻标题样式 */
+.content-section .card-body p em {
+  color: #e74c3c;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  display: block;
+  margin-top: 8px;
+  padding: 10px 15px;
+  background: rgba(231, 76, 60, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid #e74c3c;
+}
+
+/* 优化更多链接样式 */
+.content-section .card-body a[href*="publications"],
+.content-section .card-body a[href*="allnews"] {
+  display: block !important;
+  margin: 10px auto 0 auto !important;
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #1e3c72, #4a90e2);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);
+  width: fit-content !important;
+  text-align: center !important;
+  font-size: 1.3rem; /* 从1.1rem再放大20%到1.3rem */
+}
+
+.content-section .card-body a[href*="publications"]:hover,
+.content-section .card-body a[href*="allnews"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 60, 114, 0.4);
+  background: linear-gradient(135deg, #2a5298, #5ba0f2);
+}
+
 .content-section::before {
   content: '';
   position: absolute;
@@ -1165,6 +1597,9 @@ color:black;
   border: none;
   position: relative;
   transform: translateY(0);
+  flex: 1; /* 让卡片占满整个列的高度 */
+  display: flex;
+  flex-direction: column;
 }
 
 .content-card::before {
@@ -1219,7 +1654,7 @@ color:black;
 
 .card-header h3 {
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 3.0rem; /* 从2.5rem再放大20%到3.0rem */
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -1261,6 +1696,9 @@ color:black;
   padding: 40px 35px;
   background: white;
   position: relative;
+  flex: 1; /* 让card-body占满剩余空间 */
+  display: block; /* 恢复正常的块级显示 */
+  text-align: left; /* 文字左对齐 */
 }
 
 .card-body::before {
@@ -1474,7 +1912,7 @@ color:black;
   }
   
   .card-header h3 {
-    font-size: 1.8rem;
+    font-size: 2.5rem; /* 从2.1rem再放大20%到2.5rem */
   }
   
   .card-body {
@@ -1779,14 +2217,14 @@ color:black;
 }
 
 .section-icon {
-  font-size: 3rem;
+  font-size: 5rem;
   animation: bounce 2s ease-in-out infinite;
   margin-bottom: 15px;
 }
 
 .section-title {
   color: #1e3c72;
-  font-size: 2.8rem;
+  font-size: 4.8rem;
   font-weight: 700;
   margin: 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -1796,7 +2234,7 @@ color:black;
 
 .section-description {
   color: #666;
-  font-size: 1.4rem;
+  font-size: 4rem;
   font-weight: 400;
   margin: 0;
   opacity: 0.8;
@@ -1846,12 +2284,30 @@ color:black;
   margin-bottom: 20px;
 }
 
+/* 蔡青卡片的member-photo位置调整 */
+.team-grid .row .col-sm-6:first-child .member-photo {
+  margin-top: 100px !important;
+  transform: translateY(30px) !important;
+}
+
 .member-photo img {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 25%; /* 调整照片位置，让脸部更清楚，稍微向上一点 */
+  border: 4px solid #f0f0f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 除了蔡青之外的其他member-card放大样式 */
+.team-grid .row .col-sm-2 .member-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 25%;
   border: 4px solid #f0f0f0;
   transition: all 0.3s ease;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -1870,9 +2326,18 @@ color:black;
 
 .member-name {
   color: #1e3c72;
-  font-size: 1.8rem;
+  font-size: 1.8rem !important;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+/* 除了蔡青之外的其他member-name放大样式 */
+.team-grid .row .col-sm-2 .member-name {
+  color: #1e3c72;
+  font-size: 2.2rem !important;
+  font-weight: 600;
+  margin-bottom: 12px;
   transition: all 0.3s ease;
 }
 
@@ -1889,21 +2354,446 @@ color:black;
 
 .member-title {
   color: #666;
-  font-size: 1.2rem;
-  margin-bottom: 8px;
+  font-size: 1.8rem !important;
+  margin-bottom: 10px;
   font-style: italic;
 }
 
 .member-research {
   color: #888;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   margin-bottom: 8px;
   font-style: italic;
 }
 
+/* 蔡青卡片特殊样式 - 放大图片 */
+.team-grid .row .col-sm-6:first-child .member-photo img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 25px rgba(30, 60, 114, 0.2);
+}
+
+.team-grid .row .col-sm-6:first-child .member-photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(30, 60, 114, 0.3);
+}
+
+/* 蔡青卡片整体样式优化 */
+.team-grid .row .col-sm-6:first-child .member-card {
+  background: linear-gradient(135deg, rgba(30, 60, 114, 0.05) 0%, rgba(74, 144, 226, 0.05) 100%);
+  border: 2px solid rgba(30, 60, 114, 0.1);
+  box-shadow: 0 10px 30px rgba(30, 60, 114, 0.1);
+}
+
+.team-grid .row .col-sm-6:first-child .member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(30, 60, 114, 0.15);
+  border-color: rgba(30, 60, 114, 0.2);
+}
+
+/* 蔡青卡片特殊文字样式 - 放大姓名和职位 */
+.team-grid .row .col-sm-6:first-child .member-name {
+  font-size: 3.6rem !important;
+  font-weight: 700;
+}
+
+.team-grid .row .col-sm-6:first-child .member-title {
+  font-size: 3.6rem !important;
+  font-weight: 600;
+}
+
+/* 学术活动页面布局优化 */
+.activity-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.activity-page-container .row {
+  margin: 0;
+  display: flex;
+  align-items: stretch;
+  min-height: 50px;
+  height: fit-content;
+}
+
+/* 强制两个活动卡片高度一致 */
+.activity-page-container .col-sm-6:first-child .iamgeid,
+.activity-page-container .col-sm-6:last-child .iamgeid {
+  height: 100% !important;
+  min-height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.activity-page-container .col-sm-6:first-child .iamgeid .activity-container,
+.activity-page-container .col-sm-6:last-child .iamgeid .activity-container {
+  height: 100% !important;
+  min-height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.activity-page-container .col-sm-6 {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: stretch;
+  height: 100%;
+}
+
+.iamgeid {
+  padding: 20px;
+  margin: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(30, 60, 114, 0.1);
+  height: 100%;
+  min-height: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  align-items: stretch !important;
+}
+
+.iamgeid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1e3c72, #4a90e2, #2a5298);
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.iamgeid:hover::before {
+  transform: scaleX(1);
+}
+
+.iamgeid:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.iamgeid .section-header {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(30, 60, 114, 0.1);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.iamgeid .section-title {
+  font-size: 2.2rem;
+  color: #1e3c72;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.iamgeid .section-icon {
+  font-size: 2.6rem;
+  margin-right: 15px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.iamgeid .activity-container {
+  margin-bottom: 0 !important;
+  flex: 1;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between;
+  min-height: 100% !important;
+  height: 100% !important;
+  align-items: center !important;
+}
+
+.iamgeid .activity-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1e3c72;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, rgba(30, 60, 114, 0.05), rgba(74, 144, 226, 0.05));
+  border-radius: 12px;
+  border-left: 4px solid #4a90e2;
+}
+
+.iamgeid .activity-details {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 15px;
+  line-height: 1.7;
+  padding: 15px 20px;
+  background: rgba(248, 250, 252, 0.8);
+  border-radius: 10px;
+  border: 1px solid rgba(30, 60, 114, 0.08);
+}
+
+.iamgeid .carousel-container {
+  max-width: 100%;
+  margin: 5px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  flex-shrink: 0;
+}
+
+.iamgeid .carousel-container img {
+  max-height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.iamgeid .carousel-container:hover img {
+  transform: scale(1.02);
+}
+
+.iamgeid .activity-description {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.8;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, rgba(30, 60, 114, 0.03), rgba(74, 144, 226, 0.03));
+  border-radius: 12px;
+  border: 1px solid rgba(30, 60, 114, 0.1);
+  flex-shrink: 0;
+}
+
+.iamgeid .row {
+  margin-top: auto;
+  padding-top: 5px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .activity-page-container .row {
+    flex-direction: column;
+    min-height: auto;
+    height: auto;
+  }
+  
+  .iamgeid {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .iamgeid .section-title {
+    font-size: 2rem;
+  }
+  
+  .iamgeid .section-icon {
+    font-size: 2.4rem;
+  }
+  
+  .iamgeid .activity-title {
+    font-size: 1.6rem;
+    padding: 10px 16px;
+  }
+  
+  .iamgeid .activity-details {
+    font-size: 1.1rem;
+    padding: 12px 16px;
+  }
+  
+  .iamgeid .carousel-container img {
+    max-height: 250px;
+  }
+  
+  .iamgeid .activity-description {
+    font-size: 1.3rem;
+    padding: 15px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .activity-page-container {
+    padding: 15px;
+  }
+  
+  .iamgeid {
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .iamgeid .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .iamgeid .section-icon {
+    font-size: 2.2rem;
+  }
+  
+  .iamgeid .activity-title {
+    font-size: 1.5rem;
+    padding: 8px 14px;
+  }
+  
+  .iamgeid .activity-details {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+  
+  .iamgeid .carousel-container img {
+    max-height: 200px;
+  }
+  
+  .iamgeid .activity-description {
+    font-size: 1.2rem;
+    padding: 12px 15px;
+  }
+}
+
+/* 6列布局样式 */
+.team-grid .col-sm-2 {
+  flex: 0 0 16.666%;
+  max-width: 16.666%;
+  padding: 0 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .team-grid .col-sm-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid .col-sm-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 5px;
+  }
+}
+
+/* 成员详细介绍卡片样式 */
+.member-detail-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-detail-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #1e3c72, #2a5298, #4a90e2);
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.member-detail-card:hover::before {
+  transform: scaleX(1);
+}
+
+.member-detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(30, 60, 114, 0.12);
+}
+
+.detail-header {
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.detail-header h3 {
+  color: #1e3c72;
+  font-size: 3.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.detail-subtitle {
+  color: #666;
+  font-size: 2.1rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.detail-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detail-section h4 {
+  color: #1e3c72;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-left: 4px solid #4a90e2;
+  padding-left: 15px;
+}
+
+.detail-section p {
+  color: #555;
+  font-size: 1.95rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.detail-section ul {
+  color: #555;
+  font-size: 1.95rem;
+  line-height: 1.7;
+  margin: 0;
+  padding-left: 25px;
+}
+
+.detail-section li {
+  margin-bottom: 10px;
+}
+
+.detail-section a {
+  color: #4a90e2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.95rem;
+  font-weight: 500;
+}
+
+.detail-section a:hover {
+  color: #1e3c72;
+  text-decoration: underline;
+}
+
 .member-publication {
   color: #e74c3c;
-  font-size: 1rem;
+  font-size: 2.0rem;
   font-weight: 500;
   font-style: italic;
 }
@@ -2320,6 +3210,7 @@ color:black;
   
   .section-title {
     font-size: 2.2rem;
+    color: black;
   }
   
   .member-card {
@@ -2328,13 +3219,51 @@ color:black;
   }
   
   .member-photo img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-position: center 25%; /* 手机端也保持相同的位置 */
   }
   
+  /* 除了蔡青之外的其他member-card移动端放大样式 */
+  .team-grid .row .col-sm-2 .member-photo img {
+    width: 140px;
+    height: 140px;
+    object-position: center 25%;
+  }
+  
   .member-name {
-    font-size: 1.6rem;
+    font-size: 1.8rem !important;
+  }
+  
+  /* 除了蔡青之外的其他member-name移动端放大样式 */
+  .team-grid .row .col-sm-2 .member-name {
+    font-size: 2.0rem !important;
+  }
+  
+  .member-title {
+    font-size: 1.8rem !important;
+  }
+  
+  /* 蔡青卡片移动端样式 */
+  .team-grid .row .col-sm-6:first-child .member-photo img {
+    width: 220px;
+    height: 220px;
+  }
+  
+  /* 蔡青卡片移动端整体样式 */
+  .team-grid .row .col-sm-6:first-child .member-card {
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.08) 0%, rgba(74, 144, 226, 0.08) 100%);
+  }
+  
+  /* 蔡青卡片移动端特殊文字样式 */
+  .team-grid .row .col-sm-6:first-child .member-name {
+    font-size: 3.6rem !important;
+    font-weight: 700;
+  }
+  
+  .team-grid .row .col-sm-6:first-child .member-title {
+    font-size: 3.6rem !important;
+    font-weight: 600;
   }
   
   .section-title {
@@ -2444,13 +3373,24 @@ color:black;
 /* 团队成员页面样式 */
 .team-section {
   margin-bottom: 80px;
-  padding: 60px 0;
+  padding: 60px 40px;
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #e9ecef 100%);
   border-radius: 30px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(74, 144, 226, 0.1);
+}
+
+/* 团队页面section标题和描述文字颜色 */
+.team-section .section-title {
+  color: #000000 !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-section .section-description {
+  color: #000000 !important;
+  opacity: 0.8;
 }
 
 .team-section::before {
@@ -2477,13 +3417,13 @@ color:black;
 }
 
 .section-icon {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   animation: bounce 2s ease-in-out infinite;
 }
 
 .section-title {
   color: #1e3c72;
-  font-size: 2.8rem;
+  font-size: 3.8rem;
   font-weight: 700;
   margin: 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -2491,7 +3431,7 @@ color:black;
 
 .section-description {
   color: #666;
-  font-size: 1.4rem;
+  font-size: 2.8rem;
   font-weight: 400;
   margin: 0;
   opacity: 0.8;
@@ -2502,17 +3442,50 @@ color:black;
   z-index: 1;
 }
 
+/* 导师团队特殊布局样式 */
+.team-grid .row {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* 均匀分布 */
+  align-items: stretch; /* 拉伸对齐 */
+  gap: 0; /* 移除gap，使用padding控制间距 */
+}
+
+/* 导师团队2列布局 */
+.team-grid .col-sm-6 {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  flex: 0 0 48%; /* 稍微减少宽度，留出间距 */
+  max-width: 48%;
+  display: flex;
+  justify-content: center;
+}
+
+.team-grid .col-sm-3 {
+  margin-bottom: 20px;
+  padding: 0 8px; /* 减少左右padding */
+  flex: 0 0 24%; /* 稍微减少宽度，留出间距 */
+  max-width: 24%;
+  display: flex;
+  justify-content: center; /* 卡片内容居中 */
+}
+
 .member-card {
   background: white;
-  border-radius: 25px;
-  padding: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 0; /* 移除底部margin，由row控制间距 */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
   transform: translateY(0);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* 确保卡片占满容器宽度 */
 }
 
 .member-card::before {
@@ -2532,41 +3505,45 @@ color:black;
 }
 
 .member-card:hover {
-  transform: translateY(-15px) scale(1.03);
-  box-shadow: 0 25px 60px rgba(30, 60, 114, 0.15);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(30, 60, 114, 0.12);
 }
 
-.member-photo {
-  text-align: center;
-  margin-bottom: 25px;
-}
+
+/* 删除重复的member-photo定义 */
 
 .member-photo img {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid #f0f0f0;
-  transition: all 0.4s ease;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  object-position: center 25%;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .member-card:hover .member-photo img {
   border-color: #4a90e2;
-  transform: scale(1.08);
-  box-shadow: 0 15px 40px rgba(74, 144, 226, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(74, 144, 226, 0.15);
 }
 
 .member-info {
   text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .member-name {
   color: #1e3c72;
-  font-size: 2rem;
+  font-size: 1.8rem !important;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
   transition: all 0.3s ease;
+  line-height: 1.3;
 }
 
 .member-name a {
@@ -2582,9 +3559,10 @@ color:black;
 
 .member-title {
   color: #666;
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+  font-size: 1.8rem !important;
+  margin-bottom: 4px;
   font-style: italic;
+  line-height: 1.4;
 }
 
 /* 研究方向页面样式 */
@@ -2907,7 +3885,7 @@ color:black;
 }
 
 .activity-description {
-  font-size: 1.6rem;
+  font-size: 2.0rem;
   line-height: 1.8;
   color: #333;
   margin-bottom: 25px;
@@ -3236,12 +4214,12 @@ color:black;
   }
   
   .member-photo img {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
   }
   
   .member-name {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
   }
   
   .research-header {
@@ -3463,12 +4441,12 @@ color:black;
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 40px;
   align-items: start;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -3592,6 +4570,7 @@ color:black;
     max-width: 100%;
     margin-left: 20px;
     margin-right: 20px;
+    justify-content: center;
   }
   
   .join-content {
@@ -3602,9 +4581,10 @@ color:black;
 /* 研究方向页面样式 */
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 40px;
+  grid-template-columns: 30% 30% 30%; /* 设置每个item占30%宽度 */
+  gap: 60px; /* 增加间距从40px到60px */
   margin-top: 40px;
+  justify-content: center; /* 居中对齐 */
 }
 
 .research-item {
@@ -3614,6 +4594,9 @@ color:black;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   position: relative;
+  margin: 0 20px; /* 为每个item添加左右间距 */
+  width: 500px; /* 设置固定宽度 */
+  max-width: 500px; /* 限制最大宽度 */
 }
 
 .research-item:hover {
@@ -3864,20 +4847,115 @@ color:black;
 
 .intro-paragraphs {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
-.intro-text {
-  font-size: 1.2rem;
+/* 基础intro-text样式 - 使用更高优先级 */
+.intro-content .intro-text {
+  font-size: 1.8rem !important; /* 从1.4rem放大到1.8rem */
   line-height: 1.6;
-  color: #ffffff;
+  color: #000000 !important; /* 改为黑色 */
   margin-bottom: 1.2rem;
   text-align: left;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: none; /* 移除文字阴影 */
   writing-mode: horizontal-tb !important;
   text-orientation: mixed;
   transform: none !important;
   transform-origin: initial !important;
+}
+
+/* 确保所有intro-text都使用相同的基础字体大小 */
+.intro-paragraphs .intro-text {
+  font-size: 1.8rem !important;
+}
+
+/* 前三个intro-text字体大小1.5倍 */
+.intro-paragraphs .intro-text:nth-child(1),
+.intro-paragraphs .intro-text:nth-child(2),
+.intro-paragraphs .intro-text:nth-child(3) {
+  font-size: 2.1rem;
+  line-height: 1.5;
+}
+
+/* 占满宽度布局样式 */
+.intro-contact-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.intro-contact-row .intro-text {
+  flex: 1;
+  height: 200px;
+  margin-bottom: 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.3rem !important;
+  line-height: 1.4;
+}
+
+.intro-contact-row .contact-section {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.intro-contact-row .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.intro-contact-row .contact-info strong {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 3px;
+}
+
+.intro-contact-row .contact-email {
+  font-size: 1.1rem;
+  color: #4a90e2;
+  text-decoration: none;
+  padding: 6px 12px;
+  background: rgba(74, 144, 226, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(74, 144, 226, 0.3);
+  transition: all 0.3s ease;
+}
+
+.intro-contact-row .contact-email:hover {
+  color: #ffffff;
+  background: rgba(74, 144, 226, 0.8);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
 }
 
 .intro-link {
@@ -3888,6 +4966,12 @@ color:black;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   writing-mode: horizontal-tb !important;
   transform: none !important;
+  font-size: inherit !important;
+}
+
+/* 确保第一个intro-text中的链接字体大小正确 */
+.intro-paragraphs .intro-text:nth-child(1) .intro-link {
+  font-size: 2.1rem !important;
 }
 
 .intro-link:hover {
@@ -3945,9 +5029,52 @@ color:black;
     margin-bottom: 1.5rem;
   }
   
-  .intro-text {
-    font-size: 1.2rem;
+  .intro-content .intro-text {
+    font-size: 1.6rem !important; /* 从1.2rem放大到1.6rem */
     margin-bottom: 1.2rem;
+  }
+  
+  .intro-paragraphs .intro-text {
+    font-size: 1.6rem !important;
+  }
+  
+  /* 移动端前三个intro-text字体大小1.5倍 */
+  .intro-paragraphs .intro-text:nth-child(1),
+  .intro-paragraphs .intro-text:nth-child(2),
+  .intro-paragraphs .intro-text:nth-child(3) {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+  
+  /* 移动端第一个intro-text中的链接字体大小 */
+  .intro-paragraphs .intro-text:nth-child(1) .intro-link {
+    font-size: 1.8rem !important;
+  }
+  
+  /* 移动端占满宽度布局调整 */
+  .intro-contact-row {
+    flex-direction: column;
+    gap: 15px;
+    margin: 1.5rem 0;
+    padding: 0 5px;
+    width: 100%;
+  }
+  
+  .intro-contact-row .intro-text {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    margin: 0;
+    padding: 15px;
+    font-size: 1.2rem !important;
+  }
+  
+  .intro-contact-row .contact-section {
+    width: 100%;
+    height: auto;
+    min-height: 120px;
+    margin: 0;
+    padding: 15px;
   }
   
   .contact-info {
@@ -4025,7 +5152,7 @@ color:black;
   /* 主页轮播图片手机优化 */
   .image-container {
     padding: 15px;
-    min-height: 300px; /* 减少最小高度 */
+    min-height: 400px; /* 保持与intro-container一致的高度 */
   }
   
   .image-container img {
@@ -4038,7 +5165,7 @@ color:black;
   /* 主页介绍文字手机优化 */
   .intro-container {
     padding: 20px 15px;
-    min-height: 300px;
+    min-height: 400px;
   }
   
   .intro-container h3 {
@@ -4102,7 +5229,7 @@ color:black;
   }
   
   .card-header h3 {
-    font-size: 1.6rem;
+    font-size: 2.3rem; /* 从1.9rem再放大20%到2.3rem */
   }
   
   .card-body {
@@ -4177,8 +5304,17 @@ color:black;
   
   /* 团队成员页面手机优化 */
   .team-section {
-    padding: 30px 0;
+    padding: 30px 20px;
     margin-bottom: 40px;
+  }
+  
+  /* 团队页面section标题和描述文字颜色 - 手机端 */
+  .team-section .section-title {
+    color: #000000 !important;
+  }
+  
+  .team-section .section-description {
+    color: #000000 !important;
   }
   
   .section-header {
@@ -4199,8 +5335,56 @@ color:black;
     font-size: 1.2rem;
   }
   
+  /* 移动端改为2列布局 */
+  .team-grid .row {
+    justify-content: space-between; /* 移动端也均匀分布 */
+    align-items: stretch;
+    gap: 0;
+    margin-bottom: 12px;
+  }
+  
+  .team-grid .col-sm-3 {
+    flex: 0 0 48%; /* 稍微减少宽度，留出间距 */
+    max-width: 48%;
+    display: flex;
+    justify-content: center;
+    padding: 0 6px; /* 减少左右padding */
+  }
+  
+  /* 导师团队移动端布局 */
+  .team-grid .col-sm-6 {
+    flex: 0 0 100%; /* 移动端改为1列 */
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  
+  .member-detail-card {
+    padding: 25px;
+  }
+  
+  .detail-header h3 {
+    font-size: 2.7rem;
+  }
+  
+  .detail-subtitle {
+    font-size: 1.8rem;
+  }
+  
+  .detail-section h4 {
+    font-size: 2.1rem;
+  }
+  
+  .detail-section p,
+  .detail-section ul {
+    font-size: 1.65rem;
+  }
+  
+  .detail-section a {
+    font-size: 1.65rem;
+  }
+  
   .member-card {
-    padding: 20px;
+    padding: 15px;
     margin-bottom: 15px;
   }
   
@@ -4210,11 +5394,15 @@ color:black;
   }
   
   .member-name {
-    font-size: 1.6rem;
+    font-size: 1.8rem !important;
   }
   
   .member-title {
-    font-size: 1.1rem;
+    font-size: 1.8rem !important;
+  }
+  
+  .member-title {
+    font-size: 1.8rem !important;
   }
   
   /* 发表文章页面手机优化 */
@@ -4296,7 +5484,7 @@ color:black;
   }
   
   .activity-description {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   
   .activity-details {
@@ -4348,7 +5536,7 @@ color:black;
   /* 主页轮播图片超小屏幕优化 */
   .image-container {
     padding: 10px;
-    min-height: 250px;
+    min-height: 350px;
   }
   
   .image-container img {
@@ -4357,7 +5545,7 @@ color:black;
   
   .intro-container {
     padding: 15px 10px;
-    min-height: 250px;
+    min-height: 350px;
   }
   
   .intro-container h3 {
@@ -4416,7 +5604,7 @@ color:black;
   }
   
   .card-header h3 {
-    font-size: 1.4rem;
+    font-size: 2.0rem; /* 从1.7rem再放大20%到2.0rem */
   }
   
   .card-body {
@@ -4464,10 +5652,88 @@ color:black;
     font-size: 1.1rem;
   }
   
+  /* 超小屏幕content-section card-body文字水平排列 */
+  .content-section .card-body {
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    direction: ltr !important;
+    unicode-bidi: normal !important;
+  }
+  
+  /* 超小屏幕card-body中的row元素改为垂直排列 */
+  .content-section .card-body .row {
+    flex-direction: column;
+    margin-bottom: 1px;
+    padding: 1px 0;
+  }
+  
+  .content-section .card-body .col-sm-12 {
+    padding: 0 5px;
+    margin-bottom: 8px;
+  }
+  
+  /* 超小屏幕标题样式调整 */
+  .content-section .card-body h3 {
+    text-align: center !important;
+    font-size: 1.3rem;
+    margin: 0 auto 12px auto !important;
+    width: fit-content;
+    display: block;
+  }
+  
+  /* 超小屏幕作者说明样式调整 */
+  .content-section .card-body p[style*="font-size: 14px"] {
+    font-size: 0.85rem !important;
+    padding: 6px 12px;
+    margin-bottom: 20px;
+  }
+  
+  .content-section .card-body .pub1 {
+    font-size: 0.85rem;
+    margin-bottom: 3px;
+    padding: 4px 8px;
+  }
+  
+  .content-section .card-body p {
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+  }
+  
+  /* 超小屏幕新闻样式调整 */
+  .content-section .card-body p strong {
+    font-size: 0.9rem;
+    padding: 3px 6px;
+  }
+  
+  .content-section .card-body p em {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+  
+  /* 超小屏幕更多链接样式调整 */
+  .content-section .card-body a[href*="publications"],
+  .content-section .card-body a[href*="allnews"] {
+    display: block !important;
+    margin: 10px auto 0 auto !important;
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    text-align: center !important;
+    width: fit-content !important;
+  }
+  
   /* 团队成员页面超小屏幕优化 */
   .team-section {
-    padding: 25px 0;
+    padding: 25px 15px;
     margin-bottom: 30px;
+  }
+  
+  /* 团队页面section标题和描述文字颜色 - 超小屏幕 */
+  .team-section .section-title {
+    color: #000000 !important;
+  }
+  
+  .team-section .section-description {
+    color: #000000 !important;
   }
   
   .section-title {
@@ -4478,23 +5744,71 @@ color:black;
     font-size: 1.1rem;
   }
   
+  /* 超小屏幕改为1列布局 */
+  .team-grid .row {
+    justify-content: center; /* 超小屏幕居中对齐 */
+    align-items: stretch;
+    gap: 0;
+    margin-bottom: 10px;
+  }
+  
+  .team-grid .col-sm-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px; /* 增加左右padding */
+  }
+  
+  /* 导师团队超小屏幕布局 */
+  .team-grid .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 5px;
+  }
+  
+  .member-detail-card {
+    padding: 20px;
+  }
+  
+  .detail-header h3 {
+    font-size: 2.4rem;
+  }
+  
+  .detail-subtitle {
+    font-size: 1.65rem;
+  }
+  
+  .detail-section h4 {
+    font-size: 1.95rem;
+  }
+  
+  .detail-section p,
+  .detail-section ul {
+    font-size: 1.5rem;
+  }
+  
+  .detail-section a {
+    font-size: 1.5rem;
+  }
+  
   .member-card {
     padding: 15px;
     margin-bottom: 12px;
   }
   
   .member-photo img {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     object-position: center 25%; /* 超小屏幕也保持相同的位置 */
   }
   
   .member-name {
-    font-size: 1.4rem;
+    font-size: 1.8rem !important;
   }
   
   .member-title {
-    font-size: 1rem;
+    font-size: 1.8rem !important;
   }
   
   /* 发表文章页面超小屏幕优化 */
@@ -4571,7 +5885,7 @@ color:black;
   }
   
   .activity-description {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
   
   .activity-details {
@@ -4613,42 +5927,319 @@ color:black;
   }
 }
 
-/* ===== 修复研究方向小icon显示问题 - 增强版本 ===== */
-.research-item .research-content h3 {
+/* ===== 主页研究方向美化样式 ===== */
+.research-section {
+  margin: 80px 0;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 自定义research-section中的container宽度为90% */
+.research-section .container {
+  max-width: 90%; /* 设置为research-section的90%宽度 */
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .research-section .container {
+    max-width: 90%; /* 保持90%宽度 */
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .research-section .container {
+    max-width: 90%; /* 保持90%宽度 */
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .research-section .container {
+    max-width: 90%; /* 保持90%宽度 */
+    width: 90%;
+  }
+}
+
+.research-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.section-header {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-.research-item .research-content h3::before {
-  content: '🔬';
-  font-size: 1.5em;
-  flex-shrink: 0;
+.section-icon {
+  font-size: 3rem;
+  margin-right: 20px;
+  animation: float 3s ease-in-out infinite;
 }
 
-/* 为不同研究方向添加不同图标 */
-.research-item:nth-child(1) .research-content h3::before {
-  content: '🏥'; /* 医学图像处理 */
+.section-title {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.research-item:nth-child(2) .research-content h3::before {
-  content: '🌊'; /* 水下视觉 */
+.section-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 300;
 }
 
-.research-item:nth-child(3) .research-content h3::before {
-  content: '📐'; /* 三维重建 */
+/* 这个样式已移动到前面，避免重复定义 */
+
+.research-item {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
 }
 
-/* 确保图标在手机端也能正常显示 */
+.research-item:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.research-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.research-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.research-item:hover .research-image img {
+  transform: scale(1.1);
+}
+
+.image-overlay {
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  right: -15px;
+  bottom: -10px;
+  background: linear-gradient(45deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+}
+
+.research-item:hover .image-overlay {
+  opacity: 1;
+}
+
+.overlay-icon {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.research-content {
+  padding: 40px;
+}
+
+.research-content h3 {
+  color: #2c3e50;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0 0 25px 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.research-content p {
+  color: #5a6c7d;
+  line-height: 1.8;
+  margin: 0 0 30px 0;
+  font-size: 1.4rem;
+}
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* 响应式设计 */
 @media (max-width: 768px) {
-  .research-item .research-content h3::before {
-    font-size: 1.2em;
+  .research-section {
+    margin: 60px 0;
+    padding: 40px 0;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .section-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .section-title {
+    font-size: 2.8rem;
+  }
+  
+  .section-description {
+    font-size: 1.4rem;
+  }
+  
+  .research-grid {
+    grid-template-columns: repeat(2, 1.5fr);
+    gap: 25px;
+  }
+  
+  .research-image {
+    height: 220px;
+  }
+  
+  /* 平板端image-overlay宽度调整 */
+  .image-overlay {
+    left: -10px;
+    right: -10px;
+    top: -8px;
+    bottom: -8px;
+  }
+  
+  .research-content {
+    padding: 30px;
+  }
+  
+  .research-content h3 {
+    font-size: 1.8rem;
+  }
+  
+  .research-content p {
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .research-item .research-content h3::before {
-    font-size: 1em;
+  .research-section {
+    margin: 40px 0;
+    padding: 30px 0;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-description {
+    font-size: 1.2rem;
+  }
+  
+  .research-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .research-image {
+    height: 200px;
+  }
+  
+  /* 手机端image-overlay宽度调整 */
+  .image-overlay {
+    left: -8px;
+    right: -8px;
+    top: -6px;
+    bottom: -6px;
+  }
+  
+  .research-content {
+    padding: 25px;
+  }
+  
+  .research-content h3 {
+    font-size: 1.6rem;
+  }
+  
+  .research-content p {
+    font-size: 1.1rem;
+  }
+  
+  .tag {
+    font-size: 1rem;
+    padding: 6px 16px;
+  }
+  
+  /* 蔡青卡片超小屏幕样式 */
+  .team-grid .row .col-sm-6:first-child .member-photo img {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .team-grid .row .col-sm-6:first-child .member-card {
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.1) 0%, rgba(74, 144, 226, 0.1) 100%);
+  }
+  
+  /* 蔡青卡片小屏幕特殊文字样式 */
+  .team-grid .row .col-sm-6:first-child .member-name {
+    font-size: 3.6rem !important;
+    font-weight: 700;
+  }
+  
+  .team-grid .row .col-sm-6:first-child .member-title {
+    font-size: 3.6rem !important;
+    font-weight: 600;
   }
 }
 
@@ -4656,4 +6247,21 @@ color:black;
   list-style-type: none; /* 去掉圆点 */
   padding: 0; /* 可选，去除默认内边距 */
   margin: 0;  /* 可选，去除外边距 */
+}
+
+/* ===== 强制设置intro-text字体大小和颜色 ===== */
+/* 最高优先级设置，确保intro-text字体大小和颜色生效 */
+.intro-content .intro-text,
+.intro-paragraphs .intro-text {
+  font-size: 1.8rem !important;
+  color: #000000 !important; /* 强制设置为黑色 */
+}
+
+/* 移动端强制设置 */
+@media (max-width: 768px) {
+  .intro-content .intro-text,
+  .intro-paragraphs .intro-text {
+    font-size: 1.6rem !important;
+    color: #000000 !important; /* 移动端也设置为黑色 */
+  }
 }
