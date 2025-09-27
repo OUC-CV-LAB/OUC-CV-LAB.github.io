@@ -7019,11 +7019,6 @@ color:black;
     max-height: calc(100vh - 50px) !important;
   }
 }
-    font-size: 18px !important;
-    font-weight: 600 !important;
-    padding: 0 !important;
-    line-height: 60px !important;
-  }
   
   .navbar-default .navbar-brand img {
     max-width: 100px !important;
@@ -7718,10 +7713,11 @@ color:black;
     padding: 10px 15px;
     font-size: 15px;
     border-radius: 6px;
+
   }
 }
 
-/* ===== 移动端全面优化 - 现代化设计 ===== */
+/* ===== 移动端修复 - 简化版本 ===== */
 @media (max-width: 768px) {
   /* 移动端基础样式 */
   body {
