@@ -44,7 +44,11 @@ layout: default
                 <div class="detail-content">
                   <div class="detail-section">
                     <h4>个人简介</h4>
-                    <p>蔡青副教授是中国海洋大学人工智能研究院的副教授，担任VMV实验室的负责人。在计算机视觉、机器学习和医学图像分析领域具有丰富的研究经验。</p>
+                    <p>蔡青副教授是中国海洋大学人工智能研究院的副教授，担任VMV实验室的负责人。在计算机视觉、机器学习和医学图像分析领域具有丰富的研究经验。
+                    国内外重要学术组织任职：CCF 高级会员、中国自动化学会会员、CAAI会员、CSIG会员、CCF-CV专委会委员、CCF-MM专委会委员、CCF计算机应用专委会委员、
+                    CSIG青工委委员、山东省人工智能学会理事、YOCSEF青岛委员。其他情况简介：山东省“泰山学者”青年专家、山东省优青、山东省人工智能科学技术奖”获得者。
+                    博士毕业于西北工业大学，曾分别在加拿大阿尔伯塔大学和西安交通大学进行联培和访问；并在香港中文大学（深圳）和中国科学技术大学进行博后工作，合作导师
+                      为张大鹏院士和吴枫教授（副校长、杰青），目前在董军宇教授（万人）团队。</p>
                   </div>
                   
                   <div class="detail-section">
@@ -92,7 +96,7 @@ layout: default
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 5 %}
+          {% assign even_odd = number_printed | modulo: 6 %}
           {% if member.group == 4 %}
           
           {% if even_odd == 0 %}
@@ -122,14 +126,14 @@ layout: default
           
           {% assign number_printed = number_printed | plus: 1 %}
           
-          {% if even_odd == 4 %}
+          {% if even_odd == 5 %}
           </div>
           {% endif %}
           
           {% endif %}
           {% endfor %}
           
-          {% assign even_odd = number_printed | modulo: 5 %}
+          {% assign even_odd = number_printed | modulo: 6 %}
           {% if even_odd != 0 %}
           </div>
           {% endif %}
@@ -149,7 +153,7 @@ layout: default
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 5 %}
+          {% assign even_odd = number_printed | modulo: 6 %}
           {% if member.group == 3 %}
           
           {% if even_odd == 0 %}
@@ -182,14 +186,14 @@ layout: default
           
           {% assign number_printed = number_printed | plus: 1 %}
           
-          {% if even_odd == 4 %}
+          {% if even_odd == 5 %}
           </div>
           {% endif %}
           
           {% endif %}
           {% endfor %}
           
-          {% assign even_odd = number_printed | modulo: 5 %}
+          {% assign even_odd = number_printed | modulo: 6 %}
           {% if even_odd != 0 %}
           </div>
           {% endif %}
@@ -197,20 +201,20 @@ layout: default
       </div>
 
 
-      <!-- 23级研究生 -->
+      <!-- 23级研究生 经验丰富，成果丰硕-->
       <div class="team-section">
         <div class="section-header">
           <div class="section-icon">🌟</div>
           <div>
-            <h2 class="section-title">23级研究生</h2>
-            <p class="section-description">经验丰富，成果丰硕</p>
+            <h2 class="section-title">硕士研究生</h2>
+            <p class="section-description">潜心研究，追求学术卓越</p>
           </div>
         </div>
 
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 5 %}
+          {% assign even_odd = number_printed | modulo: 6 %}
           {% if member.group == 1 %}
 
           {% if even_odd == 0 %}
@@ -243,14 +247,14 @@ layout: default
 
           {% assign number_printed = number_printed | plus: 1 %}
 
-          {% if even_odd == 4 %}
+          {% if even_odd == 5 %}
           </div>
           {% endif %}
 
           {% endif %}
           {% endfor %}
 
-          {% assign even_odd = number_printed | modulo: 5 %}
+          {% assign even_odd = number_printed | modulo: 6 %}
           {% if even_odd != 0 %}
           </div>
           {% endif %}
@@ -258,8 +262,8 @@ layout: default
       </div>
 
 
-      <!-- 24级研究生 -->
-      <div class="team-section">
+       <!--24级研究生 -->
+      <!--<div class="team-section">
         <div class="section-header">
           <div class="section-icon">🌟</div>
           <div>
@@ -271,7 +275,7 @@ layout: default
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 5 %}
+          {% assign even_odd = number_printed | modulo: 6 %}
           {% if member.group == 2 %}
           
           {% if even_odd == 0 %}
@@ -301,22 +305,25 @@ layout: default
           
           {% assign number_printed = number_printed | plus: 1 %}
           
-          {% if even_odd == 4 %}
+          {% if even_odd == 5 %}
           </div>
           {% endif %}
           
           {% endif %}
           {% endfor %}
           
-          {% assign even_odd = number_printed | modulo: 5 %}
+          {% assign even_odd = number_printed | modulo: 6 %}
           {% if even_odd != 0 %}
           </div>
           {% endif %}
         </div>
-      </div>
+      </div>-->
+
+
+
 
             <!-- 25级研究生 -->
-      <div class="team-section">
+      <!--<div class="team-section">
         <div class="section-header">
           <div class="section-icon">🌟</div>
           <div>
@@ -328,7 +335,7 @@ layout: default
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 5 %}
+          {% assign even_odd = number_printed | modulo: 6 %}
           {% if member.group == 5 %}
 
           {% if even_odd == 0 %}
@@ -358,19 +365,19 @@ layout: default
 
           {% assign number_printed = number_printed | plus: 1 %}
 
-          {% if even_odd == 4 %}
+          {% if even_odd == 5 %}
           </div>
           {% endif %}
 
           {% endif %}
           {% endfor %}
 
-          {% assign even_odd = number_printed | modulo: 5 %}
+          {% assign even_odd = number_printed | modulo: 6 %}
           {% if even_odd != 0 %}
           </div>
           {% endif %}
         </div>
-      </div>
+      </div>-->
 
 
 
@@ -389,7 +396,7 @@ layout: default
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 5 %}
+          {% assign even_odd = number_printed | modulo: 6 %}
           {% if member.group == 6 %}
 
           {% if even_odd == 0 %}
@@ -419,14 +426,14 @@ layout: default
 
           {% assign number_printed = number_printed | plus: 1 %}
 
-          {% if even_odd == 4 %}
+          {% if even_odd == 5 %}
           </div>
           {% endif %}
 
           {% endif %}
           {% endfor %}
 
-          {% assign even_odd = number_printed | modulo: 5 %}
+          {% assign even_odd = number_printed | modulo: 6 %}
           {% if even_odd != 0 %}
           </div>
           {% endif %}

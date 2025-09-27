@@ -65,20 +65,23 @@ p {
 .navbar-default .navbar-nav > li > a.nav-link {
 	position: relative;
 	transition: all 0.3s ease;
-	padding: 15px 20px;
+	padding: 25px 20px; /* 增加垂直padding来控制高度 */
 	font-weight: 500;
 	font-size: 2rem; /* 17.6px */
+	line-height: 30px; /* 设置行高 */
 }
 
 .navbar-default .navbar-brand {
 	font-size: 2rem; /* 20.8px */
 	font-weight: 600;
+	padding: 20px 15px; /* 调整brand的padding来控制高度 */
+	line-height: 40px; /* 设置行高 */
 }
 
 /* 卡片标题字体大小 */
 .card-header h3 {
 	margin: 0;
-	font-size: 2.5rem; /* 20px */
+	font-size: 3.4rem; /* 从2.8rem再放大20%到3.4rem */
 	font-weight: 600;
 	display: flex;
 	align-items: center;
@@ -130,6 +133,8 @@ figcaption {
 .navbar-default {
 	background-color: #004098; /* 主背景色 */
 	border-color: #003074;      /* 可选边框色 */
+	min-height: 80px; /* 设置navbar最小高度 */
+	height: 80px; /* 设置navbar固定高度 */
   }
   
 
@@ -194,6 +199,32 @@ figcaption {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
     opacity: 0.95;
   }
+  
+  /* 移动端navbar高度调整 */
+  .navbar-default {
+    min-height: 60px;
+    height: 60px;
+  }
+  
+  .navbar-default .navbar-brand {
+    padding: 15px 15px;
+    line-height: 30px;
+  }
+  
+  .navbar-default .navbar-nav > li > a.nav-link {
+    padding: 15px 15px;
+    line-height: 30px;
+  }
+  
+  /* 移动端navbar-collapse高度调整 */
+  .navbar-collapse {
+    min-height: 60px !important;
+    height: 60px !important;
+  }
+  
+  .navbar-collapse .navbar-nav > li > a {
+    padding: 15px 15px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -203,12 +234,66 @@ figcaption {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
     opacity: 0.95;
   }
+  
+  /* 超小屏幕navbar-collapse高度调整 */
+  .navbar-collapse {
+    min-height: 50px !important;
+    height: 50px !important;
+  }
+  
+  .navbar-collapse .navbar-nav > li > a {
+    padding: 10px 10px !important;
+  }
 }
 
 /* 移动端菜单按钮优化 */
 .navbar-toggle {
   border: 2px solid rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease;
+}
+
+/* collapse navbar-collapse高度设置 */
+.navbar-collapse {
+  min-height: 80px !important; /* 与navbar-default高度一致 */
+  height: 80px !important;
+  display: flex !important;
+  align-items: center !important; /* 垂直居中对齐 */
+  padding: 0 !important; /* 移除默认padding */
+}
+
+.navbar-collapse .navbar-nav {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important; /* 垂直居中对齐 */
+  margin: 0 !important; /* 移除默认margin */
+}
+
+.navbar-collapse .navbar-nav > li {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.navbar-collapse .navbar-nav > li > a {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 25px 20px !important; /* 确保垂直padding足够 */
+}
+
+/* 确保navbar-collapse在展开状态下也有正确高度 */
+.navbar-collapse.in,
+.navbar-collapse.collapse.in {
+  min-height: 80px !important;
+  height: 80px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* 确保navbar-collapse在折叠状态下也有正确高度 */
+.navbar-collapse.collapse {
+  min-height: 80px !important;
+  height: 80px !important;
 }
 
 .navbar-toggle:hover {
@@ -469,6 +554,17 @@ color:black;
   justify-content: center; /* 列内元素垂直居中 */
 }
 
+/* 手动设置hero-section列宽度为50% */
+.hero-section .col-sm-7,
+.hero-section .col-sm-5 {
+  width: 50% !important; /* 强制设置为50%宽度 */
+  flex: 0 0 50%; /* flexbox方式设置50%宽度 */
+}
+
+
+
+
+
 /* 图片容器和介绍容器的对齐优化 */
 .image-container,
 .intro-container {
@@ -719,7 +815,7 @@ color:black;
 
 .card-header h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: 29px; /* 从24px再放大20%到29px */
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -1303,7 +1399,7 @@ color:black;
 .content-section .card-body h3 {
   text-align: center !important;
   color: #1e3c72;
-  font-size: 1.8rem;
+  font-size: 2.5rem; /* 从2.1rem再放大20%到2.5rem */
   font-weight: 600;
   margin: 0 auto 10px auto !important;
   padding-bottom: 8px;
@@ -1328,7 +1424,7 @@ color:black;
 .content-section .card-body p[style*="font-size: 14px"] {
   text-align: center;
   color: #666;
-  font-size: 1rem !important;
+  font-size: 1.4rem !important; /* 从1.2rem再放大20%到1.4rem */
   font-style: italic;
   margin-bottom: 15px;
   padding: 6px 12px;
@@ -1349,9 +1445,30 @@ color:black;
   border-left: 4px solid #4a90e2;
   transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-size: 1.3rem; /* 从1.1rem再放大20%到1.3rem */
 }
 
 .content-section .card-body .pub1:hover {
+  background: rgba(30, 60, 114, 0.05);
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(30, 60, 114, 0.1);
+}
+
+/* 确保右边新闻动态的pub1样式与左边一致 */
+.content-section .news-card .card-body .pub1 {
+  display: block;
+  margin-bottom: 3px;
+  line-height: 1.4;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  border-left: 4px solid #4a90e2;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-size: 1.3rem; /* 从1.1rem再放大20%到1.3rem */
+}
+
+.content-section .news-card .card-body .pub1:hover {
   background: rgba(30, 60, 114, 0.05);
   transform: translateX(5px);
   box-shadow: 0 4px 15px rgba(30, 60, 114, 0.1);
@@ -1362,6 +1479,40 @@ color:black;
   margin-bottom: 3px;
   line-height: 1.4;
   color: #555;
+}
+
+/* 确保右边新闻动态的标题和描述样式与左边一致 */
+.content-section .news-card .card-body h3 {
+  text-align: center !important;
+  color: #1e3c72;
+  font-size: 2.5rem; /* 从2.1rem再放大20%到2.5rem */
+  font-weight: 600;
+  margin-bottom: 15px;
+  position: relative;
+  display: block;
+}
+
+.content-section .news-card .card-body h3::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #4a90e2, #1e3c72);
+  border-radius: 2px;
+}
+
+.content-section .news-card .card-body p[style*="font-size: 14px"] {
+  text-align: center;
+  color: #666;
+  font-size: 1.4rem !important; /* 从1.2rem再放大20%到1.4rem */
+  margin-bottom: 20px;
+  padding: 8px 15px;
+  background: rgba(30, 60, 114, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid #4a90e2;
 }
 
 /* 确保包含更多按钮的p元素居中 */
@@ -1414,6 +1565,7 @@ color:black;
   box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);
   width: fit-content !important;
   text-align: center !important;
+  font-size: 1.3rem; /* 从1.1rem再放大20%到1.3rem */
 }
 
 .content-section .card-body a[href*="publications"]:hover,
@@ -1503,7 +1655,7 @@ color:black;
 
 .card-header h3 {
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 3.0rem; /* 从2.5rem再放大20%到3.0rem */
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -1761,7 +1913,7 @@ color:black;
   }
   
   .card-header h3 {
-    font-size: 1.8rem;
+    font-size: 2.5rem; /* 从2.1rem再放大20%到2.5rem */
   }
   
   .card-body {
@@ -2133,12 +2285,30 @@ color:black;
   margin-bottom: 20px;
 }
 
+/* 蔡青卡片的member-photo位置调整 */
+.team-grid .row .col-sm-6:first-child .member-photo {
+  margin-top: 100px !important;
+  transform: translateY(30px) !important;
+}
+
 .member-photo img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 25%; /* 调整照片位置，让脸部更清楚，稍微向上一点 */
+  border: 4px solid #f0f0f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 除了蔡青之外的其他member-card放大样式 */
+.team-grid .row .col-sm-2 .member-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 25%;
   border: 4px solid #f0f0f0;
   transition: all 0.3s ease;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -2158,6 +2328,15 @@ color:black;
 .member-name {
   color: #1e3c72;
   font-size: 1.8rem !important;
+  font-weight: 600;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+/* 除了蔡青之外的其他member-name放大样式 */
+.team-grid .row .col-sm-2 .member-name {
+  color: #1e3c72;
+  font-size: 2.2rem !important;
   font-weight: 600;
   margin-bottom: 12px;
   transition: all 0.3s ease;
@@ -2190,8 +2369,8 @@ color:black;
 
 /* 蔡青卡片特殊样式 - 放大图片 */
 .team-grid .row .col-sm-6:first-child .member-photo img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   transition: all 0.4s ease;
@@ -2387,7 +2566,7 @@ color:black;
 }
 
 .iamgeid .activity-description {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   text-align: center;
   color: #555;
   margin-top: 10px;
@@ -2440,7 +2619,7 @@ color:black;
   }
   
   .iamgeid .activity-description {
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 15px 18px;
   }
 }
@@ -2478,15 +2657,15 @@ color:black;
   }
   
   .iamgeid .activity-description {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     padding: 12px 15px;
   }
 }
 
-/* 5列布局样式 */
+/* 6列布局样式 */
 .team-grid .col-sm-2 {
-  flex: 0 0 20%;
-  max-width: 20%;
+  flex: 0 0 16.666%;
+  max-width: 16.666%;
   padding: 0 8px;
   margin-bottom: 20px;
 }
@@ -3046,8 +3225,20 @@ color:black;
     object-position: center 25%; /* 手机端也保持相同的位置 */
   }
   
+  /* 除了蔡青之外的其他member-card移动端放大样式 */
+  .team-grid .row .col-sm-2 .member-photo img {
+    width: 140px;
+    height: 140px;
+    object-position: center 25%;
+  }
+  
   .member-name {
     font-size: 1.8rem !important;
+  }
+  
+  /* 除了蔡青之外的其他member-name移动端放大样式 */
+  .team-grid .row .col-sm-2 .member-name {
+    font-size: 2.0rem !important;
   }
   
   .member-title {
@@ -3056,8 +3247,8 @@ color:black;
   
   /* 蔡青卡片移动端样式 */
   .team-grid .row .col-sm-6:first-child .member-photo img {
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
   }
   
   /* 蔡青卡片移动端整体样式 */
@@ -3320,11 +3511,7 @@ color:black;
 }
 
 
-.member-photo {
-  text-align: center;
-  margin-bottom: 15px;
-  flex-shrink: 0;
-}
+/* 删除重复的member-photo定义 */
 
 .member-photo img {
   width: 120px;
@@ -3699,7 +3886,7 @@ color:black;
 }
 
 .activity-description {
-  font-size: 1.6rem;
+  font-size: 2.0rem;
   line-height: 1.8;
   color: #333;
   margin-bottom: 25px;
@@ -4255,12 +4442,12 @@ color:black;
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 40px;
   align-items: start;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -4384,6 +4571,7 @@ color:black;
     max-width: 100%;
     margin-left: 20px;
     margin-right: 20px;
+    justify-content: center;
   }
   
   .join-content {
@@ -4394,9 +4582,10 @@ color:black;
 /* 研究方向页面样式 */
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 40px;
+  grid-template-columns: 30% 30% 30%; /* 设置每个item占30%宽度 */
+  gap: 60px; /* 增加间距从40px到60px */
   margin-top: 40px;
+  justify-content: center; /* 居中对齐 */
 }
 
 .research-item {
@@ -4406,6 +4595,9 @@ color:black;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   position: relative;
+  margin: 0 20px; /* 为每个item添加左右间距 */
+  width: 500px; /* 设置固定宽度 */
+  max-width: 500px; /* 限制最大宽度 */
 }
 
 .research-item:hover {
@@ -4659,17 +4851,23 @@ color:black;
   margin-bottom: 0;
 }
 
-.intro-text {
-  font-size: 1.4rem;
+/* 基础intro-text样式 - 使用更高优先级 */
+.intro-content .intro-text {
+  font-size: 1.8rem !important; /* 从1.4rem放大到1.8rem */
   line-height: 1.6;
-  color: #ffffff;
+  color: #000000 !important; /* 改为黑色 */
   margin-bottom: 1.2rem;
   text-align: left;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: none; /* 移除文字阴影 */
   writing-mode: horizontal-tb !important;
   text-orientation: mixed;
   transform: none !important;
   transform-origin: initial !important;
+}
+
+/* 确保所有intro-text都使用相同的基础字体大小 */
+.intro-paragraphs .intro-text {
+  font-size: 1.8rem !important;
 }
 
 /* 前三个intro-text字体大小1.5倍 */
@@ -4832,9 +5030,13 @@ color:black;
     margin-bottom: 1.5rem;
   }
   
-  .intro-text {
-    font-size: 1.2rem;
+  .intro-content .intro-text {
+    font-size: 1.6rem !important; /* 从1.2rem放大到1.6rem */
     margin-bottom: 1.2rem;
+  }
+  
+  .intro-paragraphs .intro-text {
+    font-size: 1.6rem !important;
   }
   
   /* 移动端前三个intro-text字体大小1.5倍 */
@@ -5028,7 +5230,7 @@ color:black;
   }
   
   .card-header h3 {
-    font-size: 1.6rem;
+    font-size: 2.3rem; /* 从1.9rem再放大20%到2.3rem */
   }
   
   .card-body {
@@ -5283,7 +5485,7 @@ color:black;
   }
   
   .activity-description {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   
   .activity-details {
@@ -5403,7 +5605,7 @@ color:black;
   }
   
   .card-header h3 {
-    font-size: 1.4rem;
+    font-size: 2.0rem; /* 从1.7rem再放大20%到2.0rem */
   }
   
   .card-body {
@@ -5684,7 +5886,7 @@ color:black;
   }
   
   .activity-description {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
   
   .activity-details {
@@ -5736,10 +5938,10 @@ color:black;
   overflow: hidden;
 }
 
-/* 自定义research-section中的container宽度为1.5倍 */
+/* 自定义research-section中的container宽度为90% */
 .research-section .container {
-  max-width: 1710px; /* 1140px * 1.5 = 1710px */
-  width: 100%;
+  max-width: 90%; /* 设置为research-section的90%宽度 */
+  width: 90%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -5747,19 +5949,22 @@ color:black;
 
 @media (min-width: 768px) {
   .research-section .container {
-    max-width: 1080px; /* 720px * 1.5 = 1080px */
+    max-width: 90%; /* 保持90%宽度 */
+    width: 90%;
   }
 }
 
 @media (min-width: 992px) {
   .research-section .container {
-    max-width: 1410px; /* 940px * 1.5 = 1410px */
+    max-width: 90%; /* 保持90%宽度 */
+    width: 90%;
   }
 }
 
 @media (min-width: 1200px) {
   .research-section .container {
-    max-width: 1710px; /* 1140px * 1.5 = 1710px */
+    max-width: 90%; /* 保持90%宽度 */
+    width: 90%;
   }
 }
 
@@ -5804,12 +6009,7 @@ color:black;
   font-weight: 300;
 }
 
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1.5fr);
-  gap: 30px;
-  margin-top: 50px;
-}
+/* 这个样式已移动到前面，避免重复定义 */
 
 .research-item {
   background: rgba(255, 255, 255, 0.95);
@@ -6024,8 +6224,8 @@ color:black;
   
   /* 蔡青卡片超小屏幕样式 */
   .team-grid .row .col-sm-6:first-child .member-photo img {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
   }
   
   .team-grid .row .col-sm-6:first-child .member-card {
@@ -6048,4 +6248,21 @@ color:black;
   list-style-type: none; /* 去掉圆点 */
   padding: 0; /* 可选，去除默认内边距 */
   margin: 0;  /* 可选，去除外边距 */
+}
+
+/* ===== 强制设置intro-text字体大小和颜色 ===== */
+/* 最高优先级设置，确保intro-text字体大小和颜色生效 */
+.intro-content .intro-text,
+.intro-paragraphs .intro-text {
+  font-size: 1.8rem !important;
+  color: #000000 !important; /* 强制设置为黑色 */
+}
+
+/* 移动端强制设置 */
+@media (max-width: 768px) {
+  .intro-content .intro-text,
+  .intro-paragraphs .intro-text {
+    font-size: 1.6rem !important;
+    color: #000000 !important; /* 移动端也设置为黑色 */
+  }
 }
