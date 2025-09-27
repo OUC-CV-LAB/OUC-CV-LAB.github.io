@@ -1,7 +1,7 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
 	<div class="navbar-header">
-	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+	  <button type="button" class="navbar-toggle collapsed" onclick="toggleMobileMenu()" aria-expanded="false">
 		<span class="sr-only">Toggle navigation</span>
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
@@ -16,15 +16,52 @@
 
 	<div class="collapse navbar-collapse" id="navbar-collapse-1">
 	  <ul class="nav navbar-nav navbar-right">
-		<li><a href="{{ site.url }}{{ site.baseurl }}/" class="nav-link"><i class="fas fa-home"></i> 主页</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/team" class="nav-link"><i class="fas fa-users"></i> 成员</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/research" class="nav-link"><i class="fas fa-flask"></i> 研究方向</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/publications" class="nav-link"><i class="fas fa-book"></i> 发表文章</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/" class="nav-link" onclick="closeMobileMenu()"><i class="fas fa-home"></i> 主页</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/team" class="nav-link" onclick="closeMobileMenu()"><i class="fas fa-users"></i> 成员</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/research" class="nav-link" onclick="closeMobileMenu()"><i class="fas fa-flask"></i> 研究方向</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/publications" class="nav-link" onclick="closeMobileMenu()"><i class="fas fa-book"></i> 发表文章</a></li>
 		<!-- <li><a href="{{ site.url }}{{ site.baseurl }}/code">Code</a></li> -->
-		<li><a href="{{ site.url }}{{ site.baseurl }}/activity" class="nav-link"><i class="fas fa-calendar-alt"></i> 学术活动</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/contact" class="nav-link"><i class="fas fa-envelope"></i> 联系我们</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/activity" class="nav-link" onclick="closeMobileMenu()"><i class="fas fa-calendar-alt"></i> 学术活动</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/contact" class="nav-link" onclick="closeMobileMenu()"><i class="fas fa-envelope"></i> 联系我们</a></li>
 	  </ul>
 	</div>
+	
+	<script>
+	function toggleMobileMenu() {
+		const navbar = document.getElementById('navbar-collapse-1');
+		const toggle = document.querySelector('.navbar-toggle');
+		
+		if (navbar.classList.contains('in')) {
+			// 如果菜单已打开，则关闭
+			navbar.classList.remove('in');
+			toggle.classList.add('collapsed');
+			toggle.setAttribute('aria-expanded', 'false');
+		} else {
+			// 如果菜单已关闭，则打开
+			navbar.classList.add('in');
+			toggle.classList.remove('collapsed');
+			toggle.setAttribute('aria-expanded', 'true');
+		}
+	}
+	
+	function closeMobileMenu() {
+		document.getElementById('navbar-collapse-1').classList.remove('in');
+		document.querySelector('.navbar-toggle').classList.add('collapsed');
+		document.querySelector('.navbar-toggle').setAttribute('aria-expanded', 'false');
+	}
+	
+	// 点击遮罩层关闭菜单
+	document.addEventListener('click', function(event) {
+		const navbar = document.querySelector('.navbar-collapse');
+		const toggle = document.querySelector('.navbar-toggle');
+		
+		if (navbar.classList.contains('in') && 
+			!navbar.contains(event.target) && 
+			!toggle.contains(event.target)) {
+			closeMobileMenu();
+		}
+	});
+	</script>
 	
   </div>
 </div>

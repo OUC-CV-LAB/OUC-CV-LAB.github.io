@@ -9,21 +9,21 @@
 
 - name: 董军宇
   photo: dongjunyu.jpg
-  info: 合作学者
+  info:
   info2: 研究方向：计算机视觉、人工智能、深度学习
   url: http://it.ouc.edu.cn/djy/list.htm
   group: 4
 
 - name: 张大鹏
   photo: zhangdapeng.jpg
-  info: 合作学者
+  info:
   info2: 研究方向：人工智能, 计算机科学, 机器学习与人工智能, 计算机视觉与计算机图形学
   url: https://sds.cuhk.edu.cn/teacher/315
   group: 4
 
 - name: 吴枫
   photo: wufeng.jpg
-  info: 合作学者
+  info:
   info2: 研究方向：视频编码与通信、多媒体内容分析、计算机视觉
   url: https://faculty.ustc.edu.cn/wufeng1/zh_CN/index.htm
   group: 4
@@ -31,10 +31,29 @@
 
 - name: 刘治
   photo: liuzhi.jpg
-  info: 合作学者
+  info:
   info2: 研究方向：医学影像组学，智能心理测量，网络空间安全
   url: https://faculty.sdu.edu.cn/liuzhi1/zh_CN/index/538797/list/index.htm
   group: 4
+
+
+
+
+
+- name: 张帆
+  photo: zhangfan.jpg
+  info: 博士后：计算机技术专业
+  info2: 研究方向：计算机视觉与人工智能
+  pub: TNNLS,PR
+  group: 3
+
+- name: 曹艳坤
+  photo: caoyankun.jpg
+  url: https://scholar.google.com/citations?user=brp3wz4AAAAJ&hl=zh-CN&oi=ao
+  info: 博士后：软件工程专业
+  info2: 研究方向：医学影像处理
+
+  group: 3
 
 
 - name: 张天戈
@@ -52,27 +71,13 @@
   group: 3
 
 
-
-
-- name: 张帆
-  photo: zhangfan.jpg
-  info: 合作学者
-  info2: 研究方向：计算机视觉与人工智能
-  pub: TNNLS,PR
-  group: 3
 - name: 张成
   photo: zhangcheng.jpg
   info: 计算机技术专业
   info2: 研究方向：计算机视觉与图像处理
   group: 3
 
-- name: 曹艳坤
-  photo: caoyankun.jpg
-  url: https://scholar.google.com/citations?user=brp3wz4AAAAJ&hl=zh-CN&oi=ao
-  info: 软件工程专业
-  info2: 研究方向：医学影像处理
 
-  group: 3
 
 - name: 胡喜风
   photo: huxifeng.jpg
