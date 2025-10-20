@@ -74,6 +74,7 @@
   photo: zhangcheng.jpg
   info: 计算机技术专业
   info2: 研究方向：计算机视觉与图像处理
+  pub: 华为杯三等奖
   group: 3
 
 
@@ -92,24 +93,28 @@
   photo: th.jpg
   info: 计算机技术专业
   info2: 研究方向：三维形状生成
+  pub: 计图比赛三等奖
   group: 1
 
 - name: 谭润清
   photo: tanrunqing.jpg
   info: 计算机技术专业
   info2: 研究方向：多视图三维重建
+  pub: 华为杯三等奖
   group: 1
 
 - name: 张朦幻
   photo: huan.jpg
   info: 软件工程专业
   info2: 研究方向：细粒度图像分类
+  pub: 挑战杯创意赛特等奖
   group: 1
 
 - name: 仇世纪
   photo: qiushiji.jpg
   info: 软件工程专业
   info2: 研究方向：点云分割
+
   group: 1
 
 - name: 鄢柯
@@ -123,6 +128,7 @@
   photo: lishuaiheng.jpg
   info: 计算机技术专业
   info2: 研究方向：细粒度分类
+  pub: 华为杯三等奖,挑战杯创意赛特等奖
   group: 1
 
 - name: 曹子彦
@@ -136,13 +142,14 @@
   info: 农业工程与信息技术专业
   info2: 研究方向：点云补全
   url: https://songqikong.github.io/
+  pub: 华为杯三等奖
   group: 1
 
 - name: 李绍铭
   photo: lishaoming.jpg
   info: 人工智能专业
   info2: 研究方向：单幅图三维重建
-  pub: CVPR+1
+  pub: CVPR+1，计图比赛三等奖
   group: 1
 
 
@@ -155,6 +162,7 @@
   photo: caozheng.jpg
   info: 计算机技术专业
   info2: 研究方向：医学图像三维重建
+  pub: 计图比赛三等奖
   group: 1
 
 - name: 舒恩慧
@@ -227,6 +235,7 @@
   photo: lifulin.jpg
   info: 软件工程专业
   info2: 研究方向：医学多模态辅助诊断
+  pub: 华为杯三等奖
   group: 1
 
 - name: 吴兴政
