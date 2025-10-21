@@ -114,6 +114,7 @@
   photo: qiushiji.jpg
   info: 软件工程专业
   info2: 研究方向：点云分割
+  pub: 挑战杯创意赛特等奖
 
   group: 1
 
@@ -121,7 +122,7 @@
   photo: yanke.jpg
   info: 计算机科学与技术专业
   info2: 研究方向：医学图像分割
-  pub: AAAI+1
+  pub: AAAI+1，国家奖学金
   group: 1
 
 - name: 李帅衡
@@ -149,7 +150,7 @@
   photo: lishaoming.jpg
   info: 人工智能专业
   info2: 研究方向：单幅图三维重建
-  pub: CVPR+1，计图比赛三等奖
+  pub: CVPR+1，计图比赛三等奖，国家奖学金
   group: 1
 
 
