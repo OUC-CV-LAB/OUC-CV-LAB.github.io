@@ -73,11 +73,30 @@
 - name: 张成
   photo: zhangcheng.jpg
   info: 计算机技术专业
-  info2: 研究方向：计算机视觉与图像处理
+  info2: 研究方向：具身智能
   pub:
   group: 3
 
+- name: 陈丹阳
+  photo: chendanyang.jpg
+  info: 电子信息专业
+  info2: 研究方向：情感计算
+  pub:
+  group: 3
 
+- name: 王聪聪
+  photo: wangcongcong.jpg
+  info: 人工智能专业
+  info2: 研究方向：大模型与多智能体协同推理
+  pub:
+  group: 3
+
+- name: 李文韬
+  photo: liwentao.jpg
+  info: 软件工程专业
+  info2: 研究方向：大模型与知识图谱
+  pub:
+  group: 3
 
 - name: 胡喜风
   photo: huxifeng.jpg
@@ -92,7 +111,7 @@
 - name: 童亨
   photo: th.jpg
   info: 计算机技术专业
-  info2: 研究方向：三维形状生成
+  info2: 研究方向：三维形状生成,具身智能
   pub: 计图比赛三等奖
   group: 1
 
@@ -129,7 +148,7 @@
   photo: lishuaiheng.jpg
   info: 计算机技术专业
   info2: 研究方向：细粒度分类
-  pub: 华为杯三等奖,挑战杯创意赛特等奖
+  pub: 华为杯三等奖,挑战杯创意赛特等奖,IEEE Transactions on Image Processing+1
   group: 1
 
 - name: 曹子彦
@@ -181,7 +200,7 @@
 - name: 严桂浩
   photo: yanguihao.jpg
   info: 计算机科学与技术专业
-  info2: 研究方向：超声标准切面识别
+  info2: 研究方向：超声标准切面识别，AAAI+1
   group: 1
 
 - name: 时东方
@@ -406,6 +425,6 @@
 
 - name: 曾祥辉
   photo: zengxianghui.jpg
-  info: 去往院校：西安交通大学
+  info: 去往院校：华南理工大学
   info2: 研究方向：通过视觉语言模型实现深度超分辨率
   group: 6
