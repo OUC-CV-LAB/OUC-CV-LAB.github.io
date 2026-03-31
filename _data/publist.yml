@@ -19,11 +19,11 @@
   authors:
   link:
     url: https://ieeexplore.ieee.org/document/11433510
-    display: Shaoming Li#, Qing Cai#, YangYang Shu, Guanbin Li, Junyu Dong. 2026, IEEE Transactions on Image Processing
+    display: Shaoming Li#, Qing Cai#, YangYang Shu, Guanbin Li, Junyu Dong. 2026, IEEE Transactions on Image Processing. (CCF A 类期刊)
   highlight: 1
-  brief: "LearnMat: Semantic-Aware Self-Supervision Fine-Grained Visual Recognition. Shaoming Li#, Qing Cai#, YangYang Shu, Guanbin Li, Junyu Dong. 2026, IEEE Transactions on Image Processing"
+  brief: "LearnMat: Semantic-Aware Self-Supervision Fine-Grained Visual Recognition. Shaoming Li#, Qing Cai#, YangYang Shu, Guanbin Li, Junyu Dong. 2026, IEEE Transactions on Image Processing. [CCF A]"
   pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11433510
-  code:
+  code: https://github.com/Heng-CHY/LearnMat
 
 
 
