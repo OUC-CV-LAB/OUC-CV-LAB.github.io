@@ -1,3 +1,56 @@
+- title: "SEMC: Structure-Enhanced Mixture-of-Experts Contrastive Learning for Ultrasound Standard Plane Recognition"
+  image: yanguihao_26.jpg
+  description:
+  authors:
+  link:
+    url: https://ojs.aaai.org/index.php/AAAI/article/view/37241
+    display: Guihao Yan#, Qing Cai#, Fan Zhang, Cheng Zhang, Zhi Liu. 2026, The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26). (CCF A 类会议)
+  highlight: 1
+  brief: "SEMC: Structure-Enhanced Mixture-of-Experts Contrastive Learning for Ultrasound Standard Plane Recognition. Guihao Yan#, Qing Cai#, Fan Zhang, Cheng Zhang, Zhi Liu. 2026, The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26). [CCF A]"
+  pdf: https://arxiv.org/abs/2511.12559
+  code: https://github.com/YanGuihao/SEMC
+  cn: https://blog.csdn.net/wxd1233/article/details/156469792
+
+
+
+- title: "LearnMat: Semantic-Aware Self-Supervision Fine-Grained Visual Recognition"
+  image: lishaoming_26.jpg
+  description:
+  authors:
+  link:
+    url: https://ieeexplore.ieee.org/document/11433510
+    display: Shaoming Li#, Qing Cai#, YangYang Shu, Guanbin Li, Junyu Dong. 2026, IEEE Transactions on Image Processing
+  highlight: 1
+  brief: "LearnMat: Semantic-Aware Self-Supervision Fine-Grained Visual Recognition. Shaoming Li#, Qing Cai#, YangYang Shu, Guanbin Li, Junyu Dong. 2026, IEEE Transactions on Image Processing"
+  pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11433510
+  code:
+
+
+
+- title: "Sonar-neus:voxel-based efficient neural implicit surface reconstruction for forward-looking sonar"
+  image: qiushiji_26.jpg
+  description:
+  authors:
+  link:
+    url: https://www.sciencedirect.com/science/article/pii/S0893608026001267
+    display: Shiji Qiu#, Qing Cai#, Zuogi Hu, Tiange Zhang, Zhi Liu, Junyu Dong. 2026, Neural Networks
+  highlight: 1
+  brief: "Sonar-neus:voxel-based efficient neural implicit surface reconstruction for forward-looking sonar. Shiji Qiu#, Qing Cai#, Zuogi Hu, Tiange Zhang, Zhi Liu, Junyu Dong. 2026, Neural Networks"
+  pdf: https://doi.org/10.1016/j.neunet.2026.108664
+  code:
+
+
+
+
+
+
+
+
+
+
+
+
+
 - title: "MESC-3D:Mining Effective Semantic Cues for 3D Reconstruction from a Single Image"
   image: 2743.jpg
   description: 
