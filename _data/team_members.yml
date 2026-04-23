@@ -6,6 +6,39 @@
   url: http://it.ouc.edu.cn/cq/list.htm
   group: 0
 
+- name: 汪萌
+  photo: wangmeng.jng
+  info: 合肥工业大学党委副书记、校长、教授、博士生导师
+  info2: 研究方向：人工智能、模式识别及多媒体信息处理
+  url: https://www.hfut.edu.cn/info/1154/10846.htm
+  group: 4
+
+- name: 洪日昌
+  photo: hongrichang.png
+  info: 合肥工业大学计算机与信息学院院长，教授、博士生导师
+  info2: 研究方向：人工智能, 计算机科学, 机器学习与人工智能, 计算机视觉与计算机图形学
+  url: https://faculty.hfut.edu.cn/hrc/zh_CN/index.htm
+  group: 4
+
+
+- name: 鲍秉坤
+  photo: baobingkun.ppg
+  info: 合肥工业大学计算机与信息学院院长，博士生导师、国家杰出青年基金获得者
+  info2: 研究方向：人工智能, 计算机科学, 机器学习与人工智能, 计算机视觉与计算机图形学
+  url: https://faculty.hfut.edu.cn/baobingkun/zh_CN/index.htm
+  group: 4
+
+
+
+- name: 张大鹏
+  photo: zhangdapeng.jpg
+  info:
+  info2: 研究方向：人工智能, 计算机科学, 机器学习与人工智能, 计算机视觉与计算机图形学
+  url: https://sds.cuhk.edu.cn/teacher/315
+  group: 4
+
+
+
 
 - name: 董军宇
   photo: dongjunyu.jpg
@@ -14,12 +47,7 @@
   url: http://it.ouc.edu.cn/djy/list.htm
   group: 4
 
-- name: 张大鹏
-  photo: zhangdapeng.jpg
-  info:
-  info2: 研究方向：人工智能, 计算机科学, 机器学习与人工智能, 计算机视觉与计算机图形学
-  url: https://sds.cuhk.edu.cn/teacher/315
-  group: 4
+
 
 
 - name: 吴枫
