@@ -9,11 +9,11 @@ layout: default
       <!-- 导师团队 -->
       <div class="team-section">
         <div class="section-header">
-          <div class="section-icon">🎓</div>
-          <div>
-            <h2 class="section-title">导师团队</h2>
-            <p class="section-description">引领研究方向，培养优秀人才</p>
-          </div>
+          <h2 class="section-title">
+            <span class="section-icon-inline">🎓</span>
+            导师团队
+            <span class="section-description-inline">引领研究方向，培养优秀人才</span>
+          </h2>
         </div>
         
         <div class="team-grid">
@@ -111,11 +111,15 @@ layout: default
       <!-- 合作学者 -->
       <div class="team-section">
         <div class="section-header">
-          <div class="section-icon">🤝</div>
-          <div>
-            <h2 class="section-title">合作学者</h2>
-            <p class="section-description">国际知名学者，共同推进科研发展</p>
-          </div>
+          <h2 class="section-title">
+            <span class="section-icon-inline">🤝</span>
+            合作学者
+            <span class="section-description-inline">
+              国际知名学者，共同推进科研发展
+            </span>
+          </h2>
+
+
         </div>
         
         <div class="team-grid collaborators-grid">
@@ -143,7 +147,8 @@ layout: default
                 </h4>
                 <p class="member-title">{{ member.info }}</p>
                 {% if member.info2 %}
-                <p class="member-research">{{ member.info2 }}</p>
+                <p class="member-title">{{ member.info2 }}</p>
+                <!--<p class="member-research">{{ member.info2 }}</p>-->
                 {% endif %}
               </div>
             </div>
@@ -168,17 +173,20 @@ layout: default
       <!-- 博士及博士后 -->
       <div class="team-section">
         <div class="section-header">
-          <div class="section-icon">🎯</div>
-          <div>
-            <h2 class="section-title">博士及博士后</h2>
-            <p class="section-description">潜心研究，追求学术卓越</p>
-          </div>
+          <h2 class="section-title">
+            <span class="section-icon-inline">🎯</span>
+            博士及博士后
+            <span class="section-description-inline">
+              潜心研究，追求学术卓越
+            </span>
+          </h2>
+
         </div>
         
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 6 %}
+          {% assign even_odd = number_printed | modulo: 5 %}
           {% if member.group == 3 %}
           
           {% if even_odd == 0 %}
@@ -211,7 +219,7 @@ layout: default
           
           {% assign number_printed = number_printed | plus: 1 %}
           
-          {% if even_odd == 5 %}
+          {% if even_odd == 4 %}
           </div>
           {% endif %}
           
@@ -229,11 +237,13 @@ layout: default
       <!-- 23级研究生 经验丰富，成果丰硕-->
       <div class="team-section">
         <div class="section-header">
-          <div class="section-icon">🌟</div>
-          <div>
-            <h2 class="section-title">硕士研究生</h2>
-            <p class="section-description">潜心研究，追求学术卓越</p>
-          </div>
+          <h2 class="section-title">
+          <span class="section-icon-inline">🌟</span>
+          硕士研究生
+          <span class="section-description-inline">
+              潜心研究，追求学术卓越
+            </span>
+        </h2>
         </div>
 
         <div class="team-grid">
@@ -290,11 +300,13 @@ layout: default
       <!-- 25届本科生 -->
       <div class="team-section">
         <div class="section-header">
-          <div class="section-icon">🌟</div>
-          <div>
-            <h2 class="section-title">已毕业学生</h2>
-            <p class="section-description">心怀梦想，追求学术高峰</p>
-          </div>
+          <h2 class="section-title">
+          <span class="section-icon-inline">🌟</span>
+            已毕业学生
+            <span class="section-description-inline">
+              心怀梦想，追求学术高峰
+            </span>
+          </h2>
         </div>
 
         <div class="team-grid">

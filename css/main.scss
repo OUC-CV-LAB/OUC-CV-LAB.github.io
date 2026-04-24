@@ -3413,7 +3413,7 @@ color:black;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 1px;
   gap: 25px;
   position: relative;
   z-index: 1;
@@ -5323,7 +5323,7 @@ color:black;
   .section-header {
     flex-direction: column;
     gap: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 1px;
   }
   
   .section-icon {
@@ -5991,7 +5991,8 @@ color:black;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 1px;
+  margin-top: 1px;
   text-align: center;
 }
 
@@ -6140,9 +6141,13 @@ color:black;
   
   .section-icon {
     margin-right: 0;
-    margin-bottom: 15px;
+    margin-bottom: 1px;
+    margin-top: 1px;
   }
-  
+
+
+
+
   .section-title {
     font-size: 2.8rem;
   }
@@ -6847,7 +6852,7 @@ color:black;
 
 /* 左侧导师卡片 */
 .team-section:first-of-type .member-card{
-    padding: 45px 55px;
+    padding: 1px 1px;
     min-height: 650px;
 }
 
@@ -6863,6 +6868,9 @@ color:black;
     font-size:3rem;
     margin-bottom:28px;
 }
+
+
+
 
 /* 下面信息全部左对齐 */
 .team-section:first-of-type .member-info{
@@ -6897,7 +6905,7 @@ color:black;
 
 /* 姓名 */
 .team-section:first-of-type .member-name{
-    font-size: 5rem !important;
+    font-size: 15rem !important;
 }
 
 /* 小标题：研究方向、联系方式 */
@@ -6931,4 +6939,105 @@ color:black;
     font-size: 3.2rem !important;
     margin-right: 12px;
 }
+
+
+/* 合作学者姓名放大（强制覆盖） */
+.collaborators-grid .member-name,
+.collaborators-grid .member-name a,
+.collaborators-grid h4.member-name,
+.collaborators-grid h4.member-name a{
+    font-size: 40px !important;
+    font-weight: 800 !important;
+    line-height: 1.25 !important;
+    color: #163d7a !important;
+}
+
+/* 合作学者职称取消斜体 */
+.collaborators-grid .member-title,
+.collaborators-grid .member-title em,
+.collaborators-grid p.member-title{
+    font-size: 30px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    color: #666 !important;
+}
+
+/* Team 标题区：图标和标题同行（紧凑版） */
+.team-section .section-header{
+    display:flex !important;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    text-align:left;
+
+    margin-top:0 !important;
+    margin-bottom:14px !important;
+
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+}
+
+
+
+
+/* 标题整体一行 */
+.team-section .section-header{
+    text-align:center;
+    margin-bottom:16px;
+}
+
+/* 主标题 */
+.team-section .inline-title{
+    display:inline-flex;
+    align-items:baseline;
+    gap:12px;
+    flex-wrap:wrap;
+    margin:0;
+    font-size:30px !important;
+    font-weight:800;
+}
+
+/* 图标 */
+.team-section .section-icon-inline{
+    font-size:28px;
+    line-height:1;
+}
+
+/* 副标题 */
+.team-section .section-description-inline{
+    font-size:20px;
+    font-weight:400;
+    color:#666;
+    margin-left:10px;
+}
+
+
+/* Team 每个板块整体顶部收紧 */
+.team-section{
+    padding-top: 6px !important;
+    padding-bottom: 20px !important;
+    margin-top: 0 !important;
+}
+
+/* 标题区域顶部空白压缩 */
+.team-section .section-header{
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 14px !important;
+}
+
+/* 标题本身去默认间距 */
+.team-section .section-title,
+.team-section .inline-title{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    line-height: 1.1;
+}
+
+/* 图标微调 */
+.team-section .section-icon-inline{
+    position: relative;
+    top: -1px;
+}
+
 
