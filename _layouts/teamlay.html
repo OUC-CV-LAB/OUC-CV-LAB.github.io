@@ -16,96 +16,64 @@ layout: default
           </h2>
         </div>
         
-        <div class="team-grid">
-          <div class="row">
-            <!-- 蔡青卡片 - 左侧 -->
-            <div class="col-sm-6">
-              <div class="member-card">
-                <div class="member-photo">
-                  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/caiqing.jpg" alt="蔡青" />
-                </div>
-                <div class="member-info">
-                  <h4 class="member-name">
-                    <a href="http://it.ouc.edu.cn/cq/list.htm" target="_blank">蔡青  (教授)</a>
-                  </h4>
-                  <div class="detail-section">
-                    <p><strong>博士生导师</strong></p>
-                    <p><strong>所在单位：</strong>人工智能创新学院</p>
-                    <p><strong>学历：</strong>研究生(博士后)</p>
-                    <p><strong>毕业院校：</strong>中国科学技术大学</p>
-                  </div>
-                   <div class="detail-section">
-                      <h4>研究方向</h4>
-                      <p>计算机视觉，医工交叉，三维重建，具身智能，AI4Science</p>
-                   </div>
-                  <div class="detail-section">
-                    <h4>联系方式</h4>
-                    <p><strong>邮箱：</strong>caiqing@hfut.edu.cn</p>
-                    <p><strong>个人主页：</strong><a href="https://faculty.hfut.edu.cn/caiqing" target="_blank">https://faculty.hfut.edu.cn/caiqing</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- 蔡青详细介绍 - 右侧 -->
-            <div class="col-sm-6">
-              <div class="member-detail-card">
-                <div class="detail-header">
-                  <h3>蔡青 教授</h3>
-                  <p class="detail-subtitle">实验室负责人</p>
-                </div>
-                <div class="detail-content">
-                  <div class="detail-section">
-                    <h4>个人简介</h4>
-                    <p>蔡青，合肥工业大学黄山特聘教授、博士生导师，先后荣获山东省“泰山学者”青年专家、
-                      山东省优青、山东省人工智能科学技术奖自然奖（1/3）和优秀青年奖等。博士毕业于西北工业大学，
-                      曾分别在加拿大阿尔伯塔大学和西安交通大学进行联培和访问；并在中国科学技术大学和香港中文大学（深圳）
-                      进行博后工作，合作导师为吴枫院士（副校长）和张大鹏院士，目前在汪萌校长、洪日昌副校长和鲍秉坤院长团队。
-                      CCF 高级会员、CCF-CV委会委员、CCF-MM专委会委员、CCF-AI专委会委员、CSIG青工委副秘书长、
-                      CSIG3DV专委会秘书处成员、山东省人工智能学会理事、YOCSEF青岛委员。主要研究领域为人工智能与医工交叉方向，
-                      具体包括医学图像处理、疾病辅助诊断、三维重建、具身智能等。相关工作已以第一或通讯作者身份发表在国内外重要
-                      学术会议、期刊: CVPR、AAAI、IJCAI、ACM MM、IEEE TIP、IEEE TNNLS、IEEE TCSVT、PR等。担任
-                      IEEE TIP副主编、CVPR、ICCV、ECCV、NeurIPS、ICLR、ICML、AAAI、IJCV、IEEE TIP、IEEE TNNLS、
-                      IEEE TCYB等审稿人。主持国家自然科学基金（面上&青年）、山东省自然科学基金（优青&青年）、中国博士后
-                      科学基金等项目，更多信息详见个人主页。</p>
-                  </div>
-                  
-                  <!--
-                  <div class="detail-section">
-                    <h4>研究方向</h4>
-                    <ul>
-                      <li>计算机视觉</li>
-                      <li>医工交叉</li>
-                      <li>三维重建</li>
-                      <li>具身智能</li>
-                      <li>AI4Science</li>
-                    </ul>
-                  </div>
-                  -->
-                  
-                  <div class="detail-section">
-                    <h4>学术成就</h4>
-                    <ul>
-                      <li>在CVPR、AAAI、IJCAI、MM、TIP、TNNLS、TCSVT、PR等国际顶级会议和期刊发表多篇论文</li>
-                      <li>主持和参与国家自然科学基金、山东省自然科学基金等项目</li>
-                      <li>荣获山东省泰山学者青年专家荣誉称号</li>
-                      <li>主持国家自然科学基金（面上&青年）,山东省自然科学基金（优青&青年）,中国博士后 科学基金等项目</li>
-                    </ul>
-                  </div>
+        <div class="prof-layout">
 
-                  <!--
-                  <div class="detail-section">
-                    <h4>联系方式</h4>
-                    <p><strong>邮箱：</strong>caiqing@hfut.edu.cn</p>
-                    <p><strong>个人主页：</strong><a href="https://faculty.hfut.edu.cn/caiqing" target="_blank">https://faculty.hfut.edu.cn/caiqing</a></p>
-                  </div>
-                  -->
+  <!-- 左侧人物信息栏 -->
+  <div class="prof-sidebar">
 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <img class="prof-avatar"
+         src="{{ site.url }}{{ site.baseurl }}/images/teampic/caiqing.jpg"
+         alt="蔡青" />
+
+    <h2>蔡青（教授）</h2>
+
+    <p style="margin-top: 120px;"><strong>博士生导师</strong></p>
+    <p><strong>电子邮箱：</strong>caiqing@hfut.edu.cn</p>
+    <p><strong>所在单位：</strong>人工智能创新学院</p>
+    <p><strong>学历：</strong>研究生(博士后)</p>
+    <p><strong>毕业院校：</strong>中国科学技术大学</p>
+
+    <a href="https://faculty.hfut.edu.cn/caiqing" target="_blank">
+      个人主页
+    </a>
+
+  </div>
+
+  <!-- 右侧详细介绍 -->
+  <div class="prof-content">
+
+    <h3>个人简介</h3>
+    <p>
+      蔡青，合肥工业大学黄山特聘教授、博士生导师，先后荣获山东省“泰山学者”青年专家、
+      山东省优青、山东省人工智能科学技术奖自然奖（1/3）和优秀青年奖等。博士毕业于西北工业大学，
+      曾分别在加拿大阿尔伯塔大学和西安交通大学进行联培和访问；并在中国科学技术大学和香港中文大学（深圳）
+      进行博后工作，合作导师为吴枫院士（副校长）和张大鹏院士，目前在汪萌校长、洪日昌副校长和鲍秉坤院长团队。
+      CCF 高级会员、CCF-CV委会委员、CCF-MM专委会委员、CCF-AI专委会委员、CSIG青工委副秘书长、
+      CSIG3DV专委会秘书处成员、山东省人工智能学会理事、YOCSEF青岛委员。主要研究领域为人工智能与医工交叉方向，
+      具体包括医学图像处理、疾病辅助诊断、三维重建、具身智能等。
+    </p>
+
+    <h3>研究方向</h3>
+    <p>
+      计算机视觉、医工交叉、三维重建、具身智能、AI4Science
+    </p>
+
+    <h3>学术成就及服务</h3>
+    <ul>
+      <li>在CVPR、AAAI、IJCAI、ACM MM、IEEE TIP、IEEE TNNLS、IEEE TCSVT、PR等国际顶级会议和期刊发表多篇论文</li>
+      <li>CVPR、ICCV、ECCV、NeurlPS、ICLR、ICML、AAAI、IJCV等审稿人</li>
+      <li>主持国家自然科学基金、山东省自然科学基金、中国博士后科学基金等项目</li>
+      <li>荣获山东省泰山学者青年专家、山东省优青等荣誉称号</li>
+      <li>IEEE TIP 副主编（CCF A&中科院SCI一区Top期刊）、Journal for Radiology Case Reports副主编等</li>
+      <li>CSIG青工委副秘书长、CCF-CV委会委员、CCF-MM专委会委、CCF-AI专委会委员、CSIG3DV专委会秘书处成员</li>
+      <li>CSIG青年科学家会议2025、2026组织委会主席、Valse Webinar十周年线下活动执行主席</li>
+      <li>VCC2025特邀报告、国际会议ICCPR2023特邀报告、CSIG青年科学家会议特邀报告</li>
+
+    </ul>
+
+  </div>
+
+</div>
       </div>
 
       <!-- 合作学者 -->

@@ -7041,3 +7041,117 @@ color:black;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 教授主页式布局 */
+.prof-layout{
+    display:flex;
+    width:100%;
+    min-height:600px;
+    border-radius:18px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 14px 38px rgba(0,0,0,.10);
+}
+
+/* 左侧人物栏 */
+.prof-sidebar{
+    width:330px;
+    background:linear-gradient(180deg,#173f73,#26384e);
+    color:#fff;
+    padding:42px 26px;
+    text-align:left;
+}
+
+.prof-avatar{
+    width:145px;
+    height:145px;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 18px;
+    border-radius:4px;
+    background:#fff;
+}
+
+.prof-sidebar h2{
+    font-size:26px;
+    text-align:center;
+    margin:0 0 28px;
+    color:#fff;
+    font-weight:700;
+}
+
+.prof-sidebar p{
+    font-size:17px;
+    line-height:2.0;
+    margin:0 0 6px;
+    color:#fff;
+}
+
+.prof-sidebar a{
+    display:block;
+    margin-top:22px;
+    color:#fff;
+    font-size:17px;
+    font-weight:700;
+    text-decoration:underline;
+}
+
+/* 右侧内容区 */
+.prof-content{
+    flex:1;
+    background:#fff;
+    padding:44px 58px;
+    text-align:left;
+}
+
+.prof-content h3{
+    font-size:26px;
+    color:#c40000;
+    font-weight:800;
+    margin:0 0 14px;
+    padding-bottom:8px;
+    border-bottom:1px solid #ddd;
+}
+
+.prof-content p,
+.prof-content li{
+    font-size:19px;
+    line-height:2.0;
+    color:#333;
+}
+
+.prof-content ul{
+    padding-left:24px;
+    margin-bottom:28px;
+}
+
+/* 手机端自适应 */
+@media (max-width: 768px){
+    .prof-layout{
+        flex-direction:column;
+    }
+
+    .prof-sidebar{
+        width:100%;
+        text-align:center;
+    }
+
+    .prof-content{
+        padding:30px 24px;
+    }
+}
+
