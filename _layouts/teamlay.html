@@ -26,10 +26,23 @@ layout: default
                 </div>
                 <div class="member-info">
                   <h4 class="member-name">
-                    <a href="http://it.ouc.edu.cn/cq/list.htm" target="_blank">蔡青</a>
+                    <a href="http://it.ouc.edu.cn/cq/list.htm" target="_blank">蔡青  (教授)</a>
                   </h4>
-                  <p class="member-title">教授</p>
-                  <p class="member-research">研究方向：计算机视觉、机器学习、医学图像分析</p>
+                  <div class="detail-section">
+                    <p><strong>博士生导师</strong></p>
+                    <p><strong>所在单位：</strong>人工智能创新学院</p>
+                    <p><strong>学历：</strong>研究生(博士后)</p>
+                    <p><strong>毕业院校：</strong>中国科学技术大学</p>
+                  </div>
+                   <div class="detail-section">
+                      <h4>研究方向</h4>
+                      <p>计算机视觉，医工交叉，三维重建，具身智能，AI4Science</p>
+                   </div>
+                  <div class="detail-section">
+                    <h4>联系方式</h4>
+                    <p><strong>邮箱：</strong>caiqing@hfut.edu.cn</p>
+                    <p><strong>个人主页：</strong><a href="https://faculty.hfut.edu.cn/caiqing" target="_blank">https://faculty.hfut.edu.cn/caiqing</a></p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -57,15 +70,18 @@ layout: default
                       科学基金等项目，更多信息详见个人主页。</p>
                   </div>
                   
+                  <!--
                   <div class="detail-section">
                     <h4>研究方向</h4>
                     <ul>
-                      <li>计算机视觉与深度学习</li>
-                      <li>医学图像分析与处理</li>
-                      <li>机器学习算法优化</li>
-                      <li>多模态数据融合</li>
+                      <li>计算机视觉</li>
+                      <li>医工交叉</li>
+                      <li>三维重建</li>
+                      <li>具身智能</li>
+                      <li>AI4Science</li>
                     </ul>
                   </div>
+                  -->
                   
                   <div class="detail-section">
                     <h4>学术成就</h4>
@@ -77,12 +93,14 @@ layout: default
                     </ul>
                   </div>
 
-
+                  <!--
                   <div class="detail-section">
                     <h4>联系方式</h4>
-                    <p><strong>邮箱：</strong>cq@ouc.edu.cn</p>
-                    <p><strong>个人主页：</strong><a href="https://faculty.hfut.edu.cn/caiqing" target="_blank">http://it.ouc.edu.cn/cq/list.htm</a></p>
+                    <p><strong>邮箱：</strong>caiqing@hfut.edu.cn</p>
+                    <p><strong>个人主页：</strong><a href="https://faculty.hfut.edu.cn/caiqing" target="_blank">https://faculty.hfut.edu.cn/caiqing</a></p>
                   </div>
+                  -->
+
                 </div>
               </div>
             </div>
@@ -100,10 +118,10 @@ layout: default
           </div>
         </div>
         
-        <div class="team-grid">
+        <div class="team-grid collaborators-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 6 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
           {% if member.group == 4 %}
           
           {% if even_odd == 0 %}
@@ -269,7 +287,78 @@ layout: default
       </div>
 
 
-       <!--24级研究生 -->
+      <!-- 25届本科生 -->
+      <div class="team-section">
+        <div class="section-header">
+          <div class="section-icon">🌟</div>
+          <div>
+            <h2 class="section-title">已毕业学生</h2>
+            <p class="section-description">心怀梦想，追求学术高峰</p>
+          </div>
+        </div>
+
+        <div class="team-grid">
+          {% assign number_printed = 0 %}
+          {% for member in site.data.team_members %}
+          {% assign even_odd = number_printed | modulo: 6 %}
+          {% if member.group == 6 %}
+
+          {% if even_odd == 0 %}
+          <div class="row">
+          {% endif %}
+
+          <div class="col-sm-2">
+            <div class="member-card">
+              <div class="member-photo">
+                <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/benke/{{ member.photo }}" alt="{{ member.name }}" />
+              </div>
+              <div class="member-info">
+                <h4 class="member-name">
+                  {% if member.url %}
+                  <a href="{{ member.url }}" target="_blank">{{ member.name }}</a>
+                  {% else %}
+                  {{ member.name }}
+                  {% endif %}
+                </h4>
+                <p class="member-title">{{ member.info }}</p>
+                {% if member.info2 %}
+                <p class="member-research">{{ member.info2 }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+
+          {% assign number_printed = number_printed | plus: 1 %}
+
+          {% if even_odd == 5 %}
+          </div>
+          {% endif %}
+
+          {% endif %}
+          {% endfor %}
+
+          {% assign even_odd = number_printed | modulo: 6 %}
+          {% if even_odd != 0 %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+ <!--24级研究生 -->
       <!--<div class="team-section">
         <div class="section-header">
           <div class="section-icon">🌟</div>
@@ -278,17 +367,17 @@ layout: default
             <p class="section-description">潜心研究，追求学术卓越</p>
           </div>
         </div>
-        
+
         <div class="team-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
           {% assign even_odd = number_printed | modulo: 6 %}
           {% if member.group == 2 %}
-          
+
           {% if even_odd == 0 %}
           <div class="row">
           {% endif %}
-          
+
           <div class="col-sm-2">
             <div class="member-card">
               <div class="member-photo">
@@ -309,16 +398,16 @@ layout: default
               </div>
             </div>
           </div>
-          
+
           {% assign number_printed = number_printed | plus: 1 %}
-          
+
           {% if even_odd == 5 %}
           </div>
           {% endif %}
-          
+
           {% endif %}
           {% endfor %}
-          
+
           {% assign even_odd = number_printed | modulo: 6 %}
           {% if even_odd != 0 %}
           </div>
@@ -385,76 +474,3 @@ layout: default
           {% endif %}
         </div>
       </div>-->
-
-
-
-
-
-      <!-- 25届本科生 -->
-      <div class="team-section">
-        <div class="section-header">
-          <div class="section-icon">🌟</div>
-          <div>
-            <h2 class="section-title">25届本科生</h2>
-            <p class="section-description">心怀梦想，追求学术高峰</p>
-          </div>
-        </div>
-
-        <div class="team-grid">
-          {% assign number_printed = 0 %}
-          {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 6 %}
-          {% if member.group == 6 %}
-
-          {% if even_odd == 0 %}
-          <div class="row">
-          {% endif %}
-
-          <div class="col-sm-2">
-            <div class="member-card">
-              <div class="member-photo">
-                <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/benke/{{ member.photo }}" alt="{{ member.name }}" />
-              </div>
-              <div class="member-info">
-                <h4 class="member-name">
-                  {% if member.url %}
-                  <a href="{{ member.url }}" target="_blank">{{ member.name }}</a>
-                  {% else %}
-                  {{ member.name }}
-                  {% endif %}
-                </h4>
-                <p class="member-title">{{ member.info }}</p>
-                {% if member.info2 %}
-                <p class="member-research">{{ member.info2 }}</p>
-                {% endif %}
-              </div>
-            </div>
-          </div>
-
-          {% assign number_printed = number_printed | plus: 1 %}
-
-          {% if even_odd == 5 %}
-          </div>
-          {% endif %}
-
-          {% endif %}
-          {% endfor %}
-
-          {% assign even_odd = number_printed | modulo: 6 %}
-          {% if even_odd != 0 %}
-          </div>
-          {% endif %}
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-    </div>
-  </div>
-</div>
