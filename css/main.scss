@@ -5033,25 +5033,25 @@ color:black;
   }
   
   .intro-content .intro-text {
-    font-size: 1.6rem !important; /* 从1.2rem放大到1.6rem */
+    font-size: 2.2rem !important; /* 从1.2rem放大到1.6rem */
     margin-bottom: 1.2rem;
   }
   
   .intro-paragraphs .intro-text {
-    font-size: 1.6rem !important;
+    font-size: 2.2rem !important;
   }
   
   /* 移动端前三个intro-text字体大小1.5倍 */
   .intro-paragraphs .intro-text:nth-child(1),
   .intro-paragraphs .intro-text:nth-child(2),
   .intro-paragraphs .intro-text:nth-child(3) {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     line-height: 1.4;
   }
   
   /* 移动端第一个intro-text中的链接字体大小 */
   .intro-paragraphs .intro-text:nth-child(1) .intro-link {
-    font-size: 1.8rem !important;
+    font-size: 2.2rem !important;
   }
   
   /* 移动端占满宽度布局调整 */
@@ -5069,7 +5069,7 @@ color:black;
     min-height: 150px;
     margin: 0;
     padding: 15px;
-    font-size: 1.2rem !important;
+    font-size: 1.4rem !important;
   }
   
   .intro-contact-row .contact-section {
@@ -6083,7 +6083,7 @@ color:black;
 
 .research-content h3 {
   color: #2c3e50;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   font-weight: 600;
   margin: 0 0 25px 0;
   display: flex;
@@ -6095,7 +6095,7 @@ color:black;
   color: #5a6c7d;
   line-height: 1.8;
   margin: 0 0 30px 0;
-  font-size: 1.4rem;
+  font-size: 2.4rem;
 }
 
 .research-tags {
@@ -6266,7 +6266,7 @@ color:black;
 /* 最高优先级设置，确保intro-text字体大小和颜色生效 */
 .intro-content .intro-text,
 .intro-paragraphs .intro-text {
-  font-size: 1.8rem !important;
+  font-size: 2.2rem !important;
   color: #000000 !important; /* 强制设置为黑色 */
 }
 
@@ -6274,7 +6274,7 @@ color:black;
 @media (max-width: 768px) {
   .intro-content .intro-text,
   .intro-paragraphs .intro-text {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
     color: #000000 !important; /* 移动端也设置为黑色 */
   }
 }
@@ -6637,7 +6637,7 @@ color:black;
   /* 移动端intro-text */
   .intro-content .intro-text,
   .intro-paragraphs .intro-text {
-    font-size: 1.5rem !important;
+    font-size: 1.7rem !important;
     color: #000000 !important;
     line-height: 1.6 !important;
     margin-bottom: 18px !important;
@@ -6778,7 +6778,7 @@ color:black;
   /* 超小屏幕intro-text */
   .intro-content .intro-text,
   .intro-paragraphs .intro-text {
-    font-size: 1.3rem !important;
+    font-size: 1.5rem !important;
   }
 }
 
@@ -6946,7 +6946,7 @@ color:black;
 .collaborators-grid .member-name a,
 .collaborators-grid h4.member-name,
 .collaborators-grid h4.member-name a{
-    font-size: 40px !important;
+    font-size: 30px !important;
     font-weight: 800 !important;
     line-height: 1.25 !important;
     color: #163d7a !important;
@@ -6956,7 +6956,7 @@ color:black;
 .collaborators-grid .member-title,
 .collaborators-grid .member-title em,
 .collaborators-grid p.member-title{
-    font-size: 30px !important;
+    font-size: 24px !important;
     font-style: normal !important;
     font-weight: 500 !important;
     color: #666 !important;
@@ -7077,8 +7077,8 @@ color:black;
 }
 
 .prof-avatar{
-    width:145px;
-    height:145px;
+    width:200px;
+    height:200px;
     object-fit:cover;
     display:block;
     margin:0 auto 18px;
@@ -7087,7 +7087,7 @@ color:black;
 }
 
 .prof-sidebar h2{
-    font-size:26px;
+    font-size:36px;
     text-align:center;
     margin:0 0 28px;
     color:#fff;
@@ -7095,7 +7095,7 @@ color:black;
 }
 
 .prof-sidebar p{
-    font-size:17px;
+    font-size:27px;
     line-height:2.0;
     margin:0 0 6px;
     color:#fff;
@@ -7105,7 +7105,7 @@ color:black;
     display:block;
     margin-top:22px;
     color:#fff;
-    font-size:17px;
+    font-size:27px;
     font-weight:700;
     text-decoration:underline;
 }
@@ -7119,7 +7119,7 @@ color:black;
 }
 
 .prof-content h3{
-    font-size:26px;
+    font-size:35px;
     color:#c40000;
     font-weight:800;
     margin:0 0 14px;
@@ -7129,7 +7129,7 @@ color:black;
 
 .prof-content p,
 .prof-content li{
-    font-size:19px;
+    font-size:24px;
     line-height:2.0;
     color:#333;
 }

@@ -248,7 +248,23 @@ permalink: /join.html
 
 
 
-
+<div class="activity-container">
+    <div class="activity-title">第五届多媒体与人工智能安全学术研讨会</div>
+    <div class="activity-details">
+      <strong>时间：</strong>2026年04月24日-26日<br>
+      <strong>地点：</strong>安徽省黄山市香茗国际酒店<br>
+      <strong>主办方：</strong>安徽省人工智能学会、隐者联盟
+    </div>
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2026-4-24.jpg" alt="活动合影">
+    <div class="activity-description">
+        本次研讨会汇聚多媒体与人工智能安全领域国内外高校、科研院所及行业企业的顶尖专家与优秀学者开展主旨分享，
+        深度剖析领域前沿技术、研究难点与产业发展热点。会议同步设置学术高峰论坛、前沿技术专题研讨、科研成果交流、青年学者
+        交流等分板块特色活动，围绕多媒体内容防护、人工智能安全、数据隐私保护、智能对抗攻防等核心方向展开多元探讨。活动内
+        容覆盖理论研究、技术创新与产业落地多个维度，形式丰富、层次多元，为参会人员搭建高质量学术交流平台，有效拓宽学术视野、
+        促进跨单位协作交流，切实提升学术沟通质量与科研创新活力。
+    </div>
+    
+  </div>
 
 
 

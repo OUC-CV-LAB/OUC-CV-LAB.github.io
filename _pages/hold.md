@@ -106,8 +106,25 @@ permalink: /hold.html
 
 
 
-
-
+<div class="activity-container">
+    <div class="activity-title">合肥工业大学斛兵学术前沿论坛（第一期）</div>
+    <div class="activity-details">
+      <strong>时间：</strong>2026年04月18日-19日<br>
+      <strong>地点：</strong>合肥工业大学(翡翠湖校区)科教楼B座501报告厅<br>
+      <strong>主办方：</strong>合肥工业大学计算机与信息学院,人工智能创新学院
+    </div>
+    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/xueshupic/2026-4-17.jpg" alt="活动合影">
+    <div class="activity-description">
+        本次论坛由合肥工业大学计算机与信息学院、合肥工业大学人工智能创新学院联合主办。
+        由合肥工业大学计算机与信息学院院长鲍秉坤教授（国家级高层次人才）担任论坛欢迎辞主讲人，
+        统筹论坛整体组织工作。论坛邀请到了中山大学肖侬教授、上海交通大学吴奇教授、湖南大学彭绍亮教授、
+        上海大学曾丹教授、中国科学院深圳先进技术研究院李志成教授、浙江大学刘华锋教授等 12 位来自国
+        内顶尖高校及科研院所的国家级高层次人才担任报告嘉宾，分享各领域前沿研究成果。同时，汇聚了计
+        算机科学、人工智能、医学影像、空基无人系统、类脑智能等相关领域的专家学者、青年才俊，以及合
+        肥工业大学相关院系的师生代表，共同参与论坛的学术报告、交流研讨与思想碰撞，全方位推动领域内
+        的学术交流与技术创新。</div>
+    
+  </div>
 
 <div class="activity-container">
     <div class="activity-title">“海洋大模型落地的核心挑战与演进路径”深度技术论坛</div>
