@@ -6,10 +6,10 @@
     </p>
 
     {% assign count = 0 %}
-    {% for publi in site.data.publist limit:8 %}
+    {% for publi in site.data.publist limit:9 %}
         {% if publi.highlight == 1 %}
             {% assign count = count | plus: 1 %}
-            {% if count <= 8 %}
+            {% if count <= 9 %}
                 <div class="row" style="max-width: 100%;padding: 0 10px; margin: auto;">
                     <div class="col-sm-12">
                         <p>

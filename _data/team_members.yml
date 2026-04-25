@@ -56,9 +56,6 @@
 
 
 
-
-
-
 - name: 刘治
   photo: liuzhi.jpg
   info: 山东省高层次人才
@@ -67,18 +64,22 @@
   group: 4
 
 
+
+
+
 - name: 张帆
   photo: zhangfan.jpg
   info: 助理教授（研究）：控制科学与工程
   info2: 研究方向：计算机视觉与人工智能
-  pub: TNNLS,PR,TIP,AAAI
+  pub: TNNLS,PR,TIP,AAAI×2等
   group: 3
 
 - name: 曹艳坤
   photo: caoyankun.jpg
   url: https://scholar.google.com/citations?user=brp3wz4AAAAJ&hl=zh-CN&oi=ao
-  info: 博士后：软件工程专业
+  info: 山东大学博士后
   info2: 研究方向：医学影像处理
+  pub: CMIG,BIBM,CMPB,TIM×2等
   group: 3
 
 
@@ -91,10 +92,10 @@
 
 - name: 郭少翔
   photo: guoshaoxiang.jpg
-  info: 计算机技术专业
+  info: 浙江大学博士后
   info2: 研究方向：计算机视觉与深度学习
   pub: ACM MM+1
-  group: 3
+  group: 6
 
 - name: 张成
   photo: zhangcheng.jpg
@@ -437,6 +438,14 @@
   year: 2018
   current: Bard College
 
+- name: 王祥龙
+  photo: wangxianglong.jpg
+  info: 青岛科技大学教师
+  info2:
+  url: https://sjkx.qust.edu.cn/info/1039/1805.htm
+  pub: T-CSVT,TIM
+  group: 6
+
 - name: 洪佳荣
   photo: hongjiarong.jpg
   info: 去往院校：南京大学
@@ -455,3 +464,4 @@
   info: 去往院校：华南理工大学
   info2: 研究方向：通过视觉语言模型实现深度超分辨率
   group: 6
+
