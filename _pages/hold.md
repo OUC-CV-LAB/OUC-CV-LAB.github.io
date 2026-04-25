@@ -106,7 +106,6 @@ permalink: /hold.html
 
 
 
-
 <div class="activity-container">
     <div class="activity-title">合肥工业大学斛兵学术前沿论坛（第一期）</div>
     <div class="activity-details">
