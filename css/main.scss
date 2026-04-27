@@ -3242,7 +3242,7 @@ color:black;
   .team-grid .row .col-sm-2 .member-name {
     font-size: 2.0rem !important;
   }
-  
+
   .member-title {
     font-size: 1.8rem !important;
   }
@@ -7084,7 +7084,7 @@ color:black;
 
 .prof-avatar{
     width:200px;
-    height:200px;
+    height:240px;
     object-fit:cover;
     display:block;
     margin:0 auto 18px;
@@ -7332,4 +7332,31 @@ color:black;
 /* 卡片高度自适应 */
 .contact-card{
   min-height: 380px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.col-sm-2 {
+  max-width: 470px; /* 你可以设置宽度大小 */
+  width: 100%;
+  margin: 0 auto; /* 居中 */
+}
+
+/* 仅调整博士栏卡片的宽度 */
+.doctor-card .member-card {
+  display: flex;
+  width: 470px;  /* 设置博士栏卡片宽度 */
+  max-width: 550px;  /* 最大宽度 */
+  margin: 0 auto;  /* 居中 */
+}
+
+.master-card .member-card {
+  width: 400px;  /* 设置博士栏卡片宽度 */
+  max-width: 550px;  /* 最大宽度 */
+  margin: 0 auto;  /* 居中 */
 }
