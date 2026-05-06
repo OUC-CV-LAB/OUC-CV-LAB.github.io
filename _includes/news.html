@@ -1,9 +1,9 @@
-<div class="row" style="max-width: 100%; margin: auto;">
+<div class="home-news-list" style="max-width: 100%; margin: auto;">
     <h3 style="text-align: center;font-size: 40px; font-weight: 800;">新闻动态</h3>
     <!--<p style="font-size: 14px;">最新实验室动态与新闻</p>-->
 
     {% for article in site.data.news limit:6 %}
-        <div class="row" style="max-width: 100%;padding: 0 10px; margin: auto;">
+        <div class="row home-news-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
             <div class="col-sm-12">
                 <p>
                     <a class="pub1" style="font-size: 10px; line-height:1.8; text-decoration: none; color: inherit;">
@@ -14,7 +14,7 @@
         </div>
     {% endfor %}
 
-    <div style="text-align: center; margin: 10px auto 0 auto; width: 100%;">
+    <div class="home-more-link" style="text-align: center; margin: 10px auto 0 auto; width: 100%;">
         <a href="{{ site.url }}{{ site.baseurl }}/allnews.html" 
            style="text-decoration: none; color: #007bff; font-weight: bold; display: inline-block; background: linear-gradient(135deg, #1e3c72, #4a90e2); color: white !important; padding: 8px 20px; border-radius: 25px; box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);">
             更多...

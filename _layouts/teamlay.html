@@ -150,7 +150,7 @@ layout: default
 
         </div>
         
-        <div class="team-grid">
+        <div class="team-grid collaborator-layout-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
           {% assign even_odd = number_printed | modulo: 4 %}
@@ -214,10 +214,10 @@ layout: default
         </h2>
         </div>
 
-        <div class="team-grid">
+        <div class="team-grid collaborator-layout-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
-          {% assign even_odd = number_printed | modulo: 5 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
           {% if member.group == 1 %}
 
           {% if even_odd == 0 %}
@@ -250,14 +250,14 @@ layout: default
 
           {% assign number_printed = number_printed | plus: 1 %}
 
-          {% if even_odd == 5 %}
+          {% if even_odd == 3 %}
           </div>
           {% endif %}
 
           {% endif %}
           {% endfor %}
 
-          {% assign even_odd = number_printed | modulo: 6 %}
+          {% assign even_odd = number_printed | modulo: 4 %}
           {% if even_odd != 0 %}
           </div>
           {% endif %}
@@ -277,7 +277,7 @@ layout: default
           </h2>
         </div>
 
-        <div class="team-grid">
+        <div class="team-grid collaborator-layout-grid">
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
           {% assign even_odd = number_printed | modulo: 6 %}
