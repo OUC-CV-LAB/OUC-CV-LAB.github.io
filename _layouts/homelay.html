@@ -96,6 +96,117 @@ layout: default
 
 
 <!-- 内容区域 -->
+<style>
+@media (orientation: portrait), (max-width: 1600px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .research-section {
+    box-sizing: border-box !important;
+    width: min(98.5vw, 1280px) !important;
+    max-width: min(98.5vw, 1280px) !important;
+    margin: 40px auto !important;
+    padding: 32px 8px !important;
+    border-radius: 24px !important;
+    overflow: hidden !important;
+  }
+
+  .research-section .container {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  .research-section .section-header {
+    width: 100% !important;
+    margin: 0 auto 20px !important;
+    text-align: center !important;
+  }
+
+  .research-section .section-title {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    font-size: 32px !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+  }
+
+  .research-section .section-description-inline {
+    display: block !important;
+    flex: 0 0 100% !important;
+    margin: 8px 0 0 !important;
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+    text-align: center !important;
+  }
+
+  .research-section .research-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 24px auto 0 !important;
+    overflow: hidden !important;
+  }
+
+  .research-section .research-item {
+    box-sizing: border-box !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  .research-section .research-image {
+    height: 165px !important;
+  }
+
+  .research-section .research-content {
+    padding: 18px 14px !important;
+  }
+
+  .research-section .research-content h3,
+  .research-section .research-content h3[style] {
+    justify-content: center !important;
+    font-size: 24px !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+  }
+
+  .research-section .research-content p,
+  .research-section .research-content p[style] {
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+  }
+
+  .research-section .research-tags {
+    gap: 8px !important;
+  }
+
+  .research-section .tag,
+  .research-section .tag[style] {
+    padding: 6px 12px !important;
+    font-size: 12px !important;
+  }
+}
+</style>
+
 <div class="content-section">
 
   <div class="row">
@@ -133,7 +244,7 @@ layout: default
             <span class="icon-symbol">🔬</span>
           </div>
           <h4>前沿研究</h4>
-          <p>专注于计算机视觉与人工智能的交叉领域研究</p>
+          <p>专注于计算机视觉与人工智能交叉领域研究</p>
         </div>
       </a>
     </div>
@@ -144,7 +255,7 @@ layout: default
             <span class="icon-symbol">👥</span>
           </div>
           <h4>优秀团队</h4>
-          <p>汇聚国内外顶尖人才，打造一流研究团队</p>
+          <p>汇聚国内外顶尖人才，打造超一流研究团队</p>
         </div>
       </a>
     </div>
@@ -155,7 +266,7 @@ layout: default
             <span class="icon-symbol">🌍</span>
           </div>
           <h4>国际视野</h4>
-          <p>与全球顶尖实验室建立合作关系</p>
+          <p>与全球顶尖实验室与优秀学者建立合作关系</p>
         </div>
       </a>
     </div>
