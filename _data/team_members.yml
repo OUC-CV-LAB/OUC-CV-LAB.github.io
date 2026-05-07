@@ -14,7 +14,7 @@
   group: 4
 
 - name: 汪萌
-  photo: wangmeng.jpg
+  photo: wangmeng1.jpg
   info: 国家杰出青年基金获得者
   info2: 合肥工业大学校长
   url: https://www.hfut.edu.cn/info/1154/10846.htm
@@ -68,7 +68,7 @@
 
 
 - name: 张帆
-  photo: zhangfan.jpg
+  photo: zhangfan1.jpg
   info: 香港理工大学助理教授（研究）
   info2: 研究方向：计算机视觉与人工智能
   pub: TNNLS,PR,TIP,AAAI×2等
