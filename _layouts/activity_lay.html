@@ -22,3 +22,42 @@ layout: default
     </div>
   </div>
 </div>
+
+<script>
+  function pairActivityCards() {
+    var columns = document.querySelectorAll('.activity-page-container > .row > .iamgeid');
+    if (columns.length < 2) return;
+    if (document.querySelector('.activity-paired-grid')) return;
+
+    var leftCards = columns[0].querySelectorAll('.activity-container');
+    var rightCards = columns[1].querySelectorAll('.activity-container');
+    var count = Math.min(leftCards.length, rightCards.length);
+    var row = document.querySelector('.activity-page-container > .row');
+    var pairedGrid = document.createElement('div');
+    pairedGrid.className = 'activity-paired-grid';
+
+    for (var k = 0; k < count; k++) {
+      pairedGrid.appendChild(leftCards[k]);
+      pairedGrid.appendChild(rightCards[k]);
+    }
+
+    columns[0].querySelectorAll('.row').forEach(function(item) {
+      if (item.textContent.indexOf('更多') !== -1 || item.textContent.indexOf('鏇村') !== -1) {
+        item.classList.add('activity-more-link');
+        pairedGrid.appendChild(item);
+      }
+    });
+    columns[1].querySelectorAll('.row').forEach(function(item) {
+      if (item.textContent.indexOf('更多') !== -1 || item.textContent.indexOf('鏇村') !== -1) {
+        item.classList.add('activity-more-link');
+        pairedGrid.appendChild(item);
+      }
+    });
+
+    row.innerHTML = '';
+    row.appendChild(pairedGrid);
+  }
+
+  window.addEventListener('load', pairActivityCards);
+  setTimeout(pairActivityCards, 300);
+</script>
