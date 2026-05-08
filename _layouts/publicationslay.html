@@ -39,12 +39,14 @@ layout: default
               <div class="publication-links">
                 {% if pub.pdf %}
                 <a href="{{ pub.pdf }}" class="publication-link pdf-link" target="_blank">
-                  <i class="fas fa-file-pdf"></i> PDF
+                  <i class="fas fa-file-pdf"></i>
+                  <span style="font-size: 24px; font-weight: bold;">PDF</span>
                 </a>
                 {% endif %}
                 {% if pub.code %}
                 <a href="{{ pub.code }}" class="publication-link code-link" target="_blank">
-                  <i class="fas fa-code"></i> Code
+                  <i class="fas fa-code"></i>
+                  <span style="font-size: 24px; font-weight: bold;">CODE</span>
                 </a>
                 {% endif %}
               </div>
