@@ -8199,6 +8199,159 @@ color:black;
   width: 100% !important;
 }
 
+/* Publications: image and content side by side, with complete media/buttons. */
+.publications-section .publication-card {
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  gap: 28px !important;
+  width: min(96vw, 1500px) !important;
+  max-width: min(96vw, 1500px) !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 auto 30px !important;
+  padding: 28px !important;
+  overflow: visible !important;
+}
+
+.publications-section .publication-image {
+  box-sizing: border-box !important;
+  flex: 0 0 52% !important;
+  width: 52% !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 220px !important;
+  margin: 0 !important;
+  padding: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: visible !important;
+  border-radius: 16px !important;
+  background: #f8f9fa !important;
+}
+
+.publications-section .publication-image img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 520px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  border-radius: 12px !important;
+  transform: none !important;
+}
+
+.publications-section .publication-card:hover .publication-image img {
+  transform: none !important;
+}
+
+.publications-section .publication-content {
+  box-sizing: border-box !important;
+  flex: 1 1 48% !important;
+  min-width: 0 !important;
+  width: auto !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  overflow: visible !important;
+}
+
+.publications-section .publication-title {
+  font-size: clamp(1.75rem, 2.15vw, 2.7rem) !important;
+  line-height: 1.32 !important;
+  margin-bottom: 22px !important;
+}
+
+.publications-section .publication-authors,
+.publications-section .publication-venue {
+  font-size: clamp(1.2rem, 1.38vw, 1.65rem) !important;
+  line-height: 1.75 !important;
+  margin-bottom: 12px !important;
+}
+
+.publications-section .publication-title,
+.publications-section .publication-authors,
+.publications-section .publication-venue {
+  max-width: 100% !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  overflow-wrap: anywhere !important;
+}
+
+.publications-section .publication-links {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  gap: 16px !important;
+  margin-top: auto !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+.publications-section .publication-link {
+  flex: 0 0 auto !important;
+  min-width: 128px !important;
+  padding: 12px 20px !important;
+  font-size: 1.05rem !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+}
+
+@media (max-width: 760px) {
+  .publications-section .publication-card {
+    gap: 14px !important;
+    padding: 16px !important;
+  }
+
+  .publications-section .publication-image {
+    flex-basis: 52% !important;
+    width: 52% !important;
+    min-height: 160px !important;
+    padding: 6px !important;
+  }
+
+  .publications-section .publication-image img {
+    max-height: 260px !important;
+  }
+
+  .publications-section .publication-title {
+    font-size: 1.25rem !important;
+  }
+
+  .publications-section .publication-authors,
+  .publications-section .publication-venue {
+    font-size: 0.95rem !important;
+  }
+
+  .publications-section .publication-link {
+    min-width: 96px !important;
+    padding: 8px 12px !important;
+    font-size: 0.88rem !important;
+  }
+}
+
+.activity-paired-grid > .activity-column-heading {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  margin: 0 0 6px !important;
+  padding: 20px 18px !important;
+  border-radius: 18px !important;
+  background: linear-gradient(135deg, rgba(30, 60, 114, 0.08), rgba(74, 144, 226, 0.08)) !important;
+  color: #1e3c72 !important;
+  font-size: clamp(30px, 2.4vw, 44px) !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  letter-spacing: 0 !important;
+  box-shadow: 0 10px 28px rgba(30, 60, 114, 0.08) !important;
+}
+
 .activity-paired-grid > .activity-container {
   box-sizing: border-box !important;
   width: 100% !important;
@@ -8255,6 +8408,11 @@ color:black;
 @media (max-width: 768px) {
   .activity-paired-grid {
     grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .activity-paired-grid > .activity-column-heading {
+    font-size: 28px !important;
+    padding: 16px 12px !important;
   }
 
   .activity-paired-grid > .activity-container {
