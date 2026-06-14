@@ -1183,13 +1183,25 @@ color:black;
     height: 32px !important; /* 移动端保持较大尺寸 */
     margin-right: 8px;
   }
-  
+
   #footer .nav > li > a {
     font-size: 16px; /* 移动端字体也增大 */
     padding: 12px 20px;
     min-height: 55px;
     margin: 3px 5px;
   }
+}
+
+/* ===== 页脚容器样式优化 ===== */
+#footer {
+  padding: 20px 0;
+}
+
+#footer .navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /* 响应式字体大小调整 */
@@ -1326,17 +1338,7 @@ color:black;
   }
 }
 
-/* ===== 页脚容器样式优化 ===== */
-#footer {
-  padding: 20px 0;
-}
 
-#footer .navbar-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
 
 /* ===== 全新设计的页面下面部分 ===== */
 
@@ -4244,10 +4246,7 @@ color:black;
     width: 140px;
     height: 140px;
   }
-  
-  .member-name {
-    font-size: 1.8rem !important;
-  }
+
   
   .research-header {
     flex-direction: column;
@@ -6977,20 +6976,31 @@ color:black;
 }
 
 
+
 /* 合作学者姓名放大（强制覆盖） */
 .collaborators-grid .member-name,
 .collaborators-grid .member-name a,
 .collaborators-grid h4.member-name,
-.collaborators-grid h4.member-name a,
-.collaborator-layout-grid .member-name,
-.collaborator-layout-grid .member-name a,
-.collaborator-layout-grid h4.member-name,
-.collaborator-layout-grid h4.member-name a{
+.collaborators-grid h4.member-name a
+{
     font-size: 30px !important;
     font-weight: 800 !important;
     line-height: 1.25 !important;
     color: #163d7a !important;
 }
+
+/* 其余学僧姓名放大（强制覆盖） */
+.collaborator-layout-grid .member-name,
+.collaborator-layout-grid .member-name a,
+.collaborator-layout-grid h4.member-name,
+.collaborator-layout-grid h4.member-name a{
+    font-size: 25px !important;
+    font-weight: 800 !important;
+    line-height: 1.25 !important;
+    color: #163d7a !important;
+}
+
+
 
 /* 合作学者职称取消斜体 */
 .collaborators-grid .member-title,

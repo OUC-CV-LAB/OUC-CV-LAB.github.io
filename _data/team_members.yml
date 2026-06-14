@@ -135,79 +135,79 @@
 
 
 
-- name: 童亨
+- name: 童亨(2026年毕业)
   photo: th.jpg
   info: 计算机技术专业
   info2: 研究方向：三维形状生成,具身智能
   pub: 计图比赛三等奖
   work: 毕业去向：中国移动通信集团浙江有限公司金华分公司
-  group: 1
+  group: 6
 
-- name: 谭润清
+- name: 谭润清(2026年毕业)
   photo: tanrunqing.jpg
   info: 计算机技术专业
   info2: 研究方向：多视图三维重建
   pub: 华为杯三等奖
   work: 毕业去向：
-  group: 1
+  group: 6
 
-- name: 张朦幻
+- name: 张朦幻(2026年毕业)
   photo: huan.jpg
   info: 软件工程专业
   info2: 研究方向：细粒度图像分类
   pub: 挑战杯创意赛特等奖
   work: 毕业去向：国家电网-天津电科院
-  group: 1
+  group: 6
 
 
 
-- name: 仇世纪
+- name: 仇世纪(2026年毕业)
   photo: qiushiji.jpg
   info: 软件工程专业
   info2: 研究方向：点云分割
   pub: 挑战杯创意赛特等奖,Neural Networks+1
   work: 毕业去向：山东省农村信用社联合社
-  group: 1
+  group: 6
 
-- name: 鄢柯
+- name: 鄢柯(2026年毕业)
   photo: yanke.jpg
   info: 计算机科学与技术专业
   info2: 研究方向：医学图像分割
   pub: AAAI+1，国家奖学金
   work: 毕业去向：文远知行
-  group: 1
+  group: 6
 
-- name: 李帅衡
+- name: 李帅衡(2026年毕业)
   photo: lishuaiheng.jpg
   info: 计算机技术专业
   info2: 研究方向：细粒度分类
   pub: 华为杯三等奖,挑战杯创意赛特等奖,IEEE Transactions on Image Processing+1
   work: 毕业去向：珠海许继电气有限公司
-  group: 1
+  group: 6
 
-- name: 曹子彦
+- name: 曹子彦(2026年毕业)
   photo: caoziyan.jpg
   info: 软件工程专业
   info2: 研究方向：半监督医学图像分割
   work: 毕业去向：山东省农村信用社联合社
-  group: 1
+  group: 6
 
-- name: 孔松琦
+- name: 孔松琦(2026年毕业)
   photo: songqikong.png
   info: 农业工程与信息技术专业
   info2: 研究方向：点云补全
   url: https://songqikong.github.io/
   pub: 华为杯三等奖
   work: 毕业去向：深圳其域创新科技有限公司
-  group: 1
+  group: 6
 
-- name: 李绍铭
+- name: 李绍铭(2026年毕业)
   photo: lishaoming.jpg
   info: 人工智能专业
   info2: 研究方向：单幅图三维重建
   pub: CVPR+1，计图比赛三等奖，国家奖学金
   work: 毕业去向：银河通用机器人
-  group: 1
+  group: 6
 
 
 
