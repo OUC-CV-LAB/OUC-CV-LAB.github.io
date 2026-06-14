@@ -2,7 +2,19 @@
   "permissions": {
     "allow": [
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(bundle exec *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(curl -sI https://gitee.com)",
+      "Bash(curl -I https://gitee.com)",
+      "Bash(git config *)",
+      "Bash(env)",
+      "Bash(GIT_SSL_NO_VERIFY=1 git push *)",
+      "Bash(ssh *)",
+      "Bash(git *)",
+      "WebFetch(domain:gitee.com)",
+      "Bash(python3 *)"
     ]
   }
 }

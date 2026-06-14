@@ -10326,6 +10326,13 @@ regtext:hover {
   font-style: italic;
 }
 
+.member-work {
+  color: #3c9de7;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
 /* ===== 发表文章页面样式 ===== */
 .publications-hero {
   background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #3498db 100%);
