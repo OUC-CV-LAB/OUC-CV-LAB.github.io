@@ -11,6 +11,7 @@ email: your-email@domain.com
 description: 
 baseurl: ""
 url: ""
+destination: docs
 
 include:
   - .htaccess

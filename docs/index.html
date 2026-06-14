@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OUC计算机视觉前沿交叉实验室 - Home</title>
+	<meta name="description" content="计算机视觉前沿交叉实验室 at OUC.">
+	<link rel="stylesheet" href="http://localhost:4000/css/main.css">
+	<link rel="canonical" href="http://localhost:4000/">
+	<link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/images/icon.ico">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/academicons/css/academicons.css">
+
+	
+</head>
+
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	
+    <a class="navbar-brand" href="http://localhost:4000/" style="padding-top: 6px;">
+		<!-- Frontier CrossVision Laboratory @ OUC -->
+		<img src="http://localhost:4000/images/vmvlab_cw.png" alt="OUC-CV-LAB" width="120" height="75" class="d-inline-block align-text-top" style="margin: 0px; padding:0px;">
+	</a>
+	</div>
+
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="http://localhost:4000/" class="nav-link"><i class="fas fa-home"></i> 主页</a></li>
+		<li><a href="http://localhost:4000/team" class="nav-link"><i class="fas fa-users"></i> 成员</a></li>
+		<li><a href="http://localhost:4000/research" class="nav-link"><i class="fas fa-flask"></i> 研究方向</a></li>
+		<li><a href="http://localhost:4000/publications" class="nav-link"><i class="fas fa-book"></i> 发表文章</a></li>
+		<!-- <li><a href="http://localhost:4000/code">Code</a></li> -->
+		<li><a href="http://localhost:4000/activity" class="nav-link"><i class="fas fa-calendar-alt"></i> 学术活动</a></li>
+		<li><a href="http://localhost:4000/contact" class="nav-link"><i class="fas fa-envelope"></i> 联系我们</a></li>
+	  </ul>
+	</div>
+	
+  </div>
+</div>
+
+
+
+    <div class="container-fluid">
+      <div class="row" style="margin-left: 20px; margin-right: 20px;">
+        <!-- 英雄区域 - 图片展示和介绍 -->
+
+<div class="hero-section">
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="image-container">
+        <div style="position: relative; text-align: center; margin: auto; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+    <div style="text-align: center; margin: auto; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+      <img id="imageDisplay" src="http://localhost:4000/images/homepageimg/image12.jpg" alt="Image" style="height: 100%; max-height: 800px; width: 100%; object-fit: contain; border-radius: 12px; transition: transform 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+       <!-- 图片标题 -->
+      <h3 id="imageTitle" style="margin-top: 10px; font-size: 30px; font-weight: bold; color: black;">
+        23级硕士毕业合影
+      </h3>
+      
+      <!-- 左右箭头按钮 -->
+      <button onclick="changeImage(-1)" style="position: absolute; top: 50%; left: 10px; background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-size: 16px;">
+        &#10094;
+      </button>
+      <button onclick="changeImage(1)" style="position: absolute; top: 50%; right: 10px; background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-size: 16px;">
+        &#10095;
+      </button>
+    </div>
+    </div>
+    <script>
+      let currentImage = 12;
+      const totalImages = 12;
+    
+      const titles = [
+        "团建露营合影",
+        "学校图书馆前合影",
+        "8.20聚餐合影",
+        "组员生日合影",
+        "中国海大100周年校庆合影",
+        "实验室聚餐合影",
+        "2023级研究生合影",
+        "2024级研究生合影",
+        "2025级研究生合影",
+        "CSIG合影",
+        "实验室聚餐合影",
+        "23级硕士毕业合影",
+      ];
+    
+      function changeImage(direction) {
+        currentImage += direction;
+        if (currentImage > totalImages) currentImage = 1;
+        if (currentImage < 1) currentImage = totalImages;
+        document.getElementById('imageDisplay').src = `http://localhost:4000/images/homepageimg/image${currentImage}.jpg`;
+        document.getElementById('imageTitle').innerText = titles[currentImage - 1];
+      }
+      
+      // 添加自动轮播功能
+      setInterval(function() {
+        changeImage(1);
+      }, 5000); // 每5秒自动切换
+    </script>
+    
+    <style>
+      /* 图片悬停放大效果 */
+      #imageDisplay:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+      
+      /* 响应式设计优化 */
+      @media (max-width: 768px) {
+        #imageDisplay {
+          height: 100% !important;
+          max-height: 350px !important; /* 增加手机端图片高度 */
+          width: 100% !important;
+          object-fit: contain;
+          border-radius: 10px;
+          box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+        
+        #imageTitle {
+          font-size: 15px !important;
+          margin-top: 10px !important;
+        }
+        
+        button {
+          width: 40px !important;
+          height: 40px !important;
+          font-size: 16px !important;
+          padding: 10px !important;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        #imageDisplay {
+          height: 100% !important;
+          max-height: 280px !important; /* 增加小屏手机图片高度 */
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        #imageTitle {
+          font-size: 13px !important;
+          margin-top: 8px !important;
+        }
+        
+        button {
+          width: 35px !important;
+          height: 35px !important;
+          font-size: 14px !important;
+          padding: 8px !important;
+        }
+      }
+    </style>
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <div class="intro-container">
+        <div class="intro-content">
+    <h3 class="intro-title" style="margin-bottom: 70px;font-size: 50px;">欢迎！我们是VMV实验室！</h3>
+
+    <div class="intro-paragraphs">
+        <div class="intro-left-copy">
+        <p class="intro-text" style="font-size: 22px;font-weight: 700;">
+            VMV(Vision& Medicine& Vanguard)实验室隶属于
+            <a href="https://iai.hfut.edu.cn/index.htm" class="intro-link" target="_blank">合肥工业大学人工智能创新学院</a>，
+            <a href="https://faculty.hfut.edu.cn/caiqing" class="intro-link" target="_blank">蔡青</a> 教授为总负责人，隶属于汪萌校长、洪日昌副校长和鲍秉坤院长团队。
+            <!--实验室负责人为 <a href="https://tocaiqing.github.io" class="intro-link" target="_blank">蔡青</a> 教授。-->
+
+
+        </p>
+
+        <p class="intro-text" style="font-size: 22px;font-weight: 700;">
+              近年来团队的研究成果发表于 CVPR、AAAI、IJCAI、MM、TIP 等国际顶级学术会议和期刊。
+            实验室先后主持和参与国家自然科学基金、山东省自然科学基金等项目。
+        </p>
+        
+        <p class="intro-text" style="font-size: 22px;font-weight: 700;">
+              欢迎对我们研究方向感兴趣的同学加入实验室。
+
+        </p>
+
+        </div>
+
+        <div class="intro-contact-row" style="font-size: 22px;font-weight: 700;">
+            <p class="intro-text">
+                我们聚焦人工智能与交叉学科的前沿探索，构建了多维度、高潜力的研究矩阵，主要方向涵盖：计算机视觉、AI4Science
+                、医工交叉、具身智能以及3D 视觉等。凭借扎实的研究积累，实验室
+                近年来在国际学术舞台持续输出高水平成果， 热烈欢迎对上述研究方向感兴趣的研究生咨询交流。
+                同时欢迎学有余力的本科生同学进入实验室！联系方式：caiqing@hfut.edu.cn
+
+            </p>
+            <!--<div class="contact-section">
+                <img src="http://localhost:4000/images/gif/dogs.gif" alt="Dogs Animation" class="dogs-gif">
+                <p class="contact-info">
+                    <strong>联系方式：</strong>
+                    <a href="mailto:cq@ouc.edu.cn" class="contact-email">caiqing@hfut.edu.cn</a>
+                </p>
+            </div>-->
+        </div>
+
+
+    </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 研究方向 -->
+<div class="research-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">
+            <span class="section-icon-inline">🎯</span>
+            研究方向
+            <span class="section-description-inline" style="margin-left: 18px;font-size: 30px;">
+              探索计算机视觉的前沿技术，推动人工智能发展
+            </span>
+          </h2>
+    </div>
+
+    <div class="research-grid">
+      <div class="research-item">
+        <div class="research-image">
+          <img src="http://localhost:4000/images/respic/yixue-base.png" alt="医工交叉" />
+          <div class="image-overlay">
+            <div class="overlay-icon">🏥</div>
+          </div>
+        </div>
+        <div class="research-content">
+          <h3 style="font-size: 35px;">医工交叉</h3>
+          <p style="font-size: 25px;">围绕深度学习在医学领域的应用开展研究，重点包括多模态疾病辅助诊断（涵盖抑郁症、阿尔茨海默病等脑部疾病及脊柱相关疾病）、超声报告生成、联邦学习以及血雾去除等方向。</p>
+          <div class="research-tags">
+            <span class="tag" style="font-size: 16px;">图像识别</span>
+            <span class="tag" style="font-size: 16px;">目标检测</span>
+            <span class="tag" style="font-size: 16px;">视频分析</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="research-item">
+        <div class="research-image">
+          <img src="http://localhost:4000/images/respic/sanwei-base.png" alt="三维重建" />
+          <div class="image-overlay">
+            <div class="overlay-icon">🔮</div>
+          </div>
+        </div>
+        <div class="research-content">
+          <h3 style="font-size: 35px;">三维重建</h3>
+          <p style="font-size: 25px;">基于深度学习先进方法，以超声影像为核心数据源，结合多模态医学影像特征，开展器官三维结构智能重建研究，为精准医疗的临床诊断与个体化治疗提供可靠的智能化技术支撑。</p>
+          <div class="research-tags">
+            <span class="tag" style="font-size: 16px;">生成式模型</span>
+            <span class="tag" style="font-size: 16px;">跨模态学习</span>
+            <span class="tag" style="font-size: 16px;">视觉大模型</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-item">
+        <div class="research-image">
+          <img src="http://localhost:4000/images/respic/jushenzhineng-base.jpg" alt="具身智能" />
+          <div class="image-overlay">
+            <div class="overlay-icon">🤖</div>
+          </div>
+        </div>
+        <div class="research-content">
+          <h3 style="font-size: 35px;">具身智能</h3>
+          <p style="font-size: 25px;">围绕视觉-语言-动作（VLA）模型开展研究，构建感知—决策—执行一体化的智能体框架，实现对超声场景的自主理解与交互控制，进而完成超声标准切面的自动化扫查。</p>
+          <div class="research-tags">
+            <span class="tag" style="font-size: 16px;">多模态理解</span>
+            <span class="tag" style="font-size: 16px;">智能交互</span>
+            <span class="tag" style="font-size: 16px;">具身学习</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- 内容区域 -->
+<style>
+@media (orientation: portrait), (max-width: 1600px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .research-section {
+    box-sizing: border-box !important;
+    width: min(98.5vw, 1280px) !important;
+    max-width: min(98.5vw, 1280px) !important;
+    margin: 40px auto !important;
+    padding: 32px 8px !important;
+    border-radius: 24px !important;
+    overflow: hidden !important;
+  }
+
+  .research-section .container {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  .research-section .section-header {
+    width: 100% !important;
+    margin: 0 auto 20px !important;
+    text-align: center !important;
+  }
+
+  .research-section .section-title {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    font-size: 32px !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+  }
+
+  .research-section .section-description-inline {
+    display: block !important;
+    flex: 0 0 100% !important;
+    margin: 8px 0 0 !important;
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+    text-align: center !important;
+  }
+
+  .research-section .research-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 24px auto 0 !important;
+    overflow: hidden !important;
+  }
+
+  .research-section .research-item {
+    box-sizing: border-box !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  .research-section .research-image {
+    height: 165px !important;
+  }
+
+  .research-section .research-content {
+    padding: 18px 14px !important;
+  }
+
+  .research-section .research-content h3,
+  .research-section .research-content h3[style] {
+    justify-content: center !important;
+    font-size: 24px !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+  }
+
+  .research-section .research-content p,
+  .research-section .research-content p[style] {
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+  }
+
+  .research-section .research-tags {
+    gap: 8px !important;
+  }
+
+  .research-section .tag,
+  .research-section .tag[style] {
+    padding: 6px 12px !important;
+    font-size: 12px !important;
+  }
+}
+</style>
+
+<div class="content-section">
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="content-card home-pub-card">
+        <div class="card-header">
+          <h3><i class="fas fa-book-open"></i> 最新发表</h3>
+        </div>
+        <div class="card-body">
+          <div class="home-publications-list" style="max-width: 100%; margin: auto; text-align:center;">
+    <h3 style="font-size:42px; font-weight:800; margin-bottom:8px;">学术论文</h3>
+
+    <p style="font-size:22px; color:#666; margin-bottom:28px;">
+        * 通讯作者 &nbsp;&nbsp; # 共同一作
+    </p>
+
+    
+    
+        
+            
+            
+                <div class="row home-publication-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
+                    <div class="col-sm-12">
+                        <p>
+                            <a class="pub1" style="font-size: 20px; line-height:1.8; text-decoration: none; color: inherit; font-weight:700;">
+                                &#8226; SEMC: Structure-Enhanced Mixture-of-Experts Contrastive Learning for Ultrasound Standard Plane Recognition. Guihao Yan#, Qing Cai#, Fan Zhang, Cheng Zhang, Zhi Liu. 2026, The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26). [CCF A]
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            
+        
+    
+        
+            
+            
+                <div class="row home-publication-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
+                    <div class="col-sm-12">
+                        <p>
+                            <a class="pub1" style="font-size: 20px; line-height:1.8; text-decoration: none; color: inherit; font-weight:700;">
+                                &#8226; LearnMat: Semantic-Aware Self-Supervision Fine-Grained Visual Recognition. Shaoming Li#, Qing Cai#, YangYang Shu, Guanbin Li, Junyu Dong. 2026, IEEE Transactions on Image Processing. [CCF A]
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            
+        
+    
+        
+            
+            
+                <div class="row home-publication-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
+                    <div class="col-sm-12">
+                        <p>
+                            <a class="pub1" style="font-size: 20px; line-height:1.8; text-decoration: none; color: inherit; font-weight:700;">
+                                &#8226; Sonar-neus:voxel-based efficient neural implicit surface reconstruction for forward-looking sonar. Shiji Qiu#, Qing Cai#, Zuogi Hu, Tiange Zhang, Zhi Liu, Junyu Dong. 2026, Neural Networks
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            
+        
+    
+        
+            
+            
+                <div class="row home-publication-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
+                    <div class="col-sm-12">
+                        <p>
+                            <a class="pub1" style="font-size: 20px; line-height:1.8; text-decoration: none; color: inherit; font-weight:700;">
+                                &#8226; MESC-3D:Mining Effective Semantic Cues for 3D Reconstruction from a Single Image. Shaoming Li#, Qing Cai#, Songqi Kong, Runqing Tan, Heng Tong, Shiji Qiu, Yongguo Jiang, Zhi Liu. 2025, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). [CCF A]
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            
+        
+    
+        
+            
+            
+                <div class="row home-publication-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
+                    <div class="col-sm-12">
+                        <p>
+                            <a class="pub1" style="font-size: 20px; line-height:1.8; text-decoration: none; color: inherit; font-weight:700;">
+                                &#8226; SGTC: Semantic-Guided Triplet Co-training for Sparsely Annotated Semi-Supervised Medical Image Segmentation. Ke Yan#, Qing Cai#, Fan Zhang, Ziyan Cao, Zhi Liu. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            
+        
+    
+        
+            
+            
+                <div class="row home-publication-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
+                    <div class="col-sm-12">
+                        <p>
+                            <a class="pub1" style="font-size: 20px; line-height:1.8; text-decoration: none; color: inherit; font-weight:700;">
+                                &#8226; BSAFusion: A Bidirectional Stepwise Feature Alignment Network for Unaligned Medical Image Fusion. Huafeng Li, Dayong Su, Qing Cai*, Yafei Zhang. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            
+        
+    
+        
+            
+            
+                <div class="row home-publication-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
+                    <div class="col-sm-12">
+                        <p>
+                            <a class="pub1" style="font-size: 20px; line-height:1.8; text-decoration: none; color: inherit; font-weight:700;">
+                                &#8226; C2PD: Continuity-Constrained Pixelwise Deformation for Guided Depth Super-Resolution. Jiahui Kang, Qing Cai*, Runqing Tan, Yimei Liu, Zhi Liu. 2025, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            
+        
+    
+        
+            
+            
+                <div class="row home-publication-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
+                    <div class="col-sm-12">
+                        <p>
+                            <a class="pub1" style="font-size: 20px; line-height:1.8; text-decoration: none; color: inherit; font-weight:700;">
+                                &#8226; Spherical Pseudo-cylindrical Representation for Omnidirectional Image Super-Resolution. Qing Cai, Mu Li, Dongwei Ren, Jun Lyu, Haiyong Zheng*, Herbert Yang and Junyu Dong*. 2024, AAAI Conference on Artificial Intelligence (AAAI). [CCF A]
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            
+        
+    
+
+    <div class="home-more-link" style="text-align: center; margin: 10px auto 0 auto; width: 100%;">
+        <a href="http://localhost:4000/publications" 
+           style="text-decoration: none; color: #007bff; font-weight: bold; display: inline-block; background: linear-gradient(135deg, #1e3c72, #4a90e2); color: white !important; padding: 8px 20px; border-radius: 25px; box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);">
+            更多...
+        </a>
+    </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="content-card news-card">
+        <div class="card-header">
+          <h3><i class="fas fa-newspaper"></i> 实验室动态</h3>
+        </div>
+        <div class="card-body">
+          <div class="home-news-list" style="max-width: 100%; margin: auto;">
+    <h3 style="text-align: center;font-size: 40px; font-weight: 800;">新闻动态</h3>
+    <!--<p style="font-size: 14px;">最新实验室动态与新闻</p>-->
+
+    
+        <div class="row home-news-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
+            <div class="col-sm-12">
+                <p>
+                    <a class="pub1" style="font-size: 10px; line-height:1.8; text-decoration: none; color: inherit;">
+                        &#8226; <strong style="font-size: 28px; line-height:1.8;">2026/2/18</strong> <em style="font-size: 20px; line-height:1.8;font-weight:700;"> 祝贺课题组严桂浩硕士的论文《SEMC: Structure-Enhanced Mixture-of-Experts Contrastive Learning for Ultrasound Standard Plane Recognition》被CCF A类会议AAAI2026接收！</em>
+                    </a>
+                </p>
+            </div>
+        </div>
+    
+        <div class="row home-news-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
+            <div class="col-sm-12">
+                <p>
+                    <a class="pub1" style="font-size: 10px; line-height:1.8; text-decoration: none; color: inherit;">
+                        &#8226; <strong style="font-size: 28px; line-height:1.8;">2026/2/13</strong> <em style="font-size: 20px; line-height:1.8;font-weight:700;"> 祝贺课题组李帅衡硕士的论文《LearnMat: Semantic-Aware Self-Supervision Fine-Grained Visual Recognition》被IEEE Transactions on Image ProcessingCCF A类期刊接收！</em>
+                    </a>
+                </p>
+            </div>
+        </div>
+    
+        <div class="row home-news-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
+            <div class="col-sm-12">
+                <p>
+                    <a class="pub1" style="font-size: 10px; line-height:1.8; text-decoration: none; color: inherit;">
+                        &#8226; <strong style="font-size: 28px; line-height:1.8;">2026/1/18</strong> <em style="font-size: 20px; line-height:1.8;font-weight:700;"> 祝贺课题组仇世纪硕士的论文《Sonar-neus:voxel-based efficient neural implicit surface reconstruction for forward-looking sonar》被Neural Networks高水平期刊接收！</em>
+                    </a>
+                </p>
+            </div>
+        </div>
+    
+        <div class="row home-news-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
+            <div class="col-sm-12">
+                <p>
+                    <a class="pub1" style="font-size: 10px; line-height:1.8; text-decoration: none; color: inherit;">
+                        &#8226; <strong style="font-size: 28px; line-height:1.8;">2025/10/18</strong> <em style="font-size: 20px; line-height:1.8;font-weight:700;"> 恭喜仇世纪、李帅衡、张朦幻荣获第十九届“挑战杯”全国大学生课外学术科技作品竞赛“人工智能+”创意赛特等奖！</em>
+                    </a>
+                </p>
+            </div>
+        </div>
+    
+        <div class="row home-news-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
+            <div class="col-sm-12">
+                <p>
+                    <a class="pub1" style="font-size: 10px; line-height:1.8; text-decoration: none; color: inherit;">
+                        &#8226; <strong style="font-size: 28px; line-height:1.8;">2025/10/12</strong> <em style="font-size: 20px; line-height:1.8;font-weight:700;"> 恭喜海谱寻源队：李福临，李帅衡;UAgent：张成，孔松琦，谭润清两支队伍，荣获“华为杯”第七届中国研究生人工智能创新大赛三等奖!</em>
+                    </a>
+                </p>
+            </div>
+        </div>
+    
+        <div class="row home-news-item" style="max-width: 100%;padding: 0 10px; margin: auto;">
+            <div class="col-sm-12">
+                <p>
+                    <a class="pub1" style="font-size: 10px; line-height:1.8; text-decoration: none; color: inherit;">
+                        &#8226; <strong style="font-size: 28px; line-height:1.8;">2025/02/27</strong> <em style="font-size: 20px; line-height:1.8;font-weight:700;"> 祝贺课题组李绍铭硕士的论文《MESC-3D:Mining Effective Semantic Cues for 3D Reconstruction from a Single Image》被CCF A类会议CVPR2025接收！</em>
+                    </a>
+                </p>
+            </div>
+        </div>
+    
+
+    <div class="home-more-link" style="text-align: center; margin: 10px auto 0 auto; width: 100%;">
+        <a href="http://localhost:4000/allnews.html" 
+           style="text-decoration: none; color: #007bff; font-weight: bold; display: inline-block; background: linear-gradient(135deg, #1e3c72, #4a90e2); color: white !important; padding: 8px 20px; border-radius: 25px; box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);">
+            更多...
+        </a>
+    </div>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 特色区域 -->
+<div class="features-section">
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="http://localhost:4000/research/" class="feature-link">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <span class="icon-symbol">🔬</span>
+          </div>
+          <h4>前沿研究</h4>
+          <p>专注于计算机视觉与人工智能交叉领域研究</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="http://localhost:4000/team/" class="feature-link">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <span class="icon-symbol">👥</span>
+          </div>
+          <h4>优秀团队</h4>
+          <p>汇聚国内外顶尖人才，打造超一流研究团队</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="http://localhost:4000/activity/" class="feature-link">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <span class="icon-symbol">🌍</span>
+          </div>
+          <h4>国际视野</h4>
+          <p>与全球顶尖实验室与优秀学者建立合作关系</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div id="footer" class="panel" style="margin: 0px; background-color:#fffffff1;">
+  <div class="panel-footer" style="background-color:#fffffff1;">
+	<div class="container-fluid">
+	  <div class="row">
+
+
+			<ul class="nav navbar-nav navbar-right">
+				<li style="width: 340px;height: 100px"><a href="https://www.hfut.edu.cn/" style="color:#4b4b4b; display: flex; align-items: center; text-decoration: none;">
+					<img src="http://localhost:4000/images/hegongda_logo_same_320x94.png" alt="合肥工业大学" class="footer-logo" style="height: 140px; width: auto; margin-right: 8px;">
+				</a></li>
+				<li style="width: 340px;height: 100px"><a href="http://www.ouc.edu.cn/" style="color:#4b4b4b; display: flex; align-items: center; text-decoration: none;">
+					<img src="http://localhost:4000/images/ouc-logo_same_320x94.png" alt="中国海洋大学" class="footer-logo" style="height: 140px; width: auto; margin-right: 8px;">
+				</a></li>
+			</ul>
+
+
+		
+	  </div>
+	  <div class="row" style="text-align: center; margin-top: 10px;">
+        <p style="color:#4b4b4b; font-size: 14px;">powered by 童亨, 孔松琦, 李绍铭, 吴兴政, 王子健</p>
+      </div>
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://localhost:4000/js/bootstrap.min.js"></script>
+
+
+  </body>
+
+</html>

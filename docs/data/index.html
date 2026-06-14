@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>计算机视觉前沿交叉实验室 - Data</title>
+	<meta name="description" content="计算机视觉前沿交叉实验室 -- Data.">
+	<link rel="stylesheet" href="http://localhost:4000/css/main.css">
+	<link rel="canonical" href="http://localhost:4000/data/">
+	<link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/images/icon.ico">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/academicons/css/academicons.css">
+
+	
+</head>
+
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	
+    <a class="navbar-brand" href="http://localhost:4000/" style="padding-top: 6px;">
+		<!-- Frontier CrossVision Laboratory @ OUC -->
+		<img src="http://localhost:4000/images/vmvlab_cw.png" alt="OUC-CV-LAB" width="120" height="75" class="d-inline-block align-text-top" style="margin: 0px; padding:0px;">
+	</a>
+	</div>
+
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="http://localhost:4000/" class="nav-link"><i class="fas fa-home"></i> 主页</a></li>
+		<li><a href="http://localhost:4000/team" class="nav-link"><i class="fas fa-users"></i> 成员</a></li>
+		<li><a href="http://localhost:4000/research" class="nav-link"><i class="fas fa-flask"></i> 研究方向</a></li>
+		<li><a href="http://localhost:4000/publications" class="nav-link"><i class="fas fa-book"></i> 发表文章</a></li>
+		<!-- <li><a href="http://localhost:4000/code">Code</a></li> -->
+		<li><a href="http://localhost:4000/activity" class="nav-link"><i class="fas fa-calendar-alt"></i> 学术活动</a></li>
+		<li><a href="http://localhost:4000/contact" class="nav-link"><i class="fas fa-envelope"></i> 联系我们</a></li>
+	  </ul>
+	</div>
+	
+  </div>
+</div>
+
+
+
+    <div class="container-fluid">
+      <div class="row" style="margin-left: 20px; margin-right: 20px;">
+        <style>
+  /* 手机端布局优化 */
+  @media (max-width: 768px) {
+    .iamgeid {
+      width: 100% !important;
+      margin-bottom: 20px;
+    }
+  }
+</style>
+
+<div class="activity-page-container">
+  <div class="row">
+    <div class="iamgeid col-sm-6">
+    <html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学术活动介绍</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    .activity-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+
+    }
+    .activity-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+    .activity-photo {
+      max-width: 1000px; /* 增加最大宽度 */
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .activity-photo:hover {
+      transform: scale(1.02);
+    }
+    .activity-description {
+      font-size: 1em;
+      text-align: center;
+      width: 80%;
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
+    .activity-details {
+      font-size: 0.9em;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 轮播图样式 -->
+<style>
+    .carousel-container {
+        position: relative;
+        text-align: center;
+        margin: 25px auto;
+        max-width: 1200px; /* 增加最大宽度 */
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .carousel-container img {
+        width: 100%;
+        height: auto; /* 改为auto，让图片完整显示 */
+        max-height: 600px; /* 设置最大高度 */
+        object-fit: contain; /* 改为contain，完整显示图片 */
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        cursor: pointer;
+        font-size: 28px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .carousel-btn.left {
+        left: 20px;
+    }
+
+    .carousel-btn.right {
+        right: 20px;
+    }
+
+    .carousel-btn:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: translateY(-50%) scale(1.1);
+    }
+    
+    /* 手机端自适应优化 */
+    @media (max-width: 768px) {
+        body {
+            margin: 10px;
+        }
+        .activity-container {
+            margin-bottom: 30px;
+            padding: 15px;
+        }
+        .activity-title {
+            font-size: 1.4em;
+            margin-bottom: 12px;
+        }
+        .activity-photo {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .activity-description {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .activity-details {
+            font-size: 0.9em;
+            padding: 12px;
+        }
+        .carousel-container {
+            margin: 20px auto;
+            max-width: 100%;
+        }
+        .carousel-container img {
+            max-height: 400px;
+        }
+        .carousel-btn {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .carousel-btn.left {
+            left: 10px;
+        }
+        .carousel-btn.right {
+            right: 10px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .activity-container {
+            padding: 10px;
+            margin-bottom: 25px;
+        }
+        .activity-title {
+            font-size: 1.2em;
+        }
+        .activity-photo {
+            border-radius: 6px;
+        }
+        .carousel-container img {
+            max-height: 300px;
+        }
+        .carousel-btn {
+            width: 35px;
+            height: 35px;
+            font-size: 16px;
+            padding: 8px;
+        }
+        .carousel-btn.left {
+            left: 5px;
+        }
+        .carousel-btn.right {
+            right: 5px;
+        }
+    }
+</style>
+
+<script>
+    const imagesMeta = [
+        "http://localhost:4000/images/xueshupic/2025-9-20.jpg",
+        "http://localhost:4000/images/xueshupic/2025-9-20_2.jpg",
+        "http://localhost:4000/images/xueshupic/2025-9-20.jpg"
+    ];
+
+    let currentIndexMeta = 0; // 当前图片索引
+
+    function changeImageMeta(direction) {
+        currentIndexMeta += direction;
+        
+        // 处理边界情况（循环切换）
+        if (currentIndexMeta < 0) {
+            currentIndexMeta = imagesMeta.length - 1;
+        } else if (currentIndexMeta >= imagesMeta.length) {
+            currentIndexMeta = 0;
+        }
+
+        // 更新图片
+        document.getElementById("imageDisplayMeta").src = imagesMeta[currentIndexMeta];
+    }
+</script>
+
+<div class="section-header">
+  <div class="section-icon">🎤</div>
+  <div>
+    <h2 class="section-title">参与学术会议</h2>
+<!--    <p class="section-description">按时间倒序展示</p>-->
+  </div>
+  
+</div>
+
+<div class="activity-container">
+    <div class="activity-title">第五届多媒体与人工智能安全学术研讨会</div>
+    <div class="activity-details">
+      <strong>时间：</strong>2026年4月24日-26日<br>
+      <strong>地点：</strong>安徽省黄山市香茗国际酒店<br>
+      <strong>主办方：</strong>安徽省人工智能学会、隐者联盟
+    </div>
+    <img class="activity-photo" src="http://localhost:4000/images/xueshupic/2026-4-24.jpg" alt="活动合影">
+    <div class="activity-description">
+        合肥工业大学承办并参与第五届多媒体与人工智能安全学术研讨会。会议面向国际学术前沿与国家战略需求，
+        聚焦多媒体安全、人工智能安全、数据安全等前沿技术与热点领域，邀请50 余位行业权威专家做特邀报告，
+        设置数据安全、多媒体内容安全、人工智能安全、女科学家论坛等多个特色论坛。这场高水平学术盛宴汇聚了
+        来自学术界与产业界的专家学者、青年才俊，各论坛报告内容丰富、精彩纷呈，全面展示多媒体与人工智能安
+        全领域最新研究成果与行业发展动态。与会专家积极交流探讨、思想碰撞充分，学术研讨氛围浓厚。
+    </div>
+
+  </div>
+
+<div class="activity-container">
+    <div class="activity-title">人工智能前沿论坛・第四期</div>
+    <div class="activity-details">
+      <strong>时间：</strong>2024年12月26日<br>
+      <strong>地点：</strong>中国科学技术大学高新校区<br>
+      <strong>主办方：</strong>脑启发智能感知与认知教育部重点实验室
+    </div>
+    <img class="activity-photo" src="http://localhost:4000/images/xueshupic/2024-12-26.jpg" alt="活动合影">
+    <div class="activity-description">
+        由脑启发智能感知与认知教育部重点实验室主办，华为诺亚方舟实验室、类脑智能技术及应用国家工程实验室和安徽省计算机学会机器学习专委会协办的第四期人工智能前沿论坛暨“具身智能”专题论坛在中国科学技术大学高新校区成功举办。
+        本次论坛邀请了19位国内人工智能领域知名专家，围绕“具身智能”专题进行了精彩的学术报告。吸引了来自中国科学技术大学、复旦大学、山东大学、山东师范大学、中国海洋大学、中科院合肥创新院等高校和科研院所的师生及专家学者们，线下总人数达到300余人。
+    </div>
+
+  </div>
+<div class="activity-container">
+    <div class="activity-title">CSIG青年科学家会议</div>
+    <div class="activity-details">
+        <strong>时间：</strong>2024年12月13日<br>
+        <strong>地点：</strong>杭州<br>
+        <strong>主办方：</strong>中国图象图形学学会
+    </div>
+
+    <img class="activity-photo" src="http://localhost:4000/images/xueshupic/2024-12-13.jpg" alt="活动合影">
+
+    <div class="activity-description">
+        大会特别邀请了四位在图像图形学领域取得卓越成就的专家做主旨报告。他们分别是南京大学副校长、国家杰出青年科学基金获得者周志华教授，中国科学院自动化研究所多模态人工智能系统全国重点实验室副主任王亮研究员，香港科技大学计算机科学与工程学系教授、思谋科技创始人贾佳亚教授和深圳大学计算机与软件学院院长黄惠教授。四位讲者就各自领域的最新研究成果发表了精彩的报告。
+        第二十一届中国图象图形学学会青年科学家会议拟于2025年在青岛召开。成功申办2025年CSIG科学家会议，并入选青工委。
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--<div class="activity-container">
+    <div class="activity-title">人工智能前沿论坛・第三期</div>
+    <div class="activity-details">
+      <strong>时间：</strong>2024年11月21日<br>
+      <strong>地点：</strong>中国科学技术大学高新校区<br>
+      <strong>主办方：</strong>脑启发智能感知与认知教育部重点实验室
+    </div>
+    <img class="activity-photo" src="http://localhost:4000/images/xueshupic/2024-11-21.png" alt="活动合影">
+    <div class="activity-description">
+        本次论坛邀请了复旦大学杨珉教授，北京化工大学朱群雄教授，北京大学查红彬教授，清华大学鲁继文教授，
+        同济大学赵生捷教授，中科院自动化所刘成林研究员，上海交通大学王新兵教授，中国科学院大学叶齐祥教授等15位人工智能领域专家。
+        中国科学技术大学党委常委、副校长吴枫教授，脑启发智能感知与认知教育部重点实验室副主任王杰教授致欢迎辞。
+        中国科学技术大学信息科学技术学院党委书记李斌书记，中国科学技术大学人工智能与数据科学学院副院长何向南教授，
+        中国科学技术大学张天柱教授等出席会议，此外现场来宾还有来自中国科学技术大学、
+        国防科技大学等高校师生及科研院所学者专家，参会总人次共计320余人。
+    </div>
+  </div>-->
+
+
+
+<div class="row" style="max-width: 800px; margin: auto;">
+    <p style="text-align: center; margin-top: 10px;">
+        <a href="http://localhost:4000/join.html"
+           style="text-decoration: none; color: #007bff; font-weight: bold;">
+            ...更多
+        </a>
+    </p>
+</div>
+    </div>
+
+    <div class="iamgeid col-sm-6">
+    <html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学术活动介绍</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    .activity-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .activity-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+    .activity-photo {
+        float: right;
+        width: 50%; /* 增加图片宽度从40%到50% */
+        max-width: 600px; /* 增加最大宽度 */
+        margin: 0 0 20px 20px; /* 增加间距 */
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease;
+    }
+    .activity-photo:hover {
+        transform: scale(1.02);
+    }
+    .activity-description {
+      font-size: 1em;
+      text-align: center;
+      width: 80%;
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
+    .activity-details {
+      font-size: 0.9em;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+
+<!-- 轮播图样式 -->
+<style>
+    .carousel-container {
+        position: relative;
+        text-align: center;
+        margin: 25px auto;
+        max-width: 1200px; /* 增加最大宽度 */
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .carousel-container img {
+        width: 100%;
+        height: auto; /* 改为auto，让图片完整显示 */
+        max-height: 600px; /* 设置最大高度 */
+        object-fit: contain; /* 改为contain，完整显示图片 */
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        cursor: pointer;
+        font-size: 28px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .carousel-btn.left {
+        left: 20px;
+    }
+
+    .carousel-btn.right {
+        right: 20px;
+    }
+
+    .carousel-btn:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: translateY(-50%) scale(1.1);
+    }
+    
+    /* 手机端自适应优化 */
+    @media (max-width: 768px) {
+        body {
+            margin: 10px;
+        }
+        .activity-container {
+            margin-bottom: 30px;
+            padding: 15px;
+        }
+        .activity-title {
+            font-size: 1.4em;
+            margin-bottom: 12px;
+        }
+        .activity-photo {
+            width: 100%; /* 手机端图片占满宽度 */
+            float: none;
+            margin: 0 0 15px 0;
+            max-width: 100%;
+        }
+        .activity-description {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .activity-details {
+            font-size: 0.9em;
+            padding: 12px;
+        }
+        .carousel-container {
+            margin: 20px auto;
+            max-width: 100%;
+        }
+        .carousel-container img {
+            max-height: 400px;
+        }
+        .carousel-btn {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .carousel-btn.left {
+            left: 10px;
+        }
+        .carousel-btn.right {
+            right: 10px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .activity-container {
+            padding: 10px;
+            margin-bottom: 25px;
+        }
+        .activity-title {
+            font-size: 1.2em;
+        }
+        .activity-photo {
+            border-radius: 8px;
+        }
+        .carousel-container img {
+            max-height: 300px;
+        }
+        .carousel-btn {
+            width: 35px;
+            height: 35px;
+            font-size: 16px;
+            padding: 8px;
+        }
+        .carousel-btn.left {
+            left: 5px;
+        }
+        .carousel-btn.right {
+            right: 5px;
+        }
+    }
+</style>
+
+<!-- 轮播图逻辑 -->
+<script>
+    const images = [
+        "http://localhost:4000/images/xueshupic/2023-11-26.jpg",
+        "http://localhost:4000/images/xueshupic/2023-11-26(2).jpg",
+        "http://localhost:4000/images/xueshupic/2023-11-26(3).jpg",
+        "http://localhost:4000/images/xueshupic/2023-11-26(4).jpg"
+    ];
+
+    let currentIndex = 0; // 当前图片索引
+
+    function changeImage(direction) {
+        currentIndex += direction;
+        
+        // 处理边界情况（循环切换）
+        if (currentIndex < 0) {
+            currentIndex = images.length - 1;
+        } else if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+
+        // 更新图片
+        document.getElementById("imageDisplay").src = images[currentIndex];
+    }
+</script>
+
+<div class="section-header">
+  <div class="section-icon">📅</div>
+  <div>
+    <h2 class="section-title">举办学术活动</h2>
+<!--    <p class="section-description"></p>-->
+  </div>
+  
+</div>
+
+
+<div class="activity-container">
+    <div class="activity-title"><a href="https://iai.hfut.edu.cn/info/1028/1162.htm" target="_blank" style="text-decoration: none; color: inherit;">合肥工业大学斛兵学术前沿论坛（第二期）</a></div>
+    <div class="activity-details">
+        <strong>时间：</strong>2026年4月27日-28日<br>
+        <strong>地点：</strong>合肥工业大学(屯溪路校区)学术会议中心二楼小报告厅<br>
+        <strong>主办方：</strong>合肥工业大学计算机与信息学院,人工智能创新学院
+    </div>
+    <img class="activity-photo" src="http://localhost:4000/images/xueshupic/2026-4-27.jpg" alt="活动合影">
+    <div class="activity-description">
+        合肥工业大学计算机与信息学院、人工智能创新学院联合主办斛兵学术前沿论坛（第二期）。
+        会议面向国际学术前沿与国家战略需求，聚焦脑机接口、脑科学、神经工程、医学工程、类脑计算
+        等前沿交叉领域，汇聚来自浙江大学、华中科技大学、哈尔滨工业大学、中国科学院深圳先进技术研究院、
+        华南理工大学、天津大学、杭州电子科技大学等国内顶尖高校与科研院所的脑机接口领域权威专家。汇聚
+        人工智能、脑科学、神经工程、医学工程、类脑计算等领域顶尖学者，报告内容覆盖脑电信号精准解码、
+        无创脑机接口关键技术、类脑计算等前沿方向，全方位展示最新科研成果、技术突破与产学研协同发展路径。
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="activity-container">
+    <div class="activity-title"><a href="https://mp.weixin.qq.com/s/xrqnGO7RbB1JxA2MUCKriw" target="_blank" style="text-decoration: none; color: inherit;">合肥工业大学斛兵学术前沿论坛（第一期）</a></div>
+    <div class="activity-details">
+        <strong>时间：</strong>2026年4月18日-19日<br>
+        <strong>地点：</strong>合肥工业大学(翡翠湖校区)科教楼B座501报告厅<br>
+        <strong>主办方：</strong>合肥工业大学计算机与信息学院,人工智能创新学院
+    </div>
+    <img class="activity-photo" src="http://localhost:4000/images/xueshupic/2026-4-17.jpg" alt="活动合影">
+    <div class="activity-description">
+        合肥工业大学计算机与信息学院、人工智能创新学院联合主办斛兵学术前沿论坛（第一期）。
+        会议面向国际学术前沿与国家战略需求，聚焦人工智能、高性能计算、生命健康、医疗影像、
+        空基无人系统、类脑智能等前沿技术与热点领域，
+        汇聚来自中山大学、上海交通大学、湖南大学、上海大学、浙江大学、电子科技大学、
+        中国科学院等多所高校与科研院所的国家级高层次人才。汇聚计算机、
+        人工智能、医学影像、机器人、感知计算等领域的顶尖专家，报告内容覆盖超算互联网、
+        具身智能、大模型智能体、多模态健康感知、肿瘤诊疗、AI 成像、手术导航、类脑计算等前沿方向，
+        全方位展示最新科研成果与产业应用进展。
+    </div>
+
+</div>
+<div class="activity-container">
+    <div class="activity-title"><a href="https://mp.weixin.qq.com/s/ooL-Cr8vUYBdx5CA-si-WA" target="_blank" style="text-decoration: none; color: inherit;">CSIG2025青年科学家会议</a></div>
+    <div class="activity-details">
+        <strong>时间：</strong>2025年9月20日<br>
+        <strong>地点：</strong>山东省青岛市西海岸新区银沙滩温德姆至尊酒店<br>
+        <strong>主办方：</strong>中国图象图形学学会
+    </div>
+    <img class="activity-photo" src="http://localhost:4000/images/xueshupic/2025-9-20.jpg" alt="活动合影">
+    <div class="activity-description">
+        中国海洋大学蔡青副教授承办并参与CSIG2025。会议面向国际学术前沿与国家战略需求，聚焦最新前沿技术和热点领域，精彩呈现了4个大会特邀报告，
+        30场主题分论坛，4场讲习班，4场学术服务论坛，8场青年学者服务论坛，总计200余场高水平学术报告。这场精彩的学术盛宴吸引了超过
+        2000位来自学术界和产业界的专家学者、青年才俊，超过350家单位共同参与。大会分论坛200余场学术报告精彩纷呈，为与会者们呈现了最前沿的科技成果和行业动态。
+        资深学者进行评点，与会者们积极参与，讨论氛围热烈。
+    </div>
+
+</div>
+<!--<div class="activity-container">
+    <div class="activity-title">VALSE Webinar 十周年特别活动</div>
+    <div class="activity-details">
+      <strong>时间：</strong>2024年10月26日<br>
+      <strong>地点：</strong>中国海洋大学西海岸校区<br>
+      <strong>主办方：</strong>中国人工智能学会
+    </div>
+    <img class="activity-photo" src="http://localhost:4000/images/xueshupic/2024-10-26.jpg" alt="活动合影">
+    <div class="activity-description">
+        视觉与学习青年学者研讨会（VALSE）是面向计算机视觉与机器学习领域国内外华人青年学者的重要学术平台。
+        自2014年以来，VALSE Webinar已成功举办365期，值此十周年之际，VALSE Webinar十周年特别活动在中国海洋大学西海岸校区顺利召开。
+        在这次活动中，通过专家学者们的精彩分享和深入互动。在这个充满创新和探索的时刻，我们目睹着学术思想的碰撞与交流，为人工智能领域的前沿研究开辟着新的视野和可能。
+        VALSE Webinar将始终恪守初心，砥砺前行，努力探索创新之路，信念坚定，必将书写出更加辉煌的未来，推动人工智能领域的蓬勃发展。
+    </div>
+
+  </div>-->
+<!--<div class="activity-container">
+    <div class="activity-title">中国图象图形学学会第二十五期珠峰论坛—视觉前沿技术及创新应用专题研讨会</div>
+    <div class="activity-details">
+      <strong>时间：</strong>2024年08月21日<br>
+      <strong>地点：</strong>中国海洋大学西海岸校区<br>
+      <strong>主办方：</strong>中国图象图形学学会
+    </div>
+    <img class="activity-photo" src="http://localhost:4000/images/xueshupic/2024-8-21.jpg" alt="活动合影">
+    <div class="activity-description">
+        2024年8月21日，2024中国图象图形学学会第二十五期珠峰论坛—视觉前沿技术及创新应用专题研讨会在青岛成功举办。
+        本次论坛由中国图象图形学学会主办，中国图象图形学学会青年工作委员会承办，中国海洋大学信息科学与工程学部、山东大学控制科学与工程学院协办。
+        本次论坛由中国海洋大学计算机科学与技术学院蔡青副教授、中国海洋大学电子工程学院郑海永教授、山东大学控制科学与工程学院元辉教授、
+        中国科学院计算技术研究所郭宗辉助理研究员担任执行主席。共同分享视觉计算领域的国际前沿技术、研究现状、及应用成果。
+    </div>
+
+  </div>-->
+
+<div class="row" style="max-width: 800px; margin: auto;">
+    <p style="text-align: center; margin-top: 10px;">
+        <a href="http://localhost:4000/hold.html" 
+           style="text-decoration: none; color: #007bff; font-weight: bold;">
+            ...更多
+        </a>
+    </p>
+</div>
+
+
+
+    </div>
+  </div>
+</div>
+
+<script>
+  function pairActivityCards() {
+    var columns = document.querySelectorAll('.activity-page-container > .row > .iamgeid');
+    if (columns.length < 2) return;
+    if (document.querySelector('.activity-paired-grid')) return;
+
+    var leftCards = columns[0].querySelectorAll('.activity-container');
+    var rightCards = columns[1].querySelectorAll('.activity-container');
+    var count = Math.min(leftCards.length, rightCards.length);
+    var row = document.querySelector('.activity-page-container > .row');
+    var pairedGrid = document.createElement('div');
+    pairedGrid.className = 'activity-paired-grid';
+
+
+    var leftHeading = document.createElement('div');
+    leftHeading.className = 'activity-column-heading';
+    leftHeading.textContent = '\u53c2\u52a0\u5b66\u672f\u6d3b\u52a8';
+    var rightHeading = document.createElement('div');
+    rightHeading.className = 'activity-column-heading';
+    rightHeading.textContent = '\u4e3e\u529e\u5b66\u672f\u6d3b\u52a8';
+    pairedGrid.appendChild(leftHeading);
+    pairedGrid.appendChild(rightHeading);
+
+    for (var k = 0; k < count; k++) {
+      pairedGrid.appendChild(leftCards[k]);
+      pairedGrid.appendChild(rightCards[k]);
+    }
+
+    columns[0].querySelectorAll('.row').forEach(function(item) {
+      if (item.textContent.indexOf('更多') !== -1 || item.textContent.indexOf('鏇村') !== -1) {
+        item.classList.add('activity-more-link');
+        pairedGrid.appendChild(item);
+      }
+    });
+    columns[1].querySelectorAll('.row').forEach(function(item) {
+      if (item.textContent.indexOf('更多') !== -1 || item.textContent.indexOf('鏇村') !== -1) {
+        item.classList.add('activity-more-link');
+        pairedGrid.appendChild(item);
+      }
+    });
+
+    row.innerHTML = '';
+    row.appendChild(pairedGrid);
+  }
+
+  window.addEventListener('load', pairActivityCards);
+  setTimeout(pairActivityCards, 300);
+</script>
+
+      </div>
+    </div>
+
+    <div id="footer" class="panel" style="margin: 0px; background-color:#fffffff1;">
+  <div class="panel-footer" style="background-color:#fffffff1;">
+	<div class="container-fluid">
+	  <div class="row">
+
+
+			<ul class="nav navbar-nav navbar-right">
+				<li style="width: 340px;height: 100px"><a href="https://www.hfut.edu.cn/" style="color:#4b4b4b; display: flex; align-items: center; text-decoration: none;">
+					<img src="http://localhost:4000/images/hegongda_logo_same_320x94.png" alt="合肥工业大学" class="footer-logo" style="height: 140px; width: auto; margin-right: 8px;">
+				</a></li>
+				<li style="width: 340px;height: 100px"><a href="http://www.ouc.edu.cn/" style="color:#4b4b4b; display: flex; align-items: center; text-decoration: none;">
+					<img src="http://localhost:4000/images/ouc-logo_same_320x94.png" alt="中国海洋大学" class="footer-logo" style="height: 140px; width: auto; margin-right: 8px;">
+				</a></li>
+			</ul>
+
+
+		
+	  </div>
+	  <div class="row" style="text-align: center; margin-top: 10px;">
+        <p style="color:#4b4b4b; font-size: 14px;">powered by 童亨, 孔松琦, 李绍铭, 吴兴政, 王子健</p>
+      </div>
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://localhost:4000/js/bootstrap.min.js"></script>
+
+
+  </body>
+
+</html>
