@@ -90,12 +90,7 @@
   pub: IJCAI+1
   group: 3
 
-- name: 郭少翔
-  photo: guoshaoxiang.jpg
-  info: 浙江大学博士后
-  info2: 研究方向：计算机视觉与深度学习
-  pub: ACM MM+1
-  group: 6
+
 
 - name: 张成
   photo: zhangcheng.jpg
@@ -132,82 +127,17 @@
   pub: information fusion
   group: 3
 
+- name: 秦森龙
+  photo: 秦森龙-博士-电子信息-脑机接口.jpg
+  info: 电子信息
+  info2: 研究方向：脑机接口
+  group: 3
 
-
-
-- name: 童亨(2026年毕业)
-  photo: th.jpg
-  info: 计算机技术专业
-  info2: 研究方向：三维形状生成,具身智能
-  pub: 计图比赛三等奖
-  work: 毕业去向：中国移动通信集团浙江有限公司金华分公司
-  group: 6
-
-- name: 谭润清(2026年毕业)
-  photo: tanrunqing.jpg
-  info: 计算机技术专业
-  info2: 研究方向：多视图三维重建
-  pub: 华为杯三等奖
-  work: 毕业去向：
-  group: 6
-
-- name: 张朦幻(2026年毕业)
-  photo: huan.jpg
-  info: 软件工程专业
-  info2: 研究方向：细粒度图像分类
-  pub: 挑战杯创意赛特等奖
-  work: 毕业去向：国家电网-天津电科院
-  group: 6
-
-
-
-- name: 仇世纪(2026年毕业)
-  photo: qiushiji.jpg
-  info: 软件工程专业
-  info2: 研究方向：点云分割
-  pub: 挑战杯创意赛特等奖,Neural Networks+1
-  work: 毕业去向：山东省农村信用社联合社
-  group: 6
-
-- name: 鄢柯(2026年毕业)
-  photo: yanke.jpg
-  info: 计算机科学与技术专业
-  info2: 研究方向：医学图像分割
-  pub: AAAI+1，国家奖学金
-  work: 毕业去向：文远知行
-  group: 6
-
-- name: 李帅衡(2026年毕业)
-  photo: lishuaiheng.jpg
-  info: 计算机技术专业
-  info2: 研究方向：细粒度分类
-  pub: 华为杯三等奖,挑战杯创意赛特等奖,IEEE Transactions on Image Processing+1
-  work: 毕业去向：珠海许继电气有限公司
-  group: 6
-
-- name: 曹子彦(2026年毕业)
-  photo: caoziyan.jpg
-  info: 软件工程专业
-  info2: 研究方向：半监督医学图像分割
-  work: 毕业去向：山东省农村信用社联合社
-  group: 6
-
-- name: 孔松琦(2026年毕业)
-  photo: songqikong.png
-  info: 农业工程与信息技术专业
-  info2: 研究方向：点云补全
-  url: https://songqikong.github.io/
-  pub: 华为杯三等奖
-  work: 毕业去向：深圳其域创新科技有限公司
-  group: 6
-
-- name: 李绍铭(2026年毕业)
-  photo: lishaoming.jpg
-  info: 人工智能专业
-  info2: 研究方向：单幅图三维重建
-  pub: CVPR+1，计图比赛三等奖，国家奖学金
-  work: 毕业去向：银河通用机器人
-  group: 6
+- name: 邹焕鑫
+  photo: 邹焕鑫-博士-电子信息-具身智能.jpg
+  info: 电子信息
+  info2: 研究方向：具身智能
+  group: 3
 
 
 
@@ -314,139 +244,59 @@
   info2: 研究方向：图像增强
   group: 1
 
-- name: Lindsay Liang
-  photo: lindsayliang.jpg
-  info: Bioinformatics Programmer II
-  url: lindsayliang
-  group: 8
+- name: 金伯秋
+  photo: 金伯秋-计算机科学与技术-医学多模态辅助诊断.jpg
+  info: 计算机科学与技术
+  info2: 研究方向：医学多模态辅助诊断
+  group: 1
 
-- name: Michael Gilson
-  photo: michaelgilson.jpg
-  info: Bioinformatics Programmer III
-  url: michaelgilson
-  group: 8
-  year: 2015-2021
+- name: 胡晓龙
+  photo: 胡晓龙-人工智能.jpg
+  info: 人工智能
+  info2:
+  group: 1
 
-- name: Brooke Sheppard
-  photo: brookesheppard.jpg
-  info: Postdoctoral Scholar
-  url: brookesheppard
-  group: 8
-  year: 2017-2021
 
-- name: Aparna Kumar
-  photo: aparnakumar.jpg
-  info: Undergraduate Research Volunteer
-  url: aparnakumar
-  group: 8
-  year: 2021
+- name: 李子涵
+  photo: 李子涵-计算机科学与技术-具身智能.jpg
+  info: 计算机科学与技术
+  info2: 研究方向：具身智能
+  group: 1
 
-- name: Mai Nojima
-  photo: mainojima.jpg
-  info: Undergraduate Research Volunteer
-  url: mainojima
-  group: 8
-  year: 2017-2020
-  current: Medical Student at Kaiser Permanente Bernard J. Tyson School of Medicine
+- name: 孟祥宇
+  photo: 孟祥宇-计算机技术-多模态智能体.jpg
+  info: 计算机科学与技术
+  info2: 研究方向：多模态智能体
+  group: 1
 
-- name: Donna Werling
-  photo: donnawerling.jpg
-  info: Postdoctoral Scholar
-  url: donnawerling
-  group: 8
-  year: 2015-2019
-  current: Assistant Professor of Genetics, University of Wisconsin-Madison
-  extlink: https://werling.genetics.wisc.edu/
 
-- name: Joon An
-  photo: joonan.jpg
-  info: Postdoctoral Scholar
-  url: joonan
-  group: 8
-  year: 2015-2019
-  current: Assistant Professor, School of Biosystem and Biomedical Science, Korea University
-  extlink: https://joonanlab.github.io/
 
-- name: Grace Schwartz
-  photo: graceschwartz.jpg
-  info: Staff Research Associate
-  url: graceschwartz
-  group: 8
-  year: 2016-2019
-  current: Research Technologist at Ann and Robert Lurie Children’s Hospital of Chicago
+- name: 唐帅飞
+  photo: 唐帅飞-人工智能-智能体.jpg
+  info: 人工智能
+  info2: 研究方向：智能体
+  group: 1
 
-- name: Sindy Law
-  photo: sindylaw.jpg
-  info: Database Architect
-  url: sindylaw
-  group: 8
-  year: 2015-2019
-  current: Institutional Research Analyst, UCSF School of Dentistry
 
-- name: Claudia Dastmalchi
-  photo: claudiaddastmalchi.jpg
-  info: Bioinformatics Programmer
-  url: claudiaddastmalchi
-  group: 8
-  year: 2017-2019
-  current: Bioinformatics Software Engineer at Ambry Genetics
+- name: 张志杰
+  photo: 张志杰-软件工程-具身智能.jpg
+  info: 软件工程
+  info2: 研究方向：具身智能
+  group: 1
 
-- name: Deniz Yuruk
-  photo: denizyuruk.jpg
-  info: Visiting Scholar
-  url: denizyuruk
-  group: 8
-  year: 2017-2018
 
-- name: Louw Smith
-  info: Data Operations Manager
-  url: louwsmith
-  group: 8
-  year: 2015-2016
-  current: Instructor, Brandeis University
-  extlink: https://www.brandeis.edu/facultyguide/person.html?emplid=decdc7873f5dc5d7658c2fbabd70047fd7d9cab0
 
-- name: Eddie Gao
-  info: Summer Intern
-  url: eddiegao
-  group: 8
-  year: 2017
-  current: Undergraduate, UC Berkeley
 
-- name: Alexandria Alpy
-  info: Summer Intern
-  url: alexandriaalpy
-  group: 8
-  year: 2017
-  current: Ohio State University
 
-- name: Flora Zhao
-  info: High School Research Volunteer
-  url: florazhao
-  group: 8
-  year: 2017
-  current:
 
-- name: Jason Zhao
-  info: High School Research Volunteer
-  url: jasonzhao
-  group: 8
-  year: 2017
-  current:
 
-- name: Carmen Sandoval
-  info: Neuroscience Rotation Student
-  url: carmensandoval
-  group: 8
-  year: 2018
-  current: Neuroscience Graduate Program, UCSF
 
-- name: Immanuel Zion
-  info: Summer Intern
-  url: immanuelzion
-  group: 8
-  year: 2018
-  current: Bard College
+- name: 郭少翔
+  photo: guoshaoxiang.jpg
+  info: 浙江大学博士后
+  info2: 研究方向：计算机视觉与深度学习
+  pub: ACM MM+1
+  group: 5
 
 - name: 王祥龙
   photo: wangxianglong.jpg
@@ -454,24 +304,110 @@
   info2:
   url: https://sjkx.qust.edu.cn/info/1039/1805.htm
   pub: T-CSVT,TIM
+  group: 5
+
+
+
+
+
+- name: 童亨(2026年毕业)
+  photo: th.jpg
+  info: 计算机技术专业
+  info2: 研究方向：三维形状生成,具身智能
+  pub: 计图比赛三等奖
+  work: 毕业去向：中国移动通信集团浙江有限公司金华分公司
   group: 6
+
+- name: 谭润清(2026年毕业)
+  photo: tanrunqing.jpg
+  info: 计算机技术专业
+  info2: 研究方向：多视图三维重建
+  pub: 华为杯三等奖
+  work: 毕业去向：
+  group: 6
+
+- name: 张朦幻(2026年毕业)
+  photo: huan.jpg
+  info: 软件工程专业
+  info2: 研究方向：细粒度图像分类
+  pub: 挑战杯创意赛特等奖
+  work: 毕业去向：国家电网-天津电科院
+  group: 6
+
+
+
+- name: 仇世纪(2026年毕业)
+  photo: qiushiji.jpg
+  info: 软件工程专业
+  info2: 研究方向：点云分割
+  pub: 挑战杯创意赛特等奖,Neural Networks+1
+  work: 毕业去向：山东省农村信用社联合社
+  group: 6
+
+- name: 鄢柯(2026年毕业)
+  photo: yanke.jpg
+  info: 计算机科学与技术专业
+  info2: 研究方向：医学图像分割
+  pub: AAAI+1，国家奖学金
+  work: 毕业去向：文远知行
+  group: 6
+
+- name: 李帅衡(2026年毕业)
+  photo: lishuaiheng.jpg
+  info: 计算机技术专业
+  info2: 研究方向：细粒度分类
+  pub: 华为杯三等奖,挑战杯创意赛特等奖,IEEE Transactions on Image Processing+1
+  work: 毕业去向：珠海许继电气有限公司
+  group: 6
+
+- name: 曹子彦(2026年毕业)
+  photo: caoziyan.jpg
+  info: 软件工程专业
+  info2: 研究方向：半监督医学图像分割
+  work: 毕业去向：山东省农村信用社联合社
+  group: 6
+
+- name: 孔松琦(2026年毕业)
+  photo: songqikong.png
+  info: 农业工程与信息技术专业
+  info2: 研究方向：点云补全
+  url: https://songqikong.github.io/
+  pub: 华为杯三等奖
+  work: 毕业去向：深圳其域创新科技有限公司
+  group: 6
+
+- name: 李绍铭(2026年毕业)
+  photo: lishaoming.jpg
+  info: 人工智能专业
+  info2: 研究方向：单幅图三维重建
+  pub: CVPR+1，计图比赛三等奖，国家奖学金
+  work: 毕业去向：银河通用机器人
+  group: 6
+
+
+
+
+
+
+
+
 
 - name: 洪佳荣
   photo: hongjiarong.jpg
   info: 去往院校：南京大学
   info2:
   url: https://github.com/hongjr03
-  group: 6
+  group: 7
 
 - name: 康家辉
   photo: kangjiahui.jpg
   info: 去往院校：西安交通大学
   info2: 研究方向：通过视觉语言模型实现深度超分辨率
-  group: 6
+  group: 7
 
 - name: 曾祥辉
   photo: zengxianghui.jpg
   info: 去往院校：华南理工大学
   info2: 研究方向：通过视觉语言模型实现深度超分辨率
-  group: 6
+  group: 7
 
