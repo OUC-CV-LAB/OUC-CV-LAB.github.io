@@ -12513,22 +12513,22 @@ regtext:hover {
     margin-bottom: 1.5rem;
   }
   .intro-content .intro-text {
-    font-size: 2.2rem !important; /* 从1.2rem放大到1.6rem */
-    margin-bottom: 1.2rem;
+    font-size: 1.05rem !important; /* 调整为与正文一致 */
+    margin-bottom: 1rem !important;
   }
   .intro-paragraphs .intro-text {
-    font-size: 2.2rem !important;
+    font-size: 1.05rem !important;
   }
-  /* 移动端前三个intro-text字体大小1.5倍 */
+  /* 移动端前三个intro-text字体大小 */
   .intro-paragraphs .intro-text:nth-child(1),
   .intro-paragraphs .intro-text:nth-child(2),
   .intro-paragraphs .intro-text:nth-child(3) {
-    font-size: 2.2rem;
-    line-height: 1.4;
+    font-size: 1.1rem !important;
+    line-height: 1.5 !important;
   }
   /* 移动端第一个intro-text中的链接字体大小 */
   .intro-paragraphs .intro-text:nth-child(1) .intro-link {
-    font-size: 2.2rem !important;
+    font-size: 1.1rem !important;
   }
   /* 移动端占满宽度布局调整 */
   .intro-contact-row {
@@ -12634,20 +12634,25 @@ regtext:hover {
     object-fit: cover;
     border-radius: 10px;
   }
-  /* 主页介绍文字手机优化 */
+  /* 移动端介绍文字手机优化 */
   .intro-container {
-    padding: 20px 15px;
-    min-height: 400px;
+    padding: 25px 15px !important;
+    min-height: auto !important;
+    margin-bottom: 20px !important;
   }
   .intro-container h3 {
-    font-size: 1.8rem; /* 减少标题字体 */
-    margin-bottom: 0.8rem;
+    font-size: 1.8rem !important; /* 缩小标题字体 */
+    margin-bottom: 1rem !important;
+    line-height: 1.3 !important;
   }
   .intro-container p,
   .intro-container a,
-  .intro-container strong {
-    font-size: 1rem; /* 减少正文字体 */
-    line-height: 1.5;
+  .intro-container strong,
+  .intro-content .intro-text,
+  .intro-paragraphs .intro-text {
+    font-size: 1.05rem !important; /* 统一正文字体大小，防止部分文字过大 */
+    line-height: 1.6 !important;
+    text-align: justify !important;
   }
   /* 非主页hero-section手机优化 */
   .team-hero,
@@ -13567,306 +13572,463 @@ regtext:hover {
     color: #000000 !important; /* 移动端也设置为黑色 */
   }
 }
-/* ===== 全新移动端设计 ===== */
+/* ===== 全新移动端设计（综合优化版） ===== */
 @media (max-width: 768px) {
   /* 移动端基础重置 */
   * {
     box-sizing: border-box;
   }
   body {
-    font-size: 16px !important;
-    line-height: 1.6 !important;
-    padding-top: 0 !important;
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+    padding-top: 60px !important;
     margin: 0 !important;
     background-color: #ffffff !important;
     overflow-x: hidden !important;
   }
-  /* 移动端导航栏 - 现代化设计 */
+  /* ---- 1. 导航栏优化 ---- */
   .navbar-default {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
+    background: #004098 !important;
     border: none !important;
-    box-shadow: 0 4px 20px rgba(30, 60, 114, 0.3) !important;
-    min-height: 60px !important;
-    height: 60px !important;
+    box-shadow: 0 2px 12px rgba(0, 64, 152, 0.25) !important;
+    min-height: 56px !important;
+    height: 56px !important;
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
     z-index: 1050 !important;
-    padding: 0 !important;
-    transition: all 0.3s ease !important;
   }
   .navbar-default .container-fluid {
-    padding: 0 15px !important;
-    height: 60px !important;
+    padding: 0 12px !important;
+    height: 56px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
   }
-  /* 移动端Logo */
   .navbar-default .navbar-brand {
-    color: #ffffff !important;
-    font-size: 18px !important;
-    font-weight: 700 !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
     padding: 0 !important;
-    line-height: 60px !important;
-    height: 60px !important;
-    display: flex !important;
-    align-items: center !important;
-    text-decoration: none !important;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+    line-height: 56px !important;
+    height: 56px !important;
+    color: #ffffff !important;
   }
   .navbar-default .navbar-brand img {
-    max-width: 100px !important;
-    height: auto !important;
-    max-height: 40px !important;
+    max-width: 85px !important;
+    max-height: 34px !important;
   }
-  /* 移动端汉堡菜单 - 现代化按钮 */
+  /* 汉堡菜单 - 紧凑白色 */
   .navbar-default .navbar-toggle {
-    position: relative !important;
-    border: 2px solid #ffffff !important;
-    border-radius: 8px !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-    padding: 8px !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.5) !important;
+    border-radius: 6px !important;
+    background: transparent !important;
+    padding: 6px !important;
     margin: 0 !important;
-    height: 40px !important;
-    width: 40px !important;
+    height: 34px !important;
+    width: 34px !important;
     display: flex !important;
+    flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    transition: all 0.3s ease !important;
-    z-index: 1051 !important;
-  }
-  .navbar-default .navbar-toggle:hover,
-  .navbar-default .navbar-toggle:focus {
-    background: rgba(255, 255, 255, 0.2) !important;
-    transform: scale(1.05) !important;
-    outline: none !important;
   }
   .navbar-default .navbar-toggle .icon-bar {
     background-color: #ffffff !important;
     height: 2px !important;
-    border-radius: 1px !important;
-    width: 20px !important;
+    width: 18px !important;
     margin: 2px 0 !important;
-    transition: all 0.3s ease !important;
+    border-radius: 1px !important;
   }
-  /* 汉堡菜单动画 */
-  .navbar-default .navbar-toggle:not(.collapsed) .icon-bar:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px) !important;
-  }
-  .navbar-default .navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
-    opacity: 0 !important;
-  }
-  .navbar-default .navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px) !important;
-  }
-  /* 移动端导航菜单 - 全屏侧边栏 */
+  /* 导航菜单 - 侧边栏缩小 */
   .navbar-default .navbar-collapse {
     position: fixed !important;
-    top: 0 !important;
+    top: 56px !important;
     right: -100% !important;
-    width: 100% !important;
-    max-width: 320px !important;
-    height: 100vh !important;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
-    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.4) !important;
+    width: 280px !important;
+    max-width: 80vw !important;
+    height: calc(100vh - 56px) !important;
+    background: #004098 !important;
+    box-shadow: -4px 0 18px rgba(0, 0, 0, 0.3) !important;
     z-index: 1040 !important;
-    padding: 0 !important;
-    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition: right 0.25s ease !important;
     overflow-y: auto !important;
+    padding: 0 !important;
   }
   .navbar-default .navbar-collapse.in {
     right: 0 !important;
-    min-height: 100vh !important;
-    height: 100vh !important;
     display: block !important;
-    align-items: stretch !important;
   }
-  /* 遮罩层 */
+  /* 遮罩层缩小 */
   .navbar-default .navbar-collapse.in::before {
     content: "";
     position: fixed;
-    top: 0;
+    top: 56px;
     left: 0;
     width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
+    height: calc(100vh - 56px);
+    background: rgba(0, 0, 0, 0.35);
     z-index: -1;
-    transition: opacity 0.3s ease;
   }
-  /* 导航菜单内容 */
   .navbar-default .navbar-collapse .navbar-nav {
     width: 100% !important;
     margin: 0 !important;
-    padding: 80px 20px 40px 20px !important;
+    padding: 16px 14px !important;
     display: flex !important;
     flex-direction: column !important;
-    align-items: stretch !important;
   }
   .navbar-default .navbar-collapse .navbar-nav > li {
-    width: 100% !important;
-    margin: 0 0 25px 0 !important;
-    text-align: left !important;
-  }
-  .navbar-default .navbar-collapse .navbar-nav > li:last-child {
-    margin-bottom: 0 !important;
+    margin: 0 0 10px 0 !important;
   }
   .navbar-default .navbar-collapse .navbar-nav > li > a {
     display: flex !important;
     align-items: center !important;
-    justify-content: flex-start !important;
-    padding: 22px 25px !important;
-    color: #ffffff !important;
-    font-size: 18px !important;
+    padding: 12px 16px !important;
+    font-size: 15px !important;
     font-weight: 500 !important;
-    text-decoration: none !important;
-    transition: all 0.3s ease !important;
-    width: 100% !important;
-    border-radius: 12px !important;
-    background-color: rgba(255, 255, 255, 0.1) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    backdrop-filter: blur(10px) !important;
-    min-height: 60px !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    min-height: 44px !important;
   }
-  .navbar-default .navbar-collapse .navbar-nav > li > a:hover,
-  .navbar-default .navbar-collapse .navbar-nav > li > a:focus {
-    background-color: rgba(255, 255, 255, 0.2) !important;
-    transform: translateX(8px) !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
-    border-color: rgba(255, 255, 255, 0.3) !important;
-    outline: none !important;
+  .navbar-default .navbar-collapse .navbar-nav > li > a:hover {
+    background: rgba(255, 255, 255, 0.18) !important;
   }
   .navbar-default .navbar-collapse .navbar-nav > li > a i {
-    margin-right: 15px !important;
-    font-size: 20px !important;
-    width: 24px !important;
+    margin-right: 10px !important;
+    font-size: 16px !important;
+    width: 20px !important;
     text-align: center !important;
     color: #87ceeb !important;
   }
-  /* 移动端内容区域 */
-  .content-section {
-    padding: 20px 15px !important;
-    margin: 0 !important;
-    background-color: #ffffff !important;
-    min-height: 100vh !important;
+  /* ---- 2. 主页研究方向卡片（竖排，无蓝色背景，参考Team风格） ---- */
+  .research-section {
+    background: #f8f9fa !important;
+    border-radius: 16px !important;
+    padding: 24px 16px !important;
+    margin: 20px 0 !important;
   }
-  /* 移动端容器 */
+  .research-section .research-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  .research-section .research-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06) !important;
+    border: 1px solid #eee !important;
+  }
+  .research-section .research-image {
+    height: 180px !important;
+  }
+  .research-section .research-content {
+    padding: 18px 16px !important;
+  }
+  .research-section .research-content h3 {
+    font-size: 1.3rem !important;
+    margin-bottom: 10px !important;
+  }
+  .research-section .research-content p {
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+  }
+  .research-section .section-header .section-title {
+    color: #1e3c72 !important;
+    font-size: 1.5rem !important;
+  }
+  /* ---- 3. Team页面优化 ---- */
+  /* 导师卡片居中 */
+  .team-grid .col-sm-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0 8px !important;
+  }
+  .team-grid .col-sm-6 .member-card {
+    width: 100% !important;
+    max-width: 380px !important;
+    padding: 16px !important;
+  }
+  .team-grid .col-sm-6 .member-photo img {
+    width: 140px !important;
+    height: 140px !important;
+  }
+  .team-grid .col-sm-6 .member-name {
+    font-size: 1.2rem !important;
+  }
+  .team-grid .col-sm-6 .member-title {
+    font-size: 1rem !important;
+  }
+  /* 导师详细信息内联缩小（手机版） */
+  .team-section:first-of-type .member-name {
+    font-size: 1.8rem !important;
+  }
+  .team-section:first-of-type .detail-section h4 {
+    font-size: 1.3rem !important;
+  }
+  .team-section:first-of-type .detail-section p,
+  .team-section:first-of-type .detail-section li {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+  .team-section:first-of-type .member-card {
+    min-height: auto !important;
+    padding: 12px !important;
+  }
+  /* 学僧和合作学者卡片缩小 */
+  .team-grid .col-sm-2,
+  .team-grid .col-sm-3 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    padding: 0 6px !important;
+    margin-bottom: 12px !important;
+  }
+  /* 手机端：成员卡片改为水平布局（头像左，信息右） */
+  .team-grid .row .col-sm-2 .member-card,
+  .team-grid .row .col-sm-3 .member-card,
+  .team-grid .row .doctor-card .member-card,
+  .team-grid .row .master-card .member-card {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    padding: 8px 10px !important;
+    gap: 10px !important;
+    min-height: 0 !important;
+    max-height: 270px !important;
+    overflow-y: auto !important;
+  }
+  .team-grid .row .col-sm-2 .member-photo,
+  .team-grid .row .col-sm-3 .member-photo,
+  .team-grid .row .doctor-card .member-photo,
+  .team-grid .row .master-card .member-photo {
+    flex-shrink: 0 !important;
+    width: auto !important;
+  }
+  .team-grid .row .col-sm-2 .member-photo img,
+  .team-grid .row .col-sm-3 .member-photo img,
+  .team-grid .row .doctor-card .member-photo img,
+  .team-grid .row .master-card .member-photo img {
+    width: 55px !important;
+    height: 55px !important;
+    min-width: 55px !important;
+    border-radius: 50% !important;
+  }
+  .team-grid .row .col-sm-2 .member-info,
+  .team-grid .row .col-sm-3 .member-info,
+  .team-grid .row .doctor-card .member-info,
+  .team-grid .row .master-card .member-info {
+    flex: 1 !important;
+    text-align: left !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1px !important;
+  }
+  .team-grid .row .col-sm-2 .member-name,
+  .team-grid .row .col-sm-2 .member-name a,
+  .team-grid .row .col-sm-3 .member-name,
+  .team-grid .row .col-sm-3 .member-name a {
+    font-size: 0.85rem !important;
+    margin-bottom: 0 !important;
+    line-height: 1.2 !important;
+  }
+  .team-grid .row .col-sm-2 .member-title,
+  .team-grid .row .col-sm-3 .member-title {
+    font-size: 0.7rem !important;
+    margin-bottom: 0 !important;
+    line-height: 1.2 !important;
+  }
+  .team-grid .row .col-sm-2 .member-research,
+  .team-grid .row .col-sm-3 .member-research {
+    font-size: 0.65rem !important;
+    margin-bottom: 0 !important;
+    line-height: 1.15 !important;
+  }
+  .team-grid .row .col-sm-2 .member-publication,
+  .team-grid .row .col-sm-3 .member-publication {
+    font-size: 0.65rem !important;
+    line-height: 1.15 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .team-grid .row .col-sm-2 .member-work,
+  .team-grid .row .col-sm-3 .member-work {
+    font-size: 0.65rem !important;
+    line-height: 1.15 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  /* 博士/硕士卡片宽度手机端自适应 */
+  .doctor-card .member-card,
+  .master-card .member-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  /* 合作学者姓名缩小 */
+  .collaborators-grid .member-name,
+  .collaborators-grid .member-name a {
+    font-size: 16px !important;
+  }
+  .collaborators-grid .member-title {
+    font-size: 13px !important;
+  }
+  .collaborator-layout-grid .member-name,
+  .collaborator-layout-grid .member-name a {
+    font-size: 15px !important;
+  }
+  .collaborator-layout-grid .member-title {
+    font-size: 12px !important;
+  }
+  /* ---- 4. Publications页面（图片在上，文字在下，无蓝色背景） ---- */
+  .publications-section {
+    background: transparent !important;
+    padding: 20px 0 !important;
+  }
+  .publication-card {
+    flex-direction: column !important;
+    padding: 16px !important;
+    background: #ffffff !important;
+    border: 1px solid #eee !important;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06) !important;
+  }
+  .publication-image {
+    width: 100% !important;
+    flex: none !important;
+    margin-bottom: 14px !important;
+  }
+  .publication-image img {
+    width: 100% !important;
+    max-height: 260px !important;
+    min-height: 180px !important;
+    object-fit: cover !important;
+    border-radius: 10px !important;
+  }
+  .publication-content {
+    flex: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .publication-title {
+    font-size: 0.95rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 8px !important;
+  }
+  .publication-title a {
+    font-size: 0.95rem !important;
+  }
+  .publication-authors {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+  .publication-links {
+    margin-top: 10px !important;
+    gap: 8px !important;
+  }
+  .publication-link {
+    font-size: 0.85rem !important;
+    padding: 6px 14px !important;
+    min-width: 80px !important;
+  }
+  /* ---- 5. Academic Activities页面（两卡片竖排） ---- */
+  .activity-page-container > .row {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+  .activity-page-container .col-sm-6 {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .iamgeid {
+    padding: 14px !important;
+    width: 100% !important;
+  }
+  .iamgeid .section-title {
+    font-size: 1.3rem !important;
+  }
+  .iamgeid .activity-title {
+    font-size: 1.1rem !important;
+    padding: 8px 12px !important;
+  }
+  .iamgeid .activity-details {
+    font-size: 0.85rem !important;
+    padding: 10px 12px !important;
+  }
+  .iamgeid .activity-description {
+    font-size: 0.9rem !important;
+    padding: 10px 14px !important;
+  }
+  .iamgeid .carousel-container img {
+    max-height: 180px !important;
+  }
+  /* ---- 6. Contact Us页面（四卡片竖排） ---- */
+  .contact-section {
+    padding: 20px 10px !important;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  .contact-card {
+    min-height: auto !important;
+    padding: 22px 18px !important;
+  }
+  .contact-card h3 {
+    font-size: 1.2rem !important;
+  }
+  .contact-card p {
+    font-size: 0.9rem !important;
+  }
+  .contact-icon {
+    font-size: 1.8rem !important;
+  }
+  /* ---- 7. 全局字体缩小 ---- */
+  h1 {
+    font-size: 1.6rem !important;
+  }
+  h2 {
+    font-size: 1.4rem !important;
+  }
+  h3 {
+    font-size: 1.2rem !important;
+  }
+  h4 {
+    font-size: 1.1rem !important;
+  }
+  p {
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+  }
+  /* 内容区 */
+  .content-section {
+    padding: 16px 10px !important;
+    margin: 0 !important;
+    background: transparent !important;
+  }
   .container {
     width: 100% !important;
     max-width: 100% !important;
-    padding: 0 15px !important;
-    margin: 0 auto !important;
+    padding: 0 10px !important;
   }
-  /* 移动端网格系统 */
   .row {
-    margin: 0 -10px !important;
+    margin: 0 -6px !important;
     display: flex !important;
     flex-wrap: wrap !important;
   }
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
   .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    padding: 0 10px 20px 10px !important;
+    padding: 0 6px 12px 6px !important;
     width: 100% !important;
     float: none !important;
   }
-  /* 移动端标题优化 */
-  h1 {
-    font-size: 2.2rem !important;
-    line-height: 1.2 !important;
-    margin-bottom: 1.5rem !important;
-    color: #1e3c72 !important;
-    font-weight: 700 !important;
-    text-align: center !important;
-  }
-  h2 {
-    font-size: 1.8rem !important;
-    line-height: 1.3 !important;
-    margin-bottom: 1.2rem !important;
-    color: #1e3c72 !important;
-    font-weight: 600 !important;
-    text-align: center !important;
-  }
-  h3 {
-    font-size: 1.5rem !important;
-    line-height: 1.4 !important;
-    margin-bottom: 1rem !important;
-    color: #2a5298 !important;
-    font-weight: 600 !important;
-  }
-  h4 {
-    font-size: 1.3rem !important;
-    line-height: 1.4 !important;
-    margin-bottom: 0.8rem !important;
-    color: #2a5298 !important;
-    font-weight: 500 !important;
-  }
-  /* 移动端段落文字 */
-  p {
-    font-size: 16px !important;
-    line-height: 1.7 !important;
-    margin-bottom: 15px !important;
-    color: #333333 !important;
-    text-align: justify !important;
-  }
-  /* 移动端按钮 */
-  .btn {
-    padding: 12px 24px !important;
-    font-size: 16px !important;
-    border-radius: 8px !important;
-    margin: 8px 4px !important;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
-    color: #ffffff !important;
-    border: none !important;
-    font-weight: 500 !important;
-    box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3) !important;
-    transition: all 0.3s ease !important;
-    display: inline-block !important;
-    text-align: center !important;
-    min-width: 120px !important;
-    touch-action: manipulation !important;
-  }
-  .btn:hover,
-  .btn:focus {
-    background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%) !important;
-    color: #ffffff !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 6px 20px rgba(30, 60, 114, 0.4) !important;
-    outline: none !important;
-  }
-  /* 移动端图片 */
-  img {
-    max-width: 100% !important;
-    height: auto !important;
-    border-radius: 8px !important;
-    margin: 15px 0 !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
-    transition: all 0.3s ease !important;
-  }
-  img:hover {
-    transform: scale(1.02) !important;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
-  }
-  /* 移动端卡片 */
-  .card, .member-card, .activity-container {
-    margin-bottom: 20px !important;
-    padding: 20px 15px !important;
-    border-radius: 12px !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
-    background-color: #ffffff !important;
-    border: 1px solid #e9ecef !important;
-    transition: all 0.3s ease !important;
-  }
-  .card:hover, .member-card:hover, .activity-container:hover {
-    transform: translateY(-3px) !important;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12) !important;
-  }
-  /* 移动端hero-section */
+  /* hero-section */
   .hero-section {
-    padding: 30px 15px !important;
+    padding: 20px 12px !important;
     margin: 0 !important;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
-    border-radius: 0 0 15px 15px !important;
+    border-radius: 0 0 12px 12px !important;
   }
   .hero-section .row {
     margin: 0 !important;
@@ -13878,50 +14040,128 @@ regtext:hover {
   .hero-section .col-sm-5 {
     width: 100% !important;
     float: none !important;
-    padding: 0 0 20px 0 !important;
+    padding: 0 0 14px 0 !important;
     margin: 0 !important;
   }
-  /* 移动端intro-text */
+  /* intro-text */
   .intro-content .intro-text,
   .intro-paragraphs .intro-text {
-    font-size: 1.7rem !important;
+    font-size: 1rem !important;
     color: #000000 !important;
     line-height: 1.6 !important;
-    margin-bottom: 18px !important;
-    text-align: left !important;
-    font-weight: 400 !important;
   }
-  /* 移动端表格 */
-  table {
-    font-size: 14px !important;
-    width: 100% !important;
-    overflow-x: auto !important;
-    background-color: #ffffff !important;
-    border-radius: 8px !important;
+  /* 卡片 */
+  .card, .member-card, .activity-container, .content-card {
+    margin-bottom: 14px !important;
+    padding: 14px 12px !important;
+    border-radius: 10px !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+    background: #ffffff !important;
+    border: 1px solid #eee !important;
   }
-  table th, table td {
-    padding: 10px 8px !important;
-    border: 1px solid #e9ecef !important;
+  /* 首页两个大卡片标题缩小 */
+  .content-card .card-header h3 {
+    font-size: 1.6rem !important;
   }
-  table th {
-    background-color: #f8f9fa !important;
-    font-weight: 600 !important;
-    color: #1e3c72 !important;
+  .content-card .card-header h3 i {
+    font-size: 1.4rem !important;
   }
-  /* 移动端表单 */
-  .form-control {
+  .card-header {
+    padding: 14px 18px !important;
+    min-height: 44px !important;
+  }
+  .card-body {
+    padding: 14px !important;
+    font-size: 0.9rem !important;
+  }
+  /* 特色卡片 */
+  .features-section {
+    padding: 20px 0 !important;
+  }
+  .feature-item {
+    padding: 18px 14px !important;
+    margin-bottom: 14px !important;
+  }
+  .feature-icon {
+    width: 56px !important;
+    height: 56px !important;
+    font-size: 24px !important;
+    margin-bottom: 12px !important;
+  }
+  .feature-item h4 {
+    font-size: 1.1rem !important;
+    margin-bottom: 10px !important;
+  }
+  .feature-item p {
+    font-size: 0.85rem !important;
+  }
+  /* 新闻和出版物列表 */
+  .content-section .card-body .pub1 {
+    font-size: 0.85rem !important;
+    padding: 6px 8px !important;
+  }
+  .content-section .card-body h3 {
+    font-size: 1.1rem !important;
+    margin: 0 auto 8px !important;
+  }
+  .content-section .card-body p strong {
+    font-size: 0.85rem !important;
+  }
+  .content-section .card-body p em {
+    font-size: 0.85rem !important;
+    padding: 6px 10px !important;
+  }
+  .content-section .card-body a[href*=publications],
+  .content-section .card-body a[href*=allnews] {
+    font-size: 0.85rem !important;
+    padding: 6px 16px !important;
+  }
+  /* 导航栏描述 */
+  .card-header h3 {
+    font-size: 1.3rem !important;
+  }
+  /* team-section / section-header */
+  .team-section {
+    padding: 14px 10px !important;
+    margin-bottom: 18px !important;
+  }
+  .section-header {
+    margin-bottom: 12px !important;
+  }
+  .section-title {
+    font-size: 1.4rem !important;
+  }
+  .section-description {
+    font-size: 0.9rem !important;
+  }
+  .section-icon {
+    font-size: 1.6rem !important;
+  }
+  /* Prof layout mobile */
+  .prof-sidebar {
+    padding: 18px 12px !important;
+  }
+  .prof-sidebar h2 {
+    font-size: 22px !important;
+  }
+  .prof-sidebar p {
     font-size: 16px !important;
-    padding: 12px 15px !important;
-    border-radius: 8px !important;
-    border: 2px solid #e9ecef !important;
-    background-color: #ffffff !important;
-    transition: all 0.3s ease !important;
   }
-  .form-control:focus {
-    border-color: #1e3c72 !important;
-    box-shadow: 0 0 0 3px rgba(30, 60, 114, 0.1) !important;
-    outline: none !important;
+  .prof-sidebar a {
+    font-size: 16px !important;
+  }
+  .prof-avatar {
+    width: 120px !important;
+    height: 144px !important;
+  }
+  .prof-content {
+    padding: 18px 14px !important;
+  }
+  .prof-content h3 {
+    font-size: 20px !important;
+  }
+  .prof-content p, .prof-content li {
+    font-size: 15px !important;
   }
 }
 /* ===== 超小屏幕移动端优化 ===== */
@@ -14001,7 +14241,7 @@ regtext:hover {
   /* 超小屏幕intro-text */
   .intro-content .intro-text,
   .intro-paragraphs .intro-text {
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
   }
 }
 /* =========================
@@ -14554,84 +14794,6 @@ regtext:hover {
   max-width: none;
 }
 
-@media (max-width: 768px) {
-  .research-section {
-    width: calc(100% - 24px);
-    margin-left: auto;
-    margin-right: auto;
-    padding: 32px 0;
-    overflow: hidden;
-  }
-  .research-section .container {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-  .research-section .section-title {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 8px 12px;
-    font-size: 2.2rem;
-    line-height: 1.3;
-  }
-  .research-section .section-description-inline {
-    display: block;
-    flex-basis: 100%;
-    margin-left: 0 !important;
-    font-size: 1.35rem !important;
-    line-height: 1.5;
-  }
-  .research-section .research-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    justify-items: center;
-    justify-content: center;
-    gap: 22px;
-    width: 100%;
-    margin: 24px auto 0;
-  }
-  .research-section .research-item {
-    width: min(100%, 420px);
-    max-width: 420px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .research-section .research-image {
-    height: 190px;
-  }
-  .research-section .research-content {
-    padding: 24px 20px;
-  }
-  .research-section .research-content h3,
-  .research-section .research-content h3[style] {
-    justify-content: center;
-    font-size: 2.2rem !important;
-    line-height: 1.3;
-    text-align: center;
-  }
-  .research-section .research-content p,
-  .research-section .research-content p[style] {
-    font-size: 1.55rem !important;
-    line-height: 1.75;
-    text-align: left;
-  }
-}
-@media (max-width: 480px) {
-  .research-section {
-    width: calc(100% - 18px);
-    border-radius: 22px;
-  }
-  .research-section .research-item {
-    width: min(100%, 360px);
-    max-width: 360px;
-  }
-  .research-section .research-content {
-    padding: 22px 18px;
-  }
-}
 @media (max-width: 1400px) {
   .research-section {
     width: calc(100vw - 32px) !important;
@@ -15370,33 +15532,6 @@ regtext:hover {
   text-align: center !important;
 }
 
-@media (max-width: 760px) {
-  .publications-section .publication-card {
-    gap: 14px !important;
-    padding: 16px !important;
-  }
-  .publications-section .publication-image {
-    flex-basis: 52% !important;
-    width: 52% !important;
-    min-height: 160px !important;
-    padding: 6px !important;
-  }
-  .publications-section .publication-image img {
-    max-height: 260px !important;
-  }
-  .publications-section .publication-title {
-    font-size: 1.25rem !important;
-  }
-  .publications-section .publication-authors,
-  .publications-section .publication-venue {
-    font-size: 0.95rem !important;
-  }
-  .publications-section .publication-link {
-    min-width: 96px !important;
-    padding: 8px 12px !important;
-    font-size: 0.88rem !important;
-  }
-}
 .activity-paired-grid > .activity-column-heading {
   box-sizing: border-box !important;
   width: 100% !important;
