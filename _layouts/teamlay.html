@@ -267,6 +267,7 @@ layout: default
 
 
       <!-- 已毕业博士生学生 -->
+      <!--
       <div class="team-section">
         <div class="section-header">
           <h2 class="section-title">
@@ -331,15 +332,18 @@ layout: default
         </div>
       </div>
 
+      -->
 
 
 
-      <!-- 已毕业研究生学生 -->
+
+
+      <!-- 已毕业硕博生 -->
       <div class="team-section">
         <div class="section-header">
           <h2 class="section-title">
           <span class="section-icon-inline">🌟</span>
-            已毕业硕士学生
+            已毕业硕博学生
             <span class="section-description-inline">
               心怀梦想，追求学术高峰
             </span>
@@ -350,7 +354,7 @@ layout: default
           {% assign number_printed = 0 %}
           {% for member in site.data.team_members %}
           {% assign even_odd = number_printed | modulo: 4 %}
-          {% if member.group == 6 %}
+          {% if member.group == 6 or member.group == 5%}
 
           {% if even_odd == 0 %}
           <div class="row">
