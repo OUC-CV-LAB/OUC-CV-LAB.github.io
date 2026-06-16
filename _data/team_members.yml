@@ -136,7 +136,7 @@
 - name: 邹焕鑫
   photo: 邹焕鑫-博士-电子信息-具身智能.jpg
   info: 电子信息
-  info2: 研究方向：具身智能
+  info2: 研究方向：脑机接口
   group: 3
 
 
@@ -253,7 +253,7 @@
 - name: 胡晓龙
   photo: 胡晓龙-人工智能.jpg
   info: 人工智能
-  info2:
+  info2: 研究方向：脑机接口
   group: 1
 
 
@@ -388,7 +388,12 @@
 
 
 
-
+- name: 蔡志恒
+  photo: caizhiheng.jpg
+  info:
+  info2: 研究方向：多模态医学图像
+  url:
+  group: 7
 
 
 

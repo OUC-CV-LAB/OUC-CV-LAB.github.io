@@ -66,9 +66,9 @@ p {
 	position: relative;
 	transition: all 0.3s ease;
 	padding: 25px 20px; /* 增加垂直padding来控制高度 */
-	font-weight: 500;
-	font-size: 2rem; /* 17.6px */
-	line-height: 30px; /* 设置行高 */
+	font-weight: 200;
+	font-size: 2.1rem; /* 17.6px */
+	line-height: 20px; /* 设置行高 */
 }
 
 .navbar-default .navbar-brand {
@@ -155,7 +155,7 @@ figcaption {
   position: relative;
   transition: all 0.3s ease;
   padding: 15px 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .navbar-default .navbar-nav > li > a.nav-link:hover {
@@ -254,8 +254,8 @@ figcaption {
 
 /* collapse navbar-collapse高度设置 */
 .navbar-collapse {
-  min-height: 80px !important; /* 与navbar-default高度一致 */
-  height: 80px !important;
+  min-height: 150px !important; /* 与navbar-default高度一致 */
+  height: 150px !important;
   display: flex !important;
   align-items: center !important; /* 垂直居中对齐 */
   padding: 0 !important; /* 移除默认padding */
@@ -1224,7 +1224,7 @@ color:black;
 	}
 	
 	.navbar-default .navbar-nav > li > a.nav-link {
-		font-size: 1rem; /* 16px */
+		font-size: 3rem; /* 16px */
 	}
 	
 	.card-header h3 {
