@@ -9779,7 +9779,7 @@ regtext:hover {
 
 .section-title {
   color: #1e3c72;
-  font-size: 4.8rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -10937,7 +10937,7 @@ regtext:hover {
 
 .section-title {
   color: #1e3c72;
-  font-size: 3.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -13324,7 +13324,7 @@ regtext:hover {
 
 .section-title {
   color: white;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 0 0 10px 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -13465,7 +13465,7 @@ regtext:hover {
     margin-top: 1px;
   }
   .section-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .section-description {
     font-size: 1.4rem;
@@ -13500,7 +13500,7 @@ regtext:hover {
     padding: 30px 0;
   }
   .section-title {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
   .section-description {
     font-size: 1.2rem;
@@ -13737,7 +13737,7 @@ regtext:hover {
   }
   .research-section .section-header .section-title {
     color: #1e3c72 !important;
-    font-size: 1.5rem !important;
+    font-size: 3.5rem !important;
   }
   /* ---- 3. Team页面优化 ---- */
   /* 导师卡片居中 */
@@ -13930,7 +13930,6 @@ regtext:hover {
   .publication-link {
     font-size: 0.85rem !important;
     padding: 6px 14px !important;
-    min-width: 80px !important;
   }
   /* ---- 5. Academic Activities页面（两卡片竖排） ---- */
   .activity-page-container > .row {
@@ -14387,7 +14386,7 @@ regtext:hover {
 
 /* 首页两个大卡片标题放大 */
 .content-card .card-header h3 {
-  font-size: 4rem !important;
+  font-size: 3rem !important;
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -14536,7 +14535,7 @@ regtext:hover {
 }
 
 .prof-sidebar h2 {
-  font-size: 36px;
+  font-size: 2.5rem;
   text-align: center;
   margin: 0 0 28px;
   color: #fff;
@@ -14544,7 +14543,7 @@ regtext:hover {
 }
 
 .prof-sidebar p {
-  font-size: 27px;
+  font-size: 2rem;
   line-height: 2;
   margin: 0 0 6px;
   color: #fff;
@@ -14554,7 +14553,7 @@ regtext:hover {
   display: block;
   margin-top: 22px;
   color: #fff;
-  font-size: 27px;
+  font-size: 2rem;
   font-weight: 700;
   text-decoration: underline;
 }
@@ -14568,7 +14567,7 @@ regtext:hover {
 }
 
 .prof-content h3 {
-  font-size: 35px;
+  font-size: 2.5rem;
   color: #c40000;
   font-weight: 800;
   margin: 0 0 14px;
@@ -14636,18 +14635,19 @@ regtext:hover {
 
 /* PDF / Code 按钮 */
 .publication-link {
-  font-size: 25px !important;
+  font-size: 2rem !important;
   font-weight: 700 !important;
   padding: 10px 16px !important;
   border-radius: 28px !important;
-  min-width: 120px;
+  width: 87px;
+  height: 50px;
   text-align: center;
 }
 
 /* 图标一起放大 */
 .publication-link i {
-  font-size: 25px !important;
-  margin-right: 8px;
+  font-size: 18px !important;
+  margin-right: 2px;
 }
 
 /* 卡片整体高度更舒适 */
@@ -15011,7 +15011,6 @@ regtext:hover {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    min-width: 104px !important;
     white-space: nowrap !important;
     position: relative !important;
     z-index: 2 !important;
@@ -15525,7 +15524,6 @@ regtext:hover {
 
 .publications-section .publication-link {
   flex: 0 0 auto !important;
-  min-width: 128px !important;
   padding: 12px 20px !important;
   font-size: 1.05rem !important;
   white-space: nowrap !important;
@@ -15618,6 +15616,9 @@ regtext:hover {
   .activity-page-container .carousel-container {
     height: 240px !important;
   }
+}
+.research-section .section-title {
+  font-size: 3.2rem !important;
 }
 
 /*# sourceMappingURL=main.css.map */
