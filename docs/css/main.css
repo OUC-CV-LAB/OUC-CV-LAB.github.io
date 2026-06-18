@@ -9962,7 +9962,8 @@ regtext:hover {
 
 /* 学术活动页面布局优化 */
 .activity-page-container {
-  max-width: 1200px;
+  max-width: 100%;
+  width: 95%;
   margin: 0 auto;
   padding: 0;
 }
@@ -11381,7 +11382,7 @@ regtext:hover {
 
 .activity-photo img {
   width: 100%;
-  max-width: 600px;
+  max-width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: 20px;
@@ -12872,9 +12873,6 @@ regtext:hover {
     max-width: none;
     height: 200px;
   }
-  .publication-title {
-    font-size: 1.4rem;
-  }
   .publication-authors {
     font-size: 1rem;
   }
@@ -13179,9 +13177,6 @@ regtext:hover {
   }
   .publication-image img {
     height: 150px;
-  }
-  .publication-title {
-    font-size: 1.2rem;
   }
   .publication-authors {
     font-size: 0.9rem;
@@ -13737,7 +13732,7 @@ regtext:hover {
   }
   .research-section .section-header .section-title {
     color: #1e3c72 !important;
-    font-size: 3.5rem !important;
+    font-size: 3.5rem;
   }
   /* ---- 3. Team页面优化 ---- */
   /* 导师卡片居中 */
@@ -13911,14 +13906,6 @@ regtext:hover {
     width: 100% !important;
     padding: 0 !important;
   }
-  .publication-title {
-    font-size: 0.95rem !important;
-    line-height: 1.35 !important;
-    margin-bottom: 8px !important;
-  }
-  .publication-title a {
-    font-size: 0.95rem !important;
-  }
   .publication-authors {
     font-size: 0.9rem !important;
     line-height: 1.5 !important;
@@ -14060,10 +14047,10 @@ regtext:hover {
   }
   /* 首页两个大卡片标题缩小 */
   .content-card .card-header h3 {
-    font-size: 1.6rem !important;
+    font-size: 1.4rem !important;
   }
   .content-card .card-header h3 i {
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
   }
   .card-header {
     padding: 14px 18px !important;
@@ -14386,14 +14373,14 @@ regtext:hover {
 
 /* 首页两个大卡片标题放大 */
 .content-card .card-header h3 {
-  font-size: 3rem !important;
+  font-size: 2.5rem !important;
   font-weight: 800;
   letter-spacing: 1px;
 }
 
 /* 图标一起放大 */
 .content-card .card-header h3 i {
-  font-size: 3.2rem !important;
+  font-size: 2.5rem !important;
   margin-right: 12px;
 }
 
@@ -14605,7 +14592,7 @@ regtext:hover {
 =============================== */
 /* 论文标题 */
 .publication-title {
-  font-size: 25px !important;
+  font-size: 22px !important;
   line-height: 1.45 !important;
   font-weight: 800 !important;
   margin-bottom: 16px !important;
@@ -14613,16 +14600,8 @@ regtext:hover {
 
 /* 标题里的链接 */
 .publication-title a {
-  font-size: 33px !important;
+  font-size: 23px !important;
   font-weight: 800 !important;
-}
-
-/* 作者信息 */
-.publication-authors {
-  font-size: 30px !important;
-  line-height: 1.8 !important;
-  color: #666 !important;
-  margin-bottom: 22px !important;
 }
 
 /* 按钮区域 */
@@ -14993,10 +14972,6 @@ regtext:hover {
     overflow-wrap: anywhere !important;
     word-break: normal !important;
   }
-  .publication-authors {
-    max-width: 100% !important;
-    overflow-wrap: anywhere !important;
-  }
   .publication-links {
     display: flex !important;
     flex-wrap: wrap !important;
@@ -15190,9 +15165,12 @@ regtext:hover {
     grid-column: 1/-1 !important;
     grid-row: 1 !important;
     margin: 0 0 6px !important;
-    font-size: clamp(32px, 3vw, 46px) !important;
+    font-size: 25px !important;
     line-height: 1.2 !important;
     text-align: center !important;
+  }
+  .intro-content .intro-title {
+    font-size: clamp(23px, 3vw, 40px) !important;
   }
   .intro-paragraphs {
     display: grid !important;
@@ -15489,14 +15467,14 @@ regtext:hover {
 }
 
 .publications-section .publication-title {
-  font-size: clamp(1.75rem, 2.15vw, 2.7rem) !important;
+  font-size: 20px !important;
   line-height: 1.32 !important;
   margin-bottom: 22px !important;
 }
 
 .publications-section .publication-authors,
 .publications-section .publication-venue {
-  font-size: clamp(1.2rem, 1.38vw, 1.65rem) !important;
+  font-size: 23px !important;
   line-height: 1.75 !important;
   margin-bottom: 12px !important;
 }
@@ -15563,8 +15541,8 @@ regtext:hover {
   float: none !important;
   display: block !important;
   width: 100% !important;
-  max-width: min(100%, 420px) !important;
-  height: 300px !important;
+  max-width: min(100%, 1500px) !important;
+  height: auto;
   margin: 18px auto 24px !important;
   object-fit: contain !important;
   object-position: center center !important;
@@ -15616,9 +15594,6 @@ regtext:hover {
   .activity-page-container .carousel-container {
     height: 240px !important;
   }
-}
-.research-section .section-title {
-  font-size: 3.2rem !important;
 }
 
 /*# sourceMappingURL=main.css.map */

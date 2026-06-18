@@ -83,12 +83,12 @@
   group: 3
 
 
-- name: 张天戈
-  photo: bio-photo.jpg
-  info: 计算机技术专业
-  info2: 研究方向：人工智能与机器学习
-  pub: IJCAI+1
-  group: 3
+#- name: 张天戈
+#  photo: bio-photo.jpg
+#  info: 计算机技术专业
+#  info2: 研究方向：人工智能与机器学习
+#  pub: IJCAI+1
+# group: 3
 
 
 
@@ -120,12 +120,7 @@
   pub:
   group: 3
 
-- name: 胡喜风
-  photo: huxifeng.jpg
-  info: 信息与通信工程专业
-  info2: 研究方向：医学图像分析
-  pub: information fusion
-  group: 3
+
 
 - name: 秦森龙
   photo: 秦森龙-博士-电子信息-脑机接口.jpg
@@ -300,88 +295,95 @@
 
 - name: 王祥龙
   photo: wangxianglong.jpg
-  info: 青岛科技大学教师
+  info: 南京大学博士后
   info2:
   url: https://sjkx.qust.edu.cn/info/1039/1805.htm
   pub: T-CSVT,TIM
+  work: 毕业去向：青岛-青岛科技大学教师
+  group: 5
+
+- name: 胡喜风(2022级博士)
+  photo: huxifeng.jpg
+  info: 山东大学博士
+  info2: 研究方向：医学图像分析
+  pub: information fusion
+  work: 毕业去向：青岛-山东省地震局
   group: 5
 
 
 
-
-
-- name: 童亨(2026年毕业)
+- name: 童亨(2023级硕士)
   photo: th.jpg
   info: 计算机技术专业
   info2: 研究方向：三维形状生成,具身智能
   pub: 计图比赛三等奖
-  work: 毕业去向：中国移动通信集团浙江有限公司金华分公司
+  work: 毕业去向：金华-中国移动通信集团浙江有限公司金华分公司
   group: 6
 
-- name: 谭润清(2026年毕业)
+- name: 谭润清(2023级硕士)
   photo: tanrunqing.jpg
   info: 计算机技术专业
   info2: 研究方向：多视图三维重建
   pub: 华为杯三等奖
-  work: 毕业去向：
+  work: 毕业去向：北京-网易
   group: 6
 
-- name: 张朦幻(2026年毕业)
+- name: 张朦幻(2023级硕士)
   photo: huan.jpg
   info: 软件工程专业
   info2: 研究方向：细粒度图像分类
   pub: 挑战杯创意赛特等奖
-  work: 毕业去向：国家电网-天津电科院
+  work: 毕业去向：天津-国家电网-天津电科院
   group: 6
 
 
 
-- name: 仇世纪(2026年毕业)
+- name: 仇世纪(2023级硕士)
   photo: qiushiji.jpg
   info: 软件工程专业
   info2: 研究方向：点云分割
   pub: 挑战杯创意赛特等奖,Neural Networks+1
-  work: 毕业去向：山东省农村信用社联合社
+  work: 毕业去向：济南-山东省农村信用社联合社
   group: 6
 
-- name: 鄢柯(2026年毕业)
+- name: 鄢柯(2023级硕士)
   photo: yanke.jpg
   info: 计算机科学与技术专业
   info2: 研究方向：医学图像分割
   pub: AAAI+1，国家奖学金
-  work: 毕业去向：文远知行
+  work: 毕业去向：广州-文远知行
   group: 6
 
-- name: 李帅衡(2026年毕业)
+- name: 李帅衡(2023级硕士)
   photo: lishuaiheng.jpg
   info: 计算机技术专业
   info2: 研究方向：细粒度分类
   pub: 华为杯三等奖,挑战杯创意赛特等奖,IEEE Transactions on Image Processing+1
-  work: 毕业去向：珠海许继电气有限公司
+  work: 毕业去向：珠海-珠海许继电气有限公司
   group: 6
 
-- name: 曹子彦(2026年毕业)
+- name: 曹子彦(2023级硕士)
   photo: caoziyan.jpg
   info: 软件工程专业
   info2: 研究方向：半监督医学图像分割
-  work: 毕业去向：山东省农村信用社联合社
+  work: 毕业去向：济南-山东省农村信用社联合社
   group: 6
 
-- name: 孔松琦(2026年毕业)
+- name: 孔松琦(2023级硕士)
   photo: songqikong.png
   info: 农业工程与信息技术专业
   info2: 研究方向：点云补全
   url: https://songqikong.github.io/
   pub: 华为杯三等奖
-  work: 毕业去向：深圳其域创新科技有限公司
+  work: 毕业去向：深圳-深圳其域创新科技有限公司
   group: 6
 
-- name: 李绍铭(2026年毕业)
+- name: 李绍铭(2023级硕士)
   photo: lishaoming.jpg
   info: 人工智能专业
   info2: 研究方向：单幅图三维重建
   pub: CVPR+1，计图比赛三等奖，国家奖学金
-  work: 毕业去向：银河通用机器人
+  work: 毕业去向：北京-银河通用机器人
   group: 6
 
 
