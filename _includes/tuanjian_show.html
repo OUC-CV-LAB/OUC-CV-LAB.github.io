@@ -17,20 +17,40 @@
 </div>
 
 
-
-
-
-
-
-
-
 <div class="activity-container">
     <div class="activity-title"><strong>时间：</strong>2026年6月13日<br>
       <strong>地点：</strong>中国海洋大学-2023级硕士毕业</div>
 
-    <img class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/团建/image11.jpg" alt="活动合影">
+    <img id="imageDisplay" class="activity-photo" src="{{ site.url }}{{ site.baseurl }}/images/团建/2023级毕业/image1.jpg" alt="活动合影">
+
+    <button onclick="changeImage(-1)" style="position: absolute; top: 50%; left: 10px; background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-size: 16px;">
+        &#10094;
+      </button>
+      <button onclick="changeImage(1)" style="position: absolute; top: 50%; right: 10px; background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-size: 16px;">
+        &#10095;
+      </button>
 
 </div>
+
+<script>
+      let currentImage = 7;
+      const totalImages = 7;
+
+
+      function changeImage(direction) {
+        currentImage += direction;
+        if (currentImage > totalImages) currentImage = 1;
+        if (currentImage < 1) currentImage = totalImages;
+        document.getElementById('imageDisplay').src = `{{ site.url }}{{ site.baseurl }}/images/团建/2023级毕业/image${currentImage}.jpg`;
+
+      }
+
+      // 添加自动轮播功能
+      setInterval(function() {
+        changeImage(1);
+      }, 5000); // 每5秒自动切换
+    </script>
+
 
 
 
