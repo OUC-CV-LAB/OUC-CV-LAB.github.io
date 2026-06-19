@@ -218,7 +218,7 @@
   photo: lifulin.jpg
   info: 软件工程专业
   info2: 研究方向：医学多模态辅助诊断
-  pub: 华为杯三等奖
+  pub: MICCAI2026,华为杯三等奖
   group: 1
 
 - name: 吴兴政
@@ -394,6 +394,7 @@
   photo: caizhiheng.jpg
   info:
   info2: 研究方向：多模态医学图像
+  pub: MICCAI2026
   url:
   group: 7
 
