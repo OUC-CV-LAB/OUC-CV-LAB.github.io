@@ -58,8 +58,8 @@
 
 - name: 刘治
   photo: liuzhi.jpg
-  info: 山东省高层次人才
-  info2: #研究方向：医学影像组学，智能心理测量，网络空间安全
+  info: 山东大学教授
+  info2: 山东省高层次人才
   url: https://faculty.sdu.edu.cn/liuzhi1/zh_CN/index/538797/list/index.htm
   group: 4
 
@@ -295,14 +295,14 @@
 
 - name: 王祥龙
   photo: wangxianglong.jpg
-  info: 南京大学博士后
+  info: 中国海洋大学博士
   info2:
   url: https://sjkx.qust.edu.cn/info/1039/1805.htm
   pub: T-CSVT,TIM
   work: 毕业去向：青岛-青岛科技大学教师
   group: 5
 
-- name: 胡喜风(2022级博士)
+- name: 胡喜凤(2022级博士)
   photo: huxifeng.jpg
   info: 山东大学博士
   info2: 研究方向：医学图像分析
