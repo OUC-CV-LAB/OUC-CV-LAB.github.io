@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<meta name="viewport" content="width=980">
+	<title>计算机视觉前沿交叉实验室 - Tuanjian</title>
+	<meta name="description" content="计算机视觉前沿交叉实验室 -- Tuanjian.">
+	<link rel="stylesheet" href="http://localhost:4000/css/main.css">
+	<link rel="canonical" href="http://localhost:4000/tuanjian.html">
+	<link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/images/icon.ico">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/academicons/css/academicons.css">
+
+	
+</head>
+
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	
+    <a class="navbar-brand" href="http://localhost:4000/" style="padding-top: 6px;">
+		<!-- Frontier CrossVision Laboratory @ OUC -->
+		<img src="http://localhost:4000/images/vmvlab_cw.png" alt="OUC-CV-LAB" width="100" height="75" class="d-inline-block align-text-top" style="margin: 0px; padding:0px;">
+	</a>
+	</div>
+
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="http://localhost:4000/" class="nav-link"><i class="fas fa-home" style="font-size: 2.5rem"></i> 主页</a></li>
+		<li><a href="http://localhost:4000/team" class="nav-link"><i class="fas fa-users" style="font-size: 2.5rem"></i> 成员</a></li>
+
+		<li><a href="http://localhost:4000/publications" class="nav-link"><i class="fas fa-book" style="font-size: 2.5rem"></i> 发表文章</a></li>
+		<!-- <li><a href="http://localhost:4000/code">Code</a></li> -->
+		<li><a href="http://localhost:4000/activity" class="nav-link"><i class="fas fa-flask" style="font-size: 2.5rem"></i> 学术活动</a></li>
+		<li><a href="http://localhost:4000/tuanjian" class="nav-link"><i class="fas fa-calendar-alt" style="font-size: 2.5rem"></i> 团建活动</a></li>
+		<li><a href="http://localhost:4000/contact" class="nav-link"><i class="fas fa-envelope" style="font-size: 2.5rem"></i> 联系我们</a></li>
+	  </ul>
+	</div>
+	
+  </div>
+</div>
+
+
+
+    <div class="container-fluid">
+      <div class="row" style="margin-left: 20px; margin-right: 20px;">
+        <style>
+  /* 手机端布局优化 */
+  @media (max-width: 768px) {
+    .iamgeid {
+      width: 100% !important;
+      margin-bottom: 20px;
+    }
+  }
+</style>
+
+<div class="activity-page-container">
+  <div class="row">
+    <div class="iamgeid col-sm-10">
+    <html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>团建活动</title>
+</head>
+<body>
+
+
+
+<div class="section-header">
+  <div class="section-icon">🎤</div>
+  <div>
+    <h2 class="section-title">举办团建活动</h2>
+  </div>
+
+</div>
+
+
+<div class="activity-container">
+    <div class="activity-title"><strong>时间：</strong>2026年6月13日<br>
+      <strong>地点：</strong>中国海洋大学-2023级硕士毕业</div>
+
+    <img id="imageDisplay" class="activity-photo" src="http://localhost:4000/images/团建/2023级毕业/image1.jpg" alt="活动合影">
+
+    <button onclick="changeImage(-1)" style="position: absolute; top: 50%; left: 10px; background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-size: 16px;">
+        &#10094;
+      </button>
+      <button onclick="changeImage(1)" style="position: absolute; top: 50%; right: 10px; background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-size: 16px;">
+        &#10095;
+      </button>
+
+</div>
+
+<script>
+      let currentImage = 7;
+      const totalImages = 7;
+
+
+      function changeImage(direction) {
+        currentImage += direction;
+        if (currentImage > totalImages) currentImage = 1;
+        if (currentImage < 1) currentImage = totalImages;
+        document.getElementById('imageDisplay').src = `http://localhost:4000/images/团建/2023级毕业/image${currentImage}.jpg`;
+
+      }
+
+      // 添加自动轮播功能
+      setInterval(function() {
+        changeImage(1);
+      }, 5000); // 每5秒自动切换
+    </script>
+
+
+
+
+
+<div class="activity-container">
+    <div class="activity-title"><strong>时间：</strong>2025年12月24日<br>
+      <strong>地点：</strong>餐厅聚餐</div>
+
+    <img class="activity-photo" src="http://localhost:4000/images/团建/image10.jpg" alt="活动合影">
+
+</div>
+
+<div class="activity-container">
+    <div class="activity-title"><strong>时间：</strong>2025年10月5日<br>
+      <strong>地点：</strong>青岛市鲜海海滩</div>
+
+    <img class="activity-photo" src="http://localhost:4000/images/团建/image1.jpg" alt="活动合影">
+
+</div>
+
+
+
+
+<div class="activity-container">
+    <div class="activity-title"><strong>时间：</strong>2024年10月25日<br>
+      <strong>地点：</strong>迎新聚餐</div>
+
+    <img class="activity-photo" src="http://localhost:4000/images/团建/image6.jpg" alt="活动合影">
+
+</div>
+
+
+
+
+<div class="activity-container">
+    <div class="activity-title"><strong>时间：</strong>2025年10月5日<br>
+      <strong>地点：</strong>青岛市鲜海海滩2023级硕士合照</div>
+
+    <img class="activity-photo" src="http://localhost:4000/images/团建/image7.jpg" alt="活动合影">
+
+</div>
+
+
+<div class="activity-container">
+    <div class="activity-title"><strong>时间：</strong>2025年10月5日<br>
+      <strong>地点：</strong>青岛市鲜海海滩2024级硕士合照</div>
+
+    <img class="activity-photo" src="http://localhost:4000/images/团建/image8.jpg" alt="活动合影">
+
+</div>
+
+
+
+
+<div class="activity-container">
+    <div class="activity-title"><strong>时间：</strong>2025年10月5日<br>
+      <strong>地点：</strong>青岛市鲜海海滩2025级硕士合照</div>
+
+    <img class="activity-photo" src="http://localhost:4000/images/团建/image9.jpg" alt="活动合影">
+
+</div>
+
+<div class="activity-container">
+    <div class="activity-title"><strong>时间：</strong>2025年7月6日<br>
+      <strong>地点：</strong>餐厅聚餐</div>
+
+    <img class="activity-photo" src="http://localhost:4000/images/团建/image3.jpg" alt="活动合影">
+
+</div>
+
+
+<div class="activity-container">
+    <div class="activity-title"><strong>时间：</strong>2025年6月6日<br>
+      <strong>地点：</strong>中国海洋大学</div>
+
+    <img class="activity-photo" src="http://localhost:4000/images/团建/image2.jpg" alt="活动合影">
+
+</div>
+
+
+
+<div class="activity-container">
+    <div class="activity-title"><strong>时间：</strong>2024年11月6日<br>
+      <strong>地点：</strong>花园合照</div>
+
+    <img class="activity-photo" src="http://localhost:4000/images/团建/image5.jpg" alt="活动合影">
+
+</div>
+
+
+<div class="activity-container">
+    <div class="activity-title"><strong>时间：</strong>2024年8月8日<br>
+      <strong>地点：</strong>谭润清生日</div>
+
+    <img class="activity-photo" src="http://localhost:4000/images/团建/image4.jpg" alt="活动合影">
+
+</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function pairActivityCards() {
+    var columns = document.querySelectorAll('.activity-page-container > .row > .iamgeid');
+    if (columns.length < 2) return;
+    if (document.querySelector('.activity-paired-grid')) return;
+
+    var leftCards = columns[0].querySelectorAll('.activity-container');
+    var rightCards = columns[1].querySelectorAll('.activity-container');
+    var count = Math.min(leftCards.length, rightCards.length);
+    var row = document.querySelector('.activity-page-container > .row');
+    var pairedGrid = document.createElement('div');
+    pairedGrid.className = 'activity-paired-grid';
+
+
+    var leftHeading = document.createElement('div');
+    leftHeading.className = 'activity-column-heading';
+    leftHeading.textContent = '\u53c2\u52a0\u5b66\u672f\u6d3b\u52a8';
+    var rightHeading = document.createElement('div');
+    rightHeading.className = 'activity-column-heading';
+    rightHeading.textContent = '\u4e3e\u529e\u5b66\u672f\u6d3b\u52a8';
+    pairedGrid.appendChild(leftHeading);
+    pairedGrid.appendChild(rightHeading);
+
+    for (var k = 0; k < count; k++) {
+      pairedGrid.appendChild(leftCards[k]);
+      pairedGrid.appendChild(rightCards[k]);
+    }
+
+    columns[0].querySelectorAll('.row').forEach(function(item) {
+      if (item.textContent.indexOf('更多') !== -1 || item.textContent.indexOf('鏇村') !== -1) {
+        item.classList.add('activity-more-link');
+        pairedGrid.appendChild(item);
+      }
+    });
+    columns[1].querySelectorAll('.row').forEach(function(item) {
+      if (item.textContent.indexOf('更多') !== -1 || item.textContent.indexOf('鏇村') !== -1) {
+        item.classList.add('activity-more-link');
+        pairedGrid.appendChild(item);
+      }
+    });
+
+    row.innerHTML = '';
+    row.appendChild(pairedGrid);
+  }
+
+  window.addEventListener('load', pairActivityCards);
+  setTimeout(pairActivityCards, 300);
+</script>
+
+      </div>
+    </div>
+
+    <div id="footer" class="panel" style="margin: 0px; background-color:#fffffff1;">
+  <div class="panel-footer" style="background-color:#fffffff1;">
+	<div class="container-fluid">
+	  <div class="row">
+
+
+			<ul class="nav navbar-nav navbar-right">
+				<li style="width: 340px;height: 100px"><a href="https://www.hfut.edu.cn/" style="color:#4b4b4b; display: flex; align-items: center; text-decoration: none;">
+					<img src="http://localhost:4000/images/hegongda_logo_same_320x94.png" alt="合肥工业大学" class="footer-logo" style="height: 140px; width: auto; margin-right: 8px;">
+				</a></li>
+				<li style="width: 340px;height: 100px"><a href="http://www.ouc.edu.cn/" style="color:#4b4b4b; display: flex; align-items: center; text-decoration: none;">
+					<img src="http://localhost:4000/images/ouc-logo_same_320x94.png" alt="中国海洋大学" class="footer-logo" style="height: 140px; width: auto; margin-right: 8px;">
+				</a></li>
+			</ul>
+
+
+		
+	  </div>
+	  <div class="row" style="text-align: center; margin-top: 10px;">
+        <p style="color:#4b4b4b; font-size: 14px;">powered by 童亨, 孔松琦, 李绍铭, 吴兴政, 王子健</p>
+      </div>
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://localhost:4000/js/bootstrap.min.js"></script>
+
+
+  </body>
+
+</html>
