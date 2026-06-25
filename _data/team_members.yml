@@ -288,9 +288,10 @@
 
 - name: 郭少翔
   photo: guoshaoxiang.jpg
-  info: 浙江大学博士后
+  info: 中国海洋大学博士
   info2: 研究方向：计算机视觉与深度学习
   pub: ACM MM+1
+  work: 浙江大学博士后
   group: 5
 
 - name: 王祥龙
@@ -326,7 +327,7 @@
   info: 计算机技术专业
   info2: 研究方向：多视图三维重建
   pub: 华为杯三等奖
-  work: 毕业去向：北京-网易
+  work: 毕业去向：杭州-网易
   group: 6
 
 - name: 张朦幻(2023级硕士)
